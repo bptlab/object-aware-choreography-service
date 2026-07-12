@@ -1,6 +1,6 @@
 # Object-Aware Choreography Service
 
-This repository contains the research prototype and executable evaluation artifact accompanying the dissertation **"Modeling and Analysis of
+This repository contains the research prototype and executable evaluation artifact accompanying the thesis **"Modeling and Analysis of
 Object-Aware Process Choreographies."**
 
 The prototype extends **OpenBPT** with model validation, formal-semantics
@@ -9,7 +9,7 @@ and transformations to BSPL information protocols. It operates on
 interaction-centric BPMN choreography diagrams enriched with a shared data
 model and shared data object lifecycles.
 
-> **Research artifact.** This repository implements the formal semantics, analyses, protocol transformations, and executable evaluation presented in the dissertation.
+> **Demo.** A demo is available at <https://app-thesis-oapc.bpt-lab.org>. The object-aware choreography service is not yet integrated into the production version of OpenBPT.
 
 ---
 
@@ -65,7 +65,7 @@ Run the implementation regression tests:
 npm test
 ```
 
-Reproduce the dissertation evaluation:
+Reproduce the thesis evaluation:
 
 ```bash
 npm run evaluation:silent
@@ -113,9 +113,9 @@ specification.
 
 ---
 
-## Reproducing the Dissertation Evaluation
+## Reproducing the Thesis Evaluation
 
-The executable evaluation accompanying the dissertation is located in
+The executable evaluation accompanying the thesis is located in
 `evaluation/`.
 
 ```text
@@ -222,7 +222,7 @@ src/
     ├── analysis/            State-space and realizability analyses
     └── targets/             Output representations
 
-evaluation/                  Dissertation evaluation artifact
+evaluation/                  Thesis evaluation artifact
 test/                        Regression tests
 lib/openbpt-service-core-ts/ Local OpenBPT adapter
 ```
@@ -231,7 +231,7 @@ lib/openbpt-service-core-ts/ Local OpenBPT adapter
 
 ## Scope and Assumptions
 
-The implementation follows the formal scope defined in the dissertation.
+The implementation follows the formal scope defined in the thesis.
 
 In particular:
 
@@ -259,7 +259,7 @@ BSPL-native safety or liveness properties.
 
 ## Known Limitations
 
-- The prototype supports only the modeling fragment defined in the dissertation.
+- The prototype supports only the modeling fragment defined in the thesis.
 - Multiple objects of the same class within a choreography case are not
   supported.
 - Dynamic object rebinding is outside the supported fragment.

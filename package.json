@@ -1,7 +1,8 @@
 {
   "name": "object-aware-choreography-service",
   "version": "1.0.1",
-  "description": "A service providing functionalities related to object-aware choreography.",
+  "private": true,
+  "description": "Research prototype and evaluation artifact for modeling and analyzing object-aware process choreographies.",
   "type": "module",
   "engines": {
     "node": ">=22.14"
@@ -18,12 +19,25 @@
     "evaluation:silent": "npm run typecheck:evaluation && cross-env NODE_ENV=development LOG_LEVEL=silent node --test --import tsx $(find ./evaluation -name '*.test.ts' -type f | sort)",
     "lint": "npx eslint ./src"
   },
-  "keywords": [],
+  "keywords": [
+    "object-aware choreography",
+    "process choreography",
+    "OpenBPT",
+    "Petri net",
+    "typed Petri net",
+    "BSPL",
+    "process analysis",
+    "research artifact"
+  ],
   "author": "Tom Lichtenstein",
   "license": "MIT",
+  "homepage": "https://app-thesis-oapc.bpt-lab.org",
   "repository": {
     "type": "git",
-    "url": "https://gitlab.hpi.de/bpt-lab/openbpt-project/services/templates/openbpt-service-template-ts.git"
+    "url": "https://gitlab.hpi.de/bpt-lab/openbpt-project/services/object-aware-choreography.git"
+  },
+  "bugs": {
+    "url": "https://gitlab.hpi.de/bpt-lab/openbpt-project/services/object-aware-choreography/-/issues"
   },
   "devDependencies": {
     "@eslint/js": "^9.0.0",
