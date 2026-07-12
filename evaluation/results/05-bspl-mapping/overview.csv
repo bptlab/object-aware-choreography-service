@@ -1,0 +1,25 @@
+ID,Scenario,Kind,Expected,Outcome,Roles,Messages,Parameters,In parameters,Out parameters,Nil parameters,Choreography traces,BSPL traces,Common traces,Recall,Precision,Exact before refinement,Rejection category,Reason,Duration ms
+CS01,no-object sequence,construct,holds,holds,2,2,4,1,4,0,1,1,1,1,1,yes,,,50.5
+CS02,single-object creation with multiple initial states and common identifier,construct,holds,holds,2,3,6,2,8,0,2,2,2,1,1,yes,,,15.2
+CS03,two-object one-to-one creation,construct,holds,holds,2,2,4,1,4,0,1,1,1,1,1,yes,,,9.0
+CS04,two-object one-to-many creation,construct,holds,holds,2,2,4,2,4,0,1,1,1,1,1,yes,,,10.2
+CS05,two-object many-to-many creation,construct,holds,holds,2,2,4,1,4,0,1,1,1,1,1,yes,,,11.5
+CS06,two-object creation without association,construct,holds,holds,2,2,4,1,4,0,1,1,1,1,1,yes,,,11.2
+CS07,three-object mixed dependencies,construct,holds,holds,2,3,5,4,5,0,1,2,1,1,0.5000,no,,,8.3
+CS08,communication with different-role local transitions and forwarding,construct,holds,holds,3,4,6,8,7,0,1,1,1,1,1,yes,,,37.5
+CS09,multiple compatible receiver states,construct,holds,holds,2,5,7,8,10,0,2,2,2,1,1,yes,,,46.3
+CS10,multi-class synchronization followed by forwarding,construct,holds,holds,3,5,9,10,9,0,1,2,1,1,0.5000,no,,,23.0
+CS11,synchronization with multiple source states,construct,holds,holds,2,5,8,8,12,0,2,2,2,1,1,yes,,,11.5
+CS12,state reachable by synchronization or local transition,construct,holds,holds,3,8,9,14,17,2,2,3,2,1,0.6667,no,,,9.1
+CS13,combined task on same class,construct,holds,holds,2,1,4,0,4,0,1,1,1,1,1,yes,,,11.7
+CS14,combined task across classes,construct,holds,holds,2,2,5,2,5,0,1,1,1,1,1,yes,,,7.6
+CS15,event-based gateway with local non-creational decision,construct,holds,holds,2,3,5,4,6,2,2,2,2,1,1,yes,,,24.9
+CS16,guarded exclusive gateway,construct,holds,holds,2,5,8,4,10,0,2,6,2,1,0.3333,no,,,29.5
+CS17,exclusive gateway with affected role identification,construct,skips,skips,,,,,,,,,,,,,,Number of independent tasks is too large,
+CS18,parallel independent object branches,construct,holds,holds,2,4,6,3,6,0,2,5,2,1,0.4000,no,,,18.9
+CS19,event-based gateway loop,construct,rejects,rejects,,,,,,,,,,,,,,BSPL mapping requires acyclic control-flow; found loop/cycle ChoreographyTask_0blhxn1 -> Gateway_0ieg9pj -> ChoreographyTask_0vvrsfb -> Gateway_0ookd9i -> ChoreographyTask_0blhxn1,6.7
+CS20,exclusive gateway loop,construct,rejects,rejects,,,,,,,,,,,,,,BSPL mapping requires acyclic control-flow; found loop/cycle Gateway_0l233z9 -> Gateway_10n552e -> ChoreographyTask_18vbtgq -> Gateway_1hms0l8 -> Gateway_1fcecxd -> ChoreographyTask_0xqod8f -> ChoreographyTask_1eltzty -> Gateway_0l233z9,21.1
+IS01,order fulfillment,integrated,holds,holds,3,12,20,35,30,8,3,541,3,1,0.0055,no,,,71.9
+IS02,item purchase plain,integrated,holds,holds,2,5,10,9,11,0,2,4,2,1,0.5000,no,,,20.3
+IS03,item purchase optimistic,integrated,holds,holds,2,8,15,16,18,2,4,10,4,1,0.4000,no,,,14.3
+IS04,item purchase pessimistic,integrated,skips,skips,,,,,,,,,,,,,,Pessimistic item purchase is not included in BSPL evaluation.,

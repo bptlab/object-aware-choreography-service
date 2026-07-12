@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ptn:definitions xmlns:ptn="http://bpt-lab.org/schemas/ptn" xmlns:ptnDi="http://bpt-lab.org/schemas/ptnDi" xmlns:dc="https://www.omg.org/spec/BPMN/20100501/DC.xsd">
+  <ptn:model>
+    <ptn:place id="p_source">
+      <ptn:name>source</ptn:name>
+      <ptn:initialMarking>1</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_sink">
+      <ptn:name>sink</ptn:name>
+      <ptn:initialMarking>0</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_sf_Flow-1g4cks8">
+      <ptn:name>Flow_1g4cks8</ptn:name>
+      <ptn:initialMarking>0</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_sf_Flow-0j5cuuu">
+      <ptn:name>Flow_0j5cuuu</ptn:name>
+      <ptn:initialMarking>0</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_sf_Flow-1lv5f23">
+      <ptn:name>Order       [fulfilled]</ptn:name>
+      <ptn:initialMarking>0</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_sf_Flow-073chlu">
+      <ptn:name>Flow_073chlu</ptn:name>
+      <ptn:initialMarking>0</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_sf_Flow-09f0omg">
+      <ptn:name>Order     [accepted]</ptn:name>
+      <ptn:initialMarking>0</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_sf_Flow-1ywvmwd">
+      <ptn:name>Flow_1ywvmwd</ptn:name>
+      <ptn:initialMarking>0</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_sf_Flow-1cy45bc">
+      <ptn:name>Flow_1cy45bc</ptn:name>
+      <ptn:initialMarking>0</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_sf_Flow-1wajnew">
+      <ptn:name>Flow_1wajnew</ptn:name>
+      <ptn:initialMarking>0</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_sf_Flow-0pxxgsj">
+      <ptn:name>Flow_0pxxgsj</ptn:name>
+      <ptn:initialMarking>0</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_sf_Flow-05c0vef">
+      <ptn:name>Flow_05c0vef</ptn:name>
+      <ptn:initialMarking>0</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_sf_Flow-0g7dnde">
+      <ptn:name>Flow_0g7dnde</ptn:name>
+      <ptn:initialMarking>0</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_exists_Buyer_Order">
+      <ptn:name>Buyer.Order+</ptn:name>
+      <ptn:initialMarking>0</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_state_Buyer_Order_initial">
+      <ptn:name>Buyer.Order [initial]</ptn:name>
+      <ptn:initialMarking>1</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_state_Buyer_Order_created">
+      <ptn:name>Buyer.Order [created]</ptn:name>
+      <ptn:initialMarking>0</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_state_Buyer_Order_accepted">
+      <ptn:name>Buyer.Order [accepted]</ptn:name>
+      <ptn:initialMarking>0</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_state_Buyer_Order_fulfilled">
+      <ptn:name>Buyer.Order [fulfilled]</ptn:name>
+      <ptn:initialMarking>0</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_exists_Seller_Order">
+      <ptn:name>Seller.Order+</ptn:name>
+      <ptn:initialMarking>0</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_state_Seller_Order_initial">
+      <ptn:name>Seller.Order [initial]</ptn:name>
+      <ptn:initialMarking>1</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_state_Seller_Order_created">
+      <ptn:name>Seller.Order [created]</ptn:name>
+      <ptn:initialMarking>0</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_state_Seller_Order_accepted">
+      <ptn:name>Seller.Order [accepted]</ptn:name>
+      <ptn:initialMarking>0</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_state_Seller_Order_fulfilled">
+      <ptn:name>Seller.Order [fulfilled]</ptn:name>
+      <ptn:initialMarking>0</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_trans_ChoreographyTask-1qr8dy4">
+      <ptn:name>place order transmission</ptn:name>
+      <ptn:initialMarking>0</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_trans_ChoreographyTask-09ngl4b">
+      <ptn:name>accept order transmission</ptn:name>
+      <ptn:initialMarking>0</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_trans_ChoreographyTask-14y3tkb">
+      <ptn:name>deliver goods transmission</ptn:name>
+      <ptn:initialMarking>0</ptn:initialMarking>
+    </ptn:place>
+    <ptn:transition id="t_Event-0uov3gs" isSilent="false">
+      <ptn:name>Event_0uov3gs</ptn:name>
+    </ptn:transition>
+    <ptn:transition id="t_Event-02a9i1n" isSilent="false">
+      <ptn:name>Event_02a9i1n</ptn:name>
+    </ptn:transition>
+    <ptn:transition id="t_ChoreographyTask-0oduo7g" isSilent="false">
+      <ptn:name>send reminder</ptn:name>
+    </ptn:transition>
+    <ptn:transition id="t_ChoreographyTask-1opsnb1" isSilent="false">
+      <ptn:name>postpone delivery</ptn:name>
+    </ptn:transition>
+    <ptn:transition id="t_ChoreographyTask-0vb16ru" isSilent="false">
+      <ptn:name>confirm      receipt</ptn:name>
+    </ptn:transition>
+    <ptn:transition id="t_xor_Gateway-0yn5tb0_ChoreographyTask-0oduo7g_Order_accepted" isSilent="true">
+      <ptn:name>Gateway_0yn5tb0 -&gt; send reminder</ptn:name>
+    </ptn:transition>
+    <ptn:transition id="t_xor_Gateway-0yn5tb0_ChoreographyTask-0vb16ru_Order_fulfilled" isSilent="true">
+      <ptn:name>Gateway_0yn5tb0 -&gt; confirm      receipt</ptn:name>
+    </ptn:transition>
+    <ptn:transition id="t_xor_Gateway-1n2935z_Gateway-1eek1d0" isSilent="true">
+      <ptn:name>Gateway_1n2935z -&gt; Gateway_1eek1d0</ptn:name>
+    </ptn:transition>
+    <ptn:transition id="t_xor_ChoreographyTask-0oduo7g_Gateway-1eek1d0" isSilent="true">
+      <ptn:name>send reminder -&gt; Gateway_1eek1d0</ptn:name>
+    </ptn:transition>
+    <ptn:transition id="t_xor_ChoreographyTask-14y3tkb_Gateway-1n2935z" isSilent="true">
+      <ptn:name>deliver goods -&gt; Gateway_1n2935z</ptn:name>
+    </ptn:transition>
+    <ptn:transition id="t_xor_ChoreographyTask-1opsnb1_Gateway-1n2935z" isSilent="true">
+      <ptn:name>postpone delivery -&gt; Gateway_1n2935z</ptn:name>
+    </ptn:transition>
+    <ptn:transition id="t_local_Buyer_Order_initial_created" isSilent="true">
+      <ptn:name>[Buyer]</ptn:name>
+    </ptn:transition>
+    <ptn:transition id="t_local_Seller_Order_created_accepted" isSilent="true">
+      <ptn:name>[Seller]</ptn:name>
+    </ptn:transition>
+    <ptn:transition id="t_send_ChoreographyTask-1qr8dy4_Order_created" isSilent="false">
+      <ptn:name>place order send</ptn:name>
+    </ptn:transition>
+    <ptn:transition id="t_recv_ChoreographyTask-1qr8dy4_Order_initial_created" isSilent="false">
+      <ptn:name>place order receive initial</ptn:name>
+    </ptn:transition>
+    <ptn:transition id="t_send_ChoreographyTask-09ngl4b_Order_accepted" isSilent="false">
+      <ptn:name>accept order send</ptn:name>
+    </ptn:transition>
+    <ptn:transition id="t_recv_ChoreographyTask-09ngl4b_Order_created_accepted" isSilent="false">
+      <ptn:name>accept order receive created</ptn:name>
+    </ptn:transition>
+    <ptn:transition id="t_sync_send_ChoreographyTask-14y3tkb_Order_accepted" isSilent="false">
+      <ptn:name>deliver goods sync send</ptn:name>
+    </ptn:transition>
+    <ptn:transition id="t_sync_recv_ChoreographyTask-14y3tkb_Order_accepted" isSilent="false">
+      <ptn:name>deliver goods sync receive</ptn:name>
+    </ptn:transition>
+    <ptn:arc id="a_p_source_t_Event-0uov3gs" source="p_source" target="t_Event-0uov3gs"/>
+    <ptn:arc id="a_t_Event-02a9i1n_p_sink" source="t_Event-02a9i1n" target="p_sink"/>
+    <ptn:arc id="a_t_Event-0uov3gs_p_sf_Flow-1g4cks8" source="t_Event-0uov3gs" target="p_sf_Flow-1g4cks8"/>
+    <ptn:arc id="a_p_sf_Flow-1lv5f23_t_ChoreographyTask-0vb16ru" source="p_sf_Flow-1lv5f23" target="t_ChoreographyTask-0vb16ru"/>
+    <ptn:arc id="a_p_sf_Flow-09f0omg_t_ChoreographyTask-0oduo7g" source="p_sf_Flow-09f0omg" target="t_ChoreographyTask-0oduo7g"/>
+    <ptn:arc id="a_t_ChoreographyTask-0oduo7g_p_sf_Flow-1ywvmwd" source="t_ChoreographyTask-0oduo7g" target="p_sf_Flow-1ywvmwd"/>
+    <ptn:arc id="a_t_ChoreographyTask-1opsnb1_p_sf_Flow-1wajnew" source="t_ChoreographyTask-1opsnb1" target="p_sf_Flow-1wajnew"/>
+    <ptn:arc id="a_p_sf_Flow-05c0vef_t_Event-02a9i1n" source="p_sf_Flow-05c0vef" target="t_Event-02a9i1n"/>
+    <ptn:arc id="a_t_ChoreographyTask-0vb16ru_p_sf_Flow-05c0vef" source="t_ChoreographyTask-0vb16ru" target="p_sf_Flow-05c0vef"/>
+    <ptn:arc id="a_p_sf_Flow-073chlu_t_xor_Gateway-0yn5tb0_ChoreographyTask-0oduo7g_Order_accepted" source="p_sf_Flow-073chlu" target="t_xor_Gateway-0yn5tb0_ChoreographyTask-0oduo7g_Order_accepted"/>
+    <ptn:arc id="a_p_sf_Flow-073chlu_t_xor_Gateway-0yn5tb0_ChoreographyTask-0vb16ru_Order_fulfilled" source="p_sf_Flow-073chlu" target="t_xor_Gateway-0yn5tb0_ChoreographyTask-0vb16ru_Order_fulfilled"/>
+    <ptn:arc id="a_t_xor_Gateway-0yn5tb0_ChoreographyTask-0oduo7g_Order_accepted_p_sf_Flow-09f0omg" source="t_xor_Gateway-0yn5tb0_ChoreographyTask-0oduo7g_Order_accepted" target="p_sf_Flow-09f0omg"/>
+    <ptn:arc id="a_t_xor_Gateway-0yn5tb0_ChoreographyTask-0vb16ru_Order_fulfilled_p_sf_Flow-1lv5f23" source="t_xor_Gateway-0yn5tb0_ChoreographyTask-0vb16ru_Order_fulfilled" target="p_sf_Flow-1lv5f23"/>
+    <ptn:arc id="a_p_sf_Flow-0pxxgsj_t_xor_Gateway-1n2935z_Gateway-1eek1d0" source="p_sf_Flow-0pxxgsj" target="t_xor_Gateway-1n2935z_Gateway-1eek1d0"/>
+    <ptn:arc id="a_p_sf_Flow-1ywvmwd_t_xor_ChoreographyTask-0oduo7g_Gateway-1eek1d0" source="p_sf_Flow-1ywvmwd" target="t_xor_ChoreographyTask-0oduo7g_Gateway-1eek1d0"/>
+    <ptn:arc id="a_t_xor_Gateway-1n2935z_Gateway-1eek1d0_p_sf_Flow-073chlu" source="t_xor_Gateway-1n2935z_Gateway-1eek1d0" target="p_sf_Flow-073chlu"/>
+    <ptn:arc id="a_t_xor_ChoreographyTask-0oduo7g_Gateway-1eek1d0_p_sf_Flow-073chlu" source="t_xor_ChoreographyTask-0oduo7g_Gateway-1eek1d0" target="p_sf_Flow-073chlu"/>
+    <ptn:arc id="a_p_sf_Flow-1cy45bc_t_xor_ChoreographyTask-14y3tkb_Gateway-1n2935z" source="p_sf_Flow-1cy45bc" target="t_xor_ChoreographyTask-14y3tkb_Gateway-1n2935z"/>
+    <ptn:arc id="a_p_sf_Flow-1wajnew_t_xor_ChoreographyTask-1opsnb1_Gateway-1n2935z" source="p_sf_Flow-1wajnew" target="t_xor_ChoreographyTask-1opsnb1_Gateway-1n2935z"/>
+    <ptn:arc id="a_t_xor_ChoreographyTask-14y3tkb_Gateway-1n2935z_p_sf_Flow-0pxxgsj" source="t_xor_ChoreographyTask-14y3tkb_Gateway-1n2935z" target="p_sf_Flow-0pxxgsj"/>
+    <ptn:arc id="a_t_xor_ChoreographyTask-1opsnb1_Gateway-1n2935z_p_sf_Flow-0pxxgsj" source="t_xor_ChoreographyTask-1opsnb1_Gateway-1n2935z" target="p_sf_Flow-0pxxgsj"/>
+    <ptn:arc id="a_p_sf_Flow-0g7dnde_t_ChoreographyTask-1opsnb1" source="p_sf_Flow-0g7dnde" target="t_ChoreographyTask-1opsnb1"/>
+    <ptn:arc id="a_p_state_Buyer_Order_initial_t_local_Buyer_Order_initial_created" source="p_state_Buyer_Order_initial" target="t_local_Buyer_Order_initial_created"/>
+    <ptn:arc id="a_t_local_Buyer_Order_initial_created_p_state_Buyer_Order_created" source="t_local_Buyer_Order_initial_created" target="p_state_Buyer_Order_created"/>
+    <ptn:arc id="a_t_local_Buyer_Order_initial_created_p_exists_Buyer_Order" source="t_local_Buyer_Order_initial_created" target="p_exists_Buyer_Order"/>
+    <ptn:arc id="a_p_state_Seller_Order_created_t_local_Seller_Order_created_accepted" source="p_state_Seller_Order_created" target="t_local_Seller_Order_created_accepted"/>
+    <ptn:arc id="a_t_local_Seller_Order_created_accepted_p_state_Seller_Order_accepted" source="t_local_Seller_Order_created_accepted" target="p_state_Seller_Order_accepted"/>
+    <ptn:arc id="a_p_sf_Flow-1g4cks8_t_send_ChoreographyTask-1qr8dy4_Order_created" source="p_sf_Flow-1g4cks8" target="t_send_ChoreographyTask-1qr8dy4_Order_created"/>
+    <ptn:arc id="a_p_state_Buyer_Order_created_t_send_ChoreographyTask-1qr8dy4_Order_created" source="p_state_Buyer_Order_created" target="t_send_ChoreographyTask-1qr8dy4_Order_created"/>
+    <ptn:arc id="a_t_send_ChoreographyTask-1qr8dy4_Order_created_p_state_Buyer_Order_created" source="t_send_ChoreographyTask-1qr8dy4_Order_created" target="p_state_Buyer_Order_created"/>
+    <ptn:arc id="a_t_send_ChoreographyTask-1qr8dy4_Order_created_p_trans_ChoreographyTask-1qr8dy4" source="t_send_ChoreographyTask-1qr8dy4_Order_created" target="p_trans_ChoreographyTask-1qr8dy4"/>
+    <ptn:arc id="a_p_trans_ChoreographyTask-1qr8dy4_t_recv_ChoreographyTask-1qr8dy4_Order_initial_created" source="p_trans_ChoreographyTask-1qr8dy4" target="t_recv_ChoreographyTask-1qr8dy4_Order_initial_created"/>
+    <ptn:arc id="a_p_state_Seller_Order_initial_t_recv_ChoreographyTask-1qr8dy4_Order_initial_created" source="p_state_Seller_Order_initial" target="t_recv_ChoreographyTask-1qr8dy4_Order_initial_created"/>
+    <ptn:arc id="a_t_recv_ChoreographyTask-1qr8dy4_Order_initial_created_p_state_Seller_Order_created" source="t_recv_ChoreographyTask-1qr8dy4_Order_initial_created" target="p_state_Seller_Order_created"/>
+    <ptn:arc id="a_t_recv_ChoreographyTask-1qr8dy4_Order_initial_created_p_sf_Flow-0j5cuuu" source="t_recv_ChoreographyTask-1qr8dy4_Order_initial_created" target="p_sf_Flow-0j5cuuu"/>
+    <ptn:arc id="a_t_recv_ChoreographyTask-1qr8dy4_Order_initial_created_p_exists_Seller_Order" source="t_recv_ChoreographyTask-1qr8dy4_Order_initial_created" target="p_exists_Seller_Order"/>
+    <ptn:arc id="a_p_sf_Flow-0j5cuuu_t_send_ChoreographyTask-09ngl4b_Order_accepted" source="p_sf_Flow-0j5cuuu" target="t_send_ChoreographyTask-09ngl4b_Order_accepted"/>
+    <ptn:arc id="a_p_state_Seller_Order_accepted_t_send_ChoreographyTask-09ngl4b_Order_accepted" source="p_state_Seller_Order_accepted" target="t_send_ChoreographyTask-09ngl4b_Order_accepted"/>
+    <ptn:arc id="a_t_send_ChoreographyTask-09ngl4b_Order_accepted_p_state_Seller_Order_accepted" source="t_send_ChoreographyTask-09ngl4b_Order_accepted" target="p_state_Seller_Order_accepted"/>
+    <ptn:arc id="a_t_send_ChoreographyTask-09ngl4b_Order_accepted_p_trans_ChoreographyTask-09ngl4b" source="t_send_ChoreographyTask-09ngl4b_Order_accepted" target="p_trans_ChoreographyTask-09ngl4b"/>
+    <ptn:arc id="a_p_trans_ChoreographyTask-09ngl4b_t_recv_ChoreographyTask-09ngl4b_Order_created_accepted" source="p_trans_ChoreographyTask-09ngl4b" target="t_recv_ChoreographyTask-09ngl4b_Order_created_accepted"/>
+    <ptn:arc id="a_p_state_Buyer_Order_created_t_recv_ChoreographyTask-09ngl4b_Order_created_accepted" source="p_state_Buyer_Order_created" target="t_recv_ChoreographyTask-09ngl4b_Order_created_accepted"/>
+    <ptn:arc id="a_t_recv_ChoreographyTask-09ngl4b_Order_created_accepted_p_state_Buyer_Order_accepted" source="t_recv_ChoreographyTask-09ngl4b_Order_created_accepted" target="p_state_Buyer_Order_accepted"/>
+    <ptn:arc id="a_t_recv_ChoreographyTask-09ngl4b_Order_created_accepted_p_sf_Flow-0g7dnde" source="t_recv_ChoreographyTask-09ngl4b_Order_created_accepted" target="p_sf_Flow-0g7dnde"/>
+    <ptn:arc id="a_p_sf_Flow-0g7dnde_t_sync_send_ChoreographyTask-14y3tkb_Order_accepted" source="p_sf_Flow-0g7dnde" target="t_sync_send_ChoreographyTask-14y3tkb_Order_accepted"/>
+    <ptn:arc id="a_t_sync_send_ChoreographyTask-14y3tkb_Order_accepted_p_trans_ChoreographyTask-14y3tkb" source="t_sync_send_ChoreographyTask-14y3tkb_Order_accepted" target="p_trans_ChoreographyTask-14y3tkb"/>
+    <ptn:arc id="a_p_state_Seller_Order_accepted_t_sync_send_ChoreographyTask-14y3tkb_Order_accepted" source="p_state_Seller_Order_accepted" target="t_sync_send_ChoreographyTask-14y3tkb_Order_accepted"/>
+    <ptn:arc id="a_t_sync_send_ChoreographyTask-14y3tkb_Order_accepted_p_state_Seller_Order_fulfilled" source="t_sync_send_ChoreographyTask-14y3tkb_Order_accepted" target="p_state_Seller_Order_fulfilled"/>
+    <ptn:arc id="a_p_trans_ChoreographyTask-14y3tkb_t_sync_recv_ChoreographyTask-14y3tkb_Order_accepted" source="p_trans_ChoreographyTask-14y3tkb" target="t_sync_recv_ChoreographyTask-14y3tkb_Order_accepted"/>
+    <ptn:arc id="a_t_sync_recv_ChoreographyTask-14y3tkb_Order_accepted_p_sf_Flow-1cy45bc" source="t_sync_recv_ChoreographyTask-14y3tkb_Order_accepted" target="p_sf_Flow-1cy45bc"/>
+    <ptn:arc id="a_p_state_Buyer_Order_accepted_t_sync_recv_ChoreographyTask-14y3tkb_Order_accepted" source="p_state_Buyer_Order_accepted" target="t_sync_recv_ChoreographyTask-14y3tkb_Order_accepted"/>
+    <ptn:arc id="a_t_sync_recv_ChoreographyTask-14y3tkb_Order_accepted_p_state_Buyer_Order_fulfilled" source="t_sync_recv_ChoreographyTask-14y3tkb_Order_accepted" target="p_state_Buyer_Order_fulfilled"/>
+    <ptn:arc id="a_p_state_Buyer_Order_accepted_t_xor_Gateway-0yn5tb0_ChoreographyTask-0oduo7g_Order_accepted" source="p_state_Buyer_Order_accepted" target="t_xor_Gateway-0yn5tb0_ChoreographyTask-0oduo7g_Order_accepted"/>
+    <ptn:arc id="a_t_xor_Gateway-0yn5tb0_ChoreographyTask-0oduo7g_Order_accepted_p_state_Buyer_Order_accepted" source="t_xor_Gateway-0yn5tb0_ChoreographyTask-0oduo7g_Order_accepted" target="p_state_Buyer_Order_accepted"/>
+    <ptn:arc id="a_p_state_Buyer_Order_fulfilled_t_xor_Gateway-0yn5tb0_ChoreographyTask-0vb16ru_Order_fulfilled" source="p_state_Buyer_Order_fulfilled" target="t_xor_Gateway-0yn5tb0_ChoreographyTask-0vb16ru_Order_fulfilled"/>
+    <ptn:arc id="a_t_xor_Gateway-0yn5tb0_ChoreographyTask-0vb16ru_Order_fulfilled_p_state_Buyer_Order_fulfilled" source="t_xor_Gateway-0yn5tb0_ChoreographyTask-0vb16ru_Order_fulfilled" target="p_state_Buyer_Order_fulfilled"/>
+  </ptn:model>
+  <ptnDi:diagram id="undefined_di">
+    <ptnDi:plane id="undefined_plane">
+      <ptnDi:diagramShape id="p_source_di" modelElement="p_source">
+        <dc:Bounds x="-510" y="1244" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_sink_di" modelElement="p_sink">
+        <dc:Bounds x="320" y="1344" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_sf_Flow-1g4cks8_di" modelElement="p_sf_Flow-1g4cks8">
+        <dc:Bounds x="-295" y="1244" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_sf_Flow-0j5cuuu_di" modelElement="p_sf_Flow-0j5cuuu">
+        <dc:Bounds x="-190" y="1244" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_sf_Flow-1lv5f23_di" modelElement="p_sf_Flow-1lv5f23">
+        <dc:Bounds x="-40" y="1344" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_sf_Flow-073chlu_di" modelElement="p_sf_Flow-073chlu">
+        <dc:Bounds x="-235" y="1344" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_sf_Flow-09f0omg_di" modelElement="p_sf_Flow-09f0omg">
+        <dc:Bounds x="-190" y="1374" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_sf_Flow-1ywvmwd_di" modelElement="p_sf_Flow-1ywvmwd">
+        <dc:Bounds x="-295" y="1374" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_sf_Flow-1cy45bc_di" modelElement="p_sf_Flow-1cy45bc">
+        <dc:Bounds x="95" y="1244" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_sf_Flow-1wajnew_di" modelElement="p_sf_Flow-1wajnew">
+        <dc:Bounds x="95" y="1199" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_sf_Flow-0pxxgsj_di" modelElement="p_sf_Flow-0pxxgsj">
+        <dc:Bounds x="-100" y="1294" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_sf_Flow-05c0vef_di" modelElement="p_sf_Flow-05c0vef">
+        <dc:Bounds x="100" y="1344" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_sf_Flow-0g7dnde_di" modelElement="p_sf_Flow-0g7dnde">
+        <dc:Bounds x="-85" y="1244" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_exists_Buyer_Order_di" modelElement="p_exists_Buyer_Order">
+        <dc:Bounds x="0" y="-916" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_state_Buyer_Order_initial_di" modelElement="p_state_Buyer_Order_initial">
+        <dc:Bounds x="0" y="-836" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_state_Buyer_Order_created_di" modelElement="p_state_Buyer_Order_created">
+        <dc:Bounds x="100" y="-836" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_state_Buyer_Order_accepted_di" modelElement="p_state_Buyer_Order_accepted">
+        <dc:Bounds x="200" y="-836" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_state_Buyer_Order_fulfilled_di" modelElement="p_state_Buyer_Order_fulfilled">
+        <dc:Bounds x="300" y="-836" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_exists_Seller_Order_di" modelElement="p_exists_Seller_Order">
+        <dc:Bounds x="0" y="-696" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_state_Seller_Order_initial_di" modelElement="p_state_Seller_Order_initial">
+        <dc:Bounds x="0" y="-616" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_state_Seller_Order_created_di" modelElement="p_state_Seller_Order_created">
+        <dc:Bounds x="100" y="-616" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_state_Seller_Order_accepted_di" modelElement="p_state_Seller_Order_accepted">
+        <dc:Bounds x="200" y="-616" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_state_Seller_Order_fulfilled_di" modelElement="p_state_Seller_Order_fulfilled">
+        <dc:Bounds x="300" y="-616" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_trans_ChoreographyTask-1qr8dy4_di" modelElement="p_trans_ChoreographyTask-1qr8dy4">
+        <dc:Bounds x="-266" y="1244" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_trans_ChoreographyTask-09ngl4b_di" modelElement="p_trans_ChoreographyTask-09ngl4b">
+        <dc:Bounds x="-146" y="1244" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_trans_ChoreographyTask-14y3tkb_di" modelElement="p_trans_ChoreographyTask-14y3tkb">
+        <dc:Bounds x="34" y="1244" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="t_Event-0uov3gs_di" modelElement="t_Event-0uov3gs">
+        <dc:Bounds x="-360" y="1230" width="40" height="60"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="t_Event-02a9i1n_di" modelElement="t_Event-02a9i1n">
+        <dc:Bounds x="130" y="1330" width="40" height="60"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="t_ChoreographyTask-0oduo7g_di" modelElement="t_ChoreographyTask-0oduo7g">
+        <dc:Bounds x="-270" y="1390" width="40" height="60"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="t_ChoreographyTask-1opsnb1_di" modelElement="t_ChoreographyTask-1opsnb1">
+        <dc:Bounds x="30" y="1140" width="40" height="60"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="t_ChoreographyTask-0vb16ru_di" modelElement="t_ChoreographyTask-0vb16ru">
+        <dc:Bounds x="30" y="1330" width="40" height="60"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="t_xor_Gateway-0yn5tb0_ChoreographyTask-0oduo7g_Order_accepted_di" modelElement="t_xor_Gateway-0yn5tb0_ChoreographyTask-0oduo7g_Order_accepted">
+        <dc:Bounds x="-172" y="1345" width="40" height="60"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="t_xor_Gateway-0yn5tb0_ChoreographyTask-0vb16ru_Order_fulfilled_di" modelElement="t_xor_Gateway-0yn5tb0_ChoreographyTask-0vb16ru_Order_fulfilled">
+        <dc:Bounds x="-97" y="1330" width="40" height="60"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="t_xor_Gateway-1n2935z_Gateway-1eek1d0_di" modelElement="t_xor_Gateway-1n2935z_Gateway-1eek1d0">
+        <dc:Bounds x="-232" y="1305" width="40" height="60"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="t_xor_ChoreographyTask-0oduo7g_Gateway-1eek1d0_di" modelElement="t_xor_ChoreographyTask-0oduo7g_Gateway-1eek1d0">
+        <dc:Bounds x="-329.5" y="1345" width="40" height="60"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="t_xor_ChoreographyTask-14y3tkb_Gateway-1n2935z_di" modelElement="t_xor_ChoreographyTask-14y3tkb_Gateway-1n2935z">
+        <dc:Bounds x="105.5" y="1230" width="40" height="60"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="t_xor_ChoreographyTask-1opsnb1_Gateway-1n2935z_di" modelElement="t_xor_ChoreographyTask-1opsnb1_Gateway-1n2935z">
+        <dc:Bounds x="105.5" y="1207.5" width="40" height="60"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="t_local_Buyer_Order_initial_created_di" modelElement="t_local_Buyer_Order_initial_created">
+        <dc:Bounds x="50" y="-930" width="40" height="60"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="t_local_Seller_Order_created_accepted_di" modelElement="t_local_Seller_Order_created_accepted">
+        <dc:Bounds x="150" y="-710" width="40" height="60"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="t_send_ChoreographyTask-1qr8dy4_Order_created_di" modelElement="t_send_ChoreographyTask-1qr8dy4_Order_created">
+        <dc:Bounds x="-330" y="1150" width="40" height="60"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="t_recv_ChoreographyTask-1qr8dy4_Order_initial_created_di" modelElement="t_recv_ChoreographyTask-1qr8dy4_Order_initial_created">
+        <dc:Bounds x="-210" y="1310" width="40" height="60"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="t_send_ChoreographyTask-09ngl4b_Order_accepted_di" modelElement="t_send_ChoreographyTask-09ngl4b_Order_accepted">
+        <dc:Bounds x="-210" y="1150" width="40" height="60"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="t_recv_ChoreographyTask-09ngl4b_Order_created_accepted_di" modelElement="t_recv_ChoreographyTask-09ngl4b_Order_created_accepted">
+        <dc:Bounds x="-90" y="1310" width="40" height="60"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="t_sync_send_ChoreographyTask-14y3tkb_Order_accepted_di" modelElement="t_sync_send_ChoreographyTask-14y3tkb_Order_accepted">
+        <dc:Bounds x="-30" y="1150" width="40" height="60"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="t_sync_recv_ChoreographyTask-14y3tkb_Order_accepted_di" modelElement="t_sync_recv_ChoreographyTask-14y3tkb_Order_accepted">
+        <dc:Bounds x="90" y="1310" width="40" height="60"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramEdge id="a_p_source_t_Event-0uov3gs_di" modelElement="a_p_source_t_Event-0uov3gs">
+        <ptnDi:waypoint x="-478" y="1260"/>
+        <ptnDi:waypoint x="-360" y="1260"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_Event-02a9i1n_p_sink_di" modelElement="a_t_Event-02a9i1n_p_sink">
+        <ptnDi:waypoint x="170" y="1360"/>
+        <ptnDi:waypoint x="320" y="1360"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_Event-0uov3gs_p_sf_Flow-1g4cks8_di" modelElement="a_t_Event-0uov3gs_p_sf_Flow-1g4cks8">
+        <ptnDi:waypoint x="-320" y="1260"/>
+        <ptnDi:waypoint x="-295" y="1260"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_sf_Flow-1lv5f23_t_ChoreographyTask-0vb16ru_di" modelElement="a_p_sf_Flow-1lv5f23_t_ChoreographyTask-0vb16ru">
+        <ptnDi:waypoint x="-8" y="1360"/>
+        <ptnDi:waypoint x="30" y="1360"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_sf_Flow-09f0omg_t_ChoreographyTask-0oduo7g_di" modelElement="a_p_sf_Flow-09f0omg_t_ChoreographyTask-0oduo7g">
+        <ptnDi:waypoint x="-190" y="1390"/>
+        <ptnDi:waypoint x="-230" y="1420"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_ChoreographyTask-0oduo7g_p_sf_Flow-1ywvmwd_di" modelElement="a_t_ChoreographyTask-0oduo7g_p_sf_Flow-1ywvmwd">
+        <ptnDi:waypoint x="-250" y="1390"/>
+        <ptnDi:waypoint x="-279" y="1406"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_ChoreographyTask-1opsnb1_p_sf_Flow-1wajnew_di" modelElement="a_t_ChoreographyTask-1opsnb1_p_sf_Flow-1wajnew">
+        <ptnDi:waypoint x="70" y="1170"/>
+        <ptnDi:waypoint x="95" y="1215"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_sf_Flow-05c0vef_t_Event-02a9i1n_di" modelElement="a_p_sf_Flow-05c0vef_t_Event-02a9i1n">
+        <ptnDi:waypoint x="132" y="1360"/>
+        <ptnDi:waypoint x="130" y="1360"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_ChoreographyTask-0vb16ru_p_sf_Flow-05c0vef_di" modelElement="a_t_ChoreographyTask-0vb16ru_p_sf_Flow-05c0vef">
+        <ptnDi:waypoint x="70" y="1360"/>
+        <ptnDi:waypoint x="100" y="1360"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_sf_Flow-073chlu_t_xor_Gateway-0yn5tb0_ChoreographyTask-0oduo7g_Order_accepted_di" modelElement="a_p_sf_Flow-073chlu_t_xor_Gateway-0yn5tb0_ChoreographyTask-0oduo7g_Order_accepted">
+        <ptnDi:waypoint x="-203" y="1360"/>
+        <ptnDi:waypoint x="-172" y="1375"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_sf_Flow-073chlu_t_xor_Gateway-0yn5tb0_ChoreographyTask-0vb16ru_Order_fulfilled_di" modelElement="a_p_sf_Flow-073chlu_t_xor_Gateway-0yn5tb0_ChoreographyTask-0vb16ru_Order_fulfilled">
+        <ptnDi:waypoint x="-203" y="1360"/>
+        <ptnDi:waypoint x="-97" y="1360"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_xor_Gateway-0yn5tb0_ChoreographyTask-0oduo7g_Order_accepted_p_sf_Flow-09f0omg_di" modelElement="a_t_xor_Gateway-0yn5tb0_ChoreographyTask-0oduo7g_Order_accepted_p_sf_Flow-09f0omg">
+        <ptnDi:waypoint x="-172" y="1375"/>
+        <ptnDi:waypoint x="-158" y="1390"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_xor_Gateway-0yn5tb0_ChoreographyTask-0vb16ru_Order_fulfilled_p_sf_Flow-1lv5f23_di" modelElement="a_t_xor_Gateway-0yn5tb0_ChoreographyTask-0vb16ru_Order_fulfilled_p_sf_Flow-1lv5f23">
+        <ptnDi:waypoint x="-57" y="1360"/>
+        <ptnDi:waypoint x="-40" y="1360"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_sf_Flow-0pxxgsj_t_xor_Gateway-1n2935z_Gateway-1eek1d0_di" modelElement="a_p_sf_Flow-0pxxgsj_t_xor_Gateway-1n2935z_Gateway-1eek1d0">
+        <ptnDi:waypoint x="-100" y="1310"/>
+        <ptnDi:waypoint x="-192" y="1335"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_sf_Flow-1ywvmwd_t_xor_ChoreographyTask-0oduo7g_Gateway-1eek1d0_di" modelElement="a_p_sf_Flow-1ywvmwd_t_xor_ChoreographyTask-0oduo7g_Gateway-1eek1d0">
+        <ptnDi:waypoint x="-295" y="1390"/>
+        <ptnDi:waypoint x="-289.5" y="1375"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_xor_Gateway-1n2935z_Gateway-1eek1d0_p_sf_Flow-073chlu_di" modelElement="a_t_xor_Gateway-1n2935z_Gateway-1eek1d0_p_sf_Flow-073chlu">
+        <ptnDi:waypoint x="-212" y="1365"/>
+        <ptnDi:waypoint x="-219" y="1344"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_xor_ChoreographyTask-0oduo7g_Gateway-1eek1d0_p_sf_Flow-073chlu_di" modelElement="a_t_xor_ChoreographyTask-0oduo7g_Gateway-1eek1d0_p_sf_Flow-073chlu">
+        <ptnDi:waypoint x="-289.5" y="1375"/>
+        <ptnDi:waypoint x="-235" y="1360"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_sf_Flow-1cy45bc_t_xor_ChoreographyTask-14y3tkb_Gateway-1n2935z_di" modelElement="a_p_sf_Flow-1cy45bc_t_xor_ChoreographyTask-14y3tkb_Gateway-1n2935z">
+        <ptnDi:waypoint x="127" y="1260"/>
+        <ptnDi:waypoint x="105.5" y="1260"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_sf_Flow-1wajnew_t_xor_ChoreographyTask-1opsnb1_Gateway-1n2935z_di" modelElement="a_p_sf_Flow-1wajnew_t_xor_ChoreographyTask-1opsnb1_Gateway-1n2935z">
+        <ptnDi:waypoint x="111" y="1231"/>
+        <ptnDi:waypoint x="125.5" y="1207.5"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_xor_ChoreographyTask-14y3tkb_Gateway-1n2935z_p_sf_Flow-0pxxgsj_di" modelElement="a_t_xor_ChoreographyTask-14y3tkb_Gateway-1n2935z_p_sf_Flow-0pxxgsj">
+        <ptnDi:waypoint x="105.5" y="1260"/>
+        <ptnDi:waypoint x="-68" y="1310"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_xor_ChoreographyTask-1opsnb1_Gateway-1n2935z_p_sf_Flow-0pxxgsj_di" modelElement="a_t_xor_ChoreographyTask-1opsnb1_Gateway-1n2935z_p_sf_Flow-0pxxgsj">
+        <ptnDi:waypoint x="105.5" y="1237.5"/>
+        <ptnDi:waypoint x="-68" y="1310"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_sf_Flow-0g7dnde_t_ChoreographyTask-1opsnb1_di" modelElement="a_p_sf_Flow-0g7dnde_t_ChoreographyTask-1opsnb1">
+        <ptnDi:waypoint x="-53" y="1260"/>
+        <ptnDi:waypoint x="30" y="1170"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_state_Buyer_Order_initial_t_local_Buyer_Order_initial_created_di" modelElement="a_p_state_Buyer_Order_initial_t_local_Buyer_Order_initial_created">
+        <ptnDi:waypoint x="16" y="-836"/>
+        <ptnDi:waypoint x="70" y="-870"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_local_Buyer_Order_initial_created_p_state_Buyer_Order_created_di" modelElement="a_t_local_Buyer_Order_initial_created_p_state_Buyer_Order_created">
+        <ptnDi:waypoint x="70" y="-870"/>
+        <ptnDi:waypoint x="116" y="-836"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_local_Buyer_Order_initial_created_p_exists_Buyer_Order_di" modelElement="a_t_local_Buyer_Order_initial_created_p_exists_Buyer_Order">
+        <ptnDi:waypoint x="50" y="-900"/>
+        <ptnDi:waypoint x="32" y="-900"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_state_Seller_Order_created_t_local_Seller_Order_created_accepted_di" modelElement="a_p_state_Seller_Order_created_t_local_Seller_Order_created_accepted">
+        <ptnDi:waypoint x="116" y="-616"/>
+        <ptnDi:waypoint x="170" y="-650"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_local_Seller_Order_created_accepted_p_state_Seller_Order_accepted_di" modelElement="a_t_local_Seller_Order_created_accepted_p_state_Seller_Order_accepted">
+        <ptnDi:waypoint x="170" y="-650"/>
+        <ptnDi:waypoint x="216" y="-616"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_sf_Flow-1g4cks8_t_send_ChoreographyTask-1qr8dy4_Order_created_di" modelElement="a_p_sf_Flow-1g4cks8_t_send_ChoreographyTask-1qr8dy4_Order_created">
+        <ptnDi:waypoint x="-279" y="1244"/>
+        <ptnDi:waypoint x="-310" y="1210"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_state_Buyer_Order_created_t_send_ChoreographyTask-1qr8dy4_Order_created_di" modelElement="a_p_state_Buyer_Order_created_t_send_ChoreographyTask-1qr8dy4_Order_created">
+        <ptnDi:waypoint x="116" y="-804"/>
+        <ptnDi:waypoint x="-310" y="1150"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_send_ChoreographyTask-1qr8dy4_Order_created_p_state_Buyer_Order_created_di" modelElement="a_t_send_ChoreographyTask-1qr8dy4_Order_created_p_state_Buyer_Order_created">
+        <ptnDi:waypoint x="-310" y="1150"/>
+        <ptnDi:waypoint x="116" y="-804"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_send_ChoreographyTask-1qr8dy4_Order_created_p_trans_ChoreographyTask-1qr8dy4_di" modelElement="a_t_send_ChoreographyTask-1qr8dy4_Order_created_p_trans_ChoreographyTask-1qr8dy4">
+        <ptnDi:waypoint x="-310" y="1210"/>
+        <ptnDi:waypoint x="-250" y="1244"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_trans_ChoreographyTask-1qr8dy4_t_recv_ChoreographyTask-1qr8dy4_Order_initial_created_di" modelElement="a_p_trans_ChoreographyTask-1qr8dy4_t_recv_ChoreographyTask-1qr8dy4_Order_initial_created">
+        <ptnDi:waypoint x="-250" y="1276"/>
+        <ptnDi:waypoint x="-190" y="1310"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_state_Seller_Order_initial_t_recv_ChoreographyTask-1qr8dy4_Order_initial_created_di" modelElement="a_p_state_Seller_Order_initial_t_recv_ChoreographyTask-1qr8dy4_Order_initial_created">
+        <ptnDi:waypoint x="16" y="-584"/>
+        <ptnDi:waypoint x="-190" y="1310"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_recv_ChoreographyTask-1qr8dy4_Order_initial_created_p_state_Seller_Order_created_di" modelElement="a_t_recv_ChoreographyTask-1qr8dy4_Order_initial_created_p_state_Seller_Order_created">
+        <ptnDi:waypoint x="-190" y="1310"/>
+        <ptnDi:waypoint x="116" y="-584"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_recv_ChoreographyTask-1qr8dy4_Order_initial_created_p_sf_Flow-0j5cuuu_di" modelElement="a_t_recv_ChoreographyTask-1qr8dy4_Order_initial_created_p_sf_Flow-0j5cuuu">
+        <ptnDi:waypoint x="-190" y="1310"/>
+        <ptnDi:waypoint x="-174" y="1276"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_recv_ChoreographyTask-1qr8dy4_Order_initial_created_p_exists_Seller_Order_di" modelElement="a_t_recv_ChoreographyTask-1qr8dy4_Order_initial_created_p_exists_Seller_Order">
+        <ptnDi:waypoint x="-190" y="1310"/>
+        <ptnDi:waypoint x="16" y="-664"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_sf_Flow-0j5cuuu_t_send_ChoreographyTask-09ngl4b_Order_accepted_di" modelElement="a_p_sf_Flow-0j5cuuu_t_send_ChoreographyTask-09ngl4b_Order_accepted">
+        <ptnDi:waypoint x="-174" y="1244"/>
+        <ptnDi:waypoint x="-190" y="1210"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_state_Seller_Order_accepted_t_send_ChoreographyTask-09ngl4b_Order_accepted_di" modelElement="a_p_state_Seller_Order_accepted_t_send_ChoreographyTask-09ngl4b_Order_accepted">
+        <ptnDi:waypoint x="216" y="-584"/>
+        <ptnDi:waypoint x="-190" y="1150"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_send_ChoreographyTask-09ngl4b_Order_accepted_p_state_Seller_Order_accepted_di" modelElement="a_t_send_ChoreographyTask-09ngl4b_Order_accepted_p_state_Seller_Order_accepted">
+        <ptnDi:waypoint x="-190" y="1150"/>
+        <ptnDi:waypoint x="216" y="-584"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_send_ChoreographyTask-09ngl4b_Order_accepted_p_trans_ChoreographyTask-09ngl4b_di" modelElement="a_t_send_ChoreographyTask-09ngl4b_Order_accepted_p_trans_ChoreographyTask-09ngl4b">
+        <ptnDi:waypoint x="-190" y="1210"/>
+        <ptnDi:waypoint x="-130" y="1244"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_trans_ChoreographyTask-09ngl4b_t_recv_ChoreographyTask-09ngl4b_Order_created_accepted_di" modelElement="a_p_trans_ChoreographyTask-09ngl4b_t_recv_ChoreographyTask-09ngl4b_Order_created_accepted">
+        <ptnDi:waypoint x="-130" y="1276"/>
+        <ptnDi:waypoint x="-70" y="1310"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_state_Buyer_Order_created_t_recv_ChoreographyTask-09ngl4b_Order_created_accepted_di" modelElement="a_p_state_Buyer_Order_created_t_recv_ChoreographyTask-09ngl4b_Order_created_accepted">
+        <ptnDi:waypoint x="116" y="-804"/>
+        <ptnDi:waypoint x="-70" y="1310"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_recv_ChoreographyTask-09ngl4b_Order_created_accepted_p_state_Buyer_Order_accepted_di" modelElement="a_t_recv_ChoreographyTask-09ngl4b_Order_created_accepted_p_state_Buyer_Order_accepted">
+        <ptnDi:waypoint x="-70" y="1310"/>
+        <ptnDi:waypoint x="216" y="-804"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_recv_ChoreographyTask-09ngl4b_Order_created_accepted_p_sf_Flow-0g7dnde_di" modelElement="a_t_recv_ChoreographyTask-09ngl4b_Order_created_accepted_p_sf_Flow-0g7dnde">
+        <ptnDi:waypoint x="-70" y="1310"/>
+        <ptnDi:waypoint x="-69" y="1276"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_sf_Flow-0g7dnde_t_sync_send_ChoreographyTask-14y3tkb_Order_accepted_di" modelElement="a_p_sf_Flow-0g7dnde_t_sync_send_ChoreographyTask-14y3tkb_Order_accepted">
+        <ptnDi:waypoint x="-69" y="1244"/>
+        <ptnDi:waypoint x="-10" y="1210"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_sync_send_ChoreographyTask-14y3tkb_Order_accepted_p_trans_ChoreographyTask-14y3tkb_di" modelElement="a_t_sync_send_ChoreographyTask-14y3tkb_Order_accepted_p_trans_ChoreographyTask-14y3tkb">
+        <ptnDi:waypoint x="-10" y="1210"/>
+        <ptnDi:waypoint x="50" y="1244"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_state_Seller_Order_accepted_t_sync_send_ChoreographyTask-14y3tkb_Order_accepted_di" modelElement="a_p_state_Seller_Order_accepted_t_sync_send_ChoreographyTask-14y3tkb_Order_accepted">
+        <ptnDi:waypoint x="216" y="-584"/>
+        <ptnDi:waypoint x="-10" y="1150"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_sync_send_ChoreographyTask-14y3tkb_Order_accepted_p_state_Seller_Order_fulfilled_di" modelElement="a_t_sync_send_ChoreographyTask-14y3tkb_Order_accepted_p_state_Seller_Order_fulfilled">
+        <ptnDi:waypoint x="-10" y="1150"/>
+        <ptnDi:waypoint x="316" y="-584"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_trans_ChoreographyTask-14y3tkb_t_sync_recv_ChoreographyTask-14y3tkb_Order_accepted_di" modelElement="a_p_trans_ChoreographyTask-14y3tkb_t_sync_recv_ChoreographyTask-14y3tkb_Order_accepted">
+        <ptnDi:waypoint x="50" y="1276"/>
+        <ptnDi:waypoint x="110" y="1310"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_sync_recv_ChoreographyTask-14y3tkb_Order_accepted_p_sf_Flow-1cy45bc_di" modelElement="a_t_sync_recv_ChoreographyTask-14y3tkb_Order_accepted_p_sf_Flow-1cy45bc">
+        <ptnDi:waypoint x="110" y="1310"/>
+        <ptnDi:waypoint x="111" y="1276"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_state_Buyer_Order_accepted_t_sync_recv_ChoreographyTask-14y3tkb_Order_accepted_di" modelElement="a_p_state_Buyer_Order_accepted_t_sync_recv_ChoreographyTask-14y3tkb_Order_accepted">
+        <ptnDi:waypoint x="216" y="-804"/>
+        <ptnDi:waypoint x="110" y="1310"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_sync_recv_ChoreographyTask-14y3tkb_Order_accepted_p_state_Buyer_Order_fulfilled_di" modelElement="a_t_sync_recv_ChoreographyTask-14y3tkb_Order_accepted_p_state_Buyer_Order_fulfilled">
+        <ptnDi:waypoint x="110" y="1310"/>
+        <ptnDi:waypoint x="316" y="-804"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_state_Buyer_Order_accepted_t_xor_Gateway-0yn5tb0_ChoreographyTask-0oduo7g_Order_accepted_di" modelElement="a_p_state_Buyer_Order_accepted_t_xor_Gateway-0yn5tb0_ChoreographyTask-0oduo7g_Order_accepted">
+        <ptnDi:waypoint x="216" y="-804"/>
+        <ptnDi:waypoint x="-152" y="1345"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_xor_Gateway-0yn5tb0_ChoreographyTask-0oduo7g_Order_accepted_p_state_Buyer_Order_accepted_di" modelElement="a_t_xor_Gateway-0yn5tb0_ChoreographyTask-0oduo7g_Order_accepted_p_state_Buyer_Order_accepted">
+        <ptnDi:waypoint x="-152" y="1345"/>
+        <ptnDi:waypoint x="216" y="-804"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_state_Buyer_Order_fulfilled_t_xor_Gateway-0yn5tb0_ChoreographyTask-0vb16ru_Order_fulfilled_di" modelElement="a_p_state_Buyer_Order_fulfilled_t_xor_Gateway-0yn5tb0_ChoreographyTask-0vb16ru_Order_fulfilled">
+        <ptnDi:waypoint x="316" y="-804"/>
+        <ptnDi:waypoint x="-77" y="1330"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_xor_Gateway-0yn5tb0_ChoreographyTask-0vb16ru_Order_fulfilled_p_state_Buyer_Order_fulfilled_di" modelElement="a_t_xor_Gateway-0yn5tb0_ChoreographyTask-0vb16ru_Order_fulfilled_p_state_Buyer_Order_fulfilled">
+        <ptnDi:waypoint x="-77" y="1330"/>
+        <ptnDi:waypoint x="316" y="-804"/>
+      </ptnDi:diagramEdge>
+    </ptnDi:plane>
+  </ptnDi:diagram>
+</ptn:definitions>

@@ -1,0 +1,33 @@
+ID,Variant,Scenario,Kind,Cross-case classes,Outcome,Typed places,Typed transitions,Typed arcs,Identifier types,Duration ms
+CS01,case_specific,no-object sequence,construct,,holds,14,5,28,4,34.0
+CS02,case_specific,single-object creation with multiple initial states and common identifier,construct,,holds,20,11,71,4,47.4
+CS03,case_specific,two-object one-to-one creation,construct,,holds,22,7,59,5,22.3
+CS04,case_specific,two-object one-to-many creation,construct,,holds,22,8,65,5,11.9
+CS05,case_specific,two-object many-to-many creation,construct,,holds,22,8,61,5,26.9
+CS06,case_specific,two-object creation without association,construct,,holds,22,8,61,5,15.7
+CS07,case_specific,three-object mixed dependencies,construct,,holds,30,10,89,6,12.1
+CS08,case_specific,communication with different-role local transitions and forwarding,construct,,holds,25,11,89,5,15.0
+CS09,case_specific,multiple compatible receiver states,construct,,holds,24,16,105,4,29.9
+CS10,case_specific,multi-class synchronization followed by forwarding,construct,,holds,40,16,154,6,18.5
+CS11,case_specific,synchronization with multiple source states,construct,,holds,24,15,111,4,19.2
+CS12,case_specific,state reachable by synchronization or local transition,construct,,holds,27,15,108,5,17.8
+CS13,case_specific,combined task on same class,construct,,holds,16,6,45,4,12.8
+CS14,case_specific,combined task across classes,construct,,holds,24,8,73,5,12.5
+CS15,case_specific,event-based gateway with local non-creational decision,construct,,holds,23,13,83,4,9.4
+CS16,case_specific,guarded exclusive gateway,construct,,holds,45,17,115,8,40.6
+CS17,case_specific,exclusive gateway with affected role identification,construct,,holds,52,24,165,8,35.3
+CS18,case_specific,parallel independent object branches,construct,,holds,34,14,99,6,31.4
+CS19,case_specific,event-based gateway loop,construct,,holds,17,9,44,4,18.0
+CS20,case_specific,exclusive gateway loop,construct,,holds,29,29,207,4,35.1
+IS01,case_specific,order fulfillment,integrated,,holds,79,35,273,8,39.9
+IS02,case_specific,item purchase plain,integrated,,holds,26,16,120,4,14.4
+IS02,cross_case_item,item purchase plain,integrated,Item,holds,26,18,139,4,16.7
+IS03,case_specific,item purchase optimistic,integrated,,holds,41,24,192,5,38.7
+IS03,cross_case_item,item purchase optimistic,integrated,Item,holds,41,26,211,5,16.2
+IS04,case_specific,item purchase pessimistic,integrated,,holds,40,23,198,5,15.3
+IS04,cross_case_item_reservation,item purchase pessimistic,integrated,Item; Reservation,holds,41,29,280,5,13.1
+WS01,case_specific,sender-side blocking,witness,,holds,30,11,72,5,14.7
+WS02,case_specific,receiver-side blocking,witness,,holds,33,15,115,5,9.5
+WS03,case_specific,unreachable behavior,witness,,holds,33,17,130,5,9.9
+WS04,case_specific,decision misalignment,witness,,holds,35,17,120,5,13.6
+WS05,case_specific,completion loss,witness,,holds,35,19,122,5,14.0

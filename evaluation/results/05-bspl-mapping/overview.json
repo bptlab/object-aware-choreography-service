@@ -1,0 +1,788 @@
+[
+  {
+    "runId": "cs01_default",
+    "scenarioId": "CS01",
+    "scenarioTitle": "no-object sequence",
+    "scenarioKind": "construct",
+    "scenarioSlug": "no_object_sequence",
+    "artifactGroup": "05-bspl-mapping",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/05-bspl-mapping/cs01_no_object_sequence.bspl",
+      "evaluation/results/05-bspl-mapping/cs01_no_object_sequence_comparison.json"
+    ],
+    "durationMs": 50.461,
+    "variantId": "default",
+    "expectedBsplOutcome": "holds",
+    "actualOutcome": "holds",
+    "protocolPath": "evaluation/results/05-bspl-mapping/cs01_no_object_sequence.bspl",
+    "comparisonReportPath": "evaluation/results/05-bspl-mapping/cs01_no_object_sequence_comparison.json",
+    "protocolMetrics": {
+      "roleCount": 2,
+      "messageCount": 2,
+      "parameterCount": 4,
+      "inParameterCount": 1,
+      "outParameterCount": 4,
+      "nilParameterCount": 0
+    },
+    "languageComparison": {
+      "choreographyTraceCount": 1,
+      "bsplTraceCount": 1,
+      "commonTraceCount": 1,
+      "recall": 1,
+      "precision": 1,
+      "exactBeforeRefinement": true
+    }
+  },
+  {
+    "runId": "cs02_default",
+    "scenarioId": "CS02",
+    "scenarioTitle": "single-object creation with multiple initial states and common identifier",
+    "scenarioKind": "construct",
+    "scenarioSlug": "single_object_alternative_creation",
+    "artifactGroup": "05-bspl-mapping",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/05-bspl-mapping/cs02_single_object_alternative_creation.bspl",
+      "evaluation/results/05-bspl-mapping/cs02_single_object_alternative_creation_comparison.json"
+    ],
+    "durationMs": 15.2,
+    "variantId": "default",
+    "expectedBsplOutcome": "holds",
+    "actualOutcome": "holds",
+    "protocolPath": "evaluation/results/05-bspl-mapping/cs02_single_object_alternative_creation.bspl",
+    "comparisonReportPath": "evaluation/results/05-bspl-mapping/cs02_single_object_alternative_creation_comparison.json",
+    "protocolMetrics": {
+      "roleCount": 2,
+      "messageCount": 3,
+      "parameterCount": 6,
+      "inParameterCount": 2,
+      "outParameterCount": 8,
+      "nilParameterCount": 0
+    },
+    "languageComparison": {
+      "choreographyTraceCount": 2,
+      "bsplTraceCount": 2,
+      "commonTraceCount": 2,
+      "recall": 1,
+      "precision": 1,
+      "exactBeforeRefinement": true
+    }
+  },
+  {
+    "runId": "cs03_default",
+    "scenarioId": "CS03",
+    "scenarioTitle": "two-object one-to-one creation",
+    "scenarioKind": "construct",
+    "scenarioSlug": "two_object_one_to_one_creation",
+    "artifactGroup": "05-bspl-mapping",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/05-bspl-mapping/cs03_two_object_one_to_one_creation.bspl",
+      "evaluation/results/05-bspl-mapping/cs03_two_object_one_to_one_creation_comparison.json"
+    ],
+    "durationMs": 8.982,
+    "variantId": "default",
+    "expectedBsplOutcome": "holds",
+    "actualOutcome": "holds",
+    "protocolPath": "evaluation/results/05-bspl-mapping/cs03_two_object_one_to_one_creation.bspl",
+    "comparisonReportPath": "evaluation/results/05-bspl-mapping/cs03_two_object_one_to_one_creation_comparison.json",
+    "protocolMetrics": {
+      "roleCount": 2,
+      "messageCount": 2,
+      "parameterCount": 4,
+      "inParameterCount": 1,
+      "outParameterCount": 4,
+      "nilParameterCount": 0
+    },
+    "languageComparison": {
+      "choreographyTraceCount": 1,
+      "bsplTraceCount": 1,
+      "commonTraceCount": 1,
+      "recall": 1,
+      "precision": 1,
+      "exactBeforeRefinement": true
+    }
+  },
+  {
+    "runId": "cs04_default",
+    "scenarioId": "CS04",
+    "scenarioTitle": "two-object one-to-many creation",
+    "scenarioKind": "construct",
+    "scenarioSlug": "two_object_one_to_many_creation",
+    "artifactGroup": "05-bspl-mapping",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/05-bspl-mapping/cs04_two_object_one_to_many_creation.bspl",
+      "evaluation/results/05-bspl-mapping/cs04_two_object_one_to_many_creation_comparison.json"
+    ],
+    "durationMs": 10.198,
+    "variantId": "default",
+    "expectedBsplOutcome": "holds",
+    "actualOutcome": "holds",
+    "protocolPath": "evaluation/results/05-bspl-mapping/cs04_two_object_one_to_many_creation.bspl",
+    "comparisonReportPath": "evaluation/results/05-bspl-mapping/cs04_two_object_one_to_many_creation_comparison.json",
+    "protocolMetrics": {
+      "roleCount": 2,
+      "messageCount": 2,
+      "parameterCount": 4,
+      "inParameterCount": 2,
+      "outParameterCount": 4,
+      "nilParameterCount": 0
+    },
+    "languageComparison": {
+      "choreographyTraceCount": 1,
+      "bsplTraceCount": 1,
+      "commonTraceCount": 1,
+      "recall": 1,
+      "precision": 1,
+      "exactBeforeRefinement": true
+    }
+  },
+  {
+    "runId": "cs05_default",
+    "scenarioId": "CS05",
+    "scenarioTitle": "two-object many-to-many creation",
+    "scenarioKind": "construct",
+    "scenarioSlug": "two_object_many_to_many_creation",
+    "artifactGroup": "05-bspl-mapping",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/05-bspl-mapping/cs05_two_object_many_to_many_creation.bspl",
+      "evaluation/results/05-bspl-mapping/cs05_two_object_many_to_many_creation_comparison.json"
+    ],
+    "durationMs": 11.532,
+    "variantId": "default",
+    "expectedBsplOutcome": "holds",
+    "actualOutcome": "holds",
+    "protocolPath": "evaluation/results/05-bspl-mapping/cs05_two_object_many_to_many_creation.bspl",
+    "comparisonReportPath": "evaluation/results/05-bspl-mapping/cs05_two_object_many_to_many_creation_comparison.json",
+    "protocolMetrics": {
+      "roleCount": 2,
+      "messageCount": 2,
+      "parameterCount": 4,
+      "inParameterCount": 1,
+      "outParameterCount": 4,
+      "nilParameterCount": 0
+    },
+    "languageComparison": {
+      "choreographyTraceCount": 1,
+      "bsplTraceCount": 1,
+      "commonTraceCount": 1,
+      "recall": 1,
+      "precision": 1,
+      "exactBeforeRefinement": true
+    }
+  },
+  {
+    "runId": "cs06_default",
+    "scenarioId": "CS06",
+    "scenarioTitle": "two-object creation without association",
+    "scenarioKind": "construct",
+    "scenarioSlug": "two_object_creation_without_association",
+    "artifactGroup": "05-bspl-mapping",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/05-bspl-mapping/cs06_two_object_creation_without_association.bspl",
+      "evaluation/results/05-bspl-mapping/cs06_two_object_creation_without_association_comparison.json"
+    ],
+    "durationMs": 11.157,
+    "variantId": "default",
+    "expectedBsplOutcome": "holds",
+    "actualOutcome": "holds",
+    "protocolPath": "evaluation/results/05-bspl-mapping/cs06_two_object_creation_without_association.bspl",
+    "comparisonReportPath": "evaluation/results/05-bspl-mapping/cs06_two_object_creation_without_association_comparison.json",
+    "protocolMetrics": {
+      "roleCount": 2,
+      "messageCount": 2,
+      "parameterCount": 4,
+      "inParameterCount": 1,
+      "outParameterCount": 4,
+      "nilParameterCount": 0
+    },
+    "languageComparison": {
+      "choreographyTraceCount": 1,
+      "bsplTraceCount": 1,
+      "commonTraceCount": 1,
+      "recall": 1,
+      "precision": 1,
+      "exactBeforeRefinement": true
+    }
+  },
+  {
+    "runId": "cs07_default",
+    "scenarioId": "CS07",
+    "scenarioTitle": "three-object mixed dependencies",
+    "scenarioKind": "construct",
+    "scenarioSlug": "three_object_mixed_dependencies",
+    "artifactGroup": "05-bspl-mapping",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/05-bspl-mapping/cs07_three_object_mixed_dependencies.bspl",
+      "evaluation/results/05-bspl-mapping/cs07_three_object_mixed_dependencies_comparison.json"
+    ],
+    "durationMs": 8.323,
+    "variantId": "default",
+    "expectedBsplOutcome": "holds",
+    "actualOutcome": "holds",
+    "protocolPath": "evaluation/results/05-bspl-mapping/cs07_three_object_mixed_dependencies.bspl",
+    "comparisonReportPath": "evaluation/results/05-bspl-mapping/cs07_three_object_mixed_dependencies_comparison.json",
+    "protocolMetrics": {
+      "roleCount": 2,
+      "messageCount": 3,
+      "parameterCount": 5,
+      "inParameterCount": 4,
+      "outParameterCount": 5,
+      "nilParameterCount": 0
+    },
+    "languageComparison": {
+      "choreographyTraceCount": 1,
+      "bsplTraceCount": 2,
+      "commonTraceCount": 1,
+      "recall": 1,
+      "precision": 0.5,
+      "exactBeforeRefinement": false
+    }
+  },
+  {
+    "runId": "cs08_default",
+    "scenarioId": "CS08",
+    "scenarioTitle": "communication with different-role local transitions and forwarding",
+    "scenarioKind": "construct",
+    "scenarioSlug": "local_transitions_and_forwarding",
+    "artifactGroup": "05-bspl-mapping",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/05-bspl-mapping/cs08_local_transitions_and_forwarding.bspl",
+      "evaluation/results/05-bspl-mapping/cs08_local_transitions_and_forwarding_comparison.json"
+    ],
+    "durationMs": 37.48,
+    "variantId": "default",
+    "expectedBsplOutcome": "holds",
+    "actualOutcome": "holds",
+    "protocolPath": "evaluation/results/05-bspl-mapping/cs08_local_transitions_and_forwarding.bspl",
+    "comparisonReportPath": "evaluation/results/05-bspl-mapping/cs08_local_transitions_and_forwarding_comparison.json",
+    "protocolMetrics": {
+      "roleCount": 3,
+      "messageCount": 4,
+      "parameterCount": 6,
+      "inParameterCount": 8,
+      "outParameterCount": 7,
+      "nilParameterCount": 0
+    },
+    "languageComparison": {
+      "choreographyTraceCount": 1,
+      "bsplTraceCount": 1,
+      "commonTraceCount": 1,
+      "recall": 1,
+      "precision": 1,
+      "exactBeforeRefinement": true
+    }
+  },
+  {
+    "runId": "cs09_default",
+    "scenarioId": "CS09",
+    "scenarioTitle": "multiple compatible receiver states",
+    "scenarioKind": "construct",
+    "scenarioSlug": "multiple_compatible_receiver_states",
+    "artifactGroup": "05-bspl-mapping",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/05-bspl-mapping/cs09_multiple_compatible_receiver_states.bspl",
+      "evaluation/results/05-bspl-mapping/cs09_multiple_compatible_receiver_states_comparison.json"
+    ],
+    "durationMs": 46.284,
+    "variantId": "default",
+    "expectedBsplOutcome": "holds",
+    "actualOutcome": "holds",
+    "protocolPath": "evaluation/results/05-bspl-mapping/cs09_multiple_compatible_receiver_states.bspl",
+    "comparisonReportPath": "evaluation/results/05-bspl-mapping/cs09_multiple_compatible_receiver_states_comparison.json",
+    "protocolMetrics": {
+      "roleCount": 2,
+      "messageCount": 5,
+      "parameterCount": 7,
+      "inParameterCount": 8,
+      "outParameterCount": 10,
+      "nilParameterCount": 0
+    },
+    "languageComparison": {
+      "choreographyTraceCount": 2,
+      "bsplTraceCount": 2,
+      "commonTraceCount": 2,
+      "recall": 1,
+      "precision": 1,
+      "exactBeforeRefinement": true
+    }
+  },
+  {
+    "runId": "cs10_default",
+    "scenarioId": "CS10",
+    "scenarioTitle": "multi-class synchronization followed by forwarding",
+    "scenarioKind": "construct",
+    "scenarioSlug": "multi_class_synchronization_forwarding",
+    "artifactGroup": "05-bspl-mapping",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/05-bspl-mapping/cs10_multi_class_synchronization_forwarding.bspl",
+      "evaluation/results/05-bspl-mapping/cs10_multi_class_synchronization_forwarding_comparison.json"
+    ],
+    "durationMs": 22.979,
+    "variantId": "default",
+    "expectedBsplOutcome": "holds",
+    "actualOutcome": "holds",
+    "protocolPath": "evaluation/results/05-bspl-mapping/cs10_multi_class_synchronization_forwarding.bspl",
+    "comparisonReportPath": "evaluation/results/05-bspl-mapping/cs10_multi_class_synchronization_forwarding_comparison.json",
+    "protocolMetrics": {
+      "roleCount": 3,
+      "messageCount": 5,
+      "parameterCount": 9,
+      "inParameterCount": 10,
+      "outParameterCount": 9,
+      "nilParameterCount": 0
+    },
+    "languageComparison": {
+      "choreographyTraceCount": 1,
+      "bsplTraceCount": 2,
+      "commonTraceCount": 1,
+      "recall": 1,
+      "precision": 0.5,
+      "exactBeforeRefinement": false
+    }
+  },
+  {
+    "runId": "cs11_default",
+    "scenarioId": "CS11",
+    "scenarioTitle": "synchronization with multiple source states",
+    "scenarioKind": "construct",
+    "scenarioSlug": "synchronization_multiple_source_states",
+    "artifactGroup": "05-bspl-mapping",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/05-bspl-mapping/cs11_synchronization_multiple_source_states.bspl",
+      "evaluation/results/05-bspl-mapping/cs11_synchronization_multiple_source_states_comparison.json"
+    ],
+    "durationMs": 11.541,
+    "variantId": "default",
+    "expectedBsplOutcome": "holds",
+    "actualOutcome": "holds",
+    "protocolPath": "evaluation/results/05-bspl-mapping/cs11_synchronization_multiple_source_states.bspl",
+    "comparisonReportPath": "evaluation/results/05-bspl-mapping/cs11_synchronization_multiple_source_states_comparison.json",
+    "protocolMetrics": {
+      "roleCount": 2,
+      "messageCount": 5,
+      "parameterCount": 8,
+      "inParameterCount": 8,
+      "outParameterCount": 12,
+      "nilParameterCount": 0
+    },
+    "languageComparison": {
+      "choreographyTraceCount": 2,
+      "bsplTraceCount": 2,
+      "commonTraceCount": 2,
+      "recall": 1,
+      "precision": 1,
+      "exactBeforeRefinement": true
+    }
+  },
+  {
+    "runId": "cs12_default",
+    "scenarioId": "CS12",
+    "scenarioTitle": "state reachable by synchronization or local transition",
+    "scenarioKind": "construct",
+    "scenarioSlug": "state_reachable_by_sync_or_local",
+    "artifactGroup": "05-bspl-mapping",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/05-bspl-mapping/cs12_state_reachable_by_sync_or_local.bspl",
+      "evaluation/results/05-bspl-mapping/cs12_state_reachable_by_sync_or_local_comparison.json"
+    ],
+    "durationMs": 9.078,
+    "variantId": "default",
+    "expectedBsplOutcome": "holds",
+    "actualOutcome": "holds",
+    "protocolPath": "evaluation/results/05-bspl-mapping/cs12_state_reachable_by_sync_or_local.bspl",
+    "comparisonReportPath": "evaluation/results/05-bspl-mapping/cs12_state_reachable_by_sync_or_local_comparison.json",
+    "protocolMetrics": {
+      "roleCount": 3,
+      "messageCount": 8,
+      "parameterCount": 9,
+      "inParameterCount": 14,
+      "outParameterCount": 17,
+      "nilParameterCount": 2
+    },
+    "languageComparison": {
+      "choreographyTraceCount": 2,
+      "bsplTraceCount": 3,
+      "commonTraceCount": 2,
+      "recall": 1,
+      "precision": 0.6666666666666666,
+      "exactBeforeRefinement": false
+    }
+  },
+  {
+    "runId": "cs13_default",
+    "scenarioId": "CS13",
+    "scenarioTitle": "combined task on same class",
+    "scenarioKind": "construct",
+    "scenarioSlug": "combined_same_class",
+    "artifactGroup": "05-bspl-mapping",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/05-bspl-mapping/cs13_combined_same_class.bspl",
+      "evaluation/results/05-bspl-mapping/cs13_combined_same_class_comparison.json"
+    ],
+    "durationMs": 11.679,
+    "variantId": "default",
+    "expectedBsplOutcome": "holds",
+    "actualOutcome": "holds",
+    "protocolPath": "evaluation/results/05-bspl-mapping/cs13_combined_same_class.bspl",
+    "comparisonReportPath": "evaluation/results/05-bspl-mapping/cs13_combined_same_class_comparison.json",
+    "protocolMetrics": {
+      "roleCount": 2,
+      "messageCount": 1,
+      "parameterCount": 4,
+      "inParameterCount": 0,
+      "outParameterCount": 4,
+      "nilParameterCount": 0
+    },
+    "languageComparison": {
+      "choreographyTraceCount": 1,
+      "bsplTraceCount": 1,
+      "commonTraceCount": 1,
+      "recall": 1,
+      "precision": 1,
+      "exactBeforeRefinement": true
+    }
+  },
+  {
+    "runId": "cs14_default",
+    "scenarioId": "CS14",
+    "scenarioTitle": "combined task across classes",
+    "scenarioKind": "construct",
+    "scenarioSlug": "combined_different_classes",
+    "artifactGroup": "05-bspl-mapping",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/05-bspl-mapping/cs14_combined_different_classes.bspl",
+      "evaluation/results/05-bspl-mapping/cs14_combined_different_classes_comparison.json"
+    ],
+    "durationMs": 7.635,
+    "variantId": "default",
+    "expectedBsplOutcome": "holds",
+    "actualOutcome": "holds",
+    "protocolPath": "evaluation/results/05-bspl-mapping/cs14_combined_different_classes.bspl",
+    "comparisonReportPath": "evaluation/results/05-bspl-mapping/cs14_combined_different_classes_comparison.json",
+    "protocolMetrics": {
+      "roleCount": 2,
+      "messageCount": 2,
+      "parameterCount": 5,
+      "inParameterCount": 2,
+      "outParameterCount": 5,
+      "nilParameterCount": 0
+    },
+    "languageComparison": {
+      "choreographyTraceCount": 1,
+      "bsplTraceCount": 1,
+      "commonTraceCount": 1,
+      "recall": 1,
+      "precision": 1,
+      "exactBeforeRefinement": true
+    }
+  },
+  {
+    "runId": "cs15_default",
+    "scenarioId": "CS15",
+    "scenarioTitle": "event-based gateway with local non-creational decision",
+    "scenarioKind": "construct",
+    "scenarioSlug": "event_based_local_non_creational_decision",
+    "artifactGroup": "05-bspl-mapping",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/05-bspl-mapping/cs15_event_based_local_non_creational_decision.bspl",
+      "evaluation/results/05-bspl-mapping/cs15_event_based_local_non_creational_decision_comparison.json"
+    ],
+    "durationMs": 24.898,
+    "variantId": "default",
+    "expectedBsplOutcome": "holds",
+    "actualOutcome": "holds",
+    "protocolPath": "evaluation/results/05-bspl-mapping/cs15_event_based_local_non_creational_decision.bspl",
+    "comparisonReportPath": "evaluation/results/05-bspl-mapping/cs15_event_based_local_non_creational_decision_comparison.json",
+    "protocolMetrics": {
+      "roleCount": 2,
+      "messageCount": 3,
+      "parameterCount": 5,
+      "inParameterCount": 4,
+      "outParameterCount": 6,
+      "nilParameterCount": 2
+    },
+    "languageComparison": {
+      "choreographyTraceCount": 2,
+      "bsplTraceCount": 2,
+      "commonTraceCount": 2,
+      "recall": 1,
+      "precision": 1,
+      "exactBeforeRefinement": true
+    }
+  },
+  {
+    "runId": "cs16_default",
+    "scenarioId": "CS16",
+    "scenarioTitle": "guarded exclusive gateway",
+    "scenarioKind": "construct",
+    "scenarioSlug": "guarded_exclusive_gateway",
+    "artifactGroup": "05-bspl-mapping",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/05-bspl-mapping/cs16_guarded_exclusive_gateway.bspl",
+      "evaluation/results/05-bspl-mapping/cs16_guarded_exclusive_gateway_comparison.json"
+    ],
+    "durationMs": 29.506,
+    "variantId": "default",
+    "expectedBsplOutcome": "holds",
+    "actualOutcome": "holds",
+    "protocolPath": "evaluation/results/05-bspl-mapping/cs16_guarded_exclusive_gateway.bspl",
+    "comparisonReportPath": "evaluation/results/05-bspl-mapping/cs16_guarded_exclusive_gateway_comparison.json",
+    "protocolMetrics": {
+      "roleCount": 2,
+      "messageCount": 5,
+      "parameterCount": 8,
+      "inParameterCount": 4,
+      "outParameterCount": 10,
+      "nilParameterCount": 0
+    },
+    "languageComparison": {
+      "choreographyTraceCount": 2,
+      "bsplTraceCount": 6,
+      "commonTraceCount": 2,
+      "recall": 1,
+      "precision": 0.3333333333333333,
+      "exactBeforeRefinement": false
+    }
+  },
+  {
+    "runId": "cs17_default",
+    "scenarioId": "CS17",
+    "scenarioTitle": "exclusive gateway with affected role identification",
+    "scenarioKind": "construct",
+    "scenarioSlug": "guarded_exclusive_gateway",
+    "artifactGroup": "05-bspl-mapping",
+    "outcome": "skips",
+    "expectedOutcome": "skips",
+    "artifactPaths": [],
+    "variantId": "default",
+    "expectedBsplOutcome": "skip",
+    "actualOutcome": "skips",
+    "skipReason": "Number of independent tasks is too large"
+  },
+  {
+    "runId": "cs18_default",
+    "scenarioId": "CS18",
+    "scenarioTitle": "parallel independent object branches",
+    "scenarioKind": "construct",
+    "scenarioSlug": "parallel_independent_object_branches",
+    "artifactGroup": "05-bspl-mapping",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/05-bspl-mapping/cs18_parallel_independent_object_branches.bspl",
+      "evaluation/results/05-bspl-mapping/cs18_parallel_independent_object_branches_comparison.json"
+    ],
+    "durationMs": 18.944,
+    "variantId": "default",
+    "expectedBsplOutcome": "holds",
+    "actualOutcome": "holds",
+    "protocolPath": "evaluation/results/05-bspl-mapping/cs18_parallel_independent_object_branches.bspl",
+    "comparisonReportPath": "evaluation/results/05-bspl-mapping/cs18_parallel_independent_object_branches_comparison.json",
+    "protocolMetrics": {
+      "roleCount": 2,
+      "messageCount": 4,
+      "parameterCount": 6,
+      "inParameterCount": 3,
+      "outParameterCount": 6,
+      "nilParameterCount": 0
+    },
+    "languageComparison": {
+      "choreographyTraceCount": 2,
+      "bsplTraceCount": 5,
+      "commonTraceCount": 2,
+      "recall": 1,
+      "precision": 0.4,
+      "exactBeforeRefinement": false
+    }
+  },
+  {
+    "runId": "cs19_default",
+    "scenarioId": "CS19",
+    "scenarioTitle": "event-based gateway loop",
+    "scenarioKind": "construct",
+    "scenarioSlug": "event_based_gateway_loop",
+    "artifactGroup": "05-bspl-mapping",
+    "outcome": "rejects",
+    "expectedOutcome": "rejects",
+    "artifactPaths": [
+      "evaluation/results/05-bspl-mapping/cs19_event_based_gateway_loop_rejection.json"
+    ],
+    "durationMs": 6.695,
+    "variantId": "default",
+    "expectedBsplOutcome": "rejects",
+    "actualOutcome": "rejects",
+    "rejectionMessage": "BSPL mapping requires acyclic control-flow; found loop/cycle ChoreographyTask_0blhxn1 -> Gateway_0ieg9pj -> ChoreographyTask_0vvrsfb -> Gateway_0ookd9i -> ChoreographyTask_0blhxn1"
+  },
+  {
+    "runId": "cs20_default",
+    "scenarioId": "CS20",
+    "scenarioTitle": "exclusive gateway loop",
+    "scenarioKind": "construct",
+    "scenarioSlug": "exclusive_gateway_loop",
+    "artifactGroup": "05-bspl-mapping",
+    "outcome": "rejects",
+    "expectedOutcome": "rejects",
+    "artifactPaths": [
+      "evaluation/results/05-bspl-mapping/cs20_exclusive_gateway_loop_rejection.json"
+    ],
+    "durationMs": 21.06,
+    "variantId": "default",
+    "expectedBsplOutcome": "rejects",
+    "actualOutcome": "rejects",
+    "rejectionMessage": "BSPL mapping requires acyclic control-flow; found loop/cycle Gateway_0l233z9 -> Gateway_10n552e -> ChoreographyTask_18vbtgq -> Gateway_1hms0l8 -> Gateway_1fcecxd -> ChoreographyTask_0xqod8f -> ChoreographyTask_1eltzty -> Gateway_0l233z9"
+  },
+  {
+    "runId": "is01_default",
+    "scenarioId": "IS01",
+    "scenarioTitle": "order fulfillment",
+    "scenarioKind": "integrated",
+    "scenarioSlug": "order_fulfillment",
+    "artifactGroup": "05-bspl-mapping",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/05-bspl-mapping/is01_order_fulfillment.bspl",
+      "evaluation/results/05-bspl-mapping/is01_order_fulfillment_comparison.json"
+    ],
+    "durationMs": 71.903,
+    "variantId": "default",
+    "expectedBsplOutcome": "holds",
+    "actualOutcome": "holds",
+    "protocolPath": "evaluation/results/05-bspl-mapping/is01_order_fulfillment.bspl",
+    "comparisonReportPath": "evaluation/results/05-bspl-mapping/is01_order_fulfillment_comparison.json",
+    "protocolMetrics": {
+      "roleCount": 3,
+      "messageCount": 12,
+      "parameterCount": 20,
+      "inParameterCount": 35,
+      "outParameterCount": 30,
+      "nilParameterCount": 8
+    },
+    "languageComparison": {
+      "choreographyTraceCount": 3,
+      "bsplTraceCount": 541,
+      "commonTraceCount": 3,
+      "recall": 1,
+      "precision": 0.005545286506469501,
+      "exactBeforeRefinement": false
+    }
+  },
+  {
+    "runId": "is02_default",
+    "scenarioId": "IS02",
+    "scenarioTitle": "item purchase plain",
+    "scenarioKind": "integrated",
+    "scenarioSlug": "item_purchase_plain",
+    "artifactGroup": "05-bspl-mapping",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/05-bspl-mapping/is02_item_purchase_plain.bspl",
+      "evaluation/results/05-bspl-mapping/is02_item_purchase_plain_comparison.json"
+    ],
+    "durationMs": 20.292,
+    "variantId": "default",
+    "expectedBsplOutcome": "holds",
+    "actualOutcome": "holds",
+    "protocolPath": "evaluation/results/05-bspl-mapping/is02_item_purchase_plain.bspl",
+    "comparisonReportPath": "evaluation/results/05-bspl-mapping/is02_item_purchase_plain_comparison.json",
+    "protocolMetrics": {
+      "roleCount": 2,
+      "messageCount": 5,
+      "parameterCount": 10,
+      "inParameterCount": 9,
+      "outParameterCount": 11,
+      "nilParameterCount": 0
+    },
+    "languageComparison": {
+      "choreographyTraceCount": 2,
+      "bsplTraceCount": 4,
+      "commonTraceCount": 2,
+      "recall": 1,
+      "precision": 0.5,
+      "exactBeforeRefinement": false
+    }
+  },
+  {
+    "runId": "is03_default",
+    "scenarioId": "IS03",
+    "scenarioTitle": "item purchase optimistic",
+    "scenarioKind": "integrated",
+    "scenarioSlug": "item_purchase_optimistic",
+    "artifactGroup": "05-bspl-mapping",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/05-bspl-mapping/is03_item_purchase_optimistic.bspl",
+      "evaluation/results/05-bspl-mapping/is03_item_purchase_optimistic_comparison.json"
+    ],
+    "durationMs": 14.285,
+    "variantId": "default",
+    "expectedBsplOutcome": "holds",
+    "actualOutcome": "holds",
+    "protocolPath": "evaluation/results/05-bspl-mapping/is03_item_purchase_optimistic.bspl",
+    "comparisonReportPath": "evaluation/results/05-bspl-mapping/is03_item_purchase_optimistic_comparison.json",
+    "protocolMetrics": {
+      "roleCount": 2,
+      "messageCount": 8,
+      "parameterCount": 15,
+      "inParameterCount": 16,
+      "outParameterCount": 18,
+      "nilParameterCount": 2
+    },
+    "languageComparison": {
+      "choreographyTraceCount": 4,
+      "bsplTraceCount": 10,
+      "commonTraceCount": 4,
+      "recall": 1,
+      "precision": 0.4,
+      "exactBeforeRefinement": false
+    }
+  },
+  {
+    "runId": "is04_default",
+    "scenarioId": "IS04",
+    "scenarioTitle": "item purchase pessimistic",
+    "scenarioKind": "integrated",
+    "scenarioSlug": "item_purchase_pessimistic",
+    "artifactGroup": "05-bspl-mapping",
+    "outcome": "skips",
+    "expectedOutcome": "skips",
+    "artifactPaths": [],
+    "variantId": "default",
+    "expectedBsplOutcome": "skip",
+    "actualOutcome": "skips",
+    "skipReason": "Pessimistic item purchase is not included in BSPL evaluation."
+  }
+]

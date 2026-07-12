@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "aaron-bond.better-comments",
+    "mikestead.dotenv",
+    "DavidAnson.vscode-markdownlint",
+  ]
+}

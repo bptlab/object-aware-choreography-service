@@ -1,0 +1,75 @@
+{
+  "comparison": {
+    "choreographyTraceCount": 2,
+    "protocolTraceCount": 5,
+    "sharedTraceCount": 2,
+    "recall": 1,
+    "precision": 0.4,
+    "protocolOnly": [
+      [
+        "task1",
+        "task4"
+      ],
+      [
+        "task1",
+        "task2",
+        "task3",
+        "task4"
+      ],
+      [
+        "task1",
+        "task3",
+        "task2",
+        "task4"
+      ]
+    ]
+  },
+  "constraints": [
+    {
+      "kind": "disjunctivePrecedence",
+      "id": "disjunctivePrecedence:task2|task3->task4",
+      "alternatives": [
+        "task2",
+        "task3"
+      ],
+      "constrained": "task4",
+      "source": {
+        "reason": "exclusiveJoin",
+        "explanation": "Task task4 requires one completed alternative branch before it can occur."
+      },
+      "violatingTraces": [
+        [
+          "task1",
+          "task4"
+        ]
+      ]
+    },
+    {
+      "kind": "exclusion",
+      "id": "exclusion:task2!task3",
+      "tasks": [
+        "task2",
+        "task3"
+      ],
+      "source": {
+        "reason": "eventBasedSplit",
+        "gatewayId": "Gateway_10n552e",
+        "explanation": "Tasks task2 and task3 are first observable tasks in alternative branches of gateway Gateway_10n552e."
+      },
+      "violatingTraces": [
+        [
+          "task1",
+          "task2",
+          "task3",
+          "task4"
+        ],
+        [
+          "task1",
+          "task3",
+          "task2",
+          "task4"
+        ]
+      ]
+    }
+  ]
+}

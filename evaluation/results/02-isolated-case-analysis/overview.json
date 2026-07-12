@@ -1,0 +1,2023 @@
+[
+  {
+    "runId": "cs01_default",
+    "scenarioId": "CS01",
+    "scenarioTitle": "no-object sequence",
+    "scenarioKind": "construct",
+    "scenarioSlug": "no_object_sequence",
+    "artifactGroup": "02-isolated-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/02-isolated-case-analysis/cs01_no_object_sequence.json"
+    ],
+    "durationMs": 104.325,
+    "variantId": "default",
+    "expected": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "projectedActual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "holds": true
+    },
+    "violatedProperties": [],
+    "projectedViolatedProperties": [],
+    "projectedViolationCounts": {
+      "optionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0
+    },
+    "taskCoverage": {
+      "coveredTaskCount": 2,
+      "totalTaskCount": 2,
+      "uncoveredTaskIds": []
+    },
+    "branchCoverage": {
+      "coveredBranchCount": 0,
+      "totalBranchCount": 0,
+      "uncoveredBranchIds": []
+    },
+    "violationCounts": {
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 10,
+      "edges": 13,
+      "truncated": false
+    },
+    "reportPath": "evaluation/results/02-isolated-case-analysis/cs01_no_object_sequence.json"
+  },
+  {
+    "runId": "cs02_default",
+    "scenarioId": "CS02",
+    "scenarioTitle": "single-object creation with multiple initial states and common identifier",
+    "scenarioKind": "construct",
+    "scenarioSlug": "single_object_alternative_creation",
+    "artifactGroup": "02-isolated-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/02-isolated-case-analysis/cs02_single_object_alternative_creation.json"
+    ],
+    "durationMs": 10.374,
+    "variantId": "default",
+    "expected": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "projectedActual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "holds": true
+    },
+    "violatedProperties": [],
+    "projectedViolatedProperties": [],
+    "projectedViolationCounts": {
+      "optionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0
+    },
+    "taskCoverage": {
+      "coveredTaskCount": 3,
+      "totalTaskCount": 3,
+      "uncoveredTaskIds": []
+    },
+    "branchCoverage": {
+      "coveredBranchCount": 2,
+      "totalBranchCount": 2,
+      "uncoveredBranchIds": []
+    },
+    "violationCounts": {
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 17,
+      "edges": 20,
+      "truncated": false
+    },
+    "reportPath": "evaluation/results/02-isolated-case-analysis/cs02_single_object_alternative_creation.json"
+  },
+  {
+    "runId": "cs03_default",
+    "scenarioId": "CS03",
+    "scenarioTitle": "two-object one-to-one creation",
+    "scenarioKind": "construct",
+    "scenarioSlug": "two_object_one_to_one_creation",
+    "artifactGroup": "02-isolated-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/02-isolated-case-analysis/cs03_two_object_one_to_one_creation.json"
+    ],
+    "durationMs": 14.55,
+    "variantId": "default",
+    "expected": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "projectedActual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "holds": true
+    },
+    "violatedProperties": [],
+    "projectedViolatedProperties": [],
+    "projectedViolationCounts": {
+      "optionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0
+    },
+    "taskCoverage": {
+      "coveredTaskCount": 2,
+      "totalTaskCount": 2,
+      "uncoveredTaskIds": []
+    },
+    "branchCoverage": {
+      "coveredBranchCount": 0,
+      "totalBranchCount": 0,
+      "uncoveredBranchIds": []
+    },
+    "violationCounts": {
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 9,
+      "edges": 9,
+      "truncated": false
+    },
+    "reportPath": "evaluation/results/02-isolated-case-analysis/cs03_two_object_one_to_one_creation.json"
+  },
+  {
+    "runId": "cs04_default",
+    "scenarioId": "CS04",
+    "scenarioTitle": "two-object one-to-many creation",
+    "scenarioKind": "construct",
+    "scenarioSlug": "two_object_one_to_many_creation",
+    "artifactGroup": "02-isolated-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/02-isolated-case-analysis/cs04_two_object_one_to_many_creation.json"
+    ],
+    "durationMs": 7.979,
+    "variantId": "default",
+    "expected": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "projectedActual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "holds": true
+    },
+    "violatedProperties": [],
+    "projectedViolatedProperties": [],
+    "projectedViolationCounts": {
+      "optionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0
+    },
+    "taskCoverage": {
+      "coveredTaskCount": 2,
+      "totalTaskCount": 2,
+      "uncoveredTaskIds": []
+    },
+    "branchCoverage": {
+      "coveredBranchCount": 0,
+      "totalBranchCount": 0,
+      "uncoveredBranchIds": []
+    },
+    "violationCounts": {
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 13,
+      "edges": 16,
+      "truncated": false
+    },
+    "reportPath": "evaluation/results/02-isolated-case-analysis/cs04_two_object_one_to_many_creation.json"
+  },
+  {
+    "runId": "cs05_default",
+    "scenarioId": "CS05",
+    "scenarioTitle": "two-object many-to-many creation",
+    "scenarioKind": "construct",
+    "scenarioSlug": "two_object_many_to_many_creation",
+    "artifactGroup": "02-isolated-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/02-isolated-case-analysis/cs05_two_object_many_to_many_creation.json"
+    ],
+    "durationMs": 10.695,
+    "variantId": "default",
+    "expected": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "projectedActual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "holds": true
+    },
+    "violatedProperties": [],
+    "projectedViolatedProperties": [],
+    "projectedViolationCounts": {
+      "optionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0
+    },
+    "taskCoverage": {
+      "coveredTaskCount": 2,
+      "totalTaskCount": 2,
+      "uncoveredTaskIds": []
+    },
+    "branchCoverage": {
+      "coveredBranchCount": 0,
+      "totalBranchCount": 0,
+      "uncoveredBranchIds": []
+    },
+    "violationCounts": {
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 15,
+      "edges": 21,
+      "truncated": false
+    },
+    "reportPath": "evaluation/results/02-isolated-case-analysis/cs05_two_object_many_to_many_creation.json"
+  },
+  {
+    "runId": "cs06_default",
+    "scenarioId": "CS06",
+    "scenarioTitle": "two-object creation without association",
+    "scenarioKind": "construct",
+    "scenarioSlug": "two_object_creation_without_association",
+    "artifactGroup": "02-isolated-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/02-isolated-case-analysis/cs06_two_object_creation_without_association.json"
+    ],
+    "durationMs": 32.743,
+    "variantId": "default",
+    "expected": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "projectedActual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "holds": true
+    },
+    "violatedProperties": [],
+    "projectedViolatedProperties": [],
+    "projectedViolationCounts": {
+      "optionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0
+    },
+    "taskCoverage": {
+      "coveredTaskCount": 2,
+      "totalTaskCount": 2,
+      "uncoveredTaskIds": []
+    },
+    "branchCoverage": {
+      "coveredBranchCount": 0,
+      "totalBranchCount": 0,
+      "uncoveredBranchIds": []
+    },
+    "violationCounts": {
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 15,
+      "edges": 21,
+      "truncated": false
+    },
+    "reportPath": "evaluation/results/02-isolated-case-analysis/cs06_two_object_creation_without_association.json"
+  },
+  {
+    "runId": "cs07_default",
+    "scenarioId": "CS07",
+    "scenarioTitle": "three-object mixed dependencies",
+    "scenarioKind": "construct",
+    "scenarioSlug": "three_object_mixed_dependencies",
+    "artifactGroup": "02-isolated-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/02-isolated-case-analysis/cs07_three_object_mixed_dependencies.json"
+    ],
+    "durationMs": 10.408,
+    "variantId": "default",
+    "expected": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "projectedActual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "holds": true
+    },
+    "violatedProperties": [],
+    "projectedViolatedProperties": [],
+    "projectedViolationCounts": {
+      "optionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0
+    },
+    "taskCoverage": {
+      "coveredTaskCount": 3,
+      "totalTaskCount": 3,
+      "uncoveredTaskIds": []
+    },
+    "branchCoverage": {
+      "coveredBranchCount": 0,
+      "totalBranchCount": 0,
+      "uncoveredBranchIds": []
+    },
+    "violationCounts": {
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 15,
+      "edges": 18,
+      "truncated": false
+    },
+    "reportPath": "evaluation/results/02-isolated-case-analysis/cs07_three_object_mixed_dependencies.json"
+  },
+  {
+    "runId": "cs08_default",
+    "scenarioId": "CS08",
+    "scenarioTitle": "communication with different-role local transitions and forwarding",
+    "scenarioKind": "construct",
+    "scenarioSlug": "local_transitions_and_forwarding",
+    "artifactGroup": "02-isolated-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/02-isolated-case-analysis/cs08_local_transitions_and_forwarding.json"
+    ],
+    "durationMs": 23.822,
+    "variantId": "default",
+    "expected": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "projectedActual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "holds": true
+    },
+    "violatedProperties": [],
+    "projectedViolatedProperties": [],
+    "projectedViolationCounts": {
+      "optionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0
+    },
+    "taskCoverage": {
+      "coveredTaskCount": 3,
+      "totalTaskCount": 3,
+      "uncoveredTaskIds": []
+    },
+    "branchCoverage": {
+      "coveredBranchCount": 0,
+      "totalBranchCount": 0,
+      "uncoveredBranchIds": []
+    },
+    "violationCounts": {
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 12,
+      "edges": 12,
+      "truncated": false
+    },
+    "reportPath": "evaluation/results/02-isolated-case-analysis/cs08_local_transitions_and_forwarding.json"
+  },
+  {
+    "runId": "cs09_default",
+    "scenarioId": "CS09",
+    "scenarioTitle": "multiple compatible receiver states",
+    "scenarioKind": "construct",
+    "scenarioSlug": "multiple_compatible_receiver_states",
+    "artifactGroup": "02-isolated-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/02-isolated-case-analysis/cs09_multiple_compatible_receiver_states.json"
+    ],
+    "durationMs": 11.068,
+    "variantId": "default",
+    "expected": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "projectedActual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "holds": true
+    },
+    "violatedProperties": [],
+    "projectedViolatedProperties": [],
+    "projectedViolationCounts": {
+      "optionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0
+    },
+    "taskCoverage": {
+      "coveredTaskCount": 4,
+      "totalTaskCount": 4,
+      "uncoveredTaskIds": []
+    },
+    "branchCoverage": {
+      "coveredBranchCount": 2,
+      "totalBranchCount": 2,
+      "uncoveredBranchIds": []
+    },
+    "violationCounts": {
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 23,
+      "edges": 29,
+      "truncated": false
+    },
+    "reportPath": "evaluation/results/02-isolated-case-analysis/cs09_multiple_compatible_receiver_states.json"
+  },
+  {
+    "runId": "cs10_default",
+    "scenarioId": "CS10",
+    "scenarioTitle": "multi-class synchronization followed by forwarding",
+    "scenarioKind": "construct",
+    "scenarioSlug": "multi_class_synchronization_forwarding",
+    "artifactGroup": "02-isolated-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/02-isolated-case-analysis/cs10_multi_class_synchronization_forwarding.json"
+    ],
+    "durationMs": 11.758,
+    "variantId": "default",
+    "expected": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "projectedActual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "holds": true
+    },
+    "violatedProperties": [],
+    "projectedViolatedProperties": [],
+    "projectedViolationCounts": {
+      "optionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0
+    },
+    "taskCoverage": {
+      "coveredTaskCount": 5,
+      "totalTaskCount": 5,
+      "uncoveredTaskIds": []
+    },
+    "branchCoverage": {
+      "coveredBranchCount": 0,
+      "totalBranchCount": 0,
+      "uncoveredBranchIds": []
+    },
+    "violationCounts": {
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 21,
+      "edges": 27,
+      "truncated": false
+    },
+    "reportPath": "evaluation/results/02-isolated-case-analysis/cs10_multi_class_synchronization_forwarding.json"
+  },
+  {
+    "runId": "cs11_default",
+    "scenarioId": "CS11",
+    "scenarioTitle": "synchronization with multiple source states",
+    "scenarioKind": "construct",
+    "scenarioSlug": "synchronization_multiple_source_states",
+    "artifactGroup": "02-isolated-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/02-isolated-case-analysis/cs11_synchronization_multiple_source_states.json"
+    ],
+    "durationMs": 11.812,
+    "variantId": "default",
+    "expected": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "projectedActual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "holds": true
+    },
+    "violatedProperties": [],
+    "projectedViolatedProperties": [],
+    "projectedViolationCounts": {
+      "optionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0
+    },
+    "taskCoverage": {
+      "coveredTaskCount": 4,
+      "totalTaskCount": 4,
+      "uncoveredTaskIds": []
+    },
+    "branchCoverage": {
+      "coveredBranchCount": 2,
+      "totalBranchCount": 2,
+      "uncoveredBranchIds": []
+    },
+    "violationCounts": {
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 19,
+      "edges": 23,
+      "truncated": false
+    },
+    "reportPath": "evaluation/results/02-isolated-case-analysis/cs11_synchronization_multiple_source_states.json"
+  },
+  {
+    "runId": "cs12_default",
+    "scenarioId": "CS12",
+    "scenarioTitle": "state reachable by synchronization or local transition",
+    "scenarioKind": "construct",
+    "scenarioSlug": "state_reachable_by_sync_or_local",
+    "artifactGroup": "02-isolated-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/02-isolated-case-analysis/cs12_state_reachable_by_sync_or_local.json"
+    ],
+    "durationMs": 12.558,
+    "variantId": "default",
+    "expected": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "projectedActual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "holds": true
+    },
+    "violatedProperties": [],
+    "projectedViolatedProperties": [],
+    "projectedViolationCounts": {
+      "optionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0
+    },
+    "taskCoverage": {
+      "coveredTaskCount": 4,
+      "totalTaskCount": 4,
+      "uncoveredTaskIds": []
+    },
+    "branchCoverage": {
+      "coveredBranchCount": 2,
+      "totalBranchCount": 2,
+      "uncoveredBranchIds": []
+    },
+    "violationCounts": {
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 20,
+      "edges": 22,
+      "truncated": false
+    },
+    "reportPath": "evaluation/results/02-isolated-case-analysis/cs12_state_reachable_by_sync_or_local.json"
+  },
+  {
+    "runId": "cs13_default",
+    "scenarioId": "CS13",
+    "scenarioTitle": "combined task on same class",
+    "scenarioKind": "construct",
+    "scenarioSlug": "combined_same_class",
+    "artifactGroup": "02-isolated-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/02-isolated-case-analysis/cs13_combined_same_class.json"
+    ],
+    "durationMs": 15.001,
+    "variantId": "default",
+    "expected": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "projectedActual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "holds": true
+    },
+    "violatedProperties": [],
+    "projectedViolatedProperties": [],
+    "projectedViolationCounts": {
+      "optionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0
+    },
+    "taskCoverage": {
+      "coveredTaskCount": 1,
+      "totalTaskCount": 1,
+      "uncoveredTaskIds": []
+    },
+    "branchCoverage": {
+      "coveredBranchCount": 0,
+      "totalBranchCount": 0,
+      "uncoveredBranchIds": []
+    },
+    "violationCounts": {
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 7,
+      "edges": 7,
+      "truncated": false
+    },
+    "reportPath": "evaluation/results/02-isolated-case-analysis/cs13_combined_same_class.json"
+  },
+  {
+    "runId": "cs14_default",
+    "scenarioId": "CS14",
+    "scenarioTitle": "combined task across classes",
+    "scenarioKind": "construct",
+    "scenarioSlug": "combined_different_classes",
+    "artifactGroup": "02-isolated-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/02-isolated-case-analysis/cs14_combined_different_classes.json"
+    ],
+    "durationMs": 16.38,
+    "variantId": "default",
+    "expected": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "projectedActual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "holds": true
+    },
+    "violatedProperties": [],
+    "projectedViolatedProperties": [],
+    "projectedViolationCounts": {
+      "optionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0
+    },
+    "taskCoverage": {
+      "coveredTaskCount": 2,
+      "totalTaskCount": 2,
+      "uncoveredTaskIds": []
+    },
+    "branchCoverage": {
+      "coveredBranchCount": 0,
+      "totalBranchCount": 0,
+      "uncoveredBranchIds": []
+    },
+    "violationCounts": {
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 15,
+      "edges": 21,
+      "truncated": false
+    },
+    "reportPath": "evaluation/results/02-isolated-case-analysis/cs14_combined_different_classes.json"
+  },
+  {
+    "runId": "cs15_default",
+    "scenarioId": "CS15",
+    "scenarioTitle": "event-based gateway with local non-creational decision",
+    "scenarioKind": "construct",
+    "scenarioSlug": "event_based_local_non_creational_decision",
+    "artifactGroup": "02-isolated-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/02-isolated-case-analysis/cs15_event_based_local_non_creational_decision.json"
+    ],
+    "durationMs": 8.936,
+    "variantId": "default",
+    "expected": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "projectedActual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "holds": true
+    },
+    "violatedProperties": [],
+    "projectedViolatedProperties": [],
+    "projectedViolationCounts": {
+      "optionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0
+    },
+    "taskCoverage": {
+      "coveredTaskCount": 3,
+      "totalTaskCount": 3,
+      "uncoveredTaskIds": []
+    },
+    "branchCoverage": {
+      "coveredBranchCount": 2,
+      "totalBranchCount": 2,
+      "uncoveredBranchIds": []
+    },
+    "violationCounts": {
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 16,
+      "edges": 16,
+      "truncated": false
+    },
+    "reportPath": "evaluation/results/02-isolated-case-analysis/cs15_event_based_local_non_creational_decision.json"
+  },
+  {
+    "runId": "cs16_default",
+    "scenarioId": "CS16",
+    "scenarioTitle": "guarded exclusive gateway",
+    "scenarioKind": "construct",
+    "scenarioSlug": "guarded_exclusive_gateway",
+    "artifactGroup": "02-isolated-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/02-isolated-case-analysis/cs16_guarded_exclusive_gateway.json"
+    ],
+    "durationMs": 22.583,
+    "variantId": "default",
+    "expected": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "projectedActual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "holds": true
+    },
+    "violatedProperties": [],
+    "projectedViolatedProperties": [],
+    "projectedViolationCounts": {
+      "optionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0
+    },
+    "taskCoverage": {
+      "coveredTaskCount": 5,
+      "totalTaskCount": 5,
+      "uncoveredTaskIds": []
+    },
+    "branchCoverage": {
+      "coveredBranchCount": 4,
+      "totalBranchCount": 4,
+      "uncoveredBranchIds": []
+    },
+    "violationCounts": {
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 23,
+      "edges": 26,
+      "truncated": false
+    },
+    "reportPath": "evaluation/results/02-isolated-case-analysis/cs16_guarded_exclusive_gateway.json"
+  },
+  {
+    "runId": "cs17_default",
+    "scenarioId": "CS17",
+    "scenarioTitle": "exclusive gateway with affected role identification",
+    "scenarioKind": "construct",
+    "scenarioSlug": "guarded_exclusive_gateway",
+    "artifactGroup": "02-isolated-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/02-isolated-case-analysis/cs17_guarded_exclusive_gateway.json"
+    ],
+    "durationMs": 31.741,
+    "variantId": "default",
+    "expected": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "projectedActual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "holds": true
+    },
+    "violatedProperties": [],
+    "projectedViolatedProperties": [],
+    "projectedViolationCounts": {
+      "optionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0
+    },
+    "taskCoverage": {
+      "coveredTaskCount": 12,
+      "totalTaskCount": 12,
+      "uncoveredTaskIds": []
+    },
+    "branchCoverage": {
+      "coveredBranchCount": 4,
+      "totalBranchCount": 4,
+      "uncoveredBranchIds": []
+    },
+    "violationCounts": {
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 37,
+      "edges": 46,
+      "truncated": false
+    },
+    "reportPath": "evaluation/results/02-isolated-case-analysis/cs17_guarded_exclusive_gateway.json"
+  },
+  {
+    "runId": "cs18_default",
+    "scenarioId": "CS18",
+    "scenarioTitle": "parallel independent object branches",
+    "scenarioKind": "construct",
+    "scenarioSlug": "parallel_independent_object_branches",
+    "artifactGroup": "02-isolated-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/02-isolated-case-analysis/cs18_parallel_independent_object_branches.json"
+    ],
+    "durationMs": 35.188,
+    "variantId": "default",
+    "expected": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "projectedActual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "holds": true
+    },
+    "violatedProperties": [],
+    "projectedViolatedProperties": [],
+    "projectedViolationCounts": {
+      "optionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0
+    },
+    "taskCoverage": {
+      "coveredTaskCount": 4,
+      "totalTaskCount": 4,
+      "uncoveredTaskIds": []
+    },
+    "branchCoverage": {
+      "coveredBranchCount": 0,
+      "totalBranchCount": 0,
+      "uncoveredBranchIds": []
+    },
+    "violationCounts": {
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 61,
+      "edges": 130,
+      "truncated": false
+    },
+    "reportPath": "evaluation/results/02-isolated-case-analysis/cs18_parallel_independent_object_branches.json"
+  },
+  {
+    "runId": "cs19_default",
+    "scenarioId": "CS19",
+    "scenarioTitle": "event-based gateway loop",
+    "scenarioKind": "construct",
+    "scenarioSlug": "event_based_gateway_loop",
+    "artifactGroup": "02-isolated-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/02-isolated-case-analysis/cs19_event_based_gateway_loop.json"
+    ],
+    "durationMs": 6.867,
+    "variantId": "default",
+    "expected": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "projectedActual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "holds": true
+    },
+    "violatedProperties": [],
+    "projectedViolatedProperties": [],
+    "projectedViolationCounts": {
+      "optionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0
+    },
+    "taskCoverage": {
+      "coveredTaskCount": 4,
+      "totalTaskCount": 4,
+      "uncoveredTaskIds": []
+    },
+    "branchCoverage": {
+      "coveredBranchCount": 2,
+      "totalBranchCount": 2,
+      "uncoveredBranchIds": []
+    },
+    "violationCounts": {
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 16,
+      "edges": 24,
+      "truncated": false
+    },
+    "reportPath": "evaluation/results/02-isolated-case-analysis/cs19_event_based_gateway_loop.json"
+  },
+  {
+    "runId": "cs20_default",
+    "scenarioId": "CS20",
+    "scenarioTitle": "exclusive gateway loop",
+    "scenarioKind": "construct",
+    "scenarioSlug": "exclusive_gateway_loop",
+    "artifactGroup": "02-isolated-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/02-isolated-case-analysis/cs20_exclusive_gateway_loop.json"
+    ],
+    "durationMs": 16.942,
+    "variantId": "default",
+    "expected": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "projectedActual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "holds": true
+    },
+    "violatedProperties": [],
+    "projectedViolatedProperties": [],
+    "projectedViolationCounts": {
+      "optionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0
+    },
+    "taskCoverage": {
+      "coveredTaskCount": 6,
+      "totalTaskCount": 6,
+      "uncoveredTaskIds": []
+    },
+    "branchCoverage": {
+      "coveredBranchCount": 4,
+      "totalBranchCount": 4,
+      "uncoveredBranchIds": []
+    },
+    "violationCounts": {
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 34,
+      "edges": 45,
+      "truncated": false
+    },
+    "reportPath": "evaluation/results/02-isolated-case-analysis/cs20_exclusive_gateway_loop.json"
+  },
+  {
+    "runId": "is01_default",
+    "scenarioId": "IS01",
+    "scenarioTitle": "order fulfillment",
+    "scenarioKind": "integrated",
+    "scenarioSlug": "order_fulfillment",
+    "artifactGroup": "02-isolated-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/02-isolated-case-analysis/is01_order_fulfillment.json"
+    ],
+    "durationMs": 30.151,
+    "variantId": "default",
+    "expected": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "projectedActual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "holds": true
+    },
+    "violatedProperties": [],
+    "projectedViolatedProperties": [],
+    "projectedViolationCounts": {
+      "optionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0
+    },
+    "taskCoverage": {
+      "coveredTaskCount": 10,
+      "totalTaskCount": 10,
+      "uncoveredTaskIds": []
+    },
+    "branchCoverage": {
+      "coveredBranchCount": 6,
+      "totalBranchCount": 6,
+      "uncoveredBranchIds": []
+    },
+    "violationCounts": {
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 105,
+      "edges": 201,
+      "truncated": false
+    },
+    "reportPath": "evaluation/results/02-isolated-case-analysis/is01_order_fulfillment.json"
+  },
+  {
+    "runId": "is02_default",
+    "scenarioId": "IS02",
+    "scenarioTitle": "item purchase plain",
+    "scenarioKind": "integrated",
+    "scenarioSlug": "item_purchase_plain",
+    "artifactGroup": "02-isolated-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/02-isolated-case-analysis/is02_item_purchase_plain.json"
+    ],
+    "durationMs": 7.256,
+    "variantId": "default",
+    "expected": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "projectedActual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "holds": true
+    },
+    "violatedProperties": [],
+    "projectedViolatedProperties": [],
+    "projectedViolationCounts": {
+      "optionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0
+    },
+    "taskCoverage": {
+      "coveredTaskCount": 5,
+      "totalTaskCount": 5,
+      "uncoveredTaskIds": []
+    },
+    "branchCoverage": {
+      "coveredBranchCount": 2,
+      "totalBranchCount": 2,
+      "uncoveredBranchIds": []
+    },
+    "violationCounts": {
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 16,
+      "edges": 17,
+      "truncated": false
+    },
+    "reportPath": "evaluation/results/02-isolated-case-analysis/is02_item_purchase_plain.json"
+  },
+  {
+    "runId": "is03_default",
+    "scenarioId": "IS03",
+    "scenarioTitle": "item purchase optimistic",
+    "scenarioKind": "integrated",
+    "scenarioSlug": "item_purchase_optimistic",
+    "artifactGroup": "02-isolated-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/02-isolated-case-analysis/is03_item_purchase_optimistic.json"
+    ],
+    "durationMs": 13.066,
+    "variantId": "default",
+    "expected": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "projectedActual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "holds": true
+    },
+    "violatedProperties": [],
+    "projectedViolatedProperties": [],
+    "projectedViolationCounts": {
+      "optionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0
+    },
+    "taskCoverage": {
+      "coveredTaskCount": 8,
+      "totalTaskCount": 8,
+      "uncoveredTaskIds": []
+    },
+    "branchCoverage": {
+      "coveredBranchCount": 6,
+      "totalBranchCount": 6,
+      "uncoveredBranchIds": []
+    },
+    "violationCounts": {
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 29,
+      "edges": 35,
+      "truncated": false
+    },
+    "reportPath": "evaluation/results/02-isolated-case-analysis/is03_item_purchase_optimistic.json"
+  },
+  {
+    "runId": "is04_default",
+    "scenarioId": "IS04",
+    "scenarioTitle": "item purchase pessimistic",
+    "scenarioKind": "integrated",
+    "scenarioSlug": "item_purchase_pessimistic",
+    "artifactGroup": "02-isolated-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/02-isolated-case-analysis/is04_item_purchase_pessimistic.json"
+    ],
+    "durationMs": 8.144,
+    "variantId": "default",
+    "expected": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "projectedActual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "holds": true
+    },
+    "violatedProperties": [],
+    "projectedViolatedProperties": [],
+    "projectedViolationCounts": {
+      "optionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0
+    },
+    "taskCoverage": {
+      "coveredTaskCount": 7,
+      "totalTaskCount": 7,
+      "uncoveredTaskIds": []
+    },
+    "branchCoverage": {
+      "coveredBranchCount": 4,
+      "totalBranchCount": 4,
+      "uncoveredBranchIds": []
+    },
+    "violationCounts": {
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 23,
+      "edges": 26,
+      "truncated": false
+    },
+    "reportPath": "evaluation/results/02-isolated-case-analysis/is04_item_purchase_pessimistic.json"
+  },
+  {
+    "runId": "ws01_default",
+    "scenarioId": "WS01",
+    "scenarioTitle": "sender-side blocking",
+    "scenarioKind": "witness",
+    "scenarioSlug": "sender_side_blocking",
+    "artifactGroup": "02-isolated-case-analysis",
+    "outcome": "violates",
+    "expectedOutcome": "violates",
+    "artifactPaths": [
+      "evaluation/results/02-isolated-case-analysis/ws01_sender_side_blocking.json"
+    ],
+    "durationMs": 7.294,
+    "variantId": "default",
+    "expected": {
+      "senderProgression": false,
+      "receiverProgression": true,
+      "decisionConsistency": true,
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true
+    },
+    "actual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": false,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "projectedActual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "holds": true
+    },
+    "violatedProperties": [
+      "senderProgression"
+    ],
+    "projectedViolatedProperties": [],
+    "projectedViolationCounts": {
+      "optionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0
+    },
+    "taskCoverage": {
+      "coveredTaskCount": 3,
+      "totalTaskCount": 3,
+      "uncoveredTaskIds": []
+    },
+    "branchCoverage": {
+      "coveredBranchCount": 0,
+      "totalBranchCount": 0,
+      "uncoveredBranchIds": []
+    },
+    "violationCounts": {
+      "senderProgressionViolations": 3,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 15,
+      "edges": 17,
+      "truncated": false
+    },
+    "reportPath": "evaluation/results/02-isolated-case-analysis/ws01_sender_side_blocking.json"
+  },
+  {
+    "runId": "ws02_default",
+    "scenarioId": "WS02",
+    "scenarioTitle": "receiver-side blocking",
+    "scenarioKind": "witness",
+    "scenarioSlug": "receiver_side_blocking",
+    "artifactGroup": "02-isolated-case-analysis",
+    "outcome": "violates",
+    "expectedOutcome": "violates",
+    "artifactPaths": [
+      "evaluation/results/02-isolated-case-analysis/ws02_receiver_side_blocking.json"
+    ],
+    "durationMs": 7.916,
+    "variantId": "default",
+    "expected": {
+      "senderProgression": true,
+      "receiverProgression": false,
+      "decisionConsistency": true,
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true
+    },
+    "actual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": false,
+      "decisionConsistency": true
+    },
+    "projectedActual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "holds": true
+    },
+    "violatedProperties": [
+      "receiverProgression"
+    ],
+    "projectedViolatedProperties": [],
+    "projectedViolationCounts": {
+      "optionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0
+    },
+    "taskCoverage": {
+      "coveredTaskCount": 4,
+      "totalTaskCount": 4,
+      "uncoveredTaskIds": []
+    },
+    "branchCoverage": {
+      "coveredBranchCount": 0,
+      "totalBranchCount": 0,
+      "uncoveredBranchIds": []
+    },
+    "violationCounts": {
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 2,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 18,
+      "edges": 20,
+      "truncated": false
+    },
+    "reportPath": "evaluation/results/02-isolated-case-analysis/ws02_receiver_side_blocking.json"
+  },
+  {
+    "runId": "ws03_default",
+    "scenarioId": "WS03",
+    "scenarioTitle": "unreachable behavior",
+    "scenarioKind": "witness",
+    "scenarioSlug": "unreachable_behavior",
+    "artifactGroup": "02-isolated-case-analysis",
+    "outcome": "violates",
+    "expectedOutcome": "violates",
+    "artifactPaths": [
+      "evaluation/results/02-isolated-case-analysis/ws03_unreachable_behavior.json"
+    ],
+    "durationMs": 9.948,
+    "variantId": "default",
+    "expected": {
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true,
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": false,
+      "branchCoverage": false
+    },
+    "actual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": false,
+      "branchCoverage": false,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "projectedActual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": false,
+      "branchCoverage": false,
+      "holds": false
+    },
+    "violatedProperties": [
+      "taskCoverage",
+      "branchCoverage"
+    ],
+    "projectedViolatedProperties": [
+      "taskCoverage",
+      "branchCoverage"
+    ],
+    "projectedViolationCounts": {
+      "optionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 1,
+      "uncoveredBranches": 1
+    },
+    "taskCoverage": {
+      "coveredTaskCount": 3,
+      "totalTaskCount": 4,
+      "uncoveredTaskIds": [
+        "ChoreographyTask_0cojd1b"
+      ]
+    },
+    "branchCoverage": {
+      "coveredBranchCount": 1,
+      "totalBranchCount": 2,
+      "uncoveredBranchIds": [
+        "branch_Gateway_05yuuvj_ChoreographyTask_0cojd1b"
+      ]
+    },
+    "violationCounts": {
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 14,
+      "edges": 14,
+      "truncated": false
+    },
+    "reportPath": "evaluation/results/02-isolated-case-analysis/ws03_unreachable_behavior.json"
+  },
+  {
+    "runId": "ws04_default",
+    "scenarioId": "WS04",
+    "scenarioTitle": "decision misalignment",
+    "scenarioKind": "witness",
+    "scenarioSlug": "decision_misalignment",
+    "artifactGroup": "02-isolated-case-analysis",
+    "outcome": "violates",
+    "expectedOutcome": "violates",
+    "artifactPaths": [
+      "evaluation/results/02-isolated-case-analysis/ws04_decision_misalignment.json"
+    ],
+    "durationMs": 13.568,
+    "variantId": "default",
+    "expected": {
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": false,
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true
+    },
+    "actual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": false
+    },
+    "projectedActual": {
+      "optionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "holds": true
+    },
+    "violatedProperties": [
+      "decisionConsistency"
+    ],
+    "projectedViolatedProperties": [],
+    "projectedViolationCounts": {
+      "optionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0
+    },
+    "taskCoverage": {
+      "coveredTaskCount": 4,
+      "totalTaskCount": 4,
+      "uncoveredTaskIds": []
+    },
+    "branchCoverage": {
+      "coveredBranchCount": 2,
+      "totalBranchCount": 2,
+      "uncoveredBranchIds": []
+    },
+    "violationCounts": {
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 2
+    },
+    "stateSpace": {
+      "markings": 31,
+      "edges": 38,
+      "truncated": false
+    },
+    "reportPath": "evaluation/results/02-isolated-case-analysis/ws04_decision_misalignment.json"
+  },
+  {
+    "runId": "ws05_default",
+    "scenarioId": "WS05",
+    "scenarioTitle": "completion loss",
+    "scenarioKind": "witness",
+    "scenarioSlug": "completion_loss",
+    "artifactGroup": "02-isolated-case-analysis",
+    "outcome": "violates",
+    "expectedOutcome": "violates",
+    "artifactPaths": [
+      "evaluation/results/02-isolated-case-analysis/ws05_completion_loss.json"
+    ],
+    "durationMs": 10.912,
+    "variantId": "default",
+    "expected": {
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true,
+      "optionToComplete": false,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true
+    },
+    "actual": {
+      "optionToComplete": false,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "projectedActual": {
+      "optionToComplete": false,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "holds": false
+    },
+    "violatedProperties": [
+      "optionToComplete"
+    ],
+    "projectedViolatedProperties": [
+      "optionToComplete"
+    ],
+    "projectedViolationCounts": {
+      "optionToCompleteViolations": 5,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0
+    },
+    "taskCoverage": {
+      "coveredTaskCount": 6,
+      "totalTaskCount": 6,
+      "uncoveredTaskIds": []
+    },
+    "branchCoverage": {
+      "coveredBranchCount": 4,
+      "totalBranchCount": 4,
+      "uncoveredBranchIds": []
+    },
+    "violationCounts": {
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 21,
+      "edges": 22,
+      "truncated": false
+    },
+    "reportPath": "evaluation/results/02-isolated-case-analysis/ws05_completion_loss.json"
+  }
+]

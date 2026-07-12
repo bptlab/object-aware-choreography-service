@@ -1,0 +1,342 @@
+[
+  {
+    "runId": "vs01_default",
+    "scenarioId": "VS01",
+    "scenarioTitle": "duplicate task names are rejected",
+    "scenarioKind": "validation",
+    "scenarioSlug": "duplicate_task_names",
+    "artifactGroup": "00-validation",
+    "outcome": "rejects",
+    "expectedOutcome": "rejects",
+    "artifactPaths": [
+      "evaluation/results/00-validation/vs01_duplicate_task_names.json"
+    ],
+    "durationMs": 48.301,
+    "variantId": "default",
+    "rejectionCategory": "duplicate-task-name",
+    "validationTarget": "context",
+    "expectedRejectionRegex": "/duplicate.*task|task.*name.*unique/i",
+    "actualRejected": true,
+    "actualErrorMessage": "Duplicate choreography task name \"task1\""
+  },
+  {
+    "runId": "vs02_default",
+    "scenarioId": "VS02",
+    "scenarioTitle": "unsupported two-way task",
+    "scenarioKind": "validation",
+    "scenarioSlug": "non-normalized_task",
+    "artifactGroup": "00-validation",
+    "outcome": "rejects",
+    "expectedOutcome": "rejects",
+    "artifactPaths": [
+      "evaluation/results/00-validation/vs02_non-normalized_task.json"
+    ],
+    "durationMs": 10.594,
+    "variantId": "default",
+    "rejectionCategory": "non-normalized-task",
+    "validationTarget": "context",
+    "expectedRejectionRegex": "/more than one message element.*at most one/i",
+    "actualRejected": true,
+    "actualErrorMessage": "Task \"task1\" has more than one message element; object-aware mapping expects at most one."
+  },
+  {
+    "runId": "vs03_default",
+    "scenarioId": "VS03",
+    "scenarioTitle": "multiple creator roles are rejected",
+    "scenarioKind": "validation",
+    "scenarioSlug": "multiple_creator_roles",
+    "artifactGroup": "00-validation",
+    "outcome": "rejects",
+    "expectedOutcome": "rejects",
+    "artifactPaths": [
+      "evaluation/results/00-validation/vs03_multiple_creator_roles.json"
+    ],
+    "durationMs": 15.277,
+    "variantId": "default",
+    "rejectionCategory": "multiple-creator-roles",
+    "validationTarget": "context",
+    "expectedRejectionRegex": "/multiple.*creator.*roles|creator.*role.*class|multiple.*initial.*roles/i",
+    "actualRejected": true,
+    "actualErrorMessage": "Object lifecycle class ClassA has multiple creator roles for initial states: RoleA, RoleB"
+  },
+  {
+    "runId": "vs04_default",
+    "scenarioId": "VS04",
+    "scenarioTitle": "inconsistent one-to-one creators are rejected",
+    "scenarioKind": "validation",
+    "scenarioSlug": "inconsistent_one_to_one_creators",
+    "artifactGroup": "00-validation",
+    "outcome": "rejects",
+    "expectedOutcome": "rejects",
+    "artifactPaths": [
+      "evaluation/results/00-validation/vs04_inconsistent_one_to_one_creators.json"
+    ],
+    "durationMs": 13.137,
+    "variantId": "default",
+    "rejectionCategory": "one-to-one-creator-inconsistency",
+    "validationTarget": "context",
+    "expectedRejectionRegex": "/(mandatory.*)?(one-to-one|1:1).*common.*creator|creator.*role.*inconsistent|common.*creator.*role/i",
+    "actualRejected": true,
+    "actualErrorMessage": "Mandatory one-to-one creation group requires a common creator role: [ClassA, ClassB] has creators ClassA:RoleA, ClassB:RoleB"
+  },
+  {
+    "runId": "vs05_default",
+    "scenarioId": "VS05",
+    "scenarioTitle": "exclusive gateway without SESE is rejected",
+    "scenarioKind": "validation",
+    "scenarioSlug": "exclusive_gateway_without_sese",
+    "artifactGroup": "00-validation",
+    "outcome": "rejects",
+    "expectedOutcome": "rejects",
+    "artifactPaths": [
+      "evaluation/results/00-validation/vs05_exclusive_gateway_without_sese.json"
+    ],
+    "durationMs": 16.509,
+    "variantId": "default",
+    "rejectionCategory": "non-sese-exclusive-gateway",
+    "validationTarget": "context",
+    "expectedRejectionRegex": "/SESE|single-entry.*single-exit|well-formed.*(decision|loop)|exclusive.*gateway.*SESE/i",
+    "actualRejected": true,
+    "actualErrorMessage": "Exclusive gateway \"Gateway_1fcecxd\" must form a well-formed SESE (single-entry single-exit) decision or loop region; found 1 entry sequence flow(s) and 2 exit node(s)."
+  },
+  {
+    "runId": "vs06_default",
+    "scenarioId": "VS06",
+    "scenarioTitle": "data-model class without lifecycle is rejected",
+    "scenarioKind": "validation",
+    "scenarioSlug": "data_class_without_lifecycle",
+    "artifactGroup": "00-validation",
+    "outcome": "rejects",
+    "expectedOutcome": "rejects",
+    "artifactPaths": [
+      "evaluation/results/00-validation/vs06_data_class_without_lifecycle.json"
+    ],
+    "durationMs": 10.139,
+    "variantId": "default",
+    "rejectionCategory": "missing-lifecycle-for-data-class",
+    "validationTarget": "context",
+    "expectedRejectionRegex": "/data model class.*does not have.*object lifecycle|class.*without.*lifecycle|missing.*object lifecycle/i",
+    "actualRejected": true,
+    "actualErrorMessage": "Data model class ClassB does not have an object lifecycle"
+  },
+  {
+    "runId": "vs07_default",
+    "scenarioId": "VS07",
+    "scenarioTitle": "lifecycle class absent from data model is rejected",
+    "scenarioKind": "validation",
+    "scenarioSlug": "lifecycle_class_absent_from_data_model",
+    "artifactGroup": "00-validation",
+    "outcome": "rejects",
+    "expectedOutcome": "rejects",
+    "artifactPaths": [
+      "evaluation/results/00-validation/vs07_lifecycle_class_absent_from_data_model.json"
+    ],
+    "durationMs": 7.484,
+    "variantId": "default",
+    "rejectionCategory": "lifecycle-class-not-in-data-model",
+    "validationTarget": "context",
+    "expectedRejectionRegex": "/object lifecycle class.*does not exist.*data model|lifecycle.*class.*absent.*data model|not.*in.*data.*model/i",
+    "actualRejected": true,
+    "actualErrorMessage": "Object lifecycle class ClassB does not exist in the data model"
+  },
+  {
+    "runId": "vs08_default",
+    "scenarioId": "VS08",
+    "scenarioTitle": "task reference to unknown class is rejected",
+    "scenarioKind": "validation",
+    "scenarioSlug": "task_reference_unknown_class",
+    "artifactGroup": "00-validation",
+    "outcome": "rejects",
+    "expectedOutcome": "rejects",
+    "artifactPaths": [
+      "evaluation/results/00-validation/vs08_task_reference_unknown_class.json"
+    ],
+    "durationMs": 17.526,
+    "variantId": "default",
+    "rejectionCategory": "unknown-task-class-reference",
+    "validationTarget": "context",
+    "expectedRejectionRegex": "/unknown.*class.*MissingClass|MissingClass.*not.*in.*data.*model/i",
+    "actualRejected": true,
+    "actualErrorMessage": "Task \"task1\" message \"MissingClass [a-x]\" references unknown class MissingClass"
+  },
+  {
+    "runId": "vs09_default",
+    "scenarioId": "VS09",
+    "scenarioTitle": "task reference to unknown lifecycle state is rejected",
+    "scenarioKind": "validation",
+    "scenarioSlug": "task_reference_unknown_state",
+    "artifactGroup": "00-validation",
+    "outcome": "rejects",
+    "expectedOutcome": "rejects",
+    "artifactPaths": [
+      "evaluation/results/00-validation/vs09_task_reference_unknown_state.json"
+    ],
+    "durationMs": 18.143,
+    "variantId": "default",
+    "rejectionCategory": "unknown-task-state-reference",
+    "validationTarget": "context",
+    "expectedRejectionRegex": "/unknown.*state.*ClassA.*missing-state|state.*not.*found.*missing-state/i",
+    "actualRejected": true,
+    "actualErrorMessage": "Task \"task1\" message \"ClassA [missing-state]\" references unknown state ClassA [missing-state]"
+  },
+  {
+    "runId": "vs10_default",
+    "scenarioId": "VS10",
+    "scenarioTitle": "ambiguous synchronized transition target",
+    "scenarioKind": "validation",
+    "scenarioSlug": "ambiguous_sync_target",
+    "artifactGroup": "00-validation",
+    "outcome": "rejects",
+    "expectedOutcome": "rejects",
+    "artifactPaths": [
+      "evaluation/results/00-validation/vs10_ambiguous_sync_target.json"
+    ],
+    "durationMs": 9.922,
+    "variantId": "default",
+    "rejectionCategory": "ambiguous-sync-target",
+    "validationTarget": "context",
+    "expectedRejectionRegex": "/ambiguous.*synchronized.*transition|synchronized.*transition.*ambiguous/i",
+    "actualRejected": true,
+    "actualErrorMessage": "Ambiguous synchronized transition target in lifecycle \"ClassA\" for trigger \"sync-task\": transitions with the same trigger must share one target state, found \"a-y\" and \"a-z\"."
+  },
+  {
+    "runId": "vs11_default",
+    "scenarioId": "VS11",
+    "scenarioTitle": "decision guard with unknown class is rejected",
+    "scenarioKind": "validation",
+    "scenarioSlug": "guard_unknown_class",
+    "artifactGroup": "00-validation",
+    "outcome": "rejects",
+    "expectedOutcome": "rejects",
+    "artifactPaths": [
+      "evaluation/results/00-validation/vs11_guard_unknown_class.json"
+    ],
+    "durationMs": 6.824,
+    "variantId": "default",
+    "rejectionCategory": "unknown-guard-class",
+    "validationTarget": "context",
+    "expectedRejectionRegex": "/guard.*class.*MissingClass|unknown.*class.*MissingClass|MissingClass.*not.*in.*data.*model/i",
+    "actualRejected": true,
+    "actualErrorMessage": "Outgoing sequence flow \"Flow_1f47s0p\" of exclusive gateway \"Gateway_1fcecxd\" references unknown class MissingClass."
+  },
+  {
+    "runId": "vs12_default",
+    "scenarioId": "VS12",
+    "scenarioTitle": "decision guard with unknown state is rejected",
+    "scenarioKind": "validation",
+    "scenarioSlug": "guard_unknown_state",
+    "artifactGroup": "00-validation",
+    "outcome": "rejects",
+    "expectedOutcome": "rejects",
+    "artifactPaths": [
+      "evaluation/results/00-validation/vs12_guard_unknown_state.json"
+    ],
+    "durationMs": 9.257,
+    "variantId": "default",
+    "rejectionCategory": "unknown-guard-state",
+    "validationTarget": "context",
+    "expectedRejectionRegex": "/guard.*state.*missing-state|unknown.*state.*missing-state|missing-state.*not.*in.*lifecycle/i",
+    "actualRejected": true,
+    "actualErrorMessage": "Outgoing sequence flow \"Flow_1yuxkqv\" of exclusive gateway \"Gateway_1fcecxd\" references unknown state ClassA [missing-state]."
+  },
+  {
+    "runId": "vs13_default",
+    "scenarioId": "VS13",
+    "scenarioTitle": "BSPL rejects alternative initial states without common identifier",
+    "scenarioKind": "validation",
+    "scenarioSlug": "bspl_no_common_identifier",
+    "artifactGroup": "00-validation",
+    "outcome": "rejects",
+    "expectedOutcome": "rejects",
+    "artifactPaths": [
+      "evaluation/results/00-validation/vs13_bspl_no_common_identifier.json"
+    ],
+    "durationMs": 5.544,
+    "variantId": "default",
+    "rejectionCategory": "bspl-no-common-identifier",
+    "validationTarget": "bspl",
+    "expectedRejectionRegex": "/no common.*attributes|common.*identifier|object-identifying.*parameters/i",
+    "actualRejected": true,
+    "actualErrorMessage": "Could not determine BSPL object-identifying parameters for class ClassA; initial concrete states have no common attributes and no data-model attribute ending in _id exists."
+  },
+  {
+    "runId": "vs14_default",
+    "scenarioId": "VS14",
+    "scenarioTitle": "BSPL rejects control-flow loop",
+    "scenarioKind": "validation",
+    "scenarioSlug": "bspl_control_flow_loop",
+    "artifactGroup": "00-validation",
+    "outcome": "rejects",
+    "expectedOutcome": "rejects",
+    "artifactPaths": [
+      "evaluation/results/00-validation/vs14_bspl_control_flow_loop.json"
+    ],
+    "durationMs": 10.308,
+    "variantId": "default",
+    "rejectionCategory": "bspl-control-flow-cycle",
+    "validationTarget": "bspl",
+    "expectedRejectionRegex": "/loop|cycle|cyclic.*control.*flow|control[- ]?flow.*cycle/i",
+    "actualRejected": true,
+    "actualErrorMessage": "BSPL mapping requires acyclic control-flow; found loop/cycle ChoreographyTask_0blhxn1 -> Gateway_0ieg9pj -> ChoreographyTask_0vvrsfb -> Gateway_0ookd9i -> ChoreographyTask_0blhxn1"
+  },
+  {
+    "runId": "vs15_default",
+    "scenarioId": "VS15",
+    "scenarioTitle": "BSPL rejects lifecycle loop",
+    "scenarioKind": "validation",
+    "scenarioSlug": "bspl_lifecycle_loop",
+    "artifactGroup": "00-validation",
+    "outcome": "rejects",
+    "expectedOutcome": "rejects",
+    "artifactPaths": [
+      "evaluation/results/00-validation/vs15_bspl_lifecycle_loop.json"
+    ],
+    "durationMs": 41.004,
+    "variantId": "default",
+    "rejectionCategory": "bspl-lifecycle-cycle",
+    "validationTarget": "bspl",
+    "expectedRejectionRegex": "/lifecycle.*loop|lifecycle.*cycle|cycle.*lifecycle/i",
+    "actualRejected": true,
+    "actualErrorMessage": "BSPL mapping requires acyclic lifecycle for class ClassA; found loop/cycle a-x -> a-y -> a-x"
+  },
+  {
+    "runId": "vs16_default",
+    "scenarioId": "VS16",
+    "scenarioTitle": "BSPL rejects direct completion after parallel join",
+    "scenarioKind": "validation",
+    "scenarioSlug": "bspl_parallel_join_completion",
+    "artifactGroup": "00-validation",
+    "outcome": "rejects",
+    "expectedOutcome": "rejects",
+    "artifactPaths": [
+      "evaluation/results/00-validation/vs16_bspl_parallel_join_completion.json"
+    ],
+    "durationMs": 30.415,
+    "variantId": "default",
+    "rejectionCategory": "bspl-parallel-join-completion",
+    "validationTarget": "bspl",
+    "expectedRejectionRegex": "/parallel.*join|completion.*parallel|unsupported.*completion/i",
+    "actualRejected": true,
+    "actualErrorMessage": "BSPL mapping does not support direct completion after parallel join Gateway_1hms0l8; outgoing flow Flow_1pat3d3 targets an end event directly."
+  },
+  {
+    "runId": "vs17_default",
+    "scenarioId": "VS17",
+    "scenarioTitle": "BSPL rejects missing local-transition attribute signature",
+    "scenarioKind": "validation",
+    "scenarioSlug": "bspl_missing_attribute_signature",
+    "artifactGroup": "00-validation",
+    "outcome": "rejects",
+    "expectedOutcome": "rejects",
+    "artifactPaths": [
+      "evaluation/results/00-validation/vs17_bspl_missing_attribute_signature.json"
+    ],
+    "durationMs": 7.03,
+    "variantId": "default",
+    "rejectionCategory": "bspl-missing-attribute-signature",
+    "validationTarget": "bspl",
+    "expectedRejectionRegex": "/local transition.*attribute/i",
+    "actualRejected": true,
+    "actualErrorMessage": "BSPL mapping requires states reached by local transitions to declare at least one attribute for class ClassA; state a-y (a-y) has no attribute specifications."
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "comparison": {
+    "choreographyTraceCount": 2,
+    "protocolTraceCount": 2,
+    "sharedTraceCount": 2,
+    "recall": 1,
+    "precision": 1,
+    "protocolOnly": []
+  },
+  "constraints": []
+}

@@ -1,0 +1,537 @@
+{
+  "objectAwareRealizability": {
+    "holds": false,
+    "assumptions": {
+      "controlFlowSoundness": "assumedExternal",
+      "controlFlowRealizability": "assumedExternal"
+    },
+    "subproperties": {
+      "projectedChoreographySoundness": {
+        "optionToComplete": {
+          "holds": true,
+          "violatingStateCount": 0
+        },
+        "properInteractionCompletion": {
+          "holds": true,
+          "violatingStateCount": 0
+        },
+        "taskCoverage": {
+          "holds": true,
+          "coveredTaskCount": 4,
+          "totalTaskCount": 4,
+          "uncoveredTaskIds": []
+        },
+        "branchCoverage": {
+          "holds": true,
+          "coveredBranchCount": 2,
+          "totalBranchCount": 2,
+          "uncoveredBranchIds": []
+        },
+        "holds": true
+      },
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": false
+    },
+    "firstViolation": {
+      "subproperty": "decisionConsistency",
+      "witnessPath": [
+        "Event_00y59n3 (t_Event-00y59n3)",
+        "[Buyer] (t_local_Buyer_Order_initial_created)",
+        "place order send (t_send_ChoreographyTask-0z7uu4d_Order_created)",
+        "place order receive initial (t_recv_ChoreographyTask-0z7uu4d_Order_initial_created)",
+        "[Seller] (t_local_Seller_Order_created_accepted)",
+        "Gateway_027hgv5 (t_parallel_Gateway-027hgv5)"
+      ]
+    }
+  },
+  "stateSpace": {
+    "markings": 31,
+    "edges": 38
+  },
+  "metadata": {
+    "senderPositions": 3,
+    "transmissions": 3,
+    "decisionGateways": 1,
+    "branchAlternatives": 2,
+    "localTransitions": 2,
+    "localTransitionsByRole": {
+      "Buyer": 1,
+      "Seller": 1
+    }
+  },
+  "diagnostics": {
+    "senderProgressionViolations": 0,
+    "receiverProgressionViolations": 0,
+    "decisionConsistencyViolations": 2,
+    "optionToCompleteViolations": 0,
+    "properInteractionCompletionViolations": 0,
+    "uncoveredTasks": 0,
+    "uncoveredBranches": 0
+  },
+  "projectedChoreographySoundness": {
+    "optionToComplete": {
+      "holds": true,
+      "violatingStateCount": 0
+    },
+    "properInteractionCompletion": {
+      "holds": true,
+      "violatingStateCount": 0
+    },
+    "taskCoverage": {
+      "holds": true,
+      "coveredTaskCount": 4,
+      "totalTaskCount": 4,
+      "uncoveredTaskIds": []
+    },
+    "branchCoverage": {
+      "holds": true,
+      "coveredBranchCount": 2,
+      "totalBranchCount": 2,
+      "uncoveredBranchIds": []
+    },
+    "holds": true
+  },
+  "senderProgression": {
+    "holds": true,
+    "violationCount": 0,
+    "violations": []
+  },
+  "receiverProgression": {
+    "holds": true,
+    "violationCount": 0,
+    "violations": []
+  },
+  "decisionConsistency": {
+    "holds": false,
+    "violationCount": 2,
+    "violations": [
+      {
+        "kind": "decision-consistency",
+        "message": "Decision consistency violation for gateway \"Gateway_17i4dd4\": expected exactly one enabled branch, found 0. Enabled branches: (none). Affected roles: \"Buyer\", \"Seller\".",
+        "gatewayId": "Gateway_17i4dd4",
+        "incomingPlaceIds": [
+          "p_sf_Flow-1aaoi3c"
+        ],
+        "markedIncomingPlaceIds": [
+          "p_sf_Flow-1aaoi3c"
+        ],
+        "affectedRoles": [
+          "Buyer",
+          "Seller"
+        ],
+        "branchTransitionIds": [
+          "t_xor_Gateway-17i4dd4_ChoreographyTask-0st642d_Order_accepted",
+          "t_xor_Gateway-17i4dd4_ChoreographyTask-03qz5iu_Order_created"
+        ],
+        "enabledBranchTransitionIds": [],
+        "enabledBranchCount": 0,
+        "markingKey": "p_exists_Buyer_Order:1|p_exists_Seller_Order:1|p_sf_Flow-18wx0h7:1|p_sf_Flow-1aaoi3c:1|p_state_Buyer_Order_created:1|p_state_Seller_Order_accepted:1",
+        "trace": [
+          {
+            "transitionId": "t_Event-00y59n3",
+            "transitionLabel": "Event_00y59n3",
+            "transitionKind": "control-flow"
+          },
+          {
+            "transitionId": "t_local_Buyer_Order_initial_created",
+            "transitionLabel": "[Buyer]",
+            "transitionKind": "local"
+          },
+          {
+            "transitionId": "t_send_ChoreographyTask-0z7uu4d_Order_created",
+            "transitionLabel": "place order send",
+            "transitionKind": "send"
+          },
+          {
+            "transitionId": "t_recv_ChoreographyTask-0z7uu4d_Order_initial_created",
+            "transitionLabel": "place order receive initial",
+            "transitionKind": "receive"
+          },
+          {
+            "transitionId": "t_local_Seller_Order_created_accepted",
+            "transitionLabel": "[Seller]",
+            "transitionKind": "local"
+          },
+          {
+            "transitionId": "t_parallel_Gateway-027hgv5",
+            "transitionLabel": "Gateway_027hgv5",
+            "transitionKind": "control-flow"
+          }
+        ],
+        "traceText": [
+          "Event_00y59n3 (t_Event-00y59n3)",
+          "[Buyer] (t_local_Buyer_Order_initial_created)",
+          "place order send (t_send_ChoreographyTask-0z7uu4d_Order_created)",
+          "place order receive initial (t_recv_ChoreographyTask-0z7uu4d_Order_initial_created)",
+          "[Seller] (t_local_Seller_Order_created_accepted)",
+          "Gateway_027hgv5 (t_parallel_Gateway-027hgv5)"
+        ],
+        "marking": {
+          "p_exists_Buyer_Order": 1,
+          "p_exists_Seller_Order": 1,
+          "p_sf_Flow-18wx0h7": 1,
+          "p_sf_Flow-1aaoi3c": 1,
+          "p_state_Buyer_Order_created": 1,
+          "p_state_Seller_Order_accepted": 1
+        },
+        "markedPlaces": [
+          {
+            "placeId": "p_exists_Buyer_Order",
+            "placeLabel": "Buyer.Order+",
+            "tokens": 1
+          },
+          {
+            "placeId": "p_exists_Seller_Order",
+            "placeLabel": "Seller.Order+",
+            "tokens": 1
+          },
+          {
+            "placeId": "p_sf_Flow-18wx0h7",
+            "placeLabel": "Flow_18wx0h7",
+            "tokens": 1
+          },
+          {
+            "placeId": "p_sf_Flow-1aaoi3c",
+            "placeLabel": "Flow_1aaoi3c",
+            "tokens": 1
+          },
+          {
+            "placeId": "p_state_Buyer_Order_created",
+            "placeLabel": "Buyer.Order [created]",
+            "tokens": 1
+          },
+          {
+            "placeId": "p_state_Seller_Order_accepted",
+            "placeLabel": "Seller.Order [accepted]",
+            "tokens": 1
+          }
+        ],
+        "classification": "noneEnabled"
+      },
+      {
+        "kind": "decision-consistency",
+        "message": "Decision consistency violation for gateway \"Gateway_17i4dd4\": expected exactly one enabled branch, found 0. Enabled branches: (none). Affected roles: \"Buyer\", \"Seller\".",
+        "gatewayId": "Gateway_17i4dd4",
+        "incomingPlaceIds": [
+          "p_sf_Flow-1aaoi3c"
+        ],
+        "markedIncomingPlaceIds": [
+          "p_sf_Flow-1aaoi3c"
+        ],
+        "affectedRoles": [
+          "Buyer",
+          "Seller"
+        ],
+        "branchTransitionIds": [
+          "t_xor_Gateway-17i4dd4_ChoreographyTask-0st642d_Order_accepted",
+          "t_xor_Gateway-17i4dd4_ChoreographyTask-03qz5iu_Order_created"
+        ],
+        "enabledBranchTransitionIds": [],
+        "enabledBranchCount": 0,
+        "markingKey": "p_exists_Buyer_Order:1|p_exists_Seller_Order:1|p_sf_Flow-1aaoi3c:1|p_state_Buyer_Order_created:1|p_state_Seller_Order_accepted:1|p_trans_ChoreographyTask-0mq09os:1",
+        "trace": [
+          {
+            "transitionId": "t_Event-00y59n3",
+            "transitionLabel": "Event_00y59n3",
+            "transitionKind": "control-flow"
+          },
+          {
+            "transitionId": "t_local_Buyer_Order_initial_created",
+            "transitionLabel": "[Buyer]",
+            "transitionKind": "local"
+          },
+          {
+            "transitionId": "t_send_ChoreographyTask-0z7uu4d_Order_created",
+            "transitionLabel": "place order send",
+            "transitionKind": "send"
+          },
+          {
+            "transitionId": "t_recv_ChoreographyTask-0z7uu4d_Order_initial_created",
+            "transitionLabel": "place order receive initial",
+            "transitionKind": "receive"
+          },
+          {
+            "transitionId": "t_local_Seller_Order_created_accepted",
+            "transitionLabel": "[Seller]",
+            "transitionKind": "local"
+          },
+          {
+            "transitionId": "t_parallel_Gateway-027hgv5",
+            "transitionLabel": "Gateway_027hgv5",
+            "transitionKind": "control-flow"
+          },
+          {
+            "transitionId": "t_send_ChoreographyTask-0mq09os_Order_accepted",
+            "transitionLabel": "accept order send",
+            "transitionKind": "send"
+          }
+        ],
+        "traceText": [
+          "Event_00y59n3 (t_Event-00y59n3)",
+          "[Buyer] (t_local_Buyer_Order_initial_created)",
+          "place order send (t_send_ChoreographyTask-0z7uu4d_Order_created)",
+          "place order receive initial (t_recv_ChoreographyTask-0z7uu4d_Order_initial_created)",
+          "[Seller] (t_local_Seller_Order_created_accepted)",
+          "Gateway_027hgv5 (t_parallel_Gateway-027hgv5)",
+          "accept order send (t_send_ChoreographyTask-0mq09os_Order_accepted)"
+        ],
+        "marking": {
+          "p_exists_Buyer_Order": 1,
+          "p_exists_Seller_Order": 1,
+          "p_sf_Flow-1aaoi3c": 1,
+          "p_state_Buyer_Order_created": 1,
+          "p_state_Seller_Order_accepted": 1,
+          "p_trans_ChoreographyTask-0mq09os": 1
+        },
+        "markedPlaces": [
+          {
+            "placeId": "p_exists_Buyer_Order",
+            "placeLabel": "Buyer.Order+",
+            "tokens": 1
+          },
+          {
+            "placeId": "p_exists_Seller_Order",
+            "placeLabel": "Seller.Order+",
+            "tokens": 1
+          },
+          {
+            "placeId": "p_sf_Flow-1aaoi3c",
+            "placeLabel": "Flow_1aaoi3c",
+            "tokens": 1
+          },
+          {
+            "placeId": "p_state_Buyer_Order_created",
+            "placeLabel": "Buyer.Order [created]",
+            "tokens": 1
+          },
+          {
+            "placeId": "p_state_Seller_Order_accepted",
+            "placeLabel": "Seller.Order [accepted]",
+            "tokens": 1
+          },
+          {
+            "placeId": "p_trans_ChoreographyTask-0mq09os",
+            "placeLabel": "accept order transmission",
+            "tokens": 1
+          }
+        ],
+        "classification": "noneEnabled"
+      }
+    ]
+  },
+  "violations": [
+    {
+      "kind": "decision-consistency",
+      "message": "Decision consistency violation for gateway \"Gateway_17i4dd4\": expected exactly one enabled branch, found 0. Enabled branches: (none). Affected roles: \"Buyer\", \"Seller\".",
+      "gatewayId": "Gateway_17i4dd4",
+      "incomingPlaceIds": [
+        "p_sf_Flow-1aaoi3c"
+      ],
+      "markedIncomingPlaceIds": [
+        "p_sf_Flow-1aaoi3c"
+      ],
+      "affectedRoles": [
+        "Buyer",
+        "Seller"
+      ],
+      "branchTransitionIds": [
+        "t_xor_Gateway-17i4dd4_ChoreographyTask-0st642d_Order_accepted",
+        "t_xor_Gateway-17i4dd4_ChoreographyTask-03qz5iu_Order_created"
+      ],
+      "enabledBranchTransitionIds": [],
+      "enabledBranchCount": 0,
+      "markingKey": "p_exists_Buyer_Order:1|p_exists_Seller_Order:1|p_sf_Flow-18wx0h7:1|p_sf_Flow-1aaoi3c:1|p_state_Buyer_Order_created:1|p_state_Seller_Order_accepted:1",
+      "trace": [
+        {
+          "transitionId": "t_Event-00y59n3",
+          "transitionLabel": "Event_00y59n3",
+          "transitionKind": "control-flow"
+        },
+        {
+          "transitionId": "t_local_Buyer_Order_initial_created",
+          "transitionLabel": "[Buyer]",
+          "transitionKind": "local"
+        },
+        {
+          "transitionId": "t_send_ChoreographyTask-0z7uu4d_Order_created",
+          "transitionLabel": "place order send",
+          "transitionKind": "send"
+        },
+        {
+          "transitionId": "t_recv_ChoreographyTask-0z7uu4d_Order_initial_created",
+          "transitionLabel": "place order receive initial",
+          "transitionKind": "receive"
+        },
+        {
+          "transitionId": "t_local_Seller_Order_created_accepted",
+          "transitionLabel": "[Seller]",
+          "transitionKind": "local"
+        },
+        {
+          "transitionId": "t_parallel_Gateway-027hgv5",
+          "transitionLabel": "Gateway_027hgv5",
+          "transitionKind": "control-flow"
+        }
+      ],
+      "traceText": [
+        "Event_00y59n3 (t_Event-00y59n3)",
+        "[Buyer] (t_local_Buyer_Order_initial_created)",
+        "place order send (t_send_ChoreographyTask-0z7uu4d_Order_created)",
+        "place order receive initial (t_recv_ChoreographyTask-0z7uu4d_Order_initial_created)",
+        "[Seller] (t_local_Seller_Order_created_accepted)",
+        "Gateway_027hgv5 (t_parallel_Gateway-027hgv5)"
+      ],
+      "marking": {
+        "p_exists_Buyer_Order": 1,
+        "p_exists_Seller_Order": 1,
+        "p_sf_Flow-18wx0h7": 1,
+        "p_sf_Flow-1aaoi3c": 1,
+        "p_state_Buyer_Order_created": 1,
+        "p_state_Seller_Order_accepted": 1
+      },
+      "markedPlaces": [
+        {
+          "placeId": "p_exists_Buyer_Order",
+          "placeLabel": "Buyer.Order+",
+          "tokens": 1
+        },
+        {
+          "placeId": "p_exists_Seller_Order",
+          "placeLabel": "Seller.Order+",
+          "tokens": 1
+        },
+        {
+          "placeId": "p_sf_Flow-18wx0h7",
+          "placeLabel": "Flow_18wx0h7",
+          "tokens": 1
+        },
+        {
+          "placeId": "p_sf_Flow-1aaoi3c",
+          "placeLabel": "Flow_1aaoi3c",
+          "tokens": 1
+        },
+        {
+          "placeId": "p_state_Buyer_Order_created",
+          "placeLabel": "Buyer.Order [created]",
+          "tokens": 1
+        },
+        {
+          "placeId": "p_state_Seller_Order_accepted",
+          "placeLabel": "Seller.Order [accepted]",
+          "tokens": 1
+        }
+      ],
+      "classification": "noneEnabled"
+    },
+    {
+      "kind": "decision-consistency",
+      "message": "Decision consistency violation for gateway \"Gateway_17i4dd4\": expected exactly one enabled branch, found 0. Enabled branches: (none). Affected roles: \"Buyer\", \"Seller\".",
+      "gatewayId": "Gateway_17i4dd4",
+      "incomingPlaceIds": [
+        "p_sf_Flow-1aaoi3c"
+      ],
+      "markedIncomingPlaceIds": [
+        "p_sf_Flow-1aaoi3c"
+      ],
+      "affectedRoles": [
+        "Buyer",
+        "Seller"
+      ],
+      "branchTransitionIds": [
+        "t_xor_Gateway-17i4dd4_ChoreographyTask-0st642d_Order_accepted",
+        "t_xor_Gateway-17i4dd4_ChoreographyTask-03qz5iu_Order_created"
+      ],
+      "enabledBranchTransitionIds": [],
+      "enabledBranchCount": 0,
+      "markingKey": "p_exists_Buyer_Order:1|p_exists_Seller_Order:1|p_sf_Flow-1aaoi3c:1|p_state_Buyer_Order_created:1|p_state_Seller_Order_accepted:1|p_trans_ChoreographyTask-0mq09os:1",
+      "trace": [
+        {
+          "transitionId": "t_Event-00y59n3",
+          "transitionLabel": "Event_00y59n3",
+          "transitionKind": "control-flow"
+        },
+        {
+          "transitionId": "t_local_Buyer_Order_initial_created",
+          "transitionLabel": "[Buyer]",
+          "transitionKind": "local"
+        },
+        {
+          "transitionId": "t_send_ChoreographyTask-0z7uu4d_Order_created",
+          "transitionLabel": "place order send",
+          "transitionKind": "send"
+        },
+        {
+          "transitionId": "t_recv_ChoreographyTask-0z7uu4d_Order_initial_created",
+          "transitionLabel": "place order receive initial",
+          "transitionKind": "receive"
+        },
+        {
+          "transitionId": "t_local_Seller_Order_created_accepted",
+          "transitionLabel": "[Seller]",
+          "transitionKind": "local"
+        },
+        {
+          "transitionId": "t_parallel_Gateway-027hgv5",
+          "transitionLabel": "Gateway_027hgv5",
+          "transitionKind": "control-flow"
+        },
+        {
+          "transitionId": "t_send_ChoreographyTask-0mq09os_Order_accepted",
+          "transitionLabel": "accept order send",
+          "transitionKind": "send"
+        }
+      ],
+      "traceText": [
+        "Event_00y59n3 (t_Event-00y59n3)",
+        "[Buyer] (t_local_Buyer_Order_initial_created)",
+        "place order send (t_send_ChoreographyTask-0z7uu4d_Order_created)",
+        "place order receive initial (t_recv_ChoreographyTask-0z7uu4d_Order_initial_created)",
+        "[Seller] (t_local_Seller_Order_created_accepted)",
+        "Gateway_027hgv5 (t_parallel_Gateway-027hgv5)",
+        "accept order send (t_send_ChoreographyTask-0mq09os_Order_accepted)"
+      ],
+      "marking": {
+        "p_exists_Buyer_Order": 1,
+        "p_exists_Seller_Order": 1,
+        "p_sf_Flow-1aaoi3c": 1,
+        "p_state_Buyer_Order_created": 1,
+        "p_state_Seller_Order_accepted": 1,
+        "p_trans_ChoreographyTask-0mq09os": 1
+      },
+      "markedPlaces": [
+        {
+          "placeId": "p_exists_Buyer_Order",
+          "placeLabel": "Buyer.Order+",
+          "tokens": 1
+        },
+        {
+          "placeId": "p_exists_Seller_Order",
+          "placeLabel": "Seller.Order+",
+          "tokens": 1
+        },
+        {
+          "placeId": "p_sf_Flow-1aaoi3c",
+          "placeLabel": "Flow_1aaoi3c",
+          "tokens": 1
+        },
+        {
+          "placeId": "p_state_Buyer_Order_created",
+          "placeLabel": "Buyer.Order [created]",
+          "tokens": 1
+        },
+        {
+          "placeId": "p_state_Seller_Order_accepted",
+          "placeLabel": "Seller.Order [accepted]",
+          "tokens": 1
+        },
+        {
+          "placeId": "p_trans_ChoreographyTask-0mq09os",
+          "placeLabel": "accept order transmission",
+          "tokens": 1
+        }
+      ],
+      "classification": "noneEnabled"
+    }
+  ]
+}

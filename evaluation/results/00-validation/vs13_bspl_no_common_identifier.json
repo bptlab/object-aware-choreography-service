@@ -1,0 +1,3 @@
+{
+  "error": "Could not determine BSPL object-identifying parameters for class ClassA; initial concrete states have no common attributes and no data-model attribute ending in _id exists."
+}

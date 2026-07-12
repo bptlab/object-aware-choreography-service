@@ -1,0 +1,3 @@
+{
+  "error": "Exclusive gateway \"Gateway_1fcecxd\" must form a well-formed SESE (single-entry single-exit) decision or loop region; found 1 entry sequence flow(s) and 2 exit node(s)."
+}

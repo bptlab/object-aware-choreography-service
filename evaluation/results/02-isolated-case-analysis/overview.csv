@@ -1,0 +1,30 @@
+ID,Scenario,Kind,Expected,Outcome,COTC,Sender progression,Receiver progression,Decision consistency,Option to complete,Proper completion,Task coverage,Branch coverage,Projected soundness,Violated properties,Projected violations,COTC violations,Sender violations,Receiver violations,Decision violations,Uncovered branches,Option violations,Proper completion violations,Uncovered tasks,Markings,Edges,Truncated,Duration ms
+CS01,no-object sequence,construct,holds,holds,,yes,yes,yes,yes,yes,yes,yes,yes,,,,0,0,0,0,0,0,0,10,13,no,104.3
+CS02,single-object creation with multiple initial states and common identifier,construct,holds,holds,,yes,yes,yes,yes,yes,yes,yes,yes,,,,0,0,0,0,0,0,0,17,20,no,10.4
+CS03,two-object one-to-one creation,construct,holds,holds,,yes,yes,yes,yes,yes,yes,yes,yes,,,,0,0,0,0,0,0,0,9,9,no,14.6
+CS04,two-object one-to-many creation,construct,holds,holds,,yes,yes,yes,yes,yes,yes,yes,yes,,,,0,0,0,0,0,0,0,13,16,no,8.0
+CS05,two-object many-to-many creation,construct,holds,holds,,yes,yes,yes,yes,yes,yes,yes,yes,,,,0,0,0,0,0,0,0,15,21,no,10.7
+CS06,two-object creation without association,construct,holds,holds,,yes,yes,yes,yes,yes,yes,yes,yes,,,,0,0,0,0,0,0,0,15,21,no,32.7
+CS07,three-object mixed dependencies,construct,holds,holds,,yes,yes,yes,yes,yes,yes,yes,yes,,,,0,0,0,0,0,0,0,15,18,no,10.4
+CS08,communication with different-role local transitions and forwarding,construct,holds,holds,,yes,yes,yes,yes,yes,yes,yes,yes,,,,0,0,0,0,0,0,0,12,12,no,23.8
+CS09,multiple compatible receiver states,construct,holds,holds,,yes,yes,yes,yes,yes,yes,yes,yes,,,,0,0,0,0,0,0,0,23,29,no,11.1
+CS10,multi-class synchronization followed by forwarding,construct,holds,holds,,yes,yes,yes,yes,yes,yes,yes,yes,,,,0,0,0,0,0,0,0,21,27,no,11.8
+CS11,synchronization with multiple source states,construct,holds,holds,,yes,yes,yes,yes,yes,yes,yes,yes,,,,0,0,0,0,0,0,0,19,23,no,11.8
+CS12,state reachable by synchronization or local transition,construct,holds,holds,,yes,yes,yes,yes,yes,yes,yes,yes,,,,0,0,0,0,0,0,0,20,22,no,12.6
+CS13,combined task on same class,construct,holds,holds,,yes,yes,yes,yes,yes,yes,yes,yes,,,,0,0,0,0,0,0,0,7,7,no,15.0
+CS14,combined task across classes,construct,holds,holds,,yes,yes,yes,yes,yes,yes,yes,yes,,,,0,0,0,0,0,0,0,15,21,no,16.4
+CS15,event-based gateway with local non-creational decision,construct,holds,holds,,yes,yes,yes,yes,yes,yes,yes,yes,,,,0,0,0,0,0,0,0,16,16,no,8.9
+CS16,guarded exclusive gateway,construct,holds,holds,,yes,yes,yes,yes,yes,yes,yes,yes,,,,0,0,0,0,0,0,0,23,26,no,22.6
+CS17,exclusive gateway with affected role identification,construct,holds,holds,,yes,yes,yes,yes,yes,yes,yes,yes,,,,0,0,0,0,0,0,0,37,46,no,31.7
+CS18,parallel independent object branches,construct,holds,holds,,yes,yes,yes,yes,yes,yes,yes,yes,,,,0,0,0,0,0,0,0,61,130,no,35.2
+CS19,event-based gateway loop,construct,holds,holds,,yes,yes,yes,yes,yes,yes,yes,yes,,,,0,0,0,0,0,0,0,16,24,no,6.9
+CS20,exclusive gateway loop,construct,holds,holds,,yes,yes,yes,yes,yes,yes,yes,yes,,,,0,0,0,0,0,0,0,34,45,no,16.9
+IS01,order fulfillment,integrated,holds,holds,,yes,yes,yes,yes,yes,yes,yes,yes,,,,0,0,0,0,0,0,0,105,201,no,30.2
+IS02,item purchase plain,integrated,holds,holds,,yes,yes,yes,yes,yes,yes,yes,yes,,,,0,0,0,0,0,0,0,16,17,no,7.3
+IS03,item purchase optimistic,integrated,holds,holds,,yes,yes,yes,yes,yes,yes,yes,yes,,,,0,0,0,0,0,0,0,29,35,no,13.1
+IS04,item purchase pessimistic,integrated,holds,holds,,yes,yes,yes,yes,yes,yes,yes,yes,,,,0,0,0,0,0,0,0,23,26,no,8.1
+WS01,sender-side blocking,witness,violates,violates,,no,yes,yes,yes,yes,yes,yes,yes,senderProgression,,,3,0,0,0,0,0,0,15,17,no,7.3
+WS02,receiver-side blocking,witness,violates,violates,,yes,no,yes,yes,yes,yes,yes,yes,receiverProgression,,,0,2,0,0,0,0,0,18,20,no,7.9
+WS03,unreachable behavior,witness,violates,violates,,yes,yes,yes,yes,yes,no,no,no,taskCoverage; branchCoverage,taskCoverage; branchCoverage,,0,0,0,1,0,0,1,14,14,no,9.9
+WS04,decision misalignment,witness,violates,violates,,yes,yes,no,yes,yes,yes,yes,yes,decisionConsistency,,,0,0,2,0,0,0,0,31,38,no,13.6
+WS05,completion loss,witness,violates,violates,,yes,yes,yes,no,yes,yes,yes,no,optionToComplete,optionToComplete,,0,0,0,0,5,0,0,21,22,no,10.9

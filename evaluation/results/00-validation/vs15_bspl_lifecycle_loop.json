@@ -1,0 +1,3 @@
+{
+  "error": "BSPL mapping requires acyclic lifecycle for class ClassA; found loop/cycle a-x -> a-y -> a-x"
+}

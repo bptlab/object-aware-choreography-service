@@ -1,0 +1,3 @@
+{
+  "error": "BSPL mapping requires acyclic control-flow; found loop/cycle ChoreographyTask_0blhxn1 -> Gateway_0ieg9pj -> ChoreographyTask_0vvrsfb -> Gateway_0ookd9i -> ChoreographyTask_0blhxn1"
+}

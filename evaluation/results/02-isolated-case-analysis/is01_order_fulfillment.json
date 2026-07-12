@@ -1,0 +1,101 @@
+{
+  "objectAwareRealizability": {
+    "holds": true,
+    "assumptions": {
+      "controlFlowSoundness": "assumedExternal",
+      "controlFlowRealizability": "assumedExternal"
+    },
+    "subproperties": {
+      "projectedChoreographySoundness": {
+        "optionToComplete": {
+          "holds": true,
+          "violatingStateCount": 0
+        },
+        "properInteractionCompletion": {
+          "holds": true,
+          "violatingStateCount": 0
+        },
+        "taskCoverage": {
+          "holds": true,
+          "coveredTaskCount": 10,
+          "totalTaskCount": 10,
+          "uncoveredTaskIds": []
+        },
+        "branchCoverage": {
+          "holds": true,
+          "coveredBranchCount": 6,
+          "totalBranchCount": 6,
+          "uncoveredBranchIds": []
+        },
+        "holds": true
+      },
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    }
+  },
+  "stateSpace": {
+    "markings": 105,
+    "edges": 201
+  },
+  "metadata": {
+    "senderPositions": 6,
+    "transmissions": 7,
+    "decisionGateways": 1,
+    "branchAlternatives": 6,
+    "localTransitions": 7,
+    "localTransitionsByRole": {
+      "Seller": 4,
+      "Buyer": 2,
+      "Warehouse": 1
+    }
+  },
+  "diagnostics": {
+    "senderProgressionViolations": 0,
+    "receiverProgressionViolations": 0,
+    "decisionConsistencyViolations": 0,
+    "optionToCompleteViolations": 0,
+    "properInteractionCompletionViolations": 0,
+    "uncoveredTasks": 0,
+    "uncoveredBranches": 0
+  },
+  "projectedChoreographySoundness": {
+    "optionToComplete": {
+      "holds": true,
+      "violatingStateCount": 0
+    },
+    "properInteractionCompletion": {
+      "holds": true,
+      "violatingStateCount": 0
+    },
+    "taskCoverage": {
+      "holds": true,
+      "coveredTaskCount": 10,
+      "totalTaskCount": 10,
+      "uncoveredTaskIds": []
+    },
+    "branchCoverage": {
+      "holds": true,
+      "coveredBranchCount": 6,
+      "totalBranchCount": 6,
+      "uncoveredBranchIds": []
+    },
+    "holds": true
+  },
+  "senderProgression": {
+    "holds": true,
+    "violationCount": 0,
+    "violations": []
+  },
+  "receiverProgression": {
+    "holds": true,
+    "violationCount": 0,
+    "violations": []
+  },
+  "decisionConsistency": {
+    "holds": true,
+    "violationCount": 0,
+    "violations": []
+  },
+  "violations": []
+}

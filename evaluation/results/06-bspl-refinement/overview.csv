@@ -1,0 +1,25 @@
+ID,Scenario,Kind,Expected,Outcome,Initial recall,Initial precision,Constraints,Constraint categories,Refined recall,Refined precision,Exact before,Exact after,No refinement needed,Ablation avg precision,Ablation avg precision reduction,Ablation min precision,Ablation max precision,Ablation removals with loss,Ablation removals without loss,Ablation recall preserved,Ablation interpretation,Reason,Duration ms
+CS01,no-object sequence,construct,holds,holds,1,1,0,,1,1,yes,yes,yes,,,,,,,,diagnostic-flexibility-not-minimality,,42.8
+CS02,single-object creation with multiple initial states and common identifier,construct,holds,holds,1,1,0,,1,1,yes,yes,yes,,,,,,,,diagnostic-flexibility-not-minimality,,38.7
+CS03,two-object one-to-one creation,construct,holds,holds,1,1,0,,1,1,yes,yes,yes,,,,,,,,diagnostic-flexibility-not-minimality,,12.1
+CS04,two-object one-to-many creation,construct,holds,holds,1,1,0,,1,1,yes,yes,yes,,,,,,,,diagnostic-flexibility-not-minimality,,25.1
+CS05,two-object many-to-many creation,construct,holds,holds,1,1,0,,1,1,yes,yes,yes,,,,,,,,diagnostic-flexibility-not-minimality,,23.2
+CS06,two-object creation without association,construct,holds,holds,1,1,0,,1,1,yes,yes,yes,,,,,,,,diagnostic-flexibility-not-minimality,,19.7
+CS07,three-object mixed dependencies,construct,holds,holds,1,0.5000,1,precedence=1,1,1,no,yes,no,0.5000,0.5000,0.5000,0.5000,1,0,yes,diagnostic-flexibility-not-minimality,,33.1
+CS08,communication with different-role local transitions and forwarding,construct,holds,holds,1,1,0,,1,1,yes,yes,yes,,,,,,,,diagnostic-flexibility-not-minimality,,31.4
+CS09,multiple compatible receiver states,construct,holds,holds,1,1,0,,1,1,yes,yes,yes,,,,,,,,diagnostic-flexibility-not-minimality,,16.7
+CS10,multi-class synchronization followed by forwarding,construct,holds,holds,1,0.5000,1,precedence=1,1,1,no,yes,no,0.5000,0.5000,0.5000,0.5000,1,0,yes,diagnostic-flexibility-not-minimality,,16.9
+CS11,synchronization with multiple source states,construct,holds,holds,1,1,0,,1,1,yes,yes,yes,,,,,,,,diagnostic-flexibility-not-minimality,,22.1
+CS12,state reachable by synchronization or local transition,construct,holds,holds,1,0.6667,1,exclusion=1,1,1,no,yes,no,0.6667,0.3333,0.6667,0.6667,1,0,yes,diagnostic-flexibility-not-minimality,,18.4
+CS13,combined task on same class,construct,holds,holds,1,1,0,,1,1,yes,yes,yes,,,,,,,,diagnostic-flexibility-not-minimality,,6.7
+CS14,combined task across classes,construct,holds,holds,1,1,0,,1,1,yes,yes,yes,,,,,,,,diagnostic-flexibility-not-minimality,,15.3
+CS15,event-based gateway with local non-creational decision,construct,holds,holds,1,1,0,,1,1,yes,yes,yes,,,,,,,,diagnostic-flexibility-not-minimality,,9.8
+CS16,guarded exclusive gateway,construct,holds,holds,1,0.3333,4,disjunctivePrecedence=2; guardInformation=2,1,1,no,yes,no,0.8333,0.1667,0.6667,1,2,2,yes,diagnostic-flexibility-not-minimality,,50.2
+CS17,exclusive gateway with affected role identification,construct,skips,skips,,,,,,,,,,,,,,,,,,Number of independent tasks is too large,
+CS18,parallel independent object branches,construct,holds,holds,1,0.4000,2,precedence=2,1,1,no,yes,no,0.6667,0.3333,0.6667,0.6667,2,0,yes,diagnostic-flexibility-not-minimality,,26.1
+CS19,event-based gateway loop,construct,skips,skips,,,,,,,,,,,,,,,,,,BSPL mapping is expected to reject.,
+CS20,exclusive gateway loop,construct,skips,skips,,,,,,,,,,,,,,,,,,BSPL mapping is expected to reject.,
+IS01,order fulfillment,integrated,holds,holds,1,0.0055,9,disjunctivePrecedence=2; exclusion=2; guardInformation=1; precedence=4,1,1,no,yes,no,0.5466,0.4534,0.0968,1,8,1,yes,diagnostic-flexibility-not-minimality,,319.7
+IS02,item purchase plain,integrated,holds,holds,1,0.5000,2,exclusion=1; precedence=1,1,1,no,yes,no,0.6667,0.3333,0.6667,0.6667,2,0,yes,diagnostic-flexibility-not-minimality,,9.1
+IS03,item purchase optimistic,integrated,holds,holds,1,0.4000,6,exclusion=5; precedence=1,1,1,no,yes,no,0.9000,0.1000,0.8000,1,3,3,yes,diagnostic-flexibility-not-minimality,,20.9
+IS04,item purchase pessimistic,integrated,skips,skips,,,,,,,,,,,,,,,,,,Pessimistic item purchase is not included in BSPL evaluation.,

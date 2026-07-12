@@ -1,0 +1,14 @@
+objectawarechoreographyprotocol {
+  roles Buyer, Seller
+  parameters out case_id key, out completed
+  private attribute_item_dimensions, attribute_item_item-id, attribute_item_price, attribute_order_order-id, state_item_delivered, state_item_ordered, state_order_accepted, state_order_rejected, task_accept-order, task_decline-offer, task_decline-order, task_decline-request, task_request-item
+  
+  Seller -> Buyer: accept-order [in case_id key, in attribute_item_item-id, in attribute_item_price, in attribute_order_order-id, out state_item_ordered, out state_order_accepted, out task_accept-order, nil state_order_rejected]
+  Buyer -> Seller: decline-offer [in case_id key, out completed, out task_decline-offer]
+  Seller -> Buyer: decline-order [in case_id key, in attribute_order_order-id, out completed, out state_order_rejected, out task_decline-order, nil state_order_accepted]
+  Seller -> Buyer: decline-request [in case_id key, out completed, out task_decline-request]
+  Seller -> Buyer: offer-item [in case_id key, out attribute_item_item-id, out attribute_item_price]
+  Buyer -> Seller: place-order [in case_id key, in attribute_item_item-id, in attribute_item_price, out attribute_order_order-id]
+  Buyer -> Seller: request-item [out case_id key, out task_request-item]
+  Seller -> Buyer: ship-item [in case_id key, in attribute_item_item-id, in attribute_item_price, in state_item_ordered, out attribute_item_dimensions, out completed, out state_item_delivered]
+}

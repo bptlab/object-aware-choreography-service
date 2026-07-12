@@ -1,0 +1,8 @@
+objectawarechoreographyprotocol {
+  roles RoleA, RoleB
+  parameters out case_id key, out completed
+  private attribute_classa_a-id, state_classa_a-y, task_sync-task
+  
+  RoleA -> RoleB: sync-task [in case_id key, in attribute_classa_a-id, out completed, out state_classa_a-y, out task_sync-task]
+  RoleA -> RoleB: task1 [out case_id key, out attribute_classa_a-id]
+}

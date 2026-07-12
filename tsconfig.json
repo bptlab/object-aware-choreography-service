@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022"],
+    "declaration": true,
+    "declarationDir": "build/types",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "rootDir": "src",
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "outDir": "build",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+    "typeRoots": ["./node_modules/@types", "./types"],
+    "types": ["node"]
+  },
+  "exclude": [
+    "node_modules",
+    "lib",
+    "_external",
+    "evaluation",
+    "test",
+    "build",
+    "eslint.config.mjs"
+  ]
+}

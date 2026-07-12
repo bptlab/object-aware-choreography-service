@@ -1,0 +1,11 @@
+objectawarechoreographyprotocol {
+  roles Buyer, Seller
+  parameters out case_id key, out completed
+  private attribute_item_dimensions, attribute_item_item-id, attribute_item_price, state_item_delivered, state_item_ordered, task_decline-offer, task_order-item, task_request-item
+  
+  Buyer -> Seller: decline-offer [in case_id key, out completed, out task_decline-offer]
+  Seller -> Buyer: offer-item [in case_id key, out attribute_item_item-id, out attribute_item_price]
+  Buyer -> Seller: order-item [in case_id key, in attribute_item_item-id, in attribute_item_price, out state_item_ordered, out task_order-item]
+  Buyer -> Seller: request-item [out case_id key, out task_request-item]
+  Seller -> Buyer: ship-item [in case_id key, in attribute_item_item-id, in attribute_item_price, in state_item_ordered, out attribute_item_dimensions, out completed, out state_item_delivered]
+}

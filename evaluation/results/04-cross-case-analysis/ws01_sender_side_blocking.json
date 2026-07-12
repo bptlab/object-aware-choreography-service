@@ -1,0 +1,310 @@
+{
+  "objectAwareRealizability": {
+    "holds": false,
+    "assumptions": {
+      "controlFlowSoundness": "assumedExternal",
+      "controlFlowRealizability": "assumedExternal"
+    },
+    "subproperties": {
+      "projectedChoreographySoundness": {
+        "optionToComplete": {
+          "holds": true,
+          "violatingStateCount": 0
+        },
+        "properInteractionCompletion": {
+          "holds": true,
+          "violatingStateCount": 0
+        },
+        "taskCoverage": {
+          "holds": true,
+          "coveredTaskCount": 3,
+          "totalTaskCount": 3,
+          "uncoveredTaskIds": []
+        },
+        "branchCoverage": {
+          "holds": true,
+          "coveredBranchCount": 0,
+          "totalBranchCount": 0,
+          "uncoveredBranchIds": []
+        },
+        "holds": true
+      },
+      "senderProgression": false,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "firstViolation": {
+      "subproperty": "senderProgression"
+    }
+  },
+  "crossCaseAnalysis": {
+    "holds": false,
+    "subproperties": {
+      "caseOptionToComplete": true,
+      "projectedChoreographySoundness": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": false,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    }
+  },
+  "stateSpace": {
+    "markings": 14,
+    "edges": 15,
+    "truncated": false,
+    "truncationReasons": [],
+    "limits": {
+      "maxMarkings": 50000,
+      "maxDepth": 100
+    }
+  },
+  "metadata": {
+    "caseOptionToCompleteSemantics": "explicit-sink-place: completed cases occur in the typed sink place and must not occur in any non-sink case-control or transmission place",
+    "activeCases": 1,
+    "checkedCaseStatePairs": 12,
+    "taskCoverageTasks": 3,
+    "branchCoverageBranches": 0,
+    "senderPositions": 3,
+    "transmissions": 2,
+    "decisionGateways": 0,
+    "localTransitions": 2
+  },
+  "diagnostics": {
+    "optionToCompleteViolations": 0,
+    "caseOptionToCompleteViolations": 0,
+    "properInteractionCompletionViolations": 0,
+    "uncoveredTasks": 0,
+    "uncoveredBranches": 0,
+    "senderProgressionViolations": 3,
+    "receiverProgressionViolations": 0,
+    "decisionConsistencyViolations": 0
+  },
+  "projectedChoreographySoundness": {
+    "optionToComplete": {
+      "holds": true,
+      "violatingStateCount": 0
+    },
+    "properInteractionCompletion": {
+      "holds": true,
+      "violatingStateCount": 0
+    },
+    "taskCoverage": {
+      "holds": true,
+      "coveredTaskCount": 3,
+      "totalTaskCount": 3,
+      "uncoveredTaskIds": []
+    },
+    "branchCoverage": {
+      "holds": true,
+      "coveredBranchCount": 0,
+      "totalBranchCount": 0,
+      "uncoveredBranchIds": []
+    },
+    "holds": true
+  },
+  "caseOptionToComplete": {
+    "holds": true,
+    "violationCount": 0,
+    "activeCaseCount": 1,
+    "checkedPairCount": 12,
+    "completionSemantics": "explicit-sink-place: completed cases occur in the typed sink place and must not occur in any non-sink case-control or transmission place",
+    "violations": []
+  },
+  "senderProgression": {
+    "holds": false,
+    "violations": [
+      {
+        "kind": "sender-progression",
+        "message": "Sender progression violation for control-flow place \"Control Flow Flow_0w62i2w\": case case1 reached the sender side of task \"accept order\", but no sequence of local lifecycle transitions can enable any corresponding sender transition for that same case. Sender transitions: Transition_send_ChoreographyTask_0gwtneo. Local transitions considered: Transition_create_Buyer_Order_created, Transition_local_Seller_Order_created_accepted.",
+        "markingKey": "Place_cf_Flow_0w62i2w[DataClass_Case:case1]|Place_cf_Flow_1dg7y2u[DataClass_Case:case1]|Place_part_Buyer[DataClass_Case:case1,DataClass_Role_Buyer:Buyer_1]|Place_part_Seller[DataClass_Case:case1,DataClass_Role_Seller:Seller_1]|Place_part_Warehouse[DataClass_Case:case1,DataClass_Role_Warehouse:Warehouse_1]|Place_pool_Buyer[DataClass_Role_Buyer:Buyer_1]|Place_pool_Seller[DataClass_Role_Seller:Seller_1]|Place_pool_Warehouse[DataClass_Role_Warehouse:Warehouse_1]",
+        "controlFlowPlaceId": "Place_cf_Flow_0w62i2w",
+        "controlFlowPlaceName": "Control Flow Flow_0w62i2w",
+        "caseToken": [
+          {
+            "typeId": "DataClass_Case",
+            "value": "case1"
+          }
+        ],
+        "caseTokenKey": "DataClass_Case:case1",
+        "caseId": "case1",
+        "taskId": "ChoreographyTask_0gwtneo",
+        "taskName": "accept order",
+        "taskIds": [
+          "ChoreographyTask_0gwtneo"
+        ],
+        "taskNames": [
+          "accept order"
+        ],
+        "senderTransitionIds": [
+          "Transition_send_ChoreographyTask_0gwtneo"
+        ],
+        "localTransitionIds": [
+          "Transition_create_Buyer_Order_created",
+          "Transition_local_Seller_Order_created_accepted"
+        ]
+      },
+      {
+        "kind": "sender-progression",
+        "message": "Sender progression violation for control-flow place \"Control Flow Flow_0w62i2w\": case case1 reached the sender side of task \"accept order\", but no sequence of local lifecycle transitions can enable any corresponding sender transition for that same case. Sender transitions: Transition_send_ChoreographyTask_0gwtneo. Local transitions considered: Transition_create_Buyer_Order_created, Transition_local_Seller_Order_created_accepted.",
+        "markingKey": "Place_aware_Buyer_Order[DataClass_Role_Buyer:Buyer_1,DataClass_Object_Order:Order_1]|Place_cf_Flow_0w62i2w[DataClass_Case:case1]|Place_cf_Flow_1dg7y2u[DataClass_Case:case1]|Place_incl_Order[DataClass_Case:case1]|Place_obj_Order[DataClass_Case:case1,DataClass_Object_Order:Order_1]|Place_part_Buyer[DataClass_Case:case1,DataClass_Role_Buyer:Buyer_1]|Place_part_Seller[DataClass_Case:case1,DataClass_Role_Seller:Seller_1]|Place_part_Warehouse[DataClass_Case:case1,DataClass_Role_Warehouse:Warehouse_1]|Place_pool_Buyer[DataClass_Role_Buyer:Buyer_1]|Place_pool_Seller[DataClass_Role_Seller:Seller_1]|Place_pool_Warehouse[DataClass_Role_Warehouse:Warehouse_1]|Place_state_Buyer_Order_created[DataClass_Role_Buyer:Buyer_1,DataClass_Object_Order:Order_1]",
+        "controlFlowPlaceId": "Place_cf_Flow_0w62i2w",
+        "controlFlowPlaceName": "Control Flow Flow_0w62i2w",
+        "caseToken": [
+          {
+            "typeId": "DataClass_Case",
+            "value": "case1"
+          }
+        ],
+        "caseTokenKey": "DataClass_Case:case1",
+        "caseId": "case1",
+        "taskId": "ChoreographyTask_0gwtneo",
+        "taskName": "accept order",
+        "taskIds": [
+          "ChoreographyTask_0gwtneo"
+        ],
+        "taskNames": [
+          "accept order"
+        ],
+        "senderTransitionIds": [
+          "Transition_send_ChoreographyTask_0gwtneo"
+        ],
+        "localTransitionIds": [
+          "Transition_create_Buyer_Order_created",
+          "Transition_local_Seller_Order_created_accepted"
+        ]
+      },
+      {
+        "kind": "sender-progression",
+        "message": "Sender progression violation for control-flow place \"Control Flow Flow_0w62i2w\": case case1 reached the sender side of task \"accept order\", but no sequence of local lifecycle transitions can enable any corresponding sender transition for that same case. Sender transitions: Transition_send_ChoreographyTask_0gwtneo. Local transitions considered: Transition_create_Buyer_Order_created, Transition_local_Seller_Order_created_accepted.",
+        "markingKey": "Place_aware_Buyer_Order[DataClass_Role_Buyer:Buyer_1,DataClass_Object_Order:Order_1]|Place_cf_Flow_0w62i2w[DataClass_Case:case1]|Place_incl_Order[DataClass_Case:case1]|Place_obj_Order[DataClass_Case:case1,DataClass_Object_Order:Order_1]|Place_part_Buyer[DataClass_Case:case1,DataClass_Role_Buyer:Buyer_1]|Place_part_Seller[DataClass_Case:case1,DataClass_Role_Seller:Seller_1]|Place_part_Warehouse[DataClass_Case:case1,DataClass_Role_Warehouse:Warehouse_1]|Place_pool_Buyer[DataClass_Role_Buyer:Buyer_1]|Place_pool_Seller[DataClass_Role_Seller:Seller_1]|Place_pool_Warehouse[DataClass_Role_Warehouse:Warehouse_1]|Place_state_Buyer_Order_created[DataClass_Role_Buyer:Buyer_1,DataClass_Object_Order:Order_1]|Place_tx_ChoreographyTask_0yqkzdm[DataClass_Case:case1,DataClass_Object_Order:Order_1]",
+        "controlFlowPlaceId": "Place_cf_Flow_0w62i2w",
+        "controlFlowPlaceName": "Control Flow Flow_0w62i2w",
+        "caseToken": [
+          {
+            "typeId": "DataClass_Case",
+            "value": "case1"
+          }
+        ],
+        "caseTokenKey": "DataClass_Case:case1",
+        "caseId": "case1",
+        "taskId": "ChoreographyTask_0gwtneo",
+        "taskName": "accept order",
+        "taskIds": [
+          "ChoreographyTask_0gwtneo"
+        ],
+        "taskNames": [
+          "accept order"
+        ],
+        "senderTransitionIds": [
+          "Transition_send_ChoreographyTask_0gwtneo"
+        ],
+        "localTransitionIds": [
+          "Transition_create_Buyer_Order_created",
+          "Transition_local_Seller_Order_created_accepted"
+        ]
+      }
+    ]
+  },
+  "receiverProgression": {
+    "holds": true,
+    "violations": []
+  },
+  "decisionConsistency": {
+    "holds": true,
+    "violations": []
+  },
+  "violations": [
+    {
+      "kind": "sender-progression",
+      "message": "Sender progression violation for control-flow place \"Control Flow Flow_0w62i2w\": case case1 reached the sender side of task \"accept order\", but no sequence of local lifecycle transitions can enable any corresponding sender transition for that same case. Sender transitions: Transition_send_ChoreographyTask_0gwtneo. Local transitions considered: Transition_create_Buyer_Order_created, Transition_local_Seller_Order_created_accepted.",
+      "markingKey": "Place_aware_Buyer_Order[DataClass_Role_Buyer:Buyer_1,DataClass_Object_Order:Order_1]|Place_cf_Flow_0w62i2w[DataClass_Case:case1]|Place_cf_Flow_1dg7y2u[DataClass_Case:case1]|Place_incl_Order[DataClass_Case:case1]|Place_obj_Order[DataClass_Case:case1,DataClass_Object_Order:Order_1]|Place_part_Buyer[DataClass_Case:case1,DataClass_Role_Buyer:Buyer_1]|Place_part_Seller[DataClass_Case:case1,DataClass_Role_Seller:Seller_1]|Place_part_Warehouse[DataClass_Case:case1,DataClass_Role_Warehouse:Warehouse_1]|Place_pool_Buyer[DataClass_Role_Buyer:Buyer_1]|Place_pool_Seller[DataClass_Role_Seller:Seller_1]|Place_pool_Warehouse[DataClass_Role_Warehouse:Warehouse_1]|Place_state_Buyer_Order_created[DataClass_Role_Buyer:Buyer_1,DataClass_Object_Order:Order_1]",
+      "controlFlowPlaceId": "Place_cf_Flow_0w62i2w",
+      "controlFlowPlaceName": "Control Flow Flow_0w62i2w",
+      "caseToken": [
+        {
+          "typeId": "DataClass_Case",
+          "value": "case1"
+        }
+      ],
+      "caseTokenKey": "DataClass_Case:case1",
+      "caseId": "case1",
+      "taskId": "ChoreographyTask_0gwtneo",
+      "taskName": "accept order",
+      "taskIds": [
+        "ChoreographyTask_0gwtneo"
+      ],
+      "taskNames": [
+        "accept order"
+      ],
+      "senderTransitionIds": [
+        "Transition_send_ChoreographyTask_0gwtneo"
+      ],
+      "localTransitionIds": [
+        "Transition_create_Buyer_Order_created",
+        "Transition_local_Seller_Order_created_accepted"
+      ]
+    },
+    {
+      "kind": "sender-progression",
+      "message": "Sender progression violation for control-flow place \"Control Flow Flow_0w62i2w\": case case1 reached the sender side of task \"accept order\", but no sequence of local lifecycle transitions can enable any corresponding sender transition for that same case. Sender transitions: Transition_send_ChoreographyTask_0gwtneo. Local transitions considered: Transition_create_Buyer_Order_created, Transition_local_Seller_Order_created_accepted.",
+      "markingKey": "Place_aware_Buyer_Order[DataClass_Role_Buyer:Buyer_1,DataClass_Object_Order:Order_1]|Place_cf_Flow_0w62i2w[DataClass_Case:case1]|Place_incl_Order[DataClass_Case:case1]|Place_obj_Order[DataClass_Case:case1,DataClass_Object_Order:Order_1]|Place_part_Buyer[DataClass_Case:case1,DataClass_Role_Buyer:Buyer_1]|Place_part_Seller[DataClass_Case:case1,DataClass_Role_Seller:Seller_1]|Place_part_Warehouse[DataClass_Case:case1,DataClass_Role_Warehouse:Warehouse_1]|Place_pool_Buyer[DataClass_Role_Buyer:Buyer_1]|Place_pool_Seller[DataClass_Role_Seller:Seller_1]|Place_pool_Warehouse[DataClass_Role_Warehouse:Warehouse_1]|Place_state_Buyer_Order_created[DataClass_Role_Buyer:Buyer_1,DataClass_Object_Order:Order_1]|Place_tx_ChoreographyTask_0yqkzdm[DataClass_Case:case1,DataClass_Object_Order:Order_1]",
+      "controlFlowPlaceId": "Place_cf_Flow_0w62i2w",
+      "controlFlowPlaceName": "Control Flow Flow_0w62i2w",
+      "caseToken": [
+        {
+          "typeId": "DataClass_Case",
+          "value": "case1"
+        }
+      ],
+      "caseTokenKey": "DataClass_Case:case1",
+      "caseId": "case1",
+      "taskId": "ChoreographyTask_0gwtneo",
+      "taskName": "accept order",
+      "taskIds": [
+        "ChoreographyTask_0gwtneo"
+      ],
+      "taskNames": [
+        "accept order"
+      ],
+      "senderTransitionIds": [
+        "Transition_send_ChoreographyTask_0gwtneo"
+      ],
+      "localTransitionIds": [
+        "Transition_create_Buyer_Order_created",
+        "Transition_local_Seller_Order_created_accepted"
+      ]
+    },
+    {
+      "kind": "sender-progression",
+      "message": "Sender progression violation for control-flow place \"Control Flow Flow_0w62i2w\": case case1 reached the sender side of task \"accept order\", but no sequence of local lifecycle transitions can enable any corresponding sender transition for that same case. Sender transitions: Transition_send_ChoreographyTask_0gwtneo. Local transitions considered: Transition_create_Buyer_Order_created, Transition_local_Seller_Order_created_accepted.",
+      "markingKey": "Place_cf_Flow_0w62i2w[DataClass_Case:case1]|Place_cf_Flow_1dg7y2u[DataClass_Case:case1]|Place_part_Buyer[DataClass_Case:case1,DataClass_Role_Buyer:Buyer_1]|Place_part_Seller[DataClass_Case:case1,DataClass_Role_Seller:Seller_1]|Place_part_Warehouse[DataClass_Case:case1,DataClass_Role_Warehouse:Warehouse_1]|Place_pool_Buyer[DataClass_Role_Buyer:Buyer_1]|Place_pool_Seller[DataClass_Role_Seller:Seller_1]|Place_pool_Warehouse[DataClass_Role_Warehouse:Warehouse_1]",
+      "controlFlowPlaceId": "Place_cf_Flow_0w62i2w",
+      "controlFlowPlaceName": "Control Flow Flow_0w62i2w",
+      "caseToken": [
+        {
+          "typeId": "DataClass_Case",
+          "value": "case1"
+        }
+      ],
+      "caseTokenKey": "DataClass_Case:case1",
+      "caseId": "case1",
+      "taskId": "ChoreographyTask_0gwtneo",
+      "taskName": "accept order",
+      "taskIds": [
+        "ChoreographyTask_0gwtneo"
+      ],
+      "taskNames": [
+        "accept order"
+      ],
+      "senderTransitionIds": [
+        "Transition_send_ChoreographyTask_0gwtneo"
+      ],
+      "localTransitionIds": [
+        "Transition_create_Buyer_Order_created",
+        "Transition_local_Seller_Order_created_accepted"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,230 @@
+{
+  "discoveredConstraints": [
+    {
+      "kind": "exclusion",
+      "id": "exclusion:accept-order!decline-offer",
+      "tasks": [
+        "accept-order",
+        "decline-offer"
+      ],
+      "source": {
+        "reason": "eventBasedSplit",
+        "gatewayId": "Gateway_0x4ydak",
+        "explanation": "Tasks accept-order and decline-offer are in alternative branches of gateway Gateway_0x4ydak."
+      },
+      "violatingTraces": [
+        [
+          "request-item",
+          "offer-item",
+          "place-order",
+          "accept-order",
+          "decline-offer"
+        ]
+      ]
+    },
+    {
+      "kind": "exclusion",
+      "id": "exclusion:accept-order!decline-request",
+      "tasks": [
+        "accept-order",
+        "decline-request"
+      ],
+      "source": {
+        "reason": "eventBasedSplit",
+        "gatewayId": "Gateway_1n3hy2b",
+        "explanation": "Tasks accept-order and decline-request are in alternative branches of gateway Gateway_1n3hy2b."
+      },
+      "violatingTraces": [
+        [
+          "request-item",
+          "offer-item",
+          "place-order",
+          "accept-order",
+          "decline-request"
+        ]
+      ]
+    },
+    {
+      "kind": "exclusion",
+      "id": "exclusion:decline-offer!place-order",
+      "tasks": [
+        "decline-offer",
+        "place-order"
+      ],
+      "source": {
+        "reason": "eventBasedSplit",
+        "gatewayId": "Gateway_0x4ydak",
+        "explanation": "Tasks decline-offer and place-order are first observable tasks in alternative branches of gateway Gateway_0x4ydak."
+      },
+      "violatingTraces": [
+        [
+          "request-item",
+          "offer-item",
+          "place-order",
+          "decline-offer"
+        ],
+        [
+          "request-item",
+          "offer-item",
+          "place-order",
+          "accept-order",
+          "decline-offer"
+        ]
+      ]
+    },
+    {
+      "kind": "exclusion",
+      "id": "exclusion:decline-request!offer-item",
+      "tasks": [
+        "decline-request",
+        "offer-item"
+      ],
+      "source": {
+        "reason": "eventBasedSplit",
+        "gatewayId": "Gateway_1n3hy2b",
+        "explanation": "Tasks decline-request and offer-item are first observable tasks in alternative branches of gateway Gateway_1n3hy2b."
+      },
+      "violatingTraces": [
+        [
+          "request-item",
+          "offer-item",
+          "decline-request"
+        ],
+        [
+          "request-item",
+          "offer-item",
+          "place-order",
+          "decline-request"
+        ],
+        [
+          "request-item",
+          "offer-item",
+          "place-order",
+          "accept-order",
+          "decline-request"
+        ]
+      ]
+    },
+    {
+      "kind": "exclusion",
+      "id": "exclusion:decline-request!place-order",
+      "tasks": [
+        "decline-request",
+        "place-order"
+      ],
+      "source": {
+        "reason": "eventBasedSplit",
+        "gatewayId": "Gateway_1n3hy2b",
+        "explanation": "Tasks place-order and decline-request are in alternative branches of gateway Gateway_1n3hy2b."
+      },
+      "violatingTraces": [
+        [
+          "request-item",
+          "offer-item",
+          "place-order",
+          "decline-request"
+        ],
+        [
+          "request-item",
+          "offer-item",
+          "place-order",
+          "accept-order",
+          "decline-request"
+        ]
+      ]
+    },
+    {
+      "kind": "precedence",
+      "id": "precedence:offer-item->decline-offer",
+      "predecessor": "offer-item",
+      "constrained": "decline-offer",
+      "source": {
+        "reason": "sequence",
+        "explanation": "Task decline-offer is not enabled until offer-item has occurred."
+      },
+      "violatingTraces": [
+        [
+          "request-item",
+          "decline-offer"
+        ]
+      ]
+    }
+  ],
+  "initialComparison": {
+    "choreographyTraceCount": 4,
+    "protocolTraceCount": 10,
+    "sharedTraceCount": 4,
+    "recall": 1,
+    "precision": 0.4,
+    "protocolOnly": [
+      [
+        "request-item",
+        "decline-offer"
+      ],
+      [
+        "request-item",
+        "offer-item",
+        "decline-request"
+      ],
+      [
+        "request-item",
+        "offer-item",
+        "place-order",
+        "decline-offer"
+      ],
+      [
+        "request-item",
+        "offer-item",
+        "place-order",
+        "decline-request"
+      ],
+      [
+        "request-item",
+        "offer-item",
+        "place-order",
+        "accept-order",
+        "decline-offer"
+      ],
+      [
+        "request-item",
+        "offer-item",
+        "place-order",
+        "accept-order",
+        "decline-request"
+      ]
+    ]
+  },
+  "refinedComparison": {
+    "choreographyTraceCount": 4,
+    "protocolTraceCount": 4,
+    "sharedTraceCount": 4,
+    "recall": 1,
+    "precision": 1,
+    "choreographyOnly": [],
+    "protocolOnly": [],
+    "shared": [
+      [
+        "request-item",
+        "decline-request"
+      ],
+      [
+        "request-item",
+        "offer-item",
+        "decline-offer"
+      ],
+      [
+        "request-item",
+        "offer-item",
+        "place-order",
+        "decline-order"
+      ],
+      [
+        "request-item",
+        "offer-item",
+        "place-order",
+        "accept-order",
+        "ship-item"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "objectAwareRealizability": {
+    "holds": true,
+    "assumptions": {
+      "controlFlowSoundness": "assumedExternal",
+      "controlFlowRealizability": "assumedExternal"
+    },
+    "subproperties": {
+      "projectedChoreographySoundness": {
+        "optionToComplete": {
+          "holds": true,
+          "violatingStateCount": 0
+        },
+        "properInteractionCompletion": {
+          "holds": true,
+          "violatingStateCount": 0
+        },
+        "taskCoverage": {
+          "holds": true,
+          "coveredTaskCount": 8,
+          "totalTaskCount": 8,
+          "uncoveredTaskIds": []
+        },
+        "branchCoverage": {
+          "holds": true,
+          "coveredBranchCount": 0,
+          "totalBranchCount": 0,
+          "uncoveredBranchIds": []
+        },
+        "holds": true
+      },
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    }
+  },
+  "crossCaseAnalysis": {
+    "holds": true,
+    "subproperties": {
+      "caseOptionToComplete": true,
+      "projectedChoreographySoundness": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    }
+  },
+  "stateSpace": {
+    "markings": 998,
+    "edges": 2165,
+    "truncated": false,
+    "truncationReasons": [],
+    "limits": {
+      "maxMarkings": 300000,
+      "maxDepth": 100
+    }
+  },
+  "metadata": {
+    "caseOptionToCompleteSemantics": "explicit-sink-place: completed cases occur in the typed sink place and must not occur in any non-sink case-control or transmission place",
+    "activeCases": 2,
+    "checkedCaseStatePairs": 1482,
+    "taskCoverageTasks": 8,
+    "branchCoverageBranches": 0,
+    "senderPositions": 5,
+    "transmissions": 5,
+    "decisionGateways": 0,
+    "localTransitions": 3
+  },
+  "diagnostics": {
+    "optionToCompleteViolations": 0,
+    "caseOptionToCompleteViolations": 0,
+    "properInteractionCompletionViolations": 0,
+    "uncoveredTasks": 0,
+    "uncoveredBranches": 0,
+    "senderProgressionViolations": 0,
+    "receiverProgressionViolations": 0,
+    "decisionConsistencyViolations": 0
+  },
+  "projectedChoreographySoundness": {
+    "optionToComplete": {
+      "holds": true,
+      "violatingStateCount": 0
+    },
+    "properInteractionCompletion": {
+      "holds": true,
+      "violatingStateCount": 0
+    },
+    "taskCoverage": {
+      "holds": true,
+      "coveredTaskCount": 8,
+      "totalTaskCount": 8,
+      "uncoveredTaskIds": []
+    },
+    "branchCoverage": {
+      "holds": true,
+      "coveredBranchCount": 0,
+      "totalBranchCount": 0,
+      "uncoveredBranchIds": []
+    },
+    "holds": true
+  },
+  "caseOptionToComplete": {
+    "holds": true,
+    "violationCount": 0,
+    "activeCaseCount": 2,
+    "checkedPairCount": 1482,
+    "completionSemantics": "explicit-sink-place: completed cases occur in the typed sink place and must not occur in any non-sink case-control or transmission place",
+    "violations": []
+  },
+  "senderProgression": {
+    "holds": true,
+    "violations": []
+  },
+  "receiverProgression": {
+    "holds": true,
+    "violations": []
+  },
+  "decisionConsistency": {
+    "holds": true,
+    "violations": []
+  },
+  "violations": []
+}

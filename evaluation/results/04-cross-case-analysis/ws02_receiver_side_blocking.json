@@ -1,0 +1,206 @@
+{
+  "objectAwareRealizability": {
+    "holds": false,
+    "assumptions": {
+      "controlFlowSoundness": "assumedExternal",
+      "controlFlowRealizability": "assumedExternal"
+    },
+    "subproperties": {
+      "projectedChoreographySoundness": {
+        "optionToComplete": {
+          "holds": true,
+          "violatingStateCount": 0
+        },
+        "properInteractionCompletion": {
+          "holds": true,
+          "violatingStateCount": 0
+        },
+        "taskCoverage": {
+          "holds": true,
+          "coveredTaskCount": 4,
+          "totalTaskCount": 4,
+          "uncoveredTaskIds": []
+        },
+        "branchCoverage": {
+          "holds": true,
+          "coveredBranchCount": 0,
+          "totalBranchCount": 0,
+          "uncoveredBranchIds": []
+        },
+        "holds": true
+      },
+      "senderProgression": true,
+      "receiverProgression": false,
+      "decisionConsistency": true
+    },
+    "firstViolation": {
+      "subproperty": "receiverProgression"
+    }
+  },
+  "crossCaseAnalysis": {
+    "holds": false,
+    "subproperties": {
+      "caseOptionToComplete": true,
+      "projectedChoreographySoundness": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": false,
+      "decisionConsistency": true
+    }
+  },
+  "stateSpace": {
+    "markings": 17,
+    "edges": 18,
+    "truncated": false,
+    "truncationReasons": [],
+    "limits": {
+      "maxMarkings": 50000,
+      "maxDepth": 100
+    }
+  },
+  "metadata": {
+    "caseOptionToCompleteSemantics": "explicit-sink-place: completed cases occur in the typed sink place and must not occur in any non-sink case-control or transmission place",
+    "activeCases": 1,
+    "checkedCaseStatePairs": 15,
+    "taskCoverageTasks": 4,
+    "branchCoverageBranches": 0,
+    "senderPositions": 4,
+    "transmissions": 4,
+    "decisionGateways": 0,
+    "localTransitions": 2
+  },
+  "diagnostics": {
+    "optionToCompleteViolations": 0,
+    "caseOptionToCompleteViolations": 0,
+    "properInteractionCompletionViolations": 0,
+    "uncoveredTasks": 0,
+    "uncoveredBranches": 0,
+    "senderProgressionViolations": 0,
+    "receiverProgressionViolations": 2,
+    "decisionConsistencyViolations": 0
+  },
+  "projectedChoreographySoundness": {
+    "optionToComplete": {
+      "holds": true,
+      "violatingStateCount": 0
+    },
+    "properInteractionCompletion": {
+      "holds": true,
+      "violatingStateCount": 0
+    },
+    "taskCoverage": {
+      "holds": true,
+      "coveredTaskCount": 4,
+      "totalTaskCount": 4,
+      "uncoveredTaskIds": []
+    },
+    "branchCoverage": {
+      "holds": true,
+      "coveredBranchCount": 0,
+      "totalBranchCount": 0,
+      "uncoveredBranchIds": []
+    },
+    "holds": true
+  },
+  "caseOptionToComplete": {
+    "holds": true,
+    "violationCount": 0,
+    "activeCaseCount": 1,
+    "checkedPairCount": 15,
+    "completionSemantics": "explicit-sink-place: completed cases occur in the typed sink place and must not occur in any non-sink case-control or transmission place",
+    "violations": []
+  },
+  "senderProgression": {
+    "holds": true,
+    "violations": []
+  },
+  "receiverProgression": {
+    "holds": false,
+    "violations": [
+      {
+        "kind": "receiver-progression",
+        "message": "Receiver progression violation for transmission place \"deliver goods Transmission\": pending token DataClass_Case:case1 cannot be consumed by any receiver-side completion transition in the same reachable marking. Receiver transitions: Transition_receive_ChoreographyTask_18q0u93.",
+        "markingKey": "Place_aware_Buyer_Order[DataClass_Role_Buyer:Buyer_1,DataClass_Object_Order:Order_1]|Place_aware_Seller_Order[DataClass_Role_Seller:Seller_1,DataClass_Object_Order:Order_1]|Place_aware_Warehouse_Order[DataClass_Role_Warehouse:Warehouse_1,DataClass_Object_Order:Order_1]|Place_cf_Flow_0q50445[DataClass_Case:case1]|Place_incl_Order[DataClass_Case:case1]|Place_obj_Order[DataClass_Case:case1,DataClass_Object_Order:Order_1]|Place_part_Buyer[DataClass_Case:case1,DataClass_Role_Buyer:Buyer_1]|Place_part_Seller[DataClass_Case:case1,DataClass_Role_Seller:Seller_1]|Place_part_Warehouse[DataClass_Case:case1,DataClass_Role_Warehouse:Warehouse_1]|Place_pool_Buyer[DataClass_Role_Buyer:Buyer_1]|Place_pool_Seller[DataClass_Role_Seller:Seller_1]|Place_pool_Warehouse[DataClass_Role_Warehouse:Warehouse_1]|Place_state_Buyer_Order_created[DataClass_Role_Buyer:Buyer_1,DataClass_Object_Order:Order_1]|Place_state_Seller_Order_fulfilled[DataClass_Role_Seller:Seller_1,DataClass_Object_Order:Order_1]|Place_state_Warehouse_Order_accepted[DataClass_Role_Warehouse:Warehouse_1,DataClass_Object_Order:Order_1]|Place_tx_ChoreographyTask_18q0u93[DataClass_Case:case1]",
+        "transmissionPlaceId": "Place_tx_ChoreographyTask_18q0u93",
+        "transmissionPlaceName": "deliver goods Transmission",
+        "transmissionToken": [
+          {
+            "typeId": "DataClass_Case",
+            "value": "case1"
+          }
+        ],
+        "transmissionTokenKey": "DataClass_Case:case1",
+        "taskId": "ChoreographyTask_18q0u93",
+        "taskName": "deliver goods",
+        "receiverTransitionIds": [
+          "Transition_receive_ChoreographyTask_18q0u93"
+        ]
+      },
+      {
+        "kind": "receiver-progression",
+        "message": "Receiver progression violation for transmission place \"deliver goods Transmission\": pending token DataClass_Case:case1 cannot be consumed by any receiver-side completion transition in the same reachable marking. Receiver transitions: Transition_receive_ChoreographyTask_18q0u93.",
+        "markingKey": "Place_aware_Buyer_Order[DataClass_Role_Buyer:Buyer_1,DataClass_Object_Order:Order_1]|Place_aware_Seller_Order[DataClass_Role_Seller:Seller_1,DataClass_Object_Order:Order_1]|Place_aware_Warehouse_Order[DataClass_Role_Warehouse:Warehouse_1,DataClass_Object_Order:Order_1]|Place_incl_Order[DataClass_Case:case1]|Place_obj_Order[DataClass_Case:case1,DataClass_Object_Order:Order_1]|Place_part_Buyer[DataClass_Case:case1,DataClass_Role_Buyer:Buyer_1]|Place_part_Seller[DataClass_Case:case1,DataClass_Role_Seller:Seller_1]|Place_part_Warehouse[DataClass_Case:case1,DataClass_Role_Warehouse:Warehouse_1]|Place_pool_Buyer[DataClass_Role_Buyer:Buyer_1]|Place_pool_Seller[DataClass_Role_Seller:Seller_1]|Place_pool_Warehouse[DataClass_Role_Warehouse:Warehouse_1]|Place_state_Buyer_Order_created[DataClass_Role_Buyer:Buyer_1,DataClass_Object_Order:Order_1]|Place_state_Seller_Order_fulfilled[DataClass_Role_Seller:Seller_1,DataClass_Object_Order:Order_1]|Place_state_Warehouse_Order_accepted[DataClass_Role_Warehouse:Warehouse_1,DataClass_Object_Order:Order_1]|Place_tx_ChoreographyTask_18q0u93[DataClass_Case:case1]|Place_tx_ChoreographyTask_1am049e[DataClass_Case:case1,DataClass_Object_Order:Order_1]",
+        "transmissionPlaceId": "Place_tx_ChoreographyTask_18q0u93",
+        "transmissionPlaceName": "deliver goods Transmission",
+        "transmissionToken": [
+          {
+            "typeId": "DataClass_Case",
+            "value": "case1"
+          }
+        ],
+        "transmissionTokenKey": "DataClass_Case:case1",
+        "taskId": "ChoreographyTask_18q0u93",
+        "taskName": "deliver goods",
+        "receiverTransitionIds": [
+          "Transition_receive_ChoreographyTask_18q0u93"
+        ]
+      }
+    ]
+  },
+  "decisionConsistency": {
+    "holds": true,
+    "violations": []
+  },
+  "violations": [
+    {
+      "kind": "receiver-progression",
+      "message": "Receiver progression violation for transmission place \"deliver goods Transmission\": pending token DataClass_Case:case1 cannot be consumed by any receiver-side completion transition in the same reachable marking. Receiver transitions: Transition_receive_ChoreographyTask_18q0u93.",
+      "markingKey": "Place_aware_Buyer_Order[DataClass_Role_Buyer:Buyer_1,DataClass_Object_Order:Order_1]|Place_aware_Seller_Order[DataClass_Role_Seller:Seller_1,DataClass_Object_Order:Order_1]|Place_aware_Warehouse_Order[DataClass_Role_Warehouse:Warehouse_1,DataClass_Object_Order:Order_1]|Place_cf_Flow_0q50445[DataClass_Case:case1]|Place_incl_Order[DataClass_Case:case1]|Place_obj_Order[DataClass_Case:case1,DataClass_Object_Order:Order_1]|Place_part_Buyer[DataClass_Case:case1,DataClass_Role_Buyer:Buyer_1]|Place_part_Seller[DataClass_Case:case1,DataClass_Role_Seller:Seller_1]|Place_part_Warehouse[DataClass_Case:case1,DataClass_Role_Warehouse:Warehouse_1]|Place_pool_Buyer[DataClass_Role_Buyer:Buyer_1]|Place_pool_Seller[DataClass_Role_Seller:Seller_1]|Place_pool_Warehouse[DataClass_Role_Warehouse:Warehouse_1]|Place_state_Buyer_Order_created[DataClass_Role_Buyer:Buyer_1,DataClass_Object_Order:Order_1]|Place_state_Seller_Order_fulfilled[DataClass_Role_Seller:Seller_1,DataClass_Object_Order:Order_1]|Place_state_Warehouse_Order_accepted[DataClass_Role_Warehouse:Warehouse_1,DataClass_Object_Order:Order_1]|Place_tx_ChoreographyTask_18q0u93[DataClass_Case:case1]",
+      "transmissionPlaceId": "Place_tx_ChoreographyTask_18q0u93",
+      "transmissionPlaceName": "deliver goods Transmission",
+      "transmissionToken": [
+        {
+          "typeId": "DataClass_Case",
+          "value": "case1"
+        }
+      ],
+      "transmissionTokenKey": "DataClass_Case:case1",
+      "taskId": "ChoreographyTask_18q0u93",
+      "taskName": "deliver goods",
+      "receiverTransitionIds": [
+        "Transition_receive_ChoreographyTask_18q0u93"
+      ]
+    },
+    {
+      "kind": "receiver-progression",
+      "message": "Receiver progression violation for transmission place \"deliver goods Transmission\": pending token DataClass_Case:case1 cannot be consumed by any receiver-side completion transition in the same reachable marking. Receiver transitions: Transition_receive_ChoreographyTask_18q0u93.",
+      "markingKey": "Place_aware_Buyer_Order[DataClass_Role_Buyer:Buyer_1,DataClass_Object_Order:Order_1]|Place_aware_Seller_Order[DataClass_Role_Seller:Seller_1,DataClass_Object_Order:Order_1]|Place_aware_Warehouse_Order[DataClass_Role_Warehouse:Warehouse_1,DataClass_Object_Order:Order_1]|Place_incl_Order[DataClass_Case:case1]|Place_obj_Order[DataClass_Case:case1,DataClass_Object_Order:Order_1]|Place_part_Buyer[DataClass_Case:case1,DataClass_Role_Buyer:Buyer_1]|Place_part_Seller[DataClass_Case:case1,DataClass_Role_Seller:Seller_1]|Place_part_Warehouse[DataClass_Case:case1,DataClass_Role_Warehouse:Warehouse_1]|Place_pool_Buyer[DataClass_Role_Buyer:Buyer_1]|Place_pool_Seller[DataClass_Role_Seller:Seller_1]|Place_pool_Warehouse[DataClass_Role_Warehouse:Warehouse_1]|Place_state_Buyer_Order_created[DataClass_Role_Buyer:Buyer_1,DataClass_Object_Order:Order_1]|Place_state_Seller_Order_fulfilled[DataClass_Role_Seller:Seller_1,DataClass_Object_Order:Order_1]|Place_state_Warehouse_Order_accepted[DataClass_Role_Warehouse:Warehouse_1,DataClass_Object_Order:Order_1]|Place_tx_ChoreographyTask_18q0u93[DataClass_Case:case1]|Place_tx_ChoreographyTask_1am049e[DataClass_Case:case1,DataClass_Object_Order:Order_1]",
+      "transmissionPlaceId": "Place_tx_ChoreographyTask_18q0u93",
+      "transmissionPlaceName": "deliver goods Transmission",
+      "transmissionToken": [
+        {
+          "typeId": "DataClass_Case",
+          "value": "case1"
+        }
+      ],
+      "transmissionTokenKey": "DataClass_Case:case1",
+      "taskId": "ChoreographyTask_18q0u93",
+      "taskName": "deliver goods",
+      "receiverTransitionIds": [
+        "Transition_receive_ChoreographyTask_18q0u93"
+      ]
+    }
+  ]
+}

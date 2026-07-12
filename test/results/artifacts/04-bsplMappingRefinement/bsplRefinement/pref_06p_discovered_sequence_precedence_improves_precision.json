@@ -1,0 +1,36 @@
+{
+  "selectedConstraints": [
+    {
+      "kind": "precedence",
+      "id": "precedence:task2->task3",
+      "predecessor": "task2",
+      "constrained": "task3",
+      "source": {
+        "reason": "sequence",
+        "explanation": "Task task3 is not enabled until task2 has occurred."
+      },
+      "violatingTraces": [
+        [
+          "task1",
+          "task3"
+        ]
+      ]
+    }
+  ],
+  "comparison": {
+    "choreographyTraceCount": 1,
+    "protocolTraceCount": 1,
+    "sharedTraceCount": 1,
+    "recall": 1,
+    "precision": 1,
+    "choreographyOnly": [],
+    "protocolOnly": [],
+    "shared": [
+      [
+        "task1",
+        "task2",
+        "task3"
+      ]
+    ]
+  }
+}

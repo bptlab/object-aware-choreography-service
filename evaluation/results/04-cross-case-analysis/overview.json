@@ -1,0 +1,4013 @@
+[
+  {
+    "runId": "cs01_default",
+    "scenarioId": "CS01",
+    "scenarioTitle": "no-object sequence",
+    "scenarioKind": "construct",
+    "scenarioSlug": "no_object_sequence",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/cs01_no_object_sequence.json"
+    ],
+    "durationMs": 68.46,
+    "variantId": "default",
+    "crossCaseClasses": [],
+    "domainSizes": {
+      "cases": 1,
+      "participantsPerRole": {
+        "RoleA": 1,
+        "RoleB": 1
+      },
+      "objectsPerClass": {
+        "ClassA": 1
+      }
+    },
+    "assignmentMode": "default",
+    "expected": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 9,
+      "edges": 11,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 50000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 2,
+        "totalTaskCount": 2,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 0,
+        "totalBranchCount": 0,
+        "uncoveredBranchIds": []
+      },
+      "holds": true
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/cs01_no_object_sequence.json"
+  },
+  {
+    "runId": "cs02_default",
+    "scenarioId": "CS02",
+    "scenarioTitle": "single-object creation with multiple initial states and common identifier",
+    "scenarioKind": "construct",
+    "scenarioSlug": "single_object_alternative_creation",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/cs02_single_object_alternative_creation.json"
+    ],
+    "durationMs": 26.68,
+    "variantId": "default",
+    "crossCaseClasses": [],
+    "domainSizes": {
+      "cases": 1,
+      "participantsPerRole": {
+        "RoleA": 1,
+        "RoleB": 1
+      },
+      "objectsPerClass": {
+        "ClassA": 1
+      }
+    },
+    "assignmentMode": "default",
+    "expected": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 15,
+      "edges": 16,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 50000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 3,
+        "totalTaskCount": 3,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 0,
+        "totalBranchCount": 0,
+        "uncoveredBranchIds": []
+      },
+      "holds": true
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/cs02_single_object_alternative_creation.json"
+  },
+  {
+    "runId": "cs03_default",
+    "scenarioId": "CS03",
+    "scenarioTitle": "two-object one-to-one creation",
+    "scenarioKind": "construct",
+    "scenarioSlug": "two_object_one_to_one_creation",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/cs03_two_object_one_to_one_creation.json"
+    ],
+    "durationMs": 19.04,
+    "variantId": "default",
+    "crossCaseClasses": [],
+    "domainSizes": {
+      "cases": 1,
+      "participantsPerRole": {
+        "RoleA": 1,
+        "RoleB": 1
+      },
+      "objectsPerClass": {
+        "ClassA": 1,
+        "ClassB": 1
+      }
+    },
+    "assignmentMode": "default",
+    "expected": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 8,
+      "edges": 7,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 50000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 2,
+        "totalTaskCount": 2,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 0,
+        "totalBranchCount": 0,
+        "uncoveredBranchIds": []
+      },
+      "holds": true
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/cs03_two_object_one_to_one_creation.json"
+  },
+  {
+    "runId": "cs04_default",
+    "scenarioId": "CS04",
+    "scenarioTitle": "two-object one-to-many creation",
+    "scenarioKind": "construct",
+    "scenarioSlug": "two_object_one_to_many_creation",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/cs04_two_object_one_to_many_creation.json"
+    ],
+    "durationMs": 22.405,
+    "variantId": "default",
+    "crossCaseClasses": [],
+    "domainSizes": {
+      "cases": 1,
+      "participantsPerRole": {
+        "RoleA": 1,
+        "RoleB": 1
+      },
+      "objectsPerClass": {
+        "ClassA": 1,
+        "ClassB": 1
+      }
+    },
+    "assignmentMode": "default",
+    "expected": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 11,
+      "edges": 12,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 50000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 2,
+        "totalTaskCount": 2,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 0,
+        "totalBranchCount": 0,
+        "uncoveredBranchIds": []
+      },
+      "holds": true
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/cs04_two_object_one_to_many_creation.json"
+  },
+  {
+    "runId": "cs05_default",
+    "scenarioId": "CS05",
+    "scenarioTitle": "two-object many-to-many creation",
+    "scenarioKind": "construct",
+    "scenarioSlug": "two_object_many_to_many_creation",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/cs05_two_object_many_to_many_creation.json"
+    ],
+    "durationMs": 12.804,
+    "variantId": "default",
+    "crossCaseClasses": [],
+    "domainSizes": {
+      "cases": 1,
+      "participantsPerRole": {
+        "RoleA": 1,
+        "RoleB": 1
+      },
+      "objectsPerClass": {
+        "ClassA": 1,
+        "ClassB": 1
+      }
+    },
+    "assignmentMode": "default",
+    "expected": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 12,
+      "edges": 14,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 50000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 2,
+        "totalTaskCount": 2,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 0,
+        "totalBranchCount": 0,
+        "uncoveredBranchIds": []
+      },
+      "holds": true
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/cs05_two_object_many_to_many_creation.json"
+  },
+  {
+    "runId": "cs06_default",
+    "scenarioId": "CS06",
+    "scenarioTitle": "two-object creation without association",
+    "scenarioKind": "construct",
+    "scenarioSlug": "two_object_creation_without_association",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/cs06_two_object_creation_without_association.json"
+    ],
+    "durationMs": 51.908,
+    "variantId": "default",
+    "crossCaseClasses": [],
+    "domainSizes": {
+      "cases": 1,
+      "participantsPerRole": {
+        "RoleA": 1,
+        "RoleB": 1
+      },
+      "objectsPerClass": {
+        "ClassA": 1,
+        "ClassB": 1
+      }
+    },
+    "assignmentMode": "default",
+    "expected": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 12,
+      "edges": 14,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 50000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 2,
+        "totalTaskCount": 2,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 0,
+        "totalBranchCount": 0,
+        "uncoveredBranchIds": []
+      },
+      "holds": true
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/cs06_two_object_creation_without_association.json"
+  },
+  {
+    "runId": "cs07_default",
+    "scenarioId": "CS07",
+    "scenarioTitle": "three-object mixed dependencies",
+    "scenarioKind": "construct",
+    "scenarioSlug": "three_object_mixed_dependencies",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/cs07_three_object_mixed_dependencies.json"
+    ],
+    "durationMs": 19.112,
+    "variantId": "default",
+    "crossCaseClasses": [],
+    "domainSizes": {
+      "cases": 1,
+      "participantsPerRole": {
+        "RoleA": 1,
+        "RoleB": 1
+      },
+      "objectsPerClass": {
+        "ClassA": 1,
+        "ClassB": 1,
+        "ClassC": 1
+      }
+    },
+    "assignmentMode": "default",
+    "expected": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 13,
+      "edges": 14,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 50000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 3,
+        "totalTaskCount": 3,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 0,
+        "totalBranchCount": 0,
+        "uncoveredBranchIds": []
+      },
+      "holds": true
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/cs07_three_object_mixed_dependencies.json"
+  },
+  {
+    "runId": "cs08_default",
+    "scenarioId": "CS08",
+    "scenarioTitle": "communication with different-role local transitions and forwarding",
+    "scenarioKind": "construct",
+    "scenarioSlug": "local_transitions_and_forwarding",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/cs08_local_transitions_and_forwarding.json"
+    ],
+    "durationMs": 15.478,
+    "variantId": "default",
+    "crossCaseClasses": [],
+    "domainSizes": {
+      "cases": 1,
+      "participantsPerRole": {
+        "RoleA": 1,
+        "RoleB": 1,
+        "RoleC": 1
+      },
+      "objectsPerClass": {
+        "ClassA": 1
+      }
+    },
+    "assignmentMode": "default",
+    "expected": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 11,
+      "edges": 10,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 50000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 3,
+        "totalTaskCount": 3,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 0,
+        "totalBranchCount": 0,
+        "uncoveredBranchIds": []
+      },
+      "holds": true
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/cs08_local_transitions_and_forwarding.json"
+  },
+  {
+    "runId": "cs09_default",
+    "scenarioId": "CS09",
+    "scenarioTitle": "multiple compatible receiver states",
+    "scenarioKind": "construct",
+    "scenarioSlug": "multiple_compatible_receiver_states",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/cs09_multiple_compatible_receiver_states.json"
+    ],
+    "durationMs": 21.183,
+    "variantId": "default",
+    "crossCaseClasses": [],
+    "domainSizes": {
+      "cases": 1,
+      "participantsPerRole": {
+        "RoleA": 1,
+        "RoleB": 1
+      },
+      "objectsPerClass": {
+        "ClassA": 1
+      }
+    },
+    "assignmentMode": "default",
+    "expected": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 21,
+      "edges": 25,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 50000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 4,
+        "totalTaskCount": 4,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 0,
+        "totalBranchCount": 0,
+        "uncoveredBranchIds": []
+      },
+      "holds": true
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/cs09_multiple_compatible_receiver_states.json"
+  },
+  {
+    "runId": "cs10_default",
+    "scenarioId": "CS10",
+    "scenarioTitle": "multi-class synchronization followed by forwarding",
+    "scenarioKind": "construct",
+    "scenarioSlug": "multi_class_synchronization_forwarding",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/cs10_multi_class_synchronization_forwarding.json"
+    ],
+    "durationMs": 19.12,
+    "variantId": "default",
+    "crossCaseClasses": [],
+    "domainSizes": {
+      "cases": 1,
+      "participantsPerRole": {
+        "RoleA": 1,
+        "RoleB": 1,
+        "RoleC": 1
+      },
+      "objectsPerClass": {
+        "ClassA": 1,
+        "ClassB": 1
+      }
+    },
+    "assignmentMode": "default",
+    "expected": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 18,
+      "edges": 20,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 50000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 5,
+        "totalTaskCount": 5,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 0,
+        "totalBranchCount": 0,
+        "uncoveredBranchIds": []
+      },
+      "holds": true
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/cs10_multi_class_synchronization_forwarding.json"
+  },
+  {
+    "runId": "cs11_default",
+    "scenarioId": "CS11",
+    "scenarioTitle": "synchronization with multiple source states",
+    "scenarioKind": "construct",
+    "scenarioSlug": "synchronization_multiple_source_states",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/cs11_synchronization_multiple_source_states.json"
+    ],
+    "durationMs": 15,
+    "variantId": "default",
+    "crossCaseClasses": [],
+    "domainSizes": {
+      "cases": 1,
+      "participantsPerRole": {
+        "RoleA": 1,
+        "RoleB": 1
+      },
+      "objectsPerClass": {
+        "ClassA": 1
+      }
+    },
+    "assignmentMode": "default",
+    "expected": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 17,
+      "edges": 19,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 50000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 4,
+        "totalTaskCount": 4,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 0,
+        "totalBranchCount": 0,
+        "uncoveredBranchIds": []
+      },
+      "holds": true
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/cs11_synchronization_multiple_source_states.json"
+  },
+  {
+    "runId": "cs12_default",
+    "scenarioId": "CS12",
+    "scenarioTitle": "state reachable by synchronization or local transition",
+    "scenarioKind": "construct",
+    "scenarioSlug": "state_reachable_by_sync_or_local",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/cs12_state_reachable_by_sync_or_local.json"
+    ],
+    "durationMs": 26.283,
+    "variantId": "default",
+    "crossCaseClasses": [],
+    "domainSizes": {
+      "cases": 1,
+      "participantsPerRole": {
+        "RoleA": 1,
+        "RoleB": 1,
+        "RoleC": 1
+      },
+      "objectsPerClass": {
+        "ClassA": 1
+      }
+    },
+    "assignmentMode": "default",
+    "expected": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 19,
+      "edges": 20,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 50000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 4,
+        "totalTaskCount": 4,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 0,
+        "totalBranchCount": 0,
+        "uncoveredBranchIds": []
+      },
+      "holds": true
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/cs12_state_reachable_by_sync_or_local.json"
+  },
+  {
+    "runId": "cs13_default",
+    "scenarioId": "CS13",
+    "scenarioTitle": "combined task on same class",
+    "scenarioKind": "construct",
+    "scenarioSlug": "combined_same_class",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/cs13_combined_same_class.json"
+    ],
+    "durationMs": 16.807,
+    "variantId": "default",
+    "crossCaseClasses": [],
+    "domainSizes": {
+      "cases": 1,
+      "participantsPerRole": {
+        "RoleA": 1,
+        "RoleB": 1
+      },
+      "objectsPerClass": {
+        "ClassA": 1
+      }
+    },
+    "assignmentMode": "default",
+    "expected": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 6,
+      "edges": 5,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 50000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 1,
+        "totalTaskCount": 1,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 0,
+        "totalBranchCount": 0,
+        "uncoveredBranchIds": []
+      },
+      "holds": true
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/cs13_combined_same_class.json"
+  },
+  {
+    "runId": "cs14_default",
+    "scenarioId": "CS14",
+    "scenarioTitle": "combined task across classes",
+    "scenarioKind": "construct",
+    "scenarioSlug": "combined_different_classes",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/cs14_combined_different_classes.json"
+    ],
+    "durationMs": 7.971,
+    "variantId": "default",
+    "crossCaseClasses": [],
+    "domainSizes": {
+      "cases": 1,
+      "participantsPerRole": {
+        "RoleA": 1,
+        "RoleB": 1
+      },
+      "objectsPerClass": {
+        "ClassA": 1,
+        "ClassB": 1
+      }
+    },
+    "assignmentMode": "default",
+    "expected": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 12,
+      "edges": 14,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 50000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 2,
+        "totalTaskCount": 2,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 0,
+        "totalBranchCount": 0,
+        "uncoveredBranchIds": []
+      },
+      "holds": true
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/cs14_combined_different_classes.json"
+  },
+  {
+    "runId": "cs15_default",
+    "scenarioId": "CS15",
+    "scenarioTitle": "event-based gateway with local non-creational decision",
+    "scenarioKind": "construct",
+    "scenarioSlug": "event_based_local_non_creational_decision",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/cs15_event_based_local_non_creational_decision.json"
+    ],
+    "durationMs": 23.52,
+    "variantId": "default",
+    "crossCaseClasses": [],
+    "domainSizes": {
+      "cases": 1,
+      "participantsPerRole": {
+        "RoleA": 1,
+        "RoleB": 1
+      },
+      "objectsPerClass": {
+        "ClassA": 1
+      }
+    },
+    "assignmentMode": "default",
+    "expected": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 15,
+      "edges": 14,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 50000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 3,
+        "totalTaskCount": 3,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 0,
+        "totalBranchCount": 0,
+        "uncoveredBranchIds": []
+      },
+      "holds": true
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/cs15_event_based_local_non_creational_decision.json"
+  },
+  {
+    "runId": "cs16_default",
+    "scenarioId": "CS16",
+    "scenarioTitle": "guarded exclusive gateway",
+    "scenarioKind": "construct",
+    "scenarioSlug": "guarded_exclusive_gateway",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/cs16_guarded_exclusive_gateway.json"
+    ],
+    "durationMs": 18.296,
+    "variantId": "default",
+    "crossCaseClasses": [],
+    "domainSizes": {
+      "cases": 1,
+      "participantsPerRole": {
+        "RoleA": 1,
+        "RoleB": 1,
+        "RoleC": 1,
+        "RoleD": 1,
+        "RoleE": 1,
+        "RoleF": 1
+      },
+      "objectsPerClass": {
+        "ClassA": 1
+      }
+    },
+    "assignmentMode": "default",
+    "expected": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 21,
+      "edges": 22,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 50000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 5,
+        "totalTaskCount": 5,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 2,
+        "totalBranchCount": 2,
+        "uncoveredBranchIds": []
+      },
+      "holds": true
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/cs16_guarded_exclusive_gateway.json"
+  },
+  {
+    "runId": "cs17_default",
+    "scenarioId": "CS17",
+    "scenarioTitle": "exclusive gateway with affected role identification",
+    "scenarioKind": "construct",
+    "scenarioSlug": "guarded_exclusive_gateway",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/cs17_guarded_exclusive_gateway.json"
+    ],
+    "durationMs": 29.376,
+    "variantId": "default",
+    "crossCaseClasses": [],
+    "domainSizes": {
+      "cases": 1,
+      "participantsPerRole": {
+        "RoleA": 1,
+        "RoleB": 1,
+        "RoleC": 1,
+        "RoleD": 1,
+        "RoleE": 1,
+        "RoleF": 1
+      },
+      "objectsPerClass": {
+        "ClassA": 1
+      }
+    },
+    "assignmentMode": "default",
+    "expected": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 35,
+      "edges": 42,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 50000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 12,
+        "totalTaskCount": 12,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 2,
+        "totalBranchCount": 2,
+        "uncoveredBranchIds": []
+      },
+      "holds": true
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/cs17_guarded_exclusive_gateway.json"
+  },
+  {
+    "runId": "cs18_default",
+    "scenarioId": "CS18",
+    "scenarioTitle": "parallel independent object branches",
+    "scenarioKind": "construct",
+    "scenarioSlug": "parallel_independent_object_branches",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/cs18_parallel_independent_object_branches.json"
+    ],
+    "durationMs": 28.076,
+    "variantId": "default",
+    "crossCaseClasses": [],
+    "domainSizes": {
+      "cases": 1,
+      "participantsPerRole": {
+        "RoleA": 1,
+        "RoleB": 1
+      },
+      "objectsPerClass": {
+        "ClassA": 1,
+        "ClassB": 1,
+        "ClassC": 1
+      }
+    },
+    "assignmentMode": "default",
+    "expected": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 54,
+      "edges": 111,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 50000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 4,
+        "totalTaskCount": 4,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 0,
+        "totalBranchCount": 0,
+        "uncoveredBranchIds": []
+      },
+      "holds": true
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/cs18_parallel_independent_object_branches.json"
+  },
+  {
+    "runId": "cs19_default",
+    "scenarioId": "CS19",
+    "scenarioTitle": "event-based gateway loop",
+    "scenarioKind": "construct",
+    "scenarioSlug": "event_based_gateway_loop",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/cs19_event_based_gateway_loop.json"
+    ],
+    "durationMs": 5.298,
+    "variantId": "default",
+    "crossCaseClasses": [],
+    "domainSizes": {
+      "cases": 1,
+      "participantsPerRole": {
+        "RoleA": 1,
+        "RoleB": 1
+      },
+      "objectsPerClass": {
+        "ClassA": 1
+      }
+    },
+    "assignmentMode": "default",
+    "expected": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 15,
+      "edges": 22,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 50000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 4,
+        "totalTaskCount": 4,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 0,
+        "totalBranchCount": 0,
+        "uncoveredBranchIds": []
+      },
+      "holds": true
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/cs19_event_based_gateway_loop.json"
+  },
+  {
+    "runId": "cs20_default",
+    "scenarioId": "CS20",
+    "scenarioTitle": "exclusive gateway loop",
+    "scenarioKind": "construct",
+    "scenarioSlug": "exclusive_gateway_loop",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/cs20_exclusive_gateway_loop.json"
+    ],
+    "durationMs": 32.561,
+    "variantId": "default",
+    "crossCaseClasses": [],
+    "domainSizes": {
+      "cases": 1,
+      "participantsPerRole": {
+        "RoleA": 1,
+        "RoleB": 1
+      },
+      "objectsPerClass": {
+        "ClassA": 1
+      }
+    },
+    "assignmentMode": "default",
+    "expected": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 32,
+      "edges": 41,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 50000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 6,
+        "totalTaskCount": 6,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 2,
+        "totalBranchCount": 2,
+        "uncoveredBranchIds": []
+      },
+      "holds": true
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/cs20_exclusive_gateway_loop.json"
+  },
+  {
+    "runId": "is01_default",
+    "scenarioId": "IS01",
+    "scenarioTitle": "order fulfillment",
+    "scenarioKind": "integrated",
+    "scenarioSlug": "order_fulfillment",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/is01_order_fulfillment.json"
+    ],
+    "durationMs": 85.064,
+    "variantId": "default",
+    "crossCaseClasses": [],
+    "domainSizes": {
+      "cases": 1,
+      "participantsPerRole": {
+        "Buyer": 1,
+        "Seller": 1,
+        "Warehouse": 1
+      },
+      "objectsPerClass": {
+        "Invoice": 1,
+        "Order": 1,
+        "Shipment Request": 1,
+        "Shipment": 1
+      }
+    },
+    "assignmentMode": "default",
+    "expected": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 104,
+      "edges": 199,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 50000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 10,
+        "totalTaskCount": 10,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 2,
+        "totalBranchCount": 2,
+        "uncoveredBranchIds": []
+      },
+      "holds": true
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/is01_order_fulfillment.json"
+  },
+  {
+    "runId": "is02_default",
+    "scenarioId": "IS02",
+    "scenarioTitle": "item purchase plain",
+    "scenarioKind": "integrated",
+    "scenarioSlug": "item_purchase_plain",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/is02_item_purchase_plain.json"
+    ],
+    "durationMs": 10.229,
+    "variantId": "default",
+    "crossCaseClasses": [],
+    "domainSizes": {
+      "cases": 1,
+      "participantsPerRole": {
+        "Buyer": 1,
+        "Seller": 1
+      },
+      "objectsPerClass": {
+        "Item": 1
+      }
+    },
+    "assignmentMode": "default",
+    "expected": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 15,
+      "edges": 15,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 50000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 5,
+        "totalTaskCount": 5,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 0,
+        "totalBranchCount": 0,
+        "uncoveredBranchIds": []
+      },
+      "holds": true
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/is02_item_purchase_plain.json"
+  },
+  {
+    "runId": "is02_fixed_2cases_1item",
+    "scenarioId": "IS02",
+    "scenarioTitle": "item purchase plain",
+    "scenarioKind": "integrated",
+    "scenarioSlug": "item_purchase_plain",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "violates",
+    "expectedOutcome": "violates",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/is02_item_purchase_plain_fixed_2cases_1item.json"
+    ],
+    "durationMs": 38.971,
+    "variantId": "fixed_2cases_1item",
+    "crossCaseClasses": [
+      "Item"
+    ],
+    "domainSizes": {
+      "cases": 2,
+      "participantsPerRole": {
+        "Buyer": 2,
+        "Seller": 1
+      },
+      "objectsPerClass": {
+        "Item": 1
+      }
+    },
+    "rawDomainSizes": {
+      "Buyer": 2,
+      "case": 2,
+      "Item": 1,
+      "Seller": 1
+    },
+    "assignmentMode": "fixed",
+    "expected": {
+      "caseOptionToComplete": false,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": false,
+      "receiverProgression": false,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": false,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": false,
+      "receiverProgression": false,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [
+      "caseOptionToComplete",
+      "senderProgression",
+      "receiverProgression"
+    ],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 30,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 10,
+      "receiverProgressionViolations": 10,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 153,
+      "edges": 273,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 300000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": false,
+        "violatingStateCount": 30,
+        "representativeViolation": "43"
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 5,
+        "totalTaskCount": 5,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 0,
+        "totalBranchCount": 0,
+        "uncoveredBranchIds": []
+      },
+      "holds": false
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/is02_item_purchase_plain_fixed_2cases_1item.json"
+  },
+  {
+    "runId": "is02_fixed_2cases_2items",
+    "scenarioId": "IS02",
+    "scenarioTitle": "item purchase plain",
+    "scenarioKind": "integrated",
+    "scenarioSlug": "item_purchase_plain",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "violates",
+    "expectedOutcome": "violates",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/is02_item_purchase_plain_fixed_2cases_2items.json"
+    ],
+    "durationMs": 230.489,
+    "variantId": "fixed_2cases_2items",
+    "crossCaseClasses": [
+      "Item"
+    ],
+    "domainSizes": {
+      "cases": 2,
+      "participantsPerRole": {
+        "Buyer": 2,
+        "Seller": 1
+      },
+      "objectsPerClass": {
+        "Item": 2
+      }
+    },
+    "rawDomainSizes": {
+      "Buyer": 2,
+      "case": 2,
+      "Item": 2,
+      "Seller": 1
+    },
+    "assignmentMode": "fixed",
+    "expected": {
+      "caseOptionToComplete": false,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": false,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": false,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": false,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [
+      "caseOptionToComplete",
+      "receiverProgression"
+    ],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 40,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 40,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 776,
+      "edges": 1714,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 300000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": false,
+        "violatingStateCount": 40,
+        "representativeViolation": "412"
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 5,
+        "totalTaskCount": 5,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 0,
+        "totalBranchCount": 0,
+        "uncoveredBranchIds": []
+      },
+      "holds": false
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/is02_item_purchase_plain_fixed_2cases_2items.json"
+  },
+  {
+    "runId": "is02_unique_1case_1item",
+    "scenarioId": "IS02",
+    "scenarioTitle": "item purchase plain",
+    "scenarioKind": "integrated",
+    "scenarioSlug": "item_purchase_plain",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/is02_item_purchase_plain_unique_1case_1item.json"
+    ],
+    "durationMs": 9.86,
+    "variantId": "unique_1case_1item",
+    "crossCaseClasses": [
+      "Item"
+    ],
+    "domainSizes": {
+      "cases": 1,
+      "participantsPerRole": {
+        "Buyer": 1,
+        "Seller": 1
+      },
+      "objectsPerClass": {
+        "Item": 1
+      }
+    },
+    "rawDomainSizes": {
+      "Buyer": 1,
+      "case": 1,
+      "Item": 1,
+      "Seller": 1
+    },
+    "assignmentMode": "unique",
+    "expected": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 16,
+      "edges": 17,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 300000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 5,
+        "totalTaskCount": 5,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 0,
+        "totalBranchCount": 0,
+        "uncoveredBranchIds": []
+      },
+      "holds": true
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/is02_item_purchase_plain_unique_1case_1item.json"
+  },
+  {
+    "runId": "is02_unrestricted_2cases_1item",
+    "scenarioId": "IS02",
+    "scenarioTitle": "item purchase plain",
+    "scenarioKind": "integrated",
+    "scenarioSlug": "item_purchase_plain",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "violates",
+    "expectedOutcome": "violates",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/is02_item_purchase_plain_unrestricted_2cases_1item.json"
+    ],
+    "durationMs": 89.799,
+    "variantId": "unrestricted_2cases_1item",
+    "crossCaseClasses": [
+      "Item"
+    ],
+    "domainSizes": {
+      "cases": 2,
+      "participantsPerRole": {
+        "Buyer": 2,
+        "Seller": 1
+      },
+      "objectsPerClass": {
+        "Item": 1
+      }
+    },
+    "rawDomainSizes": {
+      "Buyer": 2,
+      "case": 2,
+      "Item": 1,
+      "Seller": 1
+    },
+    "assignmentMode": "unrestricted",
+    "expected": {
+      "caseOptionToComplete": false,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": false,
+      "receiverProgression": false,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": false,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": false,
+      "receiverProgression": false,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [
+      "caseOptionToComplete",
+      "senderProgression",
+      "receiverProgression"
+    ],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 168,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 40,
+      "receiverProgressionViolations": 56,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 438,
+      "edges": 801,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 300000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": false,
+        "violatingStateCount": 168,
+        "representativeViolation": "66"
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 5,
+        "totalTaskCount": 5,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 0,
+        "totalBranchCount": 0,
+        "uncoveredBranchIds": []
+      },
+      "holds": false
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/is02_item_purchase_plain_unrestricted_2cases_1item.json"
+  },
+  {
+    "runId": "is02_unrestricted_2cases_2items",
+    "scenarioId": "IS02",
+    "scenarioTitle": "item purchase plain",
+    "scenarioKind": "integrated",
+    "scenarioSlug": "item_purchase_plain",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "violates",
+    "expectedOutcome": "violates",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/is02_item_purchase_plain_unrestricted_2cases_2items.json"
+    ],
+    "durationMs": 570.263,
+    "variantId": "unrestricted_2cases_2items",
+    "crossCaseClasses": [
+      "Item"
+    ],
+    "domainSizes": {
+      "cases": 2,
+      "participantsPerRole": {
+        "Buyer": 2,
+        "Seller": 1
+      },
+      "objectsPerClass": {
+        "Item": 2
+      }
+    },
+    "rawDomainSizes": {
+      "Buyer": 2,
+      "case": 2,
+      "Item": 2,
+      "Seller": 1
+    },
+    "assignmentMode": "unrestricted",
+    "expected": {
+      "caseOptionToComplete": false,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": false,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": false,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": false,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [
+      "caseOptionToComplete",
+      "receiverProgression"
+    ],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 224,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 224,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 2452,
+      "edges": 5420,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 300000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": false,
+        "violatingStateCount": 224,
+        "representativeViolation": "416"
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 5,
+        "totalTaskCount": 5,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 0,
+        "totalBranchCount": 0,
+        "uncoveredBranchIds": []
+      },
+      "holds": false
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/is02_item_purchase_plain_unrestricted_2cases_2items.json"
+  },
+  {
+    "runId": "is03_default",
+    "scenarioId": "IS03",
+    "scenarioTitle": "item purchase optimistic",
+    "scenarioKind": "integrated",
+    "scenarioSlug": "item_purchase_optimistic",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/is03_item_purchase_optimistic.json"
+    ],
+    "durationMs": 18.317,
+    "variantId": "default",
+    "crossCaseClasses": [],
+    "domainSizes": {
+      "cases": 1,
+      "participantsPerRole": {
+        "Buyer": 1,
+        "Seller": 1
+      },
+      "objectsPerClass": {
+        "Item": 1,
+        "Order": 1
+      }
+    },
+    "assignmentMode": "default",
+    "expected": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 28,
+      "edges": 33,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 50000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 8,
+        "totalTaskCount": 8,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 0,
+        "totalBranchCount": 0,
+        "uncoveredBranchIds": []
+      },
+      "holds": true
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/is03_item_purchase_optimistic.json"
+  },
+  {
+    "runId": "is03_fixed_2cases_1item",
+    "scenarioId": "IS03",
+    "scenarioTitle": "item purchase optimistic",
+    "scenarioKind": "integrated",
+    "scenarioSlug": "item_purchase_optimistic",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/is03_item_purchase_optimistic_fixed_2cases_1item.json"
+    ],
+    "durationMs": 302.252,
+    "variantId": "fixed_2cases_1item",
+    "crossCaseClasses": [
+      "Item"
+    ],
+    "domainSizes": {
+      "cases": 2,
+      "participantsPerRole": {
+        "Buyer": 2,
+        "Seller": 1
+      },
+      "objectsPerClass": {
+        "Item": 1,
+        "Order": 2
+      }
+    },
+    "rawDomainSizes": {
+      "Buyer": 2,
+      "case": 2,
+      "Item": 1,
+      "Order": 2,
+      "Seller": 1
+    },
+    "assignmentMode": "fixed",
+    "expected": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 998,
+      "edges": 2165,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 300000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 8,
+        "totalTaskCount": 8,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 0,
+        "totalBranchCount": 0,
+        "uncoveredBranchIds": []
+      },
+      "holds": true
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/is03_item_purchase_optimistic_fixed_2cases_1item.json"
+  },
+  {
+    "runId": "is03_fixed_2cases_2items",
+    "scenarioId": "IS03",
+    "scenarioTitle": "item purchase optimistic",
+    "scenarioKind": "integrated",
+    "scenarioSlug": "item_purchase_optimistic",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/is03_item_purchase_optimistic_fixed_2cases_2items.json"
+    ],
+    "durationMs": 1796.251,
+    "variantId": "fixed_2cases_2items",
+    "crossCaseClasses": [
+      "Item"
+    ],
+    "domainSizes": {
+      "cases": 2,
+      "participantsPerRole": {
+        "Buyer": 2,
+        "Seller": 1
+      },
+      "objectsPerClass": {
+        "Item": 2,
+        "Order": 2
+      }
+    },
+    "rawDomainSizes": {
+      "Buyer": 2,
+      "case": 2,
+      "Item": 2,
+      "Order": 2,
+      "Seller": 1
+    },
+    "assignmentMode": "fixed",
+    "expected": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 5304,
+      "edges": 13676,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 300000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 8,
+        "totalTaskCount": 8,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 0,
+        "totalBranchCount": 0,
+        "uncoveredBranchIds": []
+      },
+      "holds": true
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/is03_item_purchase_optimistic_fixed_2cases_2items.json"
+  },
+  {
+    "runId": "is03_unique_1case_1item",
+    "scenarioId": "IS03",
+    "scenarioTitle": "item purchase optimistic",
+    "scenarioKind": "integrated",
+    "scenarioSlug": "item_purchase_optimistic",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/is03_item_purchase_optimistic_unique_1case_1item.json"
+    ],
+    "durationMs": 12.89,
+    "variantId": "unique_1case_1item",
+    "crossCaseClasses": [
+      "Item"
+    ],
+    "domainSizes": {
+      "cases": 1,
+      "participantsPerRole": {
+        "Buyer": 1,
+        "Seller": 1
+      },
+      "objectsPerClass": {
+        "Item": 1,
+        "Order": 1
+      }
+    },
+    "rawDomainSizes": {
+      "Buyer": 1,
+      "case": 1,
+      "Item": 1,
+      "Order": 1,
+      "Seller": 1
+    },
+    "assignmentMode": "unique",
+    "expected": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 29,
+      "edges": 35,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 300000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 8,
+        "totalTaskCount": 8,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 0,
+        "totalBranchCount": 0,
+        "uncoveredBranchIds": []
+      },
+      "holds": true
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/is03_item_purchase_optimistic_unique_1case_1item.json"
+  },
+  {
+    "runId": "is03_unrestricted_2cases_1item",
+    "scenarioId": "IS03",
+    "scenarioTitle": "item purchase optimistic",
+    "scenarioKind": "integrated",
+    "scenarioSlug": "item_purchase_optimistic",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "violates",
+    "expectedOutcome": "violates",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/is03_item_purchase_optimistic_unrestricted_2cases_1item.json"
+    ],
+    "durationMs": 813.303,
+    "variantId": "unrestricted_2cases_1item",
+    "crossCaseClasses": [
+      "Item"
+    ],
+    "domainSizes": {
+      "cases": 2,
+      "participantsPerRole": {
+        "Buyer": 2,
+        "Seller": 1
+      },
+      "objectsPerClass": {
+        "Item": 1,
+        "Order": 2
+      }
+    },
+    "rawDomainSizes": {
+      "Buyer": 2,
+      "case": 2,
+      "Item": 1,
+      "Order": 2,
+      "Seller": 1
+    },
+    "assignmentMode": "unrestricted",
+    "expected": {
+      "caseOptionToComplete": false,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": false,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": false,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": false,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [
+      "caseOptionToComplete",
+      "receiverProgression"
+    ],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 276,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 276,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 2880,
+      "edges": 6213,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 300000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": false,
+        "violatingStateCount": 276,
+        "representativeViolation": "260"
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 8,
+        "totalTaskCount": 8,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 0,
+        "totalBranchCount": 0,
+        "uncoveredBranchIds": []
+      },
+      "holds": false
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/is03_item_purchase_optimistic_unrestricted_2cases_1item.json"
+  },
+  {
+    "runId": "is03_unrestricted_2cases_2items",
+    "scenarioId": "IS03",
+    "scenarioTitle": "item purchase optimistic",
+    "scenarioKind": "integrated",
+    "scenarioSlug": "item_purchase_optimistic",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "violates",
+    "expectedOutcome": "violates",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/is03_item_purchase_optimistic_unrestricted_2cases_2items.json"
+    ],
+    "durationMs": 5755.836,
+    "variantId": "unrestricted_2cases_2items",
+    "crossCaseClasses": [
+      "Item"
+    ],
+    "domainSizes": {
+      "cases": 2,
+      "participantsPerRole": {
+        "Buyer": 2,
+        "Seller": 1
+      },
+      "objectsPerClass": {
+        "Item": 2,
+        "Order": 2
+      }
+    },
+    "rawDomainSizes": {
+      "Buyer": 2,
+      "case": 2,
+      "Item": 2,
+      "Order": 2,
+      "Seller": 1
+    },
+    "assignmentMode": "unrestricted",
+    "expected": {
+      "caseOptionToComplete": false,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": false,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": false,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": false,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [
+      "caseOptionToComplete",
+      "receiverProgression"
+    ],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 1104,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 1104,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 16844,
+      "edges": 42832,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 300000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": false,
+        "violatingStateCount": 1104,
+        "representativeViolation": "730"
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 8,
+        "totalTaskCount": 8,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 0,
+        "totalBranchCount": 0,
+        "uncoveredBranchIds": []
+      },
+      "holds": false
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/is03_item_purchase_optimistic_unrestricted_2cases_2items.json"
+  },
+  {
+    "runId": "is04_default",
+    "scenarioId": "IS04",
+    "scenarioTitle": "item purchase pessimistic",
+    "scenarioKind": "integrated",
+    "scenarioSlug": "item_purchase_pessimistic",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/is04_item_purchase_pessimistic.json"
+    ],
+    "durationMs": 18.154,
+    "variantId": "default",
+    "crossCaseClasses": [],
+    "domainSizes": {
+      "cases": 1,
+      "participantsPerRole": {
+        "Buyer": 1,
+        "Seller": 1
+      },
+      "objectsPerClass": {
+        "Item": 1,
+        "Reservation": 1
+      }
+    },
+    "assignmentMode": "default",
+    "expected": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 22,
+      "edges": 24,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 50000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 7,
+        "totalTaskCount": 7,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 0,
+        "totalBranchCount": 0,
+        "uncoveredBranchIds": []
+      },
+      "holds": true
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/is04_item_purchase_pessimistic.json"
+  },
+  {
+    "runId": "is04_fixed_2cases_1reservation",
+    "scenarioId": "IS04",
+    "scenarioTitle": "item purchase pessimistic",
+    "scenarioKind": "integrated",
+    "scenarioSlug": "item_purchase_pessimistic",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/is04_item_purchase_pessimistic_fixed_2cases_1reservation.json"
+    ],
+    "durationMs": 73.299,
+    "variantId": "fixed_2cases_1reservation",
+    "crossCaseClasses": [
+      "Item",
+      "Reservation"
+    ],
+    "domainSizes": {
+      "cases": 2,
+      "participantsPerRole": {
+        "Buyer": 2,
+        "Seller": 1
+      },
+      "objectsPerClass": {
+        "Item": 1,
+        "Reservation": 1
+      }
+    },
+    "rawDomainSizes": {
+      "Buyer": 2,
+      "case": 2,
+      "Item": 1,
+      "Reservation": 1,
+      "Seller": 1
+    },
+    "assignmentMode": "fixed",
+    "expected": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 228,
+      "edges": 413,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 300000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 7,
+        "totalTaskCount": 7,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 0,
+        "totalBranchCount": 0,
+        "uncoveredBranchIds": []
+      },
+      "holds": true
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/is04_item_purchase_pessimistic_fixed_2cases_1reservation.json"
+  },
+  {
+    "runId": "is04_fixed_2cases_2reservations",
+    "scenarioId": "IS04",
+    "scenarioTitle": "item purchase pessimistic",
+    "scenarioKind": "integrated",
+    "scenarioSlug": "item_purchase_pessimistic",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/is04_item_purchase_pessimistic_fixed_2cases_2reservations.json"
+    ],
+    "durationMs": 845.366,
+    "variantId": "fixed_2cases_2reservations",
+    "crossCaseClasses": [
+      "Item",
+      "Reservation"
+    ],
+    "domainSizes": {
+      "cases": 2,
+      "participantsPerRole": {
+        "Buyer": 2,
+        "Seller": 1
+      },
+      "objectsPerClass": {
+        "Item": 2,
+        "Reservation": 2
+      }
+    },
+    "rawDomainSizes": {
+      "Buyer": 2,
+      "case": 2,
+      "Item": 2,
+      "Reservation": 2,
+      "Seller": 1
+    },
+    "assignmentMode": "fixed",
+    "expected": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 2275,
+      "edges": 5008,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 300000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 7,
+        "totalTaskCount": 7,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 0,
+        "totalBranchCount": 0,
+        "uncoveredBranchIds": []
+      },
+      "holds": true
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/is04_item_purchase_pessimistic_fixed_2cases_2reservations.json"
+  },
+  {
+    "runId": "is04_unique_1case_1reservation",
+    "scenarioId": "IS04",
+    "scenarioTitle": "item purchase pessimistic",
+    "scenarioKind": "integrated",
+    "scenarioSlug": "item_purchase_pessimistic",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "holds",
+    "expectedOutcome": "holds",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/is04_item_purchase_pessimistic_unique_1case_1reservation.json"
+    ],
+    "durationMs": 14.199,
+    "variantId": "unique_1case_1reservation",
+    "crossCaseClasses": [
+      "Item",
+      "Reservation"
+    ],
+    "domainSizes": {
+      "cases": 1,
+      "participantsPerRole": {
+        "Buyer": 1,
+        "Seller": 1
+      },
+      "objectsPerClass": {
+        "Item": 1,
+        "Reservation": 1
+      }
+    },
+    "rawDomainSizes": {
+      "Buyer": 1,
+      "case": 1,
+      "Item": 1,
+      "Reservation": 1,
+      "Seller": 1
+    },
+    "assignmentMode": "unique",
+    "expected": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 23,
+      "edges": 26,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 300000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 7,
+        "totalTaskCount": 7,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 0,
+        "totalBranchCount": 0,
+        "uncoveredBranchIds": []
+      },
+      "holds": true
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/is04_item_purchase_pessimistic_unique_1case_1reservation.json"
+  },
+  {
+    "runId": "is04_unrestricted_2cases_1reservation",
+    "scenarioId": "IS04",
+    "scenarioTitle": "item purchase pessimistic",
+    "scenarioKind": "integrated",
+    "scenarioSlug": "item_purchase_pessimistic",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "violates",
+    "expectedOutcome": "violates",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/is04_item_purchase_pessimistic_unrestricted_2cases_1reservation.json"
+    ],
+    "durationMs": 220.632,
+    "variantId": "unrestricted_2cases_1reservation",
+    "crossCaseClasses": [
+      "Item",
+      "Reservation"
+    ],
+    "domainSizes": {
+      "cases": 2,
+      "participantsPerRole": {
+        "Buyer": 2,
+        "Seller": 1
+      },
+      "objectsPerClass": {
+        "Item": 1,
+        "Reservation": 1
+      }
+    },
+    "rawDomainSizes": {
+      "Buyer": 2,
+      "case": 2,
+      "Item": 1,
+      "Reservation": 1,
+      "Seller": 1
+    },
+    "assignmentMode": "unrestricted",
+    "expected": {
+      "caseOptionToComplete": false,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": false,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": false,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": false,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [
+      "caseOptionToComplete",
+      "receiverProgression"
+    ],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 24,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 8,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 750,
+      "edges": 1437,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 300000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": false,
+        "violatingStateCount": 24,
+        "representativeViolation": "431"
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 7,
+        "totalTaskCount": 7,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 0,
+        "totalBranchCount": 0,
+        "uncoveredBranchIds": []
+      },
+      "holds": false
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/is04_item_purchase_pessimistic_unrestricted_2cases_1reservation.json"
+  },
+  {
+    "runId": "is04_unrestricted_2cases_2reservations",
+    "scenarioId": "IS04",
+    "scenarioTitle": "item purchase pessimistic",
+    "scenarioKind": "integrated",
+    "scenarioSlug": "item_purchase_pessimistic",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "violates",
+    "expectedOutcome": "violates",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/is04_item_purchase_pessimistic_unrestricted_2cases_2reservations.json"
+    ],
+    "durationMs": 2985.364,
+    "variantId": "unrestricted_2cases_2reservations",
+    "crossCaseClasses": [
+      "Item",
+      "Reservation"
+    ],
+    "domainSizes": {
+      "cases": 2,
+      "participantsPerRole": {
+        "Buyer": 2,
+        "Seller": 1
+      },
+      "objectsPerClass": {
+        "Item": 2,
+        "Reservation": 2
+      }
+    },
+    "rawDomainSizes": {
+      "Buyer": 2,
+      "case": 2,
+      "Item": 2,
+      "Reservation": 2,
+      "Seller": 1
+    },
+    "assignmentMode": "unrestricted",
+    "expected": {
+      "caseOptionToComplete": false,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": false,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": false,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": false,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [
+      "caseOptionToComplete",
+      "receiverProgression"
+    ],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 192,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 64,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 7975,
+      "edges": 17960,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 300000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": false,
+        "violatingStateCount": 192,
+        "representativeViolation": "2674"
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 7,
+        "totalTaskCount": 7,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 0,
+        "totalBranchCount": 0,
+        "uncoveredBranchIds": []
+      },
+      "holds": false
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/is04_item_purchase_pessimistic_unrestricted_2cases_2reservations.json"
+  },
+  {
+    "runId": "ws01_default",
+    "scenarioId": "WS01",
+    "scenarioTitle": "sender-side blocking",
+    "scenarioKind": "witness",
+    "scenarioSlug": "sender_side_blocking",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "violates",
+    "expectedOutcome": "violates",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/ws01_sender_side_blocking.json"
+    ],
+    "durationMs": 5.083,
+    "variantId": "default",
+    "crossCaseClasses": [],
+    "domainSizes": {
+      "cases": 1,
+      "participantsPerRole": {
+        "Buyer": 1,
+        "Seller": 1,
+        "Warehouse": 1
+      },
+      "objectsPerClass": {
+        "Order": 1
+      }
+    },
+    "assignmentMode": "default",
+    "expected": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": false,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": false,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [
+      "senderProgression"
+    ],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 3,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 14,
+      "edges": 15,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 50000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 3,
+        "totalTaskCount": 3,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 0,
+        "totalBranchCount": 0,
+        "uncoveredBranchIds": []
+      },
+      "holds": true
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/ws01_sender_side_blocking.json"
+  },
+  {
+    "runId": "ws02_default",
+    "scenarioId": "WS02",
+    "scenarioTitle": "receiver-side blocking",
+    "scenarioKind": "witness",
+    "scenarioSlug": "receiver_side_blocking",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "violates",
+    "expectedOutcome": "violates",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/ws02_receiver_side_blocking.json"
+    ],
+    "durationMs": 5.998,
+    "variantId": "default",
+    "crossCaseClasses": [],
+    "domainSizes": {
+      "cases": 1,
+      "participantsPerRole": {
+        "Buyer": 1,
+        "Seller": 1,
+        "Warehouse": 1
+      },
+      "objectsPerClass": {
+        "Order": 1
+      }
+    },
+    "assignmentMode": "default",
+    "expected": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": false,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": false,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [
+      "receiverProgression"
+    ],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 2,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 17,
+      "edges": 18,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 50000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 4,
+        "totalTaskCount": 4,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 0,
+        "totalBranchCount": 0,
+        "uncoveredBranchIds": []
+      },
+      "holds": true
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/ws02_receiver_side_blocking.json"
+  },
+  {
+    "runId": "ws03_default",
+    "scenarioId": "WS03",
+    "scenarioTitle": "unreachable behavior",
+    "scenarioKind": "witness",
+    "scenarioSlug": "unreachable_behavior",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "violates",
+    "expectedOutcome": "violates",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/ws03_unreachable_behavior.json"
+    ],
+    "durationMs": 7.203,
+    "variantId": "default",
+    "crossCaseClasses": [],
+    "domainSizes": {
+      "cases": 1,
+      "participantsPerRole": {
+        "Buyer": 1,
+        "Seller": 1,
+        "Warehouse": 1
+      },
+      "objectsPerClass": {
+        "Order": 1
+      }
+    },
+    "assignmentMode": "default",
+    "expected": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": false,
+      "branchCoverage": false,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": false,
+      "branchCoverage": false,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [
+      "taskCoverage",
+      "branchCoverage"
+    ],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 1,
+      "uncoveredBranches": 1,
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 13,
+      "edges": 12,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 50000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": false,
+        "coveredTaskCount": 3,
+        "totalTaskCount": 4,
+        "uncoveredTaskIds": [
+          "ChoreographyTask_0cojd1b"
+        ]
+      },
+      "branchCoverage": {
+        "holds": false,
+        "coveredBranchCount": 1,
+        "totalBranchCount": 2,
+        "uncoveredBranchIds": [
+          "Gateway_05yuuvj->Flow_0ddpv91"
+        ]
+      },
+      "holds": false
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/ws03_unreachable_behavior.json"
+  },
+  {
+    "runId": "ws04_default",
+    "scenarioId": "WS04",
+    "scenarioTitle": "decision misalignment",
+    "scenarioKind": "witness",
+    "scenarioSlug": "decision_misalignment",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "violates",
+    "expectedOutcome": "violates",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/ws04_decision_misalignment.json"
+    ],
+    "durationMs": 9.664,
+    "variantId": "default",
+    "crossCaseClasses": [],
+    "domainSizes": {
+      "cases": 1,
+      "participantsPerRole": {
+        "Buyer": 1,
+        "Seller": 1,
+        "Warehouse": 1
+      },
+      "objectsPerClass": {
+        "Order": 1
+      }
+    },
+    "assignmentMode": "default",
+    "expected": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": false
+    },
+    "actual": {
+      "caseOptionToComplete": true,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": false
+    },
+    "violatedProperties": [
+      "decisionConsistency"
+    ],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 0,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 2
+    },
+    "stateSpace": {
+      "markings": 30,
+      "edges": 36,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 50000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 4,
+        "totalTaskCount": 4,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 2,
+        "totalBranchCount": 2,
+        "uncoveredBranchIds": []
+      },
+      "holds": true
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/ws04_decision_misalignment.json"
+  },
+  {
+    "runId": "ws05_default",
+    "scenarioId": "WS05",
+    "scenarioTitle": "completion loss",
+    "scenarioKind": "witness",
+    "scenarioSlug": "completion_loss",
+    "artifactGroup": "04-cross-case-analysis",
+    "outcome": "violates",
+    "expectedOutcome": "violates",
+    "artifactPaths": [
+      "evaluation/results/04-cross-case-analysis/ws05_completion_loss.json"
+    ],
+    "durationMs": 8.399,
+    "variantId": "default",
+    "crossCaseClasses": [],
+    "domainSizes": {
+      "cases": 1,
+      "participantsPerRole": {
+        "Buyer": 1,
+        "Seller": 1,
+        "Warehouse": 1
+      },
+      "objectsPerClass": {
+        "Order": 1
+      }
+    },
+    "assignmentMode": "default",
+    "expected": {
+      "caseOptionToComplete": false,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "actual": {
+      "caseOptionToComplete": false,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "violatedProperties": [
+      "caseOptionToComplete"
+    ],
+    "violationCounts": {
+      "caseOptionToCompleteViolations": 5,
+      "properInteractionCompletionViolations": 0,
+      "uncoveredTasks": 0,
+      "uncoveredBranches": 0,
+      "senderProgressionViolations": 0,
+      "receiverProgressionViolations": 0,
+      "decisionConsistencyViolations": 0
+    },
+    "stateSpace": {
+      "markings": 20,
+      "edges": 20,
+      "truncated": false,
+      "maxDepth": 100,
+      "maxMarkings": 50000
+    },
+    "projectedChoreographySoundness": {
+      "optionToComplete": {
+        "holds": false,
+        "violatingStateCount": 5,
+        "representativeViolation": "9"
+      },
+      "properInteractionCompletion": {
+        "holds": true,
+        "violatingStateCount": 0
+      },
+      "taskCoverage": {
+        "holds": true,
+        "coveredTaskCount": 6,
+        "totalTaskCount": 6,
+        "uncoveredTaskIds": []
+      },
+      "branchCoverage": {
+        "holds": true,
+        "coveredBranchCount": 2,
+        "totalBranchCount": 2,
+        "uncoveredBranchIds": []
+      },
+      "holds": false
+    },
+    "reportPath": "evaluation/results/04-cross-case-analysis/ws05_completion_loss.json"
+  }
+]

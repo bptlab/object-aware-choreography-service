@@ -1,0 +1,98 @@
+{
+  "discovery": {
+    "comparison": {
+      "choreographyTraceCount": 2,
+      "protocolTraceCount": 4,
+      "sharedTraceCount": 2,
+      "recall": 1,
+      "precision": 0.5,
+      "protocolOnly": [
+        [
+          "request-item",
+          "decline-offer"
+        ],
+        [
+          "request-item",
+          "offer-item",
+          "order-item",
+          "decline-offer"
+        ]
+      ]
+    },
+    "constraints": [
+      {
+        "kind": "exclusion",
+        "id": "exclusion:decline-offer!order-item",
+        "tasks": [
+          "decline-offer",
+          "order-item"
+        ],
+        "source": {
+          "reason": "eventBasedSplit",
+          "gatewayId": "Gateway_04sockb",
+          "explanation": "Tasks decline-offer and order-item are first observable tasks in alternative branches of gateway Gateway_04sockb."
+        },
+        "violatingTraces": [
+          [
+            "request-item",
+            "offer-item",
+            "order-item",
+            "decline-offer"
+          ]
+        ]
+      },
+      {
+        "kind": "precedence",
+        "id": "precedence:offer-item->decline-offer",
+        "predecessor": "offer-item",
+        "constrained": "decline-offer",
+        "source": {
+          "reason": "sequence",
+          "explanation": "Task decline-offer is not enabled until offer-item has occurred."
+        },
+        "violatingTraces": [
+          [
+            "request-item",
+            "decline-offer"
+          ]
+        ]
+      }
+    ]
+  },
+  "refinedComparison": {
+    "choreographyTraceCount": 2,
+    "protocolTraceCount": 2,
+    "sharedTraceCount": 2,
+    "recall": 1,
+    "precision": 1,
+    "choreographyOnly": [],
+    "protocolOnly": [],
+    "shared": [
+      [
+        "request-item",
+        "offer-item",
+        "decline-offer"
+      ],
+      [
+        "request-item",
+        "offer-item",
+        "order-item",
+        "ship-item"
+      ]
+    ]
+  },
+  "singleRemovalDiagnostics": [
+    {
+      "removedConstraintId": "exclusion:decline-offer!order-item",
+      "removedConstraintKind": "exclusion",
+      "recall": 1,
+      "precision": 0.6666666666666666
+    },
+    {
+      "removedConstraintId": "precedence:offer-item->decline-offer",
+      "removedConstraintKind": "precedence",
+      "recall": 1,
+      "precision": 0.6666666666666666
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "choreographyTraceCount": 4,
+  "protocolTraceCount": 10,
+  "sharedTraceCount": 4,
+  "recall": 1,
+  "precision": 0.4,
+  "choreographyOnly": [],
+  "protocolOnly": [
+    [
+      "request-item",
+      "decline-offer"
+    ],
+    [
+      "request-item",
+      "offer-item",
+      "decline-request"
+    ],
+    [
+      "request-item",
+      "offer-item",
+      "place-order",
+      "decline-offer"
+    ],
+    [
+      "request-item",
+      "offer-item",
+      "place-order",
+      "decline-request"
+    ],
+    [
+      "request-item",
+      "offer-item",
+      "place-order",
+      "accept-order",
+      "decline-offer"
+    ],
+    [
+      "request-item",
+      "offer-item",
+      "place-order",
+      "accept-order",
+      "decline-request"
+    ]
+  ],
+  "shared": [
+    [
+      "request-item",
+      "decline-request"
+    ],
+    [
+      "request-item",
+      "offer-item",
+      "decline-offer"
+    ],
+    [
+      "request-item",
+      "offer-item",
+      "place-order",
+      "decline-order"
+    ],
+    [
+      "request-item",
+      "offer-item",
+      "place-order",
+      "accept-order",
+      "ship-item"
+    ]
+  ]
+}

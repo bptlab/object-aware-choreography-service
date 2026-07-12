@@ -1,0 +1,18 @@
+ID,Scenario,Target,Rejection category,Outcome,Rejected,Error message
+VS01,duplicate task names are rejected,context,duplicate-task-name,rejects,yes,"Duplicate choreography task name ""task1"""
+VS02,unsupported two-way task,context,non-normalized-task,rejects,yes,"Task ""task1"" has more than one message element; object-aware mapping expects at most one."
+VS03,multiple creator roles are rejected,context,multiple-creator-roles,rejects,yes,"Object lifecycle class ClassA has multiple creator roles for initial states: RoleA, RoleB"
+VS04,inconsistent one-to-one creators are rejected,context,one-to-one-creator-inconsistency,rejects,yes,"Mandatory one-to-one creation group requires a common creator role: [ClassA, ClassB] has creators ClassA:RoleA, ClassB:RoleB"
+VS05,exclusive gateway without SESE is rejected,context,non-sese-exclusive-gateway,rejects,yes,"Exclusive gateway ""Gateway_1fcecxd"" must form a well-formed SESE (single-entry single-exit) decision or loop region; found 1 entry sequence flow(s) and 2 exit node(s)."
+VS06,data-model class without lifecycle is rejected,context,missing-lifecycle-for-data-class,rejects,yes,Data model class ClassB does not have an object lifecycle
+VS07,lifecycle class absent from data model is rejected,context,lifecycle-class-not-in-data-model,rejects,yes,Object lifecycle class ClassB does not exist in the data model
+VS08,task reference to unknown class is rejected,context,unknown-task-class-reference,rejects,yes,"Task ""task1"" message ""MissingClass [a-x]"" references unknown class MissingClass"
+VS09,task reference to unknown lifecycle state is rejected,context,unknown-task-state-reference,rejects,yes,"Task ""task1"" message ""ClassA [missing-state]"" references unknown state ClassA [missing-state]"
+VS10,ambiguous synchronized transition target,context,ambiguous-sync-target,rejects,yes,"Ambiguous synchronized transition target in lifecycle ""ClassA"" for trigger ""sync-task"": transitions with the same trigger must share one target state, found ""a-y"" and ""a-z""."
+VS11,decision guard with unknown class is rejected,context,unknown-guard-class,rejects,yes,"Outgoing sequence flow ""Flow_1f47s0p"" of exclusive gateway ""Gateway_1fcecxd"" references unknown class MissingClass."
+VS12,decision guard with unknown state is rejected,context,unknown-guard-state,rejects,yes,"Outgoing sequence flow ""Flow_1yuxkqv"" of exclusive gateway ""Gateway_1fcecxd"" references unknown state ClassA [missing-state]."
+VS13,BSPL rejects alternative initial states without common identifier,bspl,bspl-no-common-identifier,rejects,yes,Could not determine BSPL object-identifying parameters for class ClassA; initial concrete states have no common attributes and no data-model attribute ending in _id exists.
+VS14,BSPL rejects control-flow loop,bspl,bspl-control-flow-cycle,rejects,yes,BSPL mapping requires acyclic control-flow; found loop/cycle ChoreographyTask_0blhxn1 -> Gateway_0ieg9pj -> ChoreographyTask_0vvrsfb -> Gateway_0ookd9i -> ChoreographyTask_0blhxn1
+VS15,BSPL rejects lifecycle loop,bspl,bspl-lifecycle-cycle,rejects,yes,BSPL mapping requires acyclic lifecycle for class ClassA; found loop/cycle a-x -> a-y -> a-x
+VS16,BSPL rejects direct completion after parallel join,bspl,bspl-parallel-join-completion,rejects,yes,BSPL mapping does not support direct completion after parallel join Gateway_1hms0l8; outgoing flow Flow_1pat3d3 targets an end event directly.
+VS17,BSPL rejects missing local-transition attribute signature,bspl,bspl-missing-attribute-signature,rejects,yes,BSPL mapping requires states reached by local transitions to declare at least one attribute for class ClassA; state a-y (a-y) has no attribute specifications.

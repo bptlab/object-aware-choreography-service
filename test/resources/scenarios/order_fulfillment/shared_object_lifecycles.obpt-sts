@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<olc:definitions xmlns:olc="http://bpt-lab.org/schemas/olc"
+  xmlns:olcDi="http://bpt-lab.org/schemas/olcDi"
+  xmlns:dc="https://www.omg.org/spec/BPMN/20100501/DC.xsd">
+  <olc:model id="model_1" name="Order">
+    <olc:state id="State_eoy8p7aufqqbxvoyws4bapma1" name="created&#10;&#10;{order_id,&#10;item}"
+      type="olc:State" />
+    <olc:transition id="Transition_e38x5ipkz2ni18idos26h5v3p" name="[Buyer]"
+      source="InitialState_725enrct2ep3hp4idrulvl40k" target="State_eoy8p7aufqqbxvoyws4bapma1"
+      type="olc:Transition" />
+    <olc:state id="State_dy7p5qqllbj9p7qp5662fnpvq" name="approved&#10;&#10;{approved, regular}"
+      type="olc:State" />
+    <olc:transition id="Transition_34y7xpyb9extf3x44d25o4wy7" name="[Seller]"
+      source="State_eoy8p7aufqqbxvoyws4bapma1" target="State_dy7p5qqllbj9p7qp5662fnpvq"
+      type="olc:Transition" />
+    <olc:state id="State_apliz2qfhhoojc6nzq45h1xyt"
+      name="approved_priority&#10;&#10;{approved, priority}"
+      type="olc:State" />
+    <olc:transition id="Transition_blo9zi11i8hndz10g5qw2i9is" name="[Seller]"
+      source="State_eoy8p7aufqqbxvoyws4bapma1" target="State_apliz2qfhhoojc6nzq45h1xyt"
+      type="olc:Transition" />
+    <olc:state id="State_5hwhzcp71ab4igj81u02zy0j0" name="canceled" />
+    <olc:transition id="Transition_bsw35d9baufocz2dilhumqken" name="cancel order"
+      source="State_dy7p5qqllbj9p7qp5662fnpvq" target="State_5hwhzcp71ab4igj81u02zy0j0"
+      type="olc:Transition" />
+    <olc:transition id="Transition_4gyjr0lwansy5gf0ta91vk7br" name="cancel order"
+      source="State_apliz2qfhhoojc6nzq45h1xyt" target="State_5hwhzcp71ab4igj81u02zy0j0"
+      type="olc:Transition" />
+    <olc:transition id="Transition_7hqmpmflg64mkxtfh584rv5a4" name="cancel order"
+      source="State_eoy8p7aufqqbxvoyws4bapma1" target="State_5hwhzcp71ab4igj81u02zy0j0"
+      type="olc:Transition" />
+    <olc:state id="State_bkn711fex25cdatyhtu605p12" name="completed" />
+    <olc:transition id="Transition_agi278y6vrqsrf5g5e1afeyg7" name="deliver goods"
+      source="State_dy7p5qqllbj9p7qp5662fnpvq" target="State_bkn711fex25cdatyhtu605p12"
+      type="olc:Transition" />
+    <olc:transition id="Transition_5oxv4emthghuhnruiee7vo7r4" name="deliver goods"
+      source="State_apliz2qfhhoojc6nzq45h1xyt" target="State_bkn711fex25cdatyhtu605p12"
+      type="olc:Transition" />
+    <olc:initialState id="InitialState_725enrct2ep3hp4idrulvl40k" type="olc:InitialState" />
+    <olc:transition id="Transition_8qg3svhtazeq5xyr7sq7r7g8x" name="deliver goods"
+      source="State_eoy8p7aufqqbxvoyws4bapma1" target="State_bkn711fex25cdatyhtu605p12"
+      type="olc:Transition" />
+  </olc:model>
+  <olc:model id="Model_9jeb2nth0tug3hrgts1tlhd36" name="Invoice">
+    <olc:state id="State_3zl818e0ijz7w6arw2cbow7wk" name="open&#10;&#10;{invoice_id, &#10;total}"
+      type="olc:State" />
+    <olc:transition id="Transition_df4n65i8c3icyvxustgx64wk9" name="[Seller]"
+      source="InitialState_a5mccgua3fhevq29i1nkp8ytm" target="State_3zl818e0ijz7w6arw2cbow7wk"
+      type="olc:Transition" />
+    <olc:state id="State_3k7m35ekcv7t82xcrcteu8i25" name="paid&#10;&#10;{transaction_id}"
+      type="olc:State" />
+    <olc:transition id="Transition_7s54xuc87aivzl0rtof0mt00a" name="[Buyer]"
+      source="State_3zl818e0ijz7w6arw2cbow7wk" target="State_3k7m35ekcv7t82xcrcteu8i25"
+      type="olc:Transition" />
+    <olc:initialState id="InitialState_a5mccgua3fhevq29i1nkp8ytm" type="olc:InitialState" />
+  </olc:model>
+  <olc:model id="Model_a6jza96wbke9yblyq92uzq3v0" name="Shipment">
+    <olc:state id="State_078jaq8wtt31hrdlw88nawskf" name="prepared&#10;&#10;{shipment_id, weight}"
+      type="olc:State" />
+    <olc:transition id="Transition_a3mttkjjnfwvpbhbx48hyg9yc" name="[Warehouse]"
+      source="InitialState_ap6sqkfisnre4uoxtho3jvcwu" target="State_078jaq8wtt31hrdlw88nawskf"
+      type="olc:Transition" />
+    <olc:state id="State_eg47do8zv5wphthm5b3ker9en" name="released" type="olc:State" />
+    <olc:transition id="Transition_91380mlyh25re94u62xfpyxzo" name="release shipment"
+      source="State_078jaq8wtt31hrdlw88nawskf" target="State_eg47do8zv5wphthm5b3ker9en"
+      type="olc:Transition" />
+    <olc:initialState id="InitialState_ap6sqkfisnre4uoxtho3jvcwu" type="olc:InitialState" />
+    <olc:state id="State_aez3r5y3tt8s4zazloa7idnug" name="delivered" type="olc:State" />
+    <olc:transition id="Transition_boi35judu8y88ghl6l5l4fnsp" name="deliver&#10;goods"
+      source="State_eg47do8zv5wphthm5b3ker9en" target="State_aez3r5y3tt8s4zazloa7idnug"
+      type="olc:Transition" />
+    <olc:transition id="Transition_ahtwoyks0vp4x6p83o1dbhmui" name="deliver goods"
+      source="State_078jaq8wtt31hrdlw88nawskf" target="State_aez3r5y3tt8s4zazloa7idnug"
+      type="olc:Transition" />
+  </olc:model>
+  <olcDi:diagram id="model_1_di">
+    <olcDi:plane id="model_1_plane" modelElement="model_1">
+      <olcDi:diagramShape id="State_eoy8p7aufqqbxvoyws4bapma1_di"
+        modelElement="State_eoy8p7aufqqbxvoyws4bapma1">
+        <dc:Bounds x="-170" y="-173" width="110" height="85" />
+      </olcDi:diagramShape>
+      <olcDi:diagramEdge id="Transition_e38x5ipkz2ni18idos26h5v3p_di"
+        modelElement="Transition_e38x5ipkz2ni18idos26h5v3p">
+        <olcDi:waypoint x="-230" y="-130" />
+        <olcDi:waypoint x="-170" y="-130" />
+        <olcDi:diagramLabel>
+          <dc:Bounds x="-226" y="-151" width="42" height="16" />
+        </olcDi:diagramLabel>
+      </olcDi:diagramEdge>
+      <olcDi:diagramShape id="State_dy7p5qqllbj9p7qp5662fnpvq_di"
+        modelElement="State_dy7p5qqllbj9p7qp5662fnpvq">
+        <dc:Bounds x="0" y="-230" width="150" height="65" />
+      </olcDi:diagramShape>
+      <olcDi:diagramEdge id="Transition_34y7xpyb9extf3x44d25o4wy7_di"
+        modelElement="Transition_34y7xpyb9extf3x44d25o4wy7">
+        <olcDi:waypoint x="-60" y="-160" />
+        <olcDi:waypoint x="1" y="-177" />
+        <olcDi:diagramLabel>
+          <dc:Bounds x="-57" y="-197" width="41" height="16" />
+        </olcDi:diagramLabel>
+      </olcDi:diagramEdge>
+      <olcDi:diagramShape id="State_apliz2qfhhoojc6nzq45h1xyt_di"
+        modelElement="State_apliz2qfhhoojc6nzq45h1xyt">
+        <dc:Bounds x="0" y="-105" width="150" height="65" />
+      </olcDi:diagramShape>
+      <olcDi:diagramEdge id="Transition_blo9zi11i8hndz10g5qw2i9is_di"
+        modelElement="Transition_blo9zi11i8hndz10g5qw2i9is">
+        <olcDi:waypoint x="-60" y="-103" />
+        <olcDi:waypoint x="0" y="-89" />
+        <olcDi:diagramLabel>
+          <dc:Bounds x="-57" y="-90" width="41" height="16" />
+        </olcDi:diagramLabel>
+      </olcDi:diagramEdge>
+      <olcDi:diagramShape id="State_5hwhzcp71ab4igj81u02zy0j0_di"
+        modelElement="State_5hwhzcp71ab4igj81u02zy0j0">
+        <dc:Bounds x="240" y="-155" width="100" height="50" />
+      </olcDi:diagramShape>
+      <olcDi:diagramEdge id="Transition_bsw35d9baufocz2dilhumqken_di"
+        modelElement="Transition_bsw35d9baufocz2dilhumqken">
+        <olcDi:waypoint x="146" y="-170" />
+        <olcDi:waypoint x="241" y="-144" />
+        <olcDi:diagramLabel>
+          <dc:Bounds x="174" y="-178" width="72" height="16" />
+        </olcDi:diagramLabel>
+      </olcDi:diagramEdge>
+      <olcDi:diagramEdge id="Transition_4gyjr0lwansy5gf0ta91vk7br_di"
+        modelElement="Transition_4gyjr0lwansy5gf0ta91vk7br">
+        <olcDi:waypoint x="148" y="-97" />
+        <olcDi:waypoint x="240" y="-118" />
+        <olcDi:diagramLabel>
+          <dc:Bounds x="174" y="-99" width="72" height="16" />
+        </olcDi:diagramLabel>
+      </olcDi:diagramEdge>
+      <olcDi:diagramEdge id="Transition_7hqmpmflg64mkxtfh584rv5a4_di"
+        modelElement="Transition_7hqmpmflg64mkxtfh584rv5a4">
+        <olcDi:waypoint x="-60" y="-130" />
+        <olcDi:waypoint x="240" y="-130" />
+        <olcDi:diagramLabel>
+          <dc:Bounds x="54" y="-148" width="72" height="16" />
+        </olcDi:diagramLabel>
+      </olcDi:diagramEdge>
+      <olcDi:diagramShape id="State_bkn711fex25cdatyhtu605p12_di"
+        modelElement="State_bkn711fex25cdatyhtu605p12">
+        <dc:Bounds x="370" y="-155" width="100" height="50" />
+      </olcDi:diagramShape>
+      <olcDi:diagramEdge id="Transition_agi278y6vrqsrf5g5e1afeyg7_di"
+        modelElement="Transition_agi278y6vrqsrf5g5e1afeyg7">
+        <olcDi:waypoint x="150" y="-210" />
+        <olcDi:waypoint x="420" y="-210" />
+        <olcDi:waypoint x="420" y="-155" />
+        <olcDi:diagramLabel>
+          <dc:Bounds x="255" y="-228" width="78" height="16" />
+        </olcDi:diagramLabel>
+      </olcDi:diagramEdge>
+      <olcDi:diagramEdge id="Transition_5oxv4emthghuhnruiee7vo7r4_di"
+        modelElement="Transition_5oxv4emthghuhnruiee7vo7r4">
+        <olcDi:waypoint x="150" y="-60" />
+        <olcDi:waypoint x="400" y="-60" />
+        <olcDi:waypoint x="400" y="-105" />
+        <olcDi:diagramLabel>
+          <dc:Bounds x="255" y="-80" width="78" height="16" />
+        </olcDi:diagramLabel>
+      </olcDi:diagramEdge>
+      <olcDi:diagramShape id="InitialState_725enrct2ep3hp4idrulvl40k_di"
+        modelElement="InitialState_725enrct2ep3hp4idrulvl40k">
+        <dc:Bounds x="-250" y="-140" width="20" height="20" />
+      </olcDi:diagramShape>
+      <olcDi:diagramEdge id="Transition_8qg3svhtazeq5xyr7sq7r7g8x_di"
+        modelElement="Transition_8qg3svhtazeq5xyr7sq7r7g8x">
+        <olcDi:waypoint x="-115" y="-88" />
+        <olcDi:waypoint x="-115" y="-20" />
+        <olcDi:waypoint x="440" y="-20" />
+        <olcDi:waypoint x="440" y="-105" />
+        <olcDi:diagramLabel>
+          <dc:Bounds x="255" y="-38" width="78" height="16" />
+        </olcDi:diagramLabel>
+      </olcDi:diagramEdge>
+    </olcDi:plane>
+  </olcDi:diagram>
+  <olcDi:diagram id="Diagram_cthb0hfrwwjmxouonrbfuxsgf">
+    <olcDi:plane modelElement="Model_9jeb2nth0tug3hrgts1tlhd36">
+      <olcDi:diagramShape id="State_3zl818e0ijz7w6arw2cbow7wk_di"
+        modelElement="State_3zl818e0ijz7w6arw2cbow7wk">
+        <dc:Bounds x="-280" y="-224" width="100" height="88" />
+      </olcDi:diagramShape>
+      <olcDi:diagramEdge id="Transition_df4n65i8c3icyvxustgx64wk9_di"
+        modelElement="Transition_df4n65i8c3icyvxustgx64wk9">
+        <olcDi:waypoint x="-333" y="-180" />
+        <olcDi:waypoint x="-280" y="-180" />
+        <olcDi:diagramLabel>
+          <dc:Bounds x="-332" y="-202" width="41" height="16" />
+        </olcDi:diagramLabel>
+      </olcDi:diagramEdge>
+      <olcDi:diagramShape id="State_3k7m35ekcv7t82xcrcteu8i25_di"
+        modelElement="State_3k7m35ekcv7t82xcrcteu8i25">
+        <dc:Bounds x="-110" y="-215" width="130" height="69" />
+      </olcDi:diagramShape>
+      <olcDi:diagramEdge id="Transition_7s54xuc87aivzl0rtof0mt00a_di"
+        modelElement="Transition_7s54xuc87aivzl0rtof0mt00a">
+        <olcDi:waypoint x="-180" y="-180" />
+        <olcDi:waypoint x="-110" y="-180" />
+        <olcDi:diagramLabel>
+          <dc:Bounds x="-171" y="-203" width="42" height="16" />
+        </olcDi:diagramLabel>
+      </olcDi:diagramEdge>
+      <olcDi:diagramShape id="InitialState_a5mccgua3fhevq29i1nkp8ytm_di"
+        modelElement="InitialState_a5mccgua3fhevq29i1nkp8ytm">
+        <dc:Bounds x="-353" y="-190" width="20" height="20" />
+      </olcDi:diagramShape>
+    </olcDi:plane>
+  </olcDi:diagram>
+  <olcDi:diagram id="Diagram_7z5f0ymcuvznss21o5m13oq10">
+    <olcDi:plane modelElement="Model_a6jza96wbke9yblyq92uzq3v0">
+      <olcDi:diagramShape id="State_078jaq8wtt31hrdlw88nawskf_di"
+        modelElement="State_078jaq8wtt31hrdlw88nawskf">
+        <dc:Bounds x="-370" y="-194" width="110" height="87" />
+      </olcDi:diagramShape>
+      <olcDi:diagramEdge id="Transition_a3mttkjjnfwvpbhbx48hyg9yc_di"
+        modelElement="Transition_a3mttkjjnfwvpbhbx48hyg9yc">
+        <olcDi:waypoint x="-456" y="-150" />
+        <olcDi:waypoint x="-370" y="-150" />
+        <olcDi:diagramLabel>
+          <dc:Bounds x="-454" y="-172" width="74" height="16" />
+        </olcDi:diagramLabel>
+      </olcDi:diagramEdge>
+      <olcDi:diagramShape id="State_eg47do8zv5wphthm5b3ker9en_di"
+        modelElement="State_eg47do8zv5wphthm5b3ker9en">
+        <dc:Bounds x="-180" y="-175" width="100" height="50" />
+      </olcDi:diagramShape>
+      <olcDi:diagramEdge id="Transition_91380mlyh25re94u62xfpyxzo_di"
+        modelElement="Transition_91380mlyh25re94u62xfpyxzo">
+        <olcDi:waypoint x="-260" y="-150" />
+        <olcDi:waypoint x="-180" y="-150" />
+        <olcDi:diagramLabel>
+          <dc:Bounds x="-246" y="-186" width="53" height="32" />
+        </olcDi:diagramLabel>
+      </olcDi:diagramEdge>
+      <olcDi:diagramShape id="InitialState_ap6sqkfisnre4uoxtho3jvcwu_di"
+        modelElement="InitialState_ap6sqkfisnre4uoxtho3jvcwu">
+        <dc:Bounds x="-476" y="-160" width="20" height="20" />
+      </olcDi:diagramShape>
+      <olcDi:diagramShape id="State_aez3r5y3tt8s4zazloa7idnug_di"
+        modelElement="State_aez3r5y3tt8s4zazloa7idnug">
+        <dc:Bounds x="0" y="-175" width="100" height="50" />
+      </olcDi:diagramShape>
+      <olcDi:diagramEdge id="Transition_boi35judu8y88ghl6l5l4fnsp_di"
+        modelElement="Transition_boi35judu8y88ghl6l5l4fnsp">
+        <olcDi:waypoint x="-80" y="-150" />
+        <olcDi:waypoint x="0" y="-150" />
+        <olcDi:diagramLabel>
+          <dc:Bounds x="-59" y="-186" width="39" height="32" />
+        </olcDi:diagramLabel>
+      </olcDi:diagramEdge>
+      <olcDi:diagramEdge id="Transition_ahtwoyks0vp4x6p83o1dbhmui_di"
+        modelElement="Transition_ahtwoyks0vp4x6p83o1dbhmui">
+        <olcDi:waypoint x="-315" y="-107" />
+        <olcDi:waypoint x="-315" y="-90" />
+        <olcDi:waypoint x="50" y="-90" />
+        <olcDi:waypoint x="50" y="-125" />
+        <olcDi:diagramLabel>
+          <dc:Bounds x="-171" y="-108" width="78" height="16" />
+        </olcDi:diagramLabel>
+      </olcDi:diagramEdge>
+    </olcDi:plane>
+  </olcDi:diagram>
+</olc:definitions>

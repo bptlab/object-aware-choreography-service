@@ -1,0 +1,624 @@
+{
+  "objectAwareRealizability": {
+    "holds": false,
+    "assumptions": {
+      "controlFlowSoundness": "assumedExternal",
+      "controlFlowRealizability": "assumedExternal"
+    },
+    "subproperties": {
+      "projectedChoreographySoundness": {
+        "optionToComplete": {
+          "holds": true,
+          "violatingStateCount": 0
+        },
+        "properInteractionCompletion": {
+          "holds": true,
+          "violatingStateCount": 0
+        },
+        "taskCoverage": {
+          "holds": true,
+          "coveredTaskCount": 4,
+          "totalTaskCount": 4,
+          "uncoveredTaskIds": []
+        },
+        "branchCoverage": {
+          "holds": true,
+          "coveredBranchCount": 0,
+          "totalBranchCount": 0,
+          "uncoveredBranchIds": []
+        },
+        "holds": true
+      },
+      "senderProgression": true,
+      "receiverProgression": false,
+      "decisionConsistency": true
+    },
+    "firstViolation": {
+      "subproperty": "receiverProgression",
+      "witnessPath": [
+        "Event_1kr2mjw (t_Event-1kr2mjw)",
+        "[Buyer] (t_local_Buyer_Order_initial_created)",
+        "place order send (t_send_ChoreographyTask-0xl6esl_Order_created)",
+        "place order receive initial (t_recv_ChoreographyTask-0xl6esl_Order_initial_created)",
+        "[Seller] (t_local_Seller_Order_created_accepted)",
+        "request picking and packing send (t_send_ChoreographyTask-1jek55j_Order_accepted)",
+        "request picking and packing receive initial (t_recv_ChoreographyTask-1jek55j_Order_initial_accepted)",
+        "Gateway_03qrwr3 (t_parallel_Gateway-03qrwr3)",
+        "deliver goods sync send (t_sync_send_ChoreographyTask-18q0u93_Order_accepted)"
+      ]
+    }
+  },
+  "stateSpace": {
+    "markings": 18,
+    "edges": 20
+  },
+  "metadata": {
+    "senderPositions": 4,
+    "transmissions": 4,
+    "decisionGateways": 0,
+    "branchAlternatives": 0,
+    "localTransitions": 2,
+    "localTransitionsByRole": {
+      "Buyer": 1,
+      "Seller": 1
+    }
+  },
+  "diagnostics": {
+    "senderProgressionViolations": 0,
+    "receiverProgressionViolations": 2,
+    "decisionConsistencyViolations": 0,
+    "optionToCompleteViolations": 0,
+    "properInteractionCompletionViolations": 0,
+    "uncoveredTasks": 0,
+    "uncoveredBranches": 0
+  },
+  "projectedChoreographySoundness": {
+    "optionToComplete": {
+      "holds": true,
+      "violatingStateCount": 0
+    },
+    "properInteractionCompletion": {
+      "holds": true,
+      "violatingStateCount": 0
+    },
+    "taskCoverage": {
+      "holds": true,
+      "coveredTaskCount": 4,
+      "totalTaskCount": 4,
+      "uncoveredTaskIds": []
+    },
+    "branchCoverage": {
+      "holds": true,
+      "coveredBranchCount": 0,
+      "totalBranchCount": 0,
+      "uncoveredBranchIds": []
+    },
+    "holds": true
+  },
+  "senderProgression": {
+    "holds": true,
+    "violationCount": 0,
+    "violations": []
+  },
+  "receiverProgression": {
+    "holds": false,
+    "violationCount": 2,
+    "violations": [
+      {
+        "kind": "receiver-progression",
+        "message": "Receiver progression violation for task \"deliver goods\": receiver \"Buyer\" has a transmission token in place \"p_trans_ChoreographyTask-18q0u93\", but none of the receiver-side completion transitions is enabled. Receiver transitions: \"t_sync_recv_ChoreographyTask-18q0u93_Order_accepted\".",
+        "transmissionId": "p_trans_ChoreographyTask-18q0u93",
+        "taskId": "ChoreographyTask_18q0u93",
+        "taskName": "deliver goods",
+        "receiverRole": "Buyer",
+        "transmissionPlaceId": "p_trans_ChoreographyTask-18q0u93",
+        "transmissionPlaceLabel": "deliver goods transmission",
+        "receiverTransitionIds": [
+          "t_sync_recv_ChoreographyTask-18q0u93_Order_accepted"
+        ],
+        "markingKey": "p_exists_Buyer_Order:1|p_exists_Seller_Order:1|p_exists_Warehouse_Order:1|p_sf_Flow-0q50445:1|p_state_Buyer_Order_created:1|p_state_Seller_Order_fulfilled:1|p_state_Warehouse_Order_accepted:1|p_trans_ChoreographyTask-18q0u93:1",
+        "trace": [
+          {
+            "transitionId": "t_Event-1kr2mjw",
+            "transitionLabel": "Event_1kr2mjw",
+            "transitionKind": "control-flow"
+          },
+          {
+            "transitionId": "t_local_Buyer_Order_initial_created",
+            "transitionLabel": "[Buyer]",
+            "transitionKind": "local"
+          },
+          {
+            "transitionId": "t_send_ChoreographyTask-0xl6esl_Order_created",
+            "transitionLabel": "place order send",
+            "transitionKind": "send"
+          },
+          {
+            "transitionId": "t_recv_ChoreographyTask-0xl6esl_Order_initial_created",
+            "transitionLabel": "place order receive initial",
+            "transitionKind": "receive"
+          },
+          {
+            "transitionId": "t_local_Seller_Order_created_accepted",
+            "transitionLabel": "[Seller]",
+            "transitionKind": "local"
+          },
+          {
+            "transitionId": "t_send_ChoreographyTask-1jek55j_Order_accepted",
+            "transitionLabel": "request picking and packing send",
+            "transitionKind": "send"
+          },
+          {
+            "transitionId": "t_recv_ChoreographyTask-1jek55j_Order_initial_accepted",
+            "transitionLabel": "request picking and packing receive initial",
+            "transitionKind": "receive"
+          },
+          {
+            "transitionId": "t_parallel_Gateway-03qrwr3",
+            "transitionLabel": "Gateway_03qrwr3",
+            "transitionKind": "control-flow"
+          },
+          {
+            "transitionId": "t_sync_send_ChoreographyTask-18q0u93_Order_accepted",
+            "transitionLabel": "deliver goods sync send",
+            "transitionKind": "send"
+          }
+        ],
+        "traceText": [
+          "Event_1kr2mjw (t_Event-1kr2mjw)",
+          "[Buyer] (t_local_Buyer_Order_initial_created)",
+          "place order send (t_send_ChoreographyTask-0xl6esl_Order_created)",
+          "place order receive initial (t_recv_ChoreographyTask-0xl6esl_Order_initial_created)",
+          "[Seller] (t_local_Seller_Order_created_accepted)",
+          "request picking and packing send (t_send_ChoreographyTask-1jek55j_Order_accepted)",
+          "request picking and packing receive initial (t_recv_ChoreographyTask-1jek55j_Order_initial_accepted)",
+          "Gateway_03qrwr3 (t_parallel_Gateway-03qrwr3)",
+          "deliver goods sync send (t_sync_send_ChoreographyTask-18q0u93_Order_accepted)"
+        ],
+        "marking": {
+          "p_exists_Buyer_Order": 1,
+          "p_exists_Seller_Order": 1,
+          "p_exists_Warehouse_Order": 1,
+          "p_sf_Flow-0q50445": 1,
+          "p_state_Buyer_Order_created": 1,
+          "p_state_Seller_Order_fulfilled": 1,
+          "p_state_Warehouse_Order_accepted": 1,
+          "p_trans_ChoreographyTask-18q0u93": 1
+        },
+        "markedPlaces": [
+          {
+            "placeId": "p_exists_Buyer_Order",
+            "placeLabel": "Buyer.Order+",
+            "tokens": 1
+          },
+          {
+            "placeId": "p_exists_Seller_Order",
+            "placeLabel": "Seller.Order+",
+            "tokens": 1
+          },
+          {
+            "placeId": "p_exists_Warehouse_Order",
+            "placeLabel": "Warehouse.Order+",
+            "tokens": 1
+          },
+          {
+            "placeId": "p_sf_Flow-0q50445",
+            "placeLabel": "Flow_0q50445",
+            "tokens": 1
+          },
+          {
+            "placeId": "p_state_Buyer_Order_created",
+            "placeLabel": "Buyer.Order [created]",
+            "tokens": 1
+          },
+          {
+            "placeId": "p_state_Seller_Order_fulfilled",
+            "placeLabel": "Seller.Order [fulfilled]",
+            "tokens": 1
+          },
+          {
+            "placeId": "p_state_Warehouse_Order_accepted",
+            "placeLabel": "Warehouse.Order [accepted]",
+            "tokens": 1
+          },
+          {
+            "placeId": "p_trans_ChoreographyTask-18q0u93",
+            "placeLabel": "deliver goods transmission",
+            "tokens": 1
+          }
+        ]
+      },
+      {
+        "kind": "receiver-progression",
+        "message": "Receiver progression violation for task \"deliver goods\": receiver \"Buyer\" has a transmission token in place \"p_trans_ChoreographyTask-18q0u93\", but none of the receiver-side completion transitions is enabled. Receiver transitions: \"t_sync_recv_ChoreographyTask-18q0u93_Order_accepted\".",
+        "transmissionId": "p_trans_ChoreographyTask-18q0u93",
+        "taskId": "ChoreographyTask_18q0u93",
+        "taskName": "deliver goods",
+        "receiverRole": "Buyer",
+        "transmissionPlaceId": "p_trans_ChoreographyTask-18q0u93",
+        "transmissionPlaceLabel": "deliver goods transmission",
+        "receiverTransitionIds": [
+          "t_sync_recv_ChoreographyTask-18q0u93_Order_accepted"
+        ],
+        "markingKey": "p_exists_Buyer_Order:1|p_exists_Seller_Order:1|p_exists_Warehouse_Order:1|p_state_Buyer_Order_created:1|p_state_Seller_Order_fulfilled:1|p_state_Warehouse_Order_accepted:1|p_trans_ChoreographyTask-18q0u93:1|p_trans_ChoreographyTask-1am049e:1",
+        "trace": [
+          {
+            "transitionId": "t_Event-1kr2mjw",
+            "transitionLabel": "Event_1kr2mjw",
+            "transitionKind": "control-flow"
+          },
+          {
+            "transitionId": "t_local_Buyer_Order_initial_created",
+            "transitionLabel": "[Buyer]",
+            "transitionKind": "local"
+          },
+          {
+            "transitionId": "t_send_ChoreographyTask-0xl6esl_Order_created",
+            "transitionLabel": "place order send",
+            "transitionKind": "send"
+          },
+          {
+            "transitionId": "t_recv_ChoreographyTask-0xl6esl_Order_initial_created",
+            "transitionLabel": "place order receive initial",
+            "transitionKind": "receive"
+          },
+          {
+            "transitionId": "t_local_Seller_Order_created_accepted",
+            "transitionLabel": "[Seller]",
+            "transitionKind": "local"
+          },
+          {
+            "transitionId": "t_send_ChoreographyTask-1jek55j_Order_accepted",
+            "transitionLabel": "request picking and packing send",
+            "transitionKind": "send"
+          },
+          {
+            "transitionId": "t_recv_ChoreographyTask-1jek55j_Order_initial_accepted",
+            "transitionLabel": "request picking and packing receive initial",
+            "transitionKind": "receive"
+          },
+          {
+            "transitionId": "t_parallel_Gateway-03qrwr3",
+            "transitionLabel": "Gateway_03qrwr3",
+            "transitionKind": "control-flow"
+          },
+          {
+            "transitionId": "t_send_ChoreographyTask-1am049e_Order_accepted",
+            "transitionLabel": "forward order confirmation send",
+            "transitionKind": "send"
+          },
+          {
+            "transitionId": "t_sync_send_ChoreographyTask-18q0u93_Order_accepted",
+            "transitionLabel": "deliver goods sync send",
+            "transitionKind": "send"
+          }
+        ],
+        "traceText": [
+          "Event_1kr2mjw (t_Event-1kr2mjw)",
+          "[Buyer] (t_local_Buyer_Order_initial_created)",
+          "place order send (t_send_ChoreographyTask-0xl6esl_Order_created)",
+          "place order receive initial (t_recv_ChoreographyTask-0xl6esl_Order_initial_created)",
+          "[Seller] (t_local_Seller_Order_created_accepted)",
+          "request picking and packing send (t_send_ChoreographyTask-1jek55j_Order_accepted)",
+          "request picking and packing receive initial (t_recv_ChoreographyTask-1jek55j_Order_initial_accepted)",
+          "Gateway_03qrwr3 (t_parallel_Gateway-03qrwr3)",
+          "forward order confirmation send (t_send_ChoreographyTask-1am049e_Order_accepted)",
+          "deliver goods sync send (t_sync_send_ChoreographyTask-18q0u93_Order_accepted)"
+        ],
+        "marking": {
+          "p_exists_Buyer_Order": 1,
+          "p_exists_Seller_Order": 1,
+          "p_exists_Warehouse_Order": 1,
+          "p_state_Buyer_Order_created": 1,
+          "p_state_Seller_Order_fulfilled": 1,
+          "p_state_Warehouse_Order_accepted": 1,
+          "p_trans_ChoreographyTask-18q0u93": 1,
+          "p_trans_ChoreographyTask-1am049e": 1
+        },
+        "markedPlaces": [
+          {
+            "placeId": "p_exists_Buyer_Order",
+            "placeLabel": "Buyer.Order+",
+            "tokens": 1
+          },
+          {
+            "placeId": "p_exists_Seller_Order",
+            "placeLabel": "Seller.Order+",
+            "tokens": 1
+          },
+          {
+            "placeId": "p_exists_Warehouse_Order",
+            "placeLabel": "Warehouse.Order+",
+            "tokens": 1
+          },
+          {
+            "placeId": "p_state_Buyer_Order_created",
+            "placeLabel": "Buyer.Order [created]",
+            "tokens": 1
+          },
+          {
+            "placeId": "p_state_Seller_Order_fulfilled",
+            "placeLabel": "Seller.Order [fulfilled]",
+            "tokens": 1
+          },
+          {
+            "placeId": "p_state_Warehouse_Order_accepted",
+            "placeLabel": "Warehouse.Order [accepted]",
+            "tokens": 1
+          },
+          {
+            "placeId": "p_trans_ChoreographyTask-18q0u93",
+            "placeLabel": "deliver goods transmission",
+            "tokens": 1
+          },
+          {
+            "placeId": "p_trans_ChoreographyTask-1am049e",
+            "placeLabel": "forward order confirmation transmission",
+            "tokens": 1
+          }
+        ]
+      }
+    ]
+  },
+  "decisionConsistency": {
+    "holds": true,
+    "violationCount": 0,
+    "violations": []
+  },
+  "violations": [
+    {
+      "kind": "receiver-progression",
+      "message": "Receiver progression violation for task \"deliver goods\": receiver \"Buyer\" has a transmission token in place \"p_trans_ChoreographyTask-18q0u93\", but none of the receiver-side completion transitions is enabled. Receiver transitions: \"t_sync_recv_ChoreographyTask-18q0u93_Order_accepted\".",
+      "transmissionId": "p_trans_ChoreographyTask-18q0u93",
+      "taskId": "ChoreographyTask_18q0u93",
+      "taskName": "deliver goods",
+      "receiverRole": "Buyer",
+      "transmissionPlaceId": "p_trans_ChoreographyTask-18q0u93",
+      "transmissionPlaceLabel": "deliver goods transmission",
+      "receiverTransitionIds": [
+        "t_sync_recv_ChoreographyTask-18q0u93_Order_accepted"
+      ],
+      "markingKey": "p_exists_Buyer_Order:1|p_exists_Seller_Order:1|p_exists_Warehouse_Order:1|p_sf_Flow-0q50445:1|p_state_Buyer_Order_created:1|p_state_Seller_Order_fulfilled:1|p_state_Warehouse_Order_accepted:1|p_trans_ChoreographyTask-18q0u93:1",
+      "trace": [
+        {
+          "transitionId": "t_Event-1kr2mjw",
+          "transitionLabel": "Event_1kr2mjw",
+          "transitionKind": "control-flow"
+        },
+        {
+          "transitionId": "t_local_Buyer_Order_initial_created",
+          "transitionLabel": "[Buyer]",
+          "transitionKind": "local"
+        },
+        {
+          "transitionId": "t_send_ChoreographyTask-0xl6esl_Order_created",
+          "transitionLabel": "place order send",
+          "transitionKind": "send"
+        },
+        {
+          "transitionId": "t_recv_ChoreographyTask-0xl6esl_Order_initial_created",
+          "transitionLabel": "place order receive initial",
+          "transitionKind": "receive"
+        },
+        {
+          "transitionId": "t_local_Seller_Order_created_accepted",
+          "transitionLabel": "[Seller]",
+          "transitionKind": "local"
+        },
+        {
+          "transitionId": "t_send_ChoreographyTask-1jek55j_Order_accepted",
+          "transitionLabel": "request picking and packing send",
+          "transitionKind": "send"
+        },
+        {
+          "transitionId": "t_recv_ChoreographyTask-1jek55j_Order_initial_accepted",
+          "transitionLabel": "request picking and packing receive initial",
+          "transitionKind": "receive"
+        },
+        {
+          "transitionId": "t_parallel_Gateway-03qrwr3",
+          "transitionLabel": "Gateway_03qrwr3",
+          "transitionKind": "control-flow"
+        },
+        {
+          "transitionId": "t_sync_send_ChoreographyTask-18q0u93_Order_accepted",
+          "transitionLabel": "deliver goods sync send",
+          "transitionKind": "send"
+        }
+      ],
+      "traceText": [
+        "Event_1kr2mjw (t_Event-1kr2mjw)",
+        "[Buyer] (t_local_Buyer_Order_initial_created)",
+        "place order send (t_send_ChoreographyTask-0xl6esl_Order_created)",
+        "place order receive initial (t_recv_ChoreographyTask-0xl6esl_Order_initial_created)",
+        "[Seller] (t_local_Seller_Order_created_accepted)",
+        "request picking and packing send (t_send_ChoreographyTask-1jek55j_Order_accepted)",
+        "request picking and packing receive initial (t_recv_ChoreographyTask-1jek55j_Order_initial_accepted)",
+        "Gateway_03qrwr3 (t_parallel_Gateway-03qrwr3)",
+        "deliver goods sync send (t_sync_send_ChoreographyTask-18q0u93_Order_accepted)"
+      ],
+      "marking": {
+        "p_exists_Buyer_Order": 1,
+        "p_exists_Seller_Order": 1,
+        "p_exists_Warehouse_Order": 1,
+        "p_sf_Flow-0q50445": 1,
+        "p_state_Buyer_Order_created": 1,
+        "p_state_Seller_Order_fulfilled": 1,
+        "p_state_Warehouse_Order_accepted": 1,
+        "p_trans_ChoreographyTask-18q0u93": 1
+      },
+      "markedPlaces": [
+        {
+          "placeId": "p_exists_Buyer_Order",
+          "placeLabel": "Buyer.Order+",
+          "tokens": 1
+        },
+        {
+          "placeId": "p_exists_Seller_Order",
+          "placeLabel": "Seller.Order+",
+          "tokens": 1
+        },
+        {
+          "placeId": "p_exists_Warehouse_Order",
+          "placeLabel": "Warehouse.Order+",
+          "tokens": 1
+        },
+        {
+          "placeId": "p_sf_Flow-0q50445",
+          "placeLabel": "Flow_0q50445",
+          "tokens": 1
+        },
+        {
+          "placeId": "p_state_Buyer_Order_created",
+          "placeLabel": "Buyer.Order [created]",
+          "tokens": 1
+        },
+        {
+          "placeId": "p_state_Seller_Order_fulfilled",
+          "placeLabel": "Seller.Order [fulfilled]",
+          "tokens": 1
+        },
+        {
+          "placeId": "p_state_Warehouse_Order_accepted",
+          "placeLabel": "Warehouse.Order [accepted]",
+          "tokens": 1
+        },
+        {
+          "placeId": "p_trans_ChoreographyTask-18q0u93",
+          "placeLabel": "deliver goods transmission",
+          "tokens": 1
+        }
+      ]
+    },
+    {
+      "kind": "receiver-progression",
+      "message": "Receiver progression violation for task \"deliver goods\": receiver \"Buyer\" has a transmission token in place \"p_trans_ChoreographyTask-18q0u93\", but none of the receiver-side completion transitions is enabled. Receiver transitions: \"t_sync_recv_ChoreographyTask-18q0u93_Order_accepted\".",
+      "transmissionId": "p_trans_ChoreographyTask-18q0u93",
+      "taskId": "ChoreographyTask_18q0u93",
+      "taskName": "deliver goods",
+      "receiverRole": "Buyer",
+      "transmissionPlaceId": "p_trans_ChoreographyTask-18q0u93",
+      "transmissionPlaceLabel": "deliver goods transmission",
+      "receiverTransitionIds": [
+        "t_sync_recv_ChoreographyTask-18q0u93_Order_accepted"
+      ],
+      "markingKey": "p_exists_Buyer_Order:1|p_exists_Seller_Order:1|p_exists_Warehouse_Order:1|p_state_Buyer_Order_created:1|p_state_Seller_Order_fulfilled:1|p_state_Warehouse_Order_accepted:1|p_trans_ChoreographyTask-18q0u93:1|p_trans_ChoreographyTask-1am049e:1",
+      "trace": [
+        {
+          "transitionId": "t_Event-1kr2mjw",
+          "transitionLabel": "Event_1kr2mjw",
+          "transitionKind": "control-flow"
+        },
+        {
+          "transitionId": "t_local_Buyer_Order_initial_created",
+          "transitionLabel": "[Buyer]",
+          "transitionKind": "local"
+        },
+        {
+          "transitionId": "t_send_ChoreographyTask-0xl6esl_Order_created",
+          "transitionLabel": "place order send",
+          "transitionKind": "send"
+        },
+        {
+          "transitionId": "t_recv_ChoreographyTask-0xl6esl_Order_initial_created",
+          "transitionLabel": "place order receive initial",
+          "transitionKind": "receive"
+        },
+        {
+          "transitionId": "t_local_Seller_Order_created_accepted",
+          "transitionLabel": "[Seller]",
+          "transitionKind": "local"
+        },
+        {
+          "transitionId": "t_send_ChoreographyTask-1jek55j_Order_accepted",
+          "transitionLabel": "request picking and packing send",
+          "transitionKind": "send"
+        },
+        {
+          "transitionId": "t_recv_ChoreographyTask-1jek55j_Order_initial_accepted",
+          "transitionLabel": "request picking and packing receive initial",
+          "transitionKind": "receive"
+        },
+        {
+          "transitionId": "t_parallel_Gateway-03qrwr3",
+          "transitionLabel": "Gateway_03qrwr3",
+          "transitionKind": "control-flow"
+        },
+        {
+          "transitionId": "t_send_ChoreographyTask-1am049e_Order_accepted",
+          "transitionLabel": "forward order confirmation send",
+          "transitionKind": "send"
+        },
+        {
+          "transitionId": "t_sync_send_ChoreographyTask-18q0u93_Order_accepted",
+          "transitionLabel": "deliver goods sync send",
+          "transitionKind": "send"
+        }
+      ],
+      "traceText": [
+        "Event_1kr2mjw (t_Event-1kr2mjw)",
+        "[Buyer] (t_local_Buyer_Order_initial_created)",
+        "place order send (t_send_ChoreographyTask-0xl6esl_Order_created)",
+        "place order receive initial (t_recv_ChoreographyTask-0xl6esl_Order_initial_created)",
+        "[Seller] (t_local_Seller_Order_created_accepted)",
+        "request picking and packing send (t_send_ChoreographyTask-1jek55j_Order_accepted)",
+        "request picking and packing receive initial (t_recv_ChoreographyTask-1jek55j_Order_initial_accepted)",
+        "Gateway_03qrwr3 (t_parallel_Gateway-03qrwr3)",
+        "forward order confirmation send (t_send_ChoreographyTask-1am049e_Order_accepted)",
+        "deliver goods sync send (t_sync_send_ChoreographyTask-18q0u93_Order_accepted)"
+      ],
+      "marking": {
+        "p_exists_Buyer_Order": 1,
+        "p_exists_Seller_Order": 1,
+        "p_exists_Warehouse_Order": 1,
+        "p_state_Buyer_Order_created": 1,
+        "p_state_Seller_Order_fulfilled": 1,
+        "p_state_Warehouse_Order_accepted": 1,
+        "p_trans_ChoreographyTask-18q0u93": 1,
+        "p_trans_ChoreographyTask-1am049e": 1
+      },
+      "markedPlaces": [
+        {
+          "placeId": "p_exists_Buyer_Order",
+          "placeLabel": "Buyer.Order+",
+          "tokens": 1
+        },
+        {
+          "placeId": "p_exists_Seller_Order",
+          "placeLabel": "Seller.Order+",
+          "tokens": 1
+        },
+        {
+          "placeId": "p_exists_Warehouse_Order",
+          "placeLabel": "Warehouse.Order+",
+          "tokens": 1
+        },
+        {
+          "placeId": "p_state_Buyer_Order_created",
+          "placeLabel": "Buyer.Order [created]",
+          "tokens": 1
+        },
+        {
+          "placeId": "p_state_Seller_Order_fulfilled",
+          "placeLabel": "Seller.Order [fulfilled]",
+          "tokens": 1
+        },
+        {
+          "placeId": "p_state_Warehouse_Order_accepted",
+          "placeLabel": "Warehouse.Order [accepted]",
+          "tokens": 1
+        },
+        {
+          "placeId": "p_trans_ChoreographyTask-18q0u93",
+          "placeLabel": "deliver goods transmission",
+          "tokens": 1
+        },
+        {
+          "placeId": "p_trans_ChoreographyTask-1am049e",
+          "placeLabel": "forward order confirmation transmission",
+          "tokens": 1
+        }
+      ]
+    }
+  ]
+}

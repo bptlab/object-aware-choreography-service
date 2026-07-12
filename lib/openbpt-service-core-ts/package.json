@@ -1,0 +1,48 @@
+{
+  "name": "openbpt-service-core",
+  "version": "1.0.1",
+  "description": "Service core that manages interactions with the OpenBPT service manager",
+  "main": "build/index.js",
+  "types": "build/types/index.d.ts",
+  "scripts": {
+    "build": "rimraf ./build && tsc",
+    "lint": "npx eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "OpenBPT",
+    "Services",
+    "Core"
+  ],
+  "author": "Tom Lichtenstein",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@types/node": "^20.4.6",
+    "eslint": "^8.57.0",
+    "pino-pretty": "^11.0.0",
+    "prettier": "^2.8.8",
+    "rimraf": "^5.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^7.6.0"
+  },
+  "dependencies": {
+    "@fastify/type-provider-typebox": "^3.4.0",
+    "@sinclair/typebox": "^0.30.2",
+    "axios": "^1.4.0",
+    "dotenv": "^16.3.1",
+    "fastify": "^4.21.0",
+    "pino": "^8.20.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.hpi.de/bpt-lab/openbpt-project/services/service-cores/openbpt-service-core-ts.git"
+  },
+  "files": [
+    "build/**/*",
+    "LICENSE",
+    "package.json",
+    "README.md"
+  ]
+}

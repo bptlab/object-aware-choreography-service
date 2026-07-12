@@ -1,0 +1,3 @@
+{
+  "error": "BSPL mapping does not support direct completion after parallel join Gateway_1hms0l8; outgoing flow Flow_1pat3d3 targets an end event directly."
+}

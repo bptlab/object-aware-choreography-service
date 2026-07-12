@@ -1,0 +1,188 @@
+{
+  "discovery": {
+    "comparison": {
+      "choreographyTraceCount": 2,
+      "protocolTraceCount": 6,
+      "sharedTraceCount": 2,
+      "recall": 1,
+      "precision": 0.3333333333333333,
+      "protocolOnly": [
+        [
+          "task1",
+          "task4"
+        ],
+        [
+          "task1",
+          "task5"
+        ],
+        [
+          "task1",
+          "task2",
+          "task5"
+        ],
+        [
+          "task1",
+          "task3",
+          "task4"
+        ]
+      ]
+    },
+    "constraints": [
+      {
+        "kind": "disjunctivePrecedence",
+        "id": "disjunctivePrecedence:task2|task3->task4",
+        "alternatives": [
+          "task2",
+          "task3"
+        ],
+        "constrained": "task4",
+        "source": {
+          "reason": "exclusiveJoin",
+          "explanation": "Task task4 requires one completed alternative branch before it can occur."
+        },
+        "violatingTraces": [
+          [
+            "task1",
+            "task4"
+          ]
+        ]
+      },
+      {
+        "kind": "disjunctivePrecedence",
+        "id": "disjunctivePrecedence:task2|task3->task5",
+        "alternatives": [
+          "task2",
+          "task3"
+        ],
+        "constrained": "task5",
+        "source": {
+          "reason": "exclusiveJoin",
+          "explanation": "Task task5 requires one completed alternative branch before it can occur."
+        },
+        "violatingTraces": [
+          [
+            "task1",
+            "task5"
+          ]
+        ]
+      },
+      {
+        "kind": "guardInformation",
+        "id": "guardInformation:Gateway_1fcecxd:Flow_1f47s0p:task5",
+        "guardedTask": "task5",
+        "objectClass": "ClassA",
+        "objectState": "a-y",
+        "requiredInAlternatives": [
+          [
+            "attribute_classa_a-id",
+            "attribute_classa_att2"
+          ]
+        ],
+        "requiredIn": [
+          "attribute_classa_a-id",
+          "attribute_classa_att2"
+        ],
+        "requiredNil": [],
+        "source": {
+          "reason": "guardedExclusiveSplit",
+          "gatewayId": "Gateway_1fcecxd",
+          "branchId": "Flow_1f47s0p",
+          "explanation": "Task task5 is the first task on a guarded exclusive branch and requires the guard information."
+        },
+        "violatingTraces": [
+          [
+            "task1",
+            "task5"
+          ],
+          [
+            "task1",
+            "task2",
+            "task5"
+          ]
+        ]
+      },
+      {
+        "kind": "guardInformation",
+        "id": "guardInformation:Gateway_1fcecxd:Flow_1yuxkqv:task4",
+        "guardedTask": "task4",
+        "objectClass": "ClassA",
+        "objectState": "a-x",
+        "requiredInAlternatives": [
+          [
+            "attribute_classa_a-id",
+            "attribute_classa_att1"
+          ]
+        ],
+        "requiredIn": [
+          "attribute_classa_a-id",
+          "attribute_classa_att1"
+        ],
+        "requiredNil": [],
+        "source": {
+          "reason": "guardedExclusiveSplit",
+          "gatewayId": "Gateway_1fcecxd",
+          "branchId": "Flow_1yuxkqv",
+          "explanation": "Task task4 is the first task on a guarded exclusive branch and requires the guard information."
+        },
+        "violatingTraces": [
+          [
+            "task1",
+            "task4"
+          ],
+          [
+            "task1",
+            "task3",
+            "task4"
+          ]
+        ]
+      }
+    ]
+  },
+  "refinedComparison": {
+    "choreographyTraceCount": 2,
+    "protocolTraceCount": 2,
+    "sharedTraceCount": 2,
+    "recall": 1,
+    "precision": 1,
+    "choreographyOnly": [],
+    "protocolOnly": [],
+    "shared": [
+      [
+        "task1",
+        "task2",
+        "task4"
+      ],
+      [
+        "task1",
+        "task3",
+        "task5"
+      ]
+    ]
+  },
+  "singleRemovalDiagnostics": [
+    {
+      "removedConstraintId": "disjunctivePrecedence:task2|task3->task4",
+      "removedConstraintKind": "disjunctivePrecedence",
+      "recall": 1,
+      "precision": 1
+    },
+    {
+      "removedConstraintId": "disjunctivePrecedence:task2|task3->task5",
+      "removedConstraintKind": "disjunctivePrecedence",
+      "recall": 1,
+      "precision": 1
+    },
+    {
+      "removedConstraintId": "guardInformation:Gateway_1fcecxd:Flow_1f47s0p:task5",
+      "removedConstraintKind": "guardInformation",
+      "recall": 1,
+      "precision": 0.6666666666666666
+    },
+    {
+      "removedConstraintId": "guardInformation:Gateway_1fcecxd:Flow_1yuxkqv:task4",
+      "removedConstraintKind": "guardInformation",
+      "recall": 1,
+      "precision": 0.6666666666666666
+    }
+  ]
+}

@@ -1,0 +1,994 @@
+{
+  "objectAwareRealizability": {
+    "holds": false,
+    "assumptions": {
+      "controlFlowSoundness": "assumedExternal",
+      "controlFlowRealizability": "assumedExternal"
+    },
+    "subproperties": {
+      "projectedChoreographySoundness": {
+        "optionToComplete": {
+          "holds": false,
+          "violatingStateCount": 5,
+          "representativeViolation": "9"
+        },
+        "properInteractionCompletion": {
+          "holds": true,
+          "violatingStateCount": 0
+        },
+        "taskCoverage": {
+          "holds": true,
+          "coveredTaskCount": 6,
+          "totalTaskCount": 6,
+          "uncoveredTaskIds": []
+        },
+        "branchCoverage": {
+          "holds": true,
+          "coveredBranchCount": 2,
+          "totalBranchCount": 2,
+          "uncoveredBranchIds": []
+        },
+        "holds": false
+      },
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "firstViolation": {
+      "subproperty": "projectedChoreographySoundness"
+    }
+  },
+  "crossCaseAnalysis": {
+    "holds": false,
+    "subproperties": {
+      "caseOptionToComplete": false,
+      "projectedChoreographySoundness": false,
+      "properInteractionCompletion": true,
+      "taskCoverage": true,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    }
+  },
+  "stateSpace": {
+    "markings": 20,
+    "edges": 20,
+    "truncated": false,
+    "truncationReasons": [],
+    "limits": {
+      "maxMarkings": 50000,
+      "maxDepth": 100
+    }
+  },
+  "metadata": {
+    "caseOptionToCompleteSemantics": "explicit-sink-place: completed cases occur in the typed sink place and must not occur in any non-sink case-control or transmission place",
+    "activeCases": 1,
+    "checkedCaseStatePairs": 18,
+    "taskCoverageTasks": 6,
+    "branchCoverageBranches": 2,
+    "senderPositions": 5,
+    "transmissions": 3,
+    "decisionGateways": 1,
+    "localTransitions": 2
+  },
+  "diagnostics": {
+    "optionToCompleteViolations": 5,
+    "caseOptionToCompleteViolations": 5,
+    "properInteractionCompletionViolations": 0,
+    "uncoveredTasks": 0,
+    "uncoveredBranches": 0,
+    "senderProgressionViolations": 0,
+    "receiverProgressionViolations": 0,
+    "decisionConsistencyViolations": 0
+  },
+  "projectedChoreographySoundness": {
+    "optionToComplete": {
+      "holds": false,
+      "violatingStateCount": 5,
+      "representativeViolation": "9"
+    },
+    "properInteractionCompletion": {
+      "holds": true,
+      "violatingStateCount": 0
+    },
+    "taskCoverage": {
+      "holds": true,
+      "coveredTaskCount": 6,
+      "totalTaskCount": 6,
+      "uncoveredTaskIds": []
+    },
+    "branchCoverage": {
+      "holds": true,
+      "coveredBranchCount": 2,
+      "totalBranchCount": 2,
+      "uncoveredBranchIds": []
+    },
+    "holds": false
+  },
+  "caseOptionToComplete": {
+    "holds": false,
+    "violationCount": 5,
+    "activeCaseCount": 1,
+    "checkedPairCount": 18,
+    "completionSemantics": "explicit-sink-place: completed cases occur in the typed sink place and must not occur in any non-sink case-control or transmission place",
+    "violations": [
+      {
+        "kind": "case-option-to-complete",
+        "message": "Case option-to-complete violation: case case1 is active in reachable marking 9, but no continuation reaches a marking where that case occurs in the typed sink place and no longer occurs in any non-sink case-control or transmission place.",
+        "markingKey": "Place_aware_Buyer_Order[DataClass_Role_Buyer:Buyer_1,DataClass_Object_Order:Order_1]|Place_aware_Seller_Order[DataClass_Role_Seller:Seller_1,DataClass_Object_Order:Order_1]|Place_cf_Flow_1wajnew[DataClass_Case:case1]|Place_incl_Order[DataClass_Case:case1]|Place_obj_Order[DataClass_Case:case1,DataClass_Object_Order:Order_1]|Place_part_Buyer[DataClass_Case:case1,DataClass_Role_Buyer:Buyer_1]|Place_part_Seller[DataClass_Case:case1,DataClass_Role_Seller:Seller_1]|Place_part_Warehouse[DataClass_Case:case1,DataClass_Role_Warehouse:Warehouse_1]|Place_pool_Buyer[DataClass_Role_Buyer:Buyer_1]|Place_pool_Seller[DataClass_Role_Seller:Seller_1]|Place_pool_Warehouse[DataClass_Role_Warehouse:Warehouse_1]|Place_state_Buyer_Order_accepted[DataClass_Role_Buyer:Buyer_1,DataClass_Object_Order:Order_1]|Place_state_Seller_Order_accepted[DataClass_Role_Seller:Seller_1,DataClass_Object_Order:Order_1]",
+        "nodeId": 9,
+        "caseId": "case1",
+        "witnessPath": [
+          {
+            "transitionId": "Transition_start_Event_0uov3gs",
+            "binding": {
+              "role_Buyer": "Buyer_1",
+              "role_Seller": "Seller_1",
+              "role_Warehouse": "Warehouse_1",
+              "case": "case1"
+            }
+          },
+          {
+            "transitionId": "Transition_create_Buyer_Order_created",
+            "binding": {
+              "case": "case1",
+              "role_Buyer": "Buyer_1",
+              "object_Order": "Order_1"
+            }
+          },
+          {
+            "transitionId": "Transition_send_ChoreographyTask_1qr8dy4",
+            "binding": {
+              "role_Buyer": "Buyer_1",
+              "object_Order": "Order_1",
+              "case": "case1"
+            }
+          },
+          {
+            "transitionId": "Transition_receive_ChoreographyTask_1qr8dy4",
+            "binding": {
+              "case": "case1",
+              "object_Order": "Order_1",
+              "role_Seller": "Seller_1"
+            }
+          },
+          {
+            "transitionId": "Transition_local_Seller_Order_created_accepted",
+            "binding": {
+              "role_Seller": "Seller_1",
+              "object_Order": "Order_1"
+            }
+          },
+          {
+            "transitionId": "Transition_send_ChoreographyTask_09ngl4b",
+            "binding": {
+              "role_Seller": "Seller_1",
+              "object_Order": "Order_1",
+              "case": "case1"
+            }
+          },
+          {
+            "transitionId": "Transition_receive_ChoreographyTask_09ngl4b",
+            "binding": {
+              "role_Buyer": "Buyer_1",
+              "object_Order": "Order_1",
+              "case": "case1"
+            }
+          },
+          {
+            "transitionId": "Transition_task_ChoreographyTask_1opsnb1",
+            "binding": {
+              "case": "case1",
+              "role_Buyer": "Buyer_1",
+              "role_Seller": "Seller_1"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "case-option-to-complete",
+        "message": "Case option-to-complete violation: case case1 is active in reachable marking 11, but no continuation reaches a marking where that case occurs in the typed sink place and no longer occurs in any non-sink case-control or transmission place.",
+        "markingKey": "Place_aware_Buyer_Order[DataClass_Role_Buyer:Buyer_1,DataClass_Object_Order:Order_1]|Place_aware_Seller_Order[DataClass_Role_Seller:Seller_1,DataClass_Object_Order:Order_1]|Place_cf_Flow_0pxxgsj[DataClass_Case:case1]|Place_incl_Order[DataClass_Case:case1]|Place_obj_Order[DataClass_Case:case1,DataClass_Object_Order:Order_1]|Place_part_Buyer[DataClass_Case:case1,DataClass_Role_Buyer:Buyer_1]|Place_part_Seller[DataClass_Case:case1,DataClass_Role_Seller:Seller_1]|Place_part_Warehouse[DataClass_Case:case1,DataClass_Role_Warehouse:Warehouse_1]|Place_pool_Buyer[DataClass_Role_Buyer:Buyer_1]|Place_pool_Seller[DataClass_Role_Seller:Seller_1]|Place_pool_Warehouse[DataClass_Role_Warehouse:Warehouse_1]|Place_state_Buyer_Order_accepted[DataClass_Role_Buyer:Buyer_1,DataClass_Object_Order:Order_1]|Place_state_Seller_Order_accepted[DataClass_Role_Seller:Seller_1,DataClass_Object_Order:Order_1]",
+        "nodeId": 11,
+        "caseId": "case1",
+        "witnessPath": [
+          {
+            "transitionId": "Transition_start_Event_0uov3gs",
+            "binding": {
+              "role_Buyer": "Buyer_1",
+              "role_Seller": "Seller_1",
+              "role_Warehouse": "Warehouse_1",
+              "case": "case1"
+            }
+          },
+          {
+            "transitionId": "Transition_create_Buyer_Order_created",
+            "binding": {
+              "case": "case1",
+              "role_Buyer": "Buyer_1",
+              "object_Order": "Order_1"
+            }
+          },
+          {
+            "transitionId": "Transition_send_ChoreographyTask_1qr8dy4",
+            "binding": {
+              "role_Buyer": "Buyer_1",
+              "object_Order": "Order_1",
+              "case": "case1"
+            }
+          },
+          {
+            "transitionId": "Transition_receive_ChoreographyTask_1qr8dy4",
+            "binding": {
+              "case": "case1",
+              "object_Order": "Order_1",
+              "role_Seller": "Seller_1"
+            }
+          },
+          {
+            "transitionId": "Transition_local_Seller_Order_created_accepted",
+            "binding": {
+              "role_Seller": "Seller_1",
+              "object_Order": "Order_1"
+            }
+          },
+          {
+            "transitionId": "Transition_send_ChoreographyTask_09ngl4b",
+            "binding": {
+              "role_Seller": "Seller_1",
+              "object_Order": "Order_1",
+              "case": "case1"
+            }
+          },
+          {
+            "transitionId": "Transition_receive_ChoreographyTask_09ngl4b",
+            "binding": {
+              "role_Buyer": "Buyer_1",
+              "object_Order": "Order_1",
+              "case": "case1"
+            }
+          },
+          {
+            "transitionId": "Transition_task_ChoreographyTask_1opsnb1",
+            "binding": {
+              "case": "case1",
+              "role_Buyer": "Buyer_1",
+              "role_Seller": "Seller_1"
+            }
+          },
+          {
+            "transitionId": "Transition_gateway_Gateway_1n2935z_Flow_1wajnew",
+            "binding": {
+              "case": "case1"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "case-option-to-complete",
+        "message": "Case option-to-complete violation: case case1 is active in reachable marking 13, but no continuation reaches a marking where that case occurs in the typed sink place and no longer occurs in any non-sink case-control or transmission place.",
+        "markingKey": "Place_aware_Buyer_Order[DataClass_Role_Buyer:Buyer_1,DataClass_Object_Order:Order_1]|Place_aware_Seller_Order[DataClass_Role_Seller:Seller_1,DataClass_Object_Order:Order_1]|Place_cf_Flow_073chlu[DataClass_Case:case1]|Place_incl_Order[DataClass_Case:case1]|Place_obj_Order[DataClass_Case:case1,DataClass_Object_Order:Order_1]|Place_part_Buyer[DataClass_Case:case1,DataClass_Role_Buyer:Buyer_1]|Place_part_Seller[DataClass_Case:case1,DataClass_Role_Seller:Seller_1]|Place_part_Warehouse[DataClass_Case:case1,DataClass_Role_Warehouse:Warehouse_1]|Place_pool_Buyer[DataClass_Role_Buyer:Buyer_1]|Place_pool_Seller[DataClass_Role_Seller:Seller_1]|Place_pool_Warehouse[DataClass_Role_Warehouse:Warehouse_1]|Place_state_Buyer_Order_accepted[DataClass_Role_Buyer:Buyer_1,DataClass_Object_Order:Order_1]|Place_state_Seller_Order_accepted[DataClass_Role_Seller:Seller_1,DataClass_Object_Order:Order_1]",
+        "nodeId": 13,
+        "caseId": "case1",
+        "witnessPath": [
+          {
+            "transitionId": "Transition_start_Event_0uov3gs",
+            "binding": {
+              "role_Buyer": "Buyer_1",
+              "role_Seller": "Seller_1",
+              "role_Warehouse": "Warehouse_1",
+              "case": "case1"
+            }
+          },
+          {
+            "transitionId": "Transition_create_Buyer_Order_created",
+            "binding": {
+              "case": "case1",
+              "role_Buyer": "Buyer_1",
+              "object_Order": "Order_1"
+            }
+          },
+          {
+            "transitionId": "Transition_send_ChoreographyTask_1qr8dy4",
+            "binding": {
+              "role_Buyer": "Buyer_1",
+              "object_Order": "Order_1",
+              "case": "case1"
+            }
+          },
+          {
+            "transitionId": "Transition_receive_ChoreographyTask_1qr8dy4",
+            "binding": {
+              "case": "case1",
+              "object_Order": "Order_1",
+              "role_Seller": "Seller_1"
+            }
+          },
+          {
+            "transitionId": "Transition_local_Seller_Order_created_accepted",
+            "binding": {
+              "role_Seller": "Seller_1",
+              "object_Order": "Order_1"
+            }
+          },
+          {
+            "transitionId": "Transition_send_ChoreographyTask_09ngl4b",
+            "binding": {
+              "role_Seller": "Seller_1",
+              "object_Order": "Order_1",
+              "case": "case1"
+            }
+          },
+          {
+            "transitionId": "Transition_receive_ChoreographyTask_09ngl4b",
+            "binding": {
+              "role_Buyer": "Buyer_1",
+              "object_Order": "Order_1",
+              "case": "case1"
+            }
+          },
+          {
+            "transitionId": "Transition_task_ChoreographyTask_1opsnb1",
+            "binding": {
+              "case": "case1",
+              "role_Buyer": "Buyer_1",
+              "role_Seller": "Seller_1"
+            }
+          },
+          {
+            "transitionId": "Transition_gateway_Gateway_1n2935z_Flow_1wajnew",
+            "binding": {
+              "case": "case1"
+            }
+          },
+          {
+            "transitionId": "Transition_gateway_Gateway_1eek1d0_Flow_0pxxgsj",
+            "binding": {
+              "case": "case1"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "case-option-to-complete",
+        "message": "Case option-to-complete violation: case case1 is active in reachable marking 15, but no continuation reaches a marking where that case occurs in the typed sink place and no longer occurs in any non-sink case-control or transmission place.",
+        "markingKey": "Place_aware_Buyer_Order[DataClass_Role_Buyer:Buyer_1,DataClass_Object_Order:Order_1]|Place_aware_Seller_Order[DataClass_Role_Seller:Seller_1,DataClass_Object_Order:Order_1]|Place_cf_Flow_09f0omg[DataClass_Case:case1]|Place_incl_Order[DataClass_Case:case1]|Place_obj_Order[DataClass_Case:case1,DataClass_Object_Order:Order_1]|Place_part_Buyer[DataClass_Case:case1,DataClass_Role_Buyer:Buyer_1]|Place_part_Seller[DataClass_Case:case1,DataClass_Role_Seller:Seller_1]|Place_part_Warehouse[DataClass_Case:case1,DataClass_Role_Warehouse:Warehouse_1]|Place_pool_Buyer[DataClass_Role_Buyer:Buyer_1]|Place_pool_Seller[DataClass_Role_Seller:Seller_1]|Place_pool_Warehouse[DataClass_Role_Warehouse:Warehouse_1]|Place_state_Buyer_Order_accepted[DataClass_Role_Buyer:Buyer_1,DataClass_Object_Order:Order_1]|Place_state_Seller_Order_accepted[DataClass_Role_Seller:Seller_1,DataClass_Object_Order:Order_1]",
+        "nodeId": 15,
+        "caseId": "case1",
+        "witnessPath": [
+          {
+            "transitionId": "Transition_start_Event_0uov3gs",
+            "binding": {
+              "role_Buyer": "Buyer_1",
+              "role_Seller": "Seller_1",
+              "role_Warehouse": "Warehouse_1",
+              "case": "case1"
+            }
+          },
+          {
+            "transitionId": "Transition_create_Buyer_Order_created",
+            "binding": {
+              "case": "case1",
+              "role_Buyer": "Buyer_1",
+              "object_Order": "Order_1"
+            }
+          },
+          {
+            "transitionId": "Transition_send_ChoreographyTask_1qr8dy4",
+            "binding": {
+              "role_Buyer": "Buyer_1",
+              "object_Order": "Order_1",
+              "case": "case1"
+            }
+          },
+          {
+            "transitionId": "Transition_receive_ChoreographyTask_1qr8dy4",
+            "binding": {
+              "case": "case1",
+              "object_Order": "Order_1",
+              "role_Seller": "Seller_1"
+            }
+          },
+          {
+            "transitionId": "Transition_local_Seller_Order_created_accepted",
+            "binding": {
+              "role_Seller": "Seller_1",
+              "object_Order": "Order_1"
+            }
+          },
+          {
+            "transitionId": "Transition_send_ChoreographyTask_09ngl4b",
+            "binding": {
+              "role_Seller": "Seller_1",
+              "object_Order": "Order_1",
+              "case": "case1"
+            }
+          },
+          {
+            "transitionId": "Transition_receive_ChoreographyTask_09ngl4b",
+            "binding": {
+              "role_Buyer": "Buyer_1",
+              "object_Order": "Order_1",
+              "case": "case1"
+            }
+          },
+          {
+            "transitionId": "Transition_task_ChoreographyTask_1opsnb1",
+            "binding": {
+              "case": "case1",
+              "role_Buyer": "Buyer_1",
+              "role_Seller": "Seller_1"
+            }
+          },
+          {
+            "transitionId": "Transition_gateway_Gateway_1n2935z_Flow_1wajnew",
+            "binding": {
+              "case": "case1"
+            }
+          },
+          {
+            "transitionId": "Transition_gateway_Gateway_1eek1d0_Flow_0pxxgsj",
+            "binding": {
+              "case": "case1"
+            }
+          },
+          {
+            "transitionId": "Transition_gateway_Gateway_0yn5tb0_Flow_09f0omg",
+            "binding": {
+              "case": "case1",
+              "object_Order": "Order_1",
+              "role_Buyer": "Buyer_1"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "case-option-to-complete",
+        "message": "Case option-to-complete violation: case case1 is active in reachable marking 17, but no continuation reaches a marking where that case occurs in the typed sink place and no longer occurs in any non-sink case-control or transmission place.",
+        "markingKey": "Place_aware_Buyer_Order[DataClass_Role_Buyer:Buyer_1,DataClass_Object_Order:Order_1]|Place_aware_Seller_Order[DataClass_Role_Seller:Seller_1,DataClass_Object_Order:Order_1]|Place_cf_Flow_1ywvmwd[DataClass_Case:case1]|Place_incl_Order[DataClass_Case:case1]|Place_obj_Order[DataClass_Case:case1,DataClass_Object_Order:Order_1]|Place_part_Buyer[DataClass_Case:case1,DataClass_Role_Buyer:Buyer_1]|Place_part_Seller[DataClass_Case:case1,DataClass_Role_Seller:Seller_1]|Place_part_Warehouse[DataClass_Case:case1,DataClass_Role_Warehouse:Warehouse_1]|Place_pool_Buyer[DataClass_Role_Buyer:Buyer_1]|Place_pool_Seller[DataClass_Role_Seller:Seller_1]|Place_pool_Warehouse[DataClass_Role_Warehouse:Warehouse_1]|Place_state_Buyer_Order_accepted[DataClass_Role_Buyer:Buyer_1,DataClass_Object_Order:Order_1]|Place_state_Seller_Order_accepted[DataClass_Role_Seller:Seller_1,DataClass_Object_Order:Order_1]",
+        "nodeId": 17,
+        "caseId": "case1",
+        "witnessPath": [
+          {
+            "transitionId": "Transition_start_Event_0uov3gs",
+            "binding": {
+              "role_Buyer": "Buyer_1",
+              "role_Seller": "Seller_1",
+              "role_Warehouse": "Warehouse_1",
+              "case": "case1"
+            }
+          },
+          {
+            "transitionId": "Transition_create_Buyer_Order_created",
+            "binding": {
+              "case": "case1",
+              "role_Buyer": "Buyer_1",
+              "object_Order": "Order_1"
+            }
+          },
+          {
+            "transitionId": "Transition_send_ChoreographyTask_1qr8dy4",
+            "binding": {
+              "role_Buyer": "Buyer_1",
+              "object_Order": "Order_1",
+              "case": "case1"
+            }
+          },
+          {
+            "transitionId": "Transition_receive_ChoreographyTask_1qr8dy4",
+            "binding": {
+              "case": "case1",
+              "object_Order": "Order_1",
+              "role_Seller": "Seller_1"
+            }
+          },
+          {
+            "transitionId": "Transition_local_Seller_Order_created_accepted",
+            "binding": {
+              "role_Seller": "Seller_1",
+              "object_Order": "Order_1"
+            }
+          },
+          {
+            "transitionId": "Transition_send_ChoreographyTask_09ngl4b",
+            "binding": {
+              "role_Seller": "Seller_1",
+              "object_Order": "Order_1",
+              "case": "case1"
+            }
+          },
+          {
+            "transitionId": "Transition_receive_ChoreographyTask_09ngl4b",
+            "binding": {
+              "role_Buyer": "Buyer_1",
+              "object_Order": "Order_1",
+              "case": "case1"
+            }
+          },
+          {
+            "transitionId": "Transition_task_ChoreographyTask_1opsnb1",
+            "binding": {
+              "case": "case1",
+              "role_Buyer": "Buyer_1",
+              "role_Seller": "Seller_1"
+            }
+          },
+          {
+            "transitionId": "Transition_gateway_Gateway_1n2935z_Flow_1wajnew",
+            "binding": {
+              "case": "case1"
+            }
+          },
+          {
+            "transitionId": "Transition_gateway_Gateway_1eek1d0_Flow_0pxxgsj",
+            "binding": {
+              "case": "case1"
+            }
+          },
+          {
+            "transitionId": "Transition_gateway_Gateway_0yn5tb0_Flow_09f0omg",
+            "binding": {
+              "case": "case1",
+              "object_Order": "Order_1",
+              "role_Buyer": "Buyer_1"
+            }
+          },
+          {
+            "transitionId": "Transition_task_ChoreographyTask_0oduo7g",
+            "binding": {
+              "case": "case1",
+              "role_Buyer": "Buyer_1",
+              "role_Seller": "Seller_1"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "senderProgression": {
+    "holds": true,
+    "violations": []
+  },
+  "receiverProgression": {
+    "holds": true,
+    "violations": []
+  },
+  "decisionConsistency": {
+    "holds": true,
+    "violations": []
+  },
+  "violations": [
+    {
+      "kind": "case-option-to-complete",
+      "message": "Case option-to-complete violation: case case1 is active in reachable marking 13, but no continuation reaches a marking where that case occurs in the typed sink place and no longer occurs in any non-sink case-control or transmission place.",
+      "markingKey": "Place_aware_Buyer_Order[DataClass_Role_Buyer:Buyer_1,DataClass_Object_Order:Order_1]|Place_aware_Seller_Order[DataClass_Role_Seller:Seller_1,DataClass_Object_Order:Order_1]|Place_cf_Flow_073chlu[DataClass_Case:case1]|Place_incl_Order[DataClass_Case:case1]|Place_obj_Order[DataClass_Case:case1,DataClass_Object_Order:Order_1]|Place_part_Buyer[DataClass_Case:case1,DataClass_Role_Buyer:Buyer_1]|Place_part_Seller[DataClass_Case:case1,DataClass_Role_Seller:Seller_1]|Place_part_Warehouse[DataClass_Case:case1,DataClass_Role_Warehouse:Warehouse_1]|Place_pool_Buyer[DataClass_Role_Buyer:Buyer_1]|Place_pool_Seller[DataClass_Role_Seller:Seller_1]|Place_pool_Warehouse[DataClass_Role_Warehouse:Warehouse_1]|Place_state_Buyer_Order_accepted[DataClass_Role_Buyer:Buyer_1,DataClass_Object_Order:Order_1]|Place_state_Seller_Order_accepted[DataClass_Role_Seller:Seller_1,DataClass_Object_Order:Order_1]",
+      "nodeId": 13,
+      "caseId": "case1",
+      "witnessPath": [
+        {
+          "transitionId": "Transition_start_Event_0uov3gs",
+          "binding": {
+            "role_Buyer": "Buyer_1",
+            "role_Seller": "Seller_1",
+            "role_Warehouse": "Warehouse_1",
+            "case": "case1"
+          }
+        },
+        {
+          "transitionId": "Transition_create_Buyer_Order_created",
+          "binding": {
+            "case": "case1",
+            "role_Buyer": "Buyer_1",
+            "object_Order": "Order_1"
+          }
+        },
+        {
+          "transitionId": "Transition_send_ChoreographyTask_1qr8dy4",
+          "binding": {
+            "role_Buyer": "Buyer_1",
+            "object_Order": "Order_1",
+            "case": "case1"
+          }
+        },
+        {
+          "transitionId": "Transition_receive_ChoreographyTask_1qr8dy4",
+          "binding": {
+            "case": "case1",
+            "object_Order": "Order_1",
+            "role_Seller": "Seller_1"
+          }
+        },
+        {
+          "transitionId": "Transition_local_Seller_Order_created_accepted",
+          "binding": {
+            "role_Seller": "Seller_1",
+            "object_Order": "Order_1"
+          }
+        },
+        {
+          "transitionId": "Transition_send_ChoreographyTask_09ngl4b",
+          "binding": {
+            "role_Seller": "Seller_1",
+            "object_Order": "Order_1",
+            "case": "case1"
+          }
+        },
+        {
+          "transitionId": "Transition_receive_ChoreographyTask_09ngl4b",
+          "binding": {
+            "role_Buyer": "Buyer_1",
+            "object_Order": "Order_1",
+            "case": "case1"
+          }
+        },
+        {
+          "transitionId": "Transition_task_ChoreographyTask_1opsnb1",
+          "binding": {
+            "case": "case1",
+            "role_Buyer": "Buyer_1",
+            "role_Seller": "Seller_1"
+          }
+        },
+        {
+          "transitionId": "Transition_gateway_Gateway_1n2935z_Flow_1wajnew",
+          "binding": {
+            "case": "case1"
+          }
+        },
+        {
+          "transitionId": "Transition_gateway_Gateway_1eek1d0_Flow_0pxxgsj",
+          "binding": {
+            "case": "case1"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "case-option-to-complete",
+      "message": "Case option-to-complete violation: case case1 is active in reachable marking 15, but no continuation reaches a marking where that case occurs in the typed sink place and no longer occurs in any non-sink case-control or transmission place.",
+      "markingKey": "Place_aware_Buyer_Order[DataClass_Role_Buyer:Buyer_1,DataClass_Object_Order:Order_1]|Place_aware_Seller_Order[DataClass_Role_Seller:Seller_1,DataClass_Object_Order:Order_1]|Place_cf_Flow_09f0omg[DataClass_Case:case1]|Place_incl_Order[DataClass_Case:case1]|Place_obj_Order[DataClass_Case:case1,DataClass_Object_Order:Order_1]|Place_part_Buyer[DataClass_Case:case1,DataClass_Role_Buyer:Buyer_1]|Place_part_Seller[DataClass_Case:case1,DataClass_Role_Seller:Seller_1]|Place_part_Warehouse[DataClass_Case:case1,DataClass_Role_Warehouse:Warehouse_1]|Place_pool_Buyer[DataClass_Role_Buyer:Buyer_1]|Place_pool_Seller[DataClass_Role_Seller:Seller_1]|Place_pool_Warehouse[DataClass_Role_Warehouse:Warehouse_1]|Place_state_Buyer_Order_accepted[DataClass_Role_Buyer:Buyer_1,DataClass_Object_Order:Order_1]|Place_state_Seller_Order_accepted[DataClass_Role_Seller:Seller_1,DataClass_Object_Order:Order_1]",
+      "nodeId": 15,
+      "caseId": "case1",
+      "witnessPath": [
+        {
+          "transitionId": "Transition_start_Event_0uov3gs",
+          "binding": {
+            "role_Buyer": "Buyer_1",
+            "role_Seller": "Seller_1",
+            "role_Warehouse": "Warehouse_1",
+            "case": "case1"
+          }
+        },
+        {
+          "transitionId": "Transition_create_Buyer_Order_created",
+          "binding": {
+            "case": "case1",
+            "role_Buyer": "Buyer_1",
+            "object_Order": "Order_1"
+          }
+        },
+        {
+          "transitionId": "Transition_send_ChoreographyTask_1qr8dy4",
+          "binding": {
+            "role_Buyer": "Buyer_1",
+            "object_Order": "Order_1",
+            "case": "case1"
+          }
+        },
+        {
+          "transitionId": "Transition_receive_ChoreographyTask_1qr8dy4",
+          "binding": {
+            "case": "case1",
+            "object_Order": "Order_1",
+            "role_Seller": "Seller_1"
+          }
+        },
+        {
+          "transitionId": "Transition_local_Seller_Order_created_accepted",
+          "binding": {
+            "role_Seller": "Seller_1",
+            "object_Order": "Order_1"
+          }
+        },
+        {
+          "transitionId": "Transition_send_ChoreographyTask_09ngl4b",
+          "binding": {
+            "role_Seller": "Seller_1",
+            "object_Order": "Order_1",
+            "case": "case1"
+          }
+        },
+        {
+          "transitionId": "Transition_receive_ChoreographyTask_09ngl4b",
+          "binding": {
+            "role_Buyer": "Buyer_1",
+            "object_Order": "Order_1",
+            "case": "case1"
+          }
+        },
+        {
+          "transitionId": "Transition_task_ChoreographyTask_1opsnb1",
+          "binding": {
+            "case": "case1",
+            "role_Buyer": "Buyer_1",
+            "role_Seller": "Seller_1"
+          }
+        },
+        {
+          "transitionId": "Transition_gateway_Gateway_1n2935z_Flow_1wajnew",
+          "binding": {
+            "case": "case1"
+          }
+        },
+        {
+          "transitionId": "Transition_gateway_Gateway_1eek1d0_Flow_0pxxgsj",
+          "binding": {
+            "case": "case1"
+          }
+        },
+        {
+          "transitionId": "Transition_gateway_Gateway_0yn5tb0_Flow_09f0omg",
+          "binding": {
+            "case": "case1",
+            "object_Order": "Order_1",
+            "role_Buyer": "Buyer_1"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "case-option-to-complete",
+      "message": "Case option-to-complete violation: case case1 is active in reachable marking 11, but no continuation reaches a marking where that case occurs in the typed sink place and no longer occurs in any non-sink case-control or transmission place.",
+      "markingKey": "Place_aware_Buyer_Order[DataClass_Role_Buyer:Buyer_1,DataClass_Object_Order:Order_1]|Place_aware_Seller_Order[DataClass_Role_Seller:Seller_1,DataClass_Object_Order:Order_1]|Place_cf_Flow_0pxxgsj[DataClass_Case:case1]|Place_incl_Order[DataClass_Case:case1]|Place_obj_Order[DataClass_Case:case1,DataClass_Object_Order:Order_1]|Place_part_Buyer[DataClass_Case:case1,DataClass_Role_Buyer:Buyer_1]|Place_part_Seller[DataClass_Case:case1,DataClass_Role_Seller:Seller_1]|Place_part_Warehouse[DataClass_Case:case1,DataClass_Role_Warehouse:Warehouse_1]|Place_pool_Buyer[DataClass_Role_Buyer:Buyer_1]|Place_pool_Seller[DataClass_Role_Seller:Seller_1]|Place_pool_Warehouse[DataClass_Role_Warehouse:Warehouse_1]|Place_state_Buyer_Order_accepted[DataClass_Role_Buyer:Buyer_1,DataClass_Object_Order:Order_1]|Place_state_Seller_Order_accepted[DataClass_Role_Seller:Seller_1,DataClass_Object_Order:Order_1]",
+      "nodeId": 11,
+      "caseId": "case1",
+      "witnessPath": [
+        {
+          "transitionId": "Transition_start_Event_0uov3gs",
+          "binding": {
+            "role_Buyer": "Buyer_1",
+            "role_Seller": "Seller_1",
+            "role_Warehouse": "Warehouse_1",
+            "case": "case1"
+          }
+        },
+        {
+          "transitionId": "Transition_create_Buyer_Order_created",
+          "binding": {
+            "case": "case1",
+            "role_Buyer": "Buyer_1",
+            "object_Order": "Order_1"
+          }
+        },
+        {
+          "transitionId": "Transition_send_ChoreographyTask_1qr8dy4",
+          "binding": {
+            "role_Buyer": "Buyer_1",
+            "object_Order": "Order_1",
+            "case": "case1"
+          }
+        },
+        {
+          "transitionId": "Transition_receive_ChoreographyTask_1qr8dy4",
+          "binding": {
+            "case": "case1",
+            "object_Order": "Order_1",
+            "role_Seller": "Seller_1"
+          }
+        },
+        {
+          "transitionId": "Transition_local_Seller_Order_created_accepted",
+          "binding": {
+            "role_Seller": "Seller_1",
+            "object_Order": "Order_1"
+          }
+        },
+        {
+          "transitionId": "Transition_send_ChoreographyTask_09ngl4b",
+          "binding": {
+            "role_Seller": "Seller_1",
+            "object_Order": "Order_1",
+            "case": "case1"
+          }
+        },
+        {
+          "transitionId": "Transition_receive_ChoreographyTask_09ngl4b",
+          "binding": {
+            "role_Buyer": "Buyer_1",
+            "object_Order": "Order_1",
+            "case": "case1"
+          }
+        },
+        {
+          "transitionId": "Transition_task_ChoreographyTask_1opsnb1",
+          "binding": {
+            "case": "case1",
+            "role_Buyer": "Buyer_1",
+            "role_Seller": "Seller_1"
+          }
+        },
+        {
+          "transitionId": "Transition_gateway_Gateway_1n2935z_Flow_1wajnew",
+          "binding": {
+            "case": "case1"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "case-option-to-complete",
+      "message": "Case option-to-complete violation: case case1 is active in reachable marking 9, but no continuation reaches a marking where that case occurs in the typed sink place and no longer occurs in any non-sink case-control or transmission place.",
+      "markingKey": "Place_aware_Buyer_Order[DataClass_Role_Buyer:Buyer_1,DataClass_Object_Order:Order_1]|Place_aware_Seller_Order[DataClass_Role_Seller:Seller_1,DataClass_Object_Order:Order_1]|Place_cf_Flow_1wajnew[DataClass_Case:case1]|Place_incl_Order[DataClass_Case:case1]|Place_obj_Order[DataClass_Case:case1,DataClass_Object_Order:Order_1]|Place_part_Buyer[DataClass_Case:case1,DataClass_Role_Buyer:Buyer_1]|Place_part_Seller[DataClass_Case:case1,DataClass_Role_Seller:Seller_1]|Place_part_Warehouse[DataClass_Case:case1,DataClass_Role_Warehouse:Warehouse_1]|Place_pool_Buyer[DataClass_Role_Buyer:Buyer_1]|Place_pool_Seller[DataClass_Role_Seller:Seller_1]|Place_pool_Warehouse[DataClass_Role_Warehouse:Warehouse_1]|Place_state_Buyer_Order_accepted[DataClass_Role_Buyer:Buyer_1,DataClass_Object_Order:Order_1]|Place_state_Seller_Order_accepted[DataClass_Role_Seller:Seller_1,DataClass_Object_Order:Order_1]",
+      "nodeId": 9,
+      "caseId": "case1",
+      "witnessPath": [
+        {
+          "transitionId": "Transition_start_Event_0uov3gs",
+          "binding": {
+            "role_Buyer": "Buyer_1",
+            "role_Seller": "Seller_1",
+            "role_Warehouse": "Warehouse_1",
+            "case": "case1"
+          }
+        },
+        {
+          "transitionId": "Transition_create_Buyer_Order_created",
+          "binding": {
+            "case": "case1",
+            "role_Buyer": "Buyer_1",
+            "object_Order": "Order_1"
+          }
+        },
+        {
+          "transitionId": "Transition_send_ChoreographyTask_1qr8dy4",
+          "binding": {
+            "role_Buyer": "Buyer_1",
+            "object_Order": "Order_1",
+            "case": "case1"
+          }
+        },
+        {
+          "transitionId": "Transition_receive_ChoreographyTask_1qr8dy4",
+          "binding": {
+            "case": "case1",
+            "object_Order": "Order_1",
+            "role_Seller": "Seller_1"
+          }
+        },
+        {
+          "transitionId": "Transition_local_Seller_Order_created_accepted",
+          "binding": {
+            "role_Seller": "Seller_1",
+            "object_Order": "Order_1"
+          }
+        },
+        {
+          "transitionId": "Transition_send_ChoreographyTask_09ngl4b",
+          "binding": {
+            "role_Seller": "Seller_1",
+            "object_Order": "Order_1",
+            "case": "case1"
+          }
+        },
+        {
+          "transitionId": "Transition_receive_ChoreographyTask_09ngl4b",
+          "binding": {
+            "role_Buyer": "Buyer_1",
+            "object_Order": "Order_1",
+            "case": "case1"
+          }
+        },
+        {
+          "transitionId": "Transition_task_ChoreographyTask_1opsnb1",
+          "binding": {
+            "case": "case1",
+            "role_Buyer": "Buyer_1",
+            "role_Seller": "Seller_1"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "case-option-to-complete",
+      "message": "Case option-to-complete violation: case case1 is active in reachable marking 17, but no continuation reaches a marking where that case occurs in the typed sink place and no longer occurs in any non-sink case-control or transmission place.",
+      "markingKey": "Place_aware_Buyer_Order[DataClass_Role_Buyer:Buyer_1,DataClass_Object_Order:Order_1]|Place_aware_Seller_Order[DataClass_Role_Seller:Seller_1,DataClass_Object_Order:Order_1]|Place_cf_Flow_1ywvmwd[DataClass_Case:case1]|Place_incl_Order[DataClass_Case:case1]|Place_obj_Order[DataClass_Case:case1,DataClass_Object_Order:Order_1]|Place_part_Buyer[DataClass_Case:case1,DataClass_Role_Buyer:Buyer_1]|Place_part_Seller[DataClass_Case:case1,DataClass_Role_Seller:Seller_1]|Place_part_Warehouse[DataClass_Case:case1,DataClass_Role_Warehouse:Warehouse_1]|Place_pool_Buyer[DataClass_Role_Buyer:Buyer_1]|Place_pool_Seller[DataClass_Role_Seller:Seller_1]|Place_pool_Warehouse[DataClass_Role_Warehouse:Warehouse_1]|Place_state_Buyer_Order_accepted[DataClass_Role_Buyer:Buyer_1,DataClass_Object_Order:Order_1]|Place_state_Seller_Order_accepted[DataClass_Role_Seller:Seller_1,DataClass_Object_Order:Order_1]",
+      "nodeId": 17,
+      "caseId": "case1",
+      "witnessPath": [
+        {
+          "transitionId": "Transition_start_Event_0uov3gs",
+          "binding": {
+            "role_Buyer": "Buyer_1",
+            "role_Seller": "Seller_1",
+            "role_Warehouse": "Warehouse_1",
+            "case": "case1"
+          }
+        },
+        {
+          "transitionId": "Transition_create_Buyer_Order_created",
+          "binding": {
+            "case": "case1",
+            "role_Buyer": "Buyer_1",
+            "object_Order": "Order_1"
+          }
+        },
+        {
+          "transitionId": "Transition_send_ChoreographyTask_1qr8dy4",
+          "binding": {
+            "role_Buyer": "Buyer_1",
+            "object_Order": "Order_1",
+            "case": "case1"
+          }
+        },
+        {
+          "transitionId": "Transition_receive_ChoreographyTask_1qr8dy4",
+          "binding": {
+            "case": "case1",
+            "object_Order": "Order_1",
+            "role_Seller": "Seller_1"
+          }
+        },
+        {
+          "transitionId": "Transition_local_Seller_Order_created_accepted",
+          "binding": {
+            "role_Seller": "Seller_1",
+            "object_Order": "Order_1"
+          }
+        },
+        {
+          "transitionId": "Transition_send_ChoreographyTask_09ngl4b",
+          "binding": {
+            "role_Seller": "Seller_1",
+            "object_Order": "Order_1",
+            "case": "case1"
+          }
+        },
+        {
+          "transitionId": "Transition_receive_ChoreographyTask_09ngl4b",
+          "binding": {
+            "role_Buyer": "Buyer_1",
+            "object_Order": "Order_1",
+            "case": "case1"
+          }
+        },
+        {
+          "transitionId": "Transition_task_ChoreographyTask_1opsnb1",
+          "binding": {
+            "case": "case1",
+            "role_Buyer": "Buyer_1",
+            "role_Seller": "Seller_1"
+          }
+        },
+        {
+          "transitionId": "Transition_gateway_Gateway_1n2935z_Flow_1wajnew",
+          "binding": {
+            "case": "case1"
+          }
+        },
+        {
+          "transitionId": "Transition_gateway_Gateway_1eek1d0_Flow_0pxxgsj",
+          "binding": {
+            "case": "case1"
+          }
+        },
+        {
+          "transitionId": "Transition_gateway_Gateway_0yn5tb0_Flow_09f0omg",
+          "binding": {
+            "case": "case1",
+            "object_Order": "Order_1",
+            "role_Buyer": "Buyer_1"
+          }
+        },
+        {
+          "transitionId": "Transition_task_ChoreographyTask_0oduo7g",
+          "binding": {
+            "case": "case1",
+            "role_Buyer": "Buyer_1",
+            "role_Seller": "Seller_1"
+          }
+        }
+      ]
+    }
+  ]
+}

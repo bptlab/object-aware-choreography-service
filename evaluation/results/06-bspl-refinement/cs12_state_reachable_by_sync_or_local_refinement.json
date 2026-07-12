@@ -1,0 +1,71 @@
+{
+  "discovery": {
+    "comparison": {
+      "choreographyTraceCount": 2,
+      "protocolTraceCount": 3,
+      "sharedTraceCount": 2,
+      "recall": 1,
+      "precision": 0.6666666666666666,
+      "protocolOnly": [
+        [
+          "task1",
+          "task2",
+          "sync-task",
+          "task3"
+        ]
+      ]
+    },
+    "constraints": [
+      {
+        "kind": "exclusion",
+        "id": "exclusion:sync-task!task2",
+        "tasks": [
+          "sync-task",
+          "task2"
+        ],
+        "source": {
+          "reason": "eventBasedSplit",
+          "gatewayId": "Gateway_10n552e",
+          "explanation": "Tasks sync-task and task2 are first observable tasks in alternative branches of gateway Gateway_10n552e."
+        },
+        "violatingTraces": [
+          [
+            "task1",
+            "task2",
+            "sync-task",
+            "task3"
+          ]
+        ]
+      }
+    ]
+  },
+  "refinedComparison": {
+    "choreographyTraceCount": 2,
+    "protocolTraceCount": 2,
+    "sharedTraceCount": 2,
+    "recall": 1,
+    "precision": 1,
+    "choreographyOnly": [],
+    "protocolOnly": [],
+    "shared": [
+      [
+        "task1",
+        "sync-task",
+        "task3"
+      ],
+      [
+        "task1",
+        "task2",
+        "task3"
+      ]
+    ]
+  },
+  "singleRemovalDiagnostics": [
+    {
+      "removedConstraintId": "exclusion:sync-task!task2",
+      "removedConstraintKind": "exclusion",
+      "recall": 1,
+      "precision": 0.6666666666666666
+    }
+  ]
+}

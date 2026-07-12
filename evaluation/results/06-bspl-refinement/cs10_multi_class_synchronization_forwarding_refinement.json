@@ -1,0 +1,65 @@
+{
+  "discovery": {
+    "comparison": {
+      "choreographyTraceCount": 1,
+      "protocolTraceCount": 2,
+      "sharedTraceCount": 1,
+      "recall": 1,
+      "precision": 0.5,
+      "protocolOnly": [
+        [
+          "task1",
+          "task2",
+          "sync-task",
+          "task4"
+        ]
+      ]
+    },
+    "constraints": [
+      {
+        "kind": "precedence",
+        "id": "precedence:task3->task4",
+        "predecessor": "task3",
+        "constrained": "task4",
+        "source": {
+          "reason": "sequence",
+          "explanation": "Task task4 is not enabled until task3 has occurred."
+        },
+        "violatingTraces": [
+          [
+            "task1",
+            "task2",
+            "sync-task",
+            "task4"
+          ]
+        ]
+      }
+    ]
+  },
+  "refinedComparison": {
+    "choreographyTraceCount": 1,
+    "protocolTraceCount": 1,
+    "sharedTraceCount": 1,
+    "recall": 1,
+    "precision": 1,
+    "choreographyOnly": [],
+    "protocolOnly": [],
+    "shared": [
+      [
+        "task1",
+        "task2",
+        "sync-task",
+        "task3",
+        "task4"
+      ]
+    ]
+  },
+  "singleRemovalDiagnostics": [
+    {
+      "removedConstraintId": "precedence:task3->task4",
+      "removedConstraintKind": "precedence",
+      "recall": 1,
+      "precision": 0.5
+    }
+  ]
+}

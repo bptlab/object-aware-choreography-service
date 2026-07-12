@@ -1,0 +1,3 @@
+{
+  "error": "Mandatory one-to-one creation group requires a common creator role: [ClassA, ClassB] has creators ClassA:RoleA, ClassB:RoleB"
+}

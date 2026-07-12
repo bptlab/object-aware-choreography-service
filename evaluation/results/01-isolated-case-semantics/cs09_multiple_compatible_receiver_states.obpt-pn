@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ptn:definitions xmlns:ptn="http://bpt-lab.org/schemas/ptn" xmlns:ptnDi="http://bpt-lab.org/schemas/ptnDi" xmlns:dc="https://www.omg.org/spec/BPMN/20100501/DC.xsd">
+  <ptn:model>
+    <ptn:place id="p_source">
+      <ptn:name>source</ptn:name>
+      <ptn:initialMarking>1</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_sink">
+      <ptn:name>sink</ptn:name>
+      <ptn:initialMarking>0</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_sf_Flow-0yu7xi1">
+      <ptn:name>Flow_0yu7xi1</ptn:name>
+      <ptn:initialMarking>0</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_sf_Flow-0h536ur">
+      <ptn:name>Flow_0h536ur</ptn:name>
+      <ptn:initialMarking>0</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_sf_Flow-0kxe60s">
+      <ptn:name>Flow_0kxe60s</ptn:name>
+      <ptn:initialMarking>0</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_sf_Flow-1pat3d3">
+      <ptn:name>Flow_1pat3d3</ptn:name>
+      <ptn:initialMarking>0</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_sf_Flow-0v6yqir">
+      <ptn:name>Flow_0v6yqir</ptn:name>
+      <ptn:initialMarking>0</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_sf_Flow-07i5zqs">
+      <ptn:name>Flow_07i5zqs</ptn:name>
+      <ptn:initialMarking>0</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_exists_RoleA_ClassA">
+      <ptn:name>RoleA.ClassA+</ptn:name>
+      <ptn:initialMarking>0</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_state_RoleA_ClassA_initial">
+      <ptn:name>RoleA.ClassA [initial]</ptn:name>
+      <ptn:initialMarking>1</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_state_RoleA_ClassA_a-x">
+      <ptn:name>RoleA.ClassA [a-x]</ptn:name>
+      <ptn:initialMarking>0</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_state_RoleA_ClassA_a-z">
+      <ptn:name>RoleA.ClassA [a-z]</ptn:name>
+      <ptn:initialMarking>0</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_state_RoleA_ClassA_a-y">
+      <ptn:name>RoleA.ClassA [a-y]</ptn:name>
+      <ptn:initialMarking>0</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_exists_RoleB_ClassA">
+      <ptn:name>RoleB.ClassA+</ptn:name>
+      <ptn:initialMarking>0</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_state_RoleB_ClassA_initial">
+      <ptn:name>RoleB.ClassA [initial]</ptn:name>
+      <ptn:initialMarking>1</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_state_RoleB_ClassA_a-x">
+      <ptn:name>RoleB.ClassA [a-x]</ptn:name>
+      <ptn:initialMarking>0</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_state_RoleB_ClassA_a-z">
+      <ptn:name>RoleB.ClassA [a-z]</ptn:name>
+      <ptn:initialMarking>0</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_state_RoleB_ClassA_a-y">
+      <ptn:name>RoleB.ClassA [a-y]</ptn:name>
+      <ptn:initialMarking>0</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_trans_ChoreographyTask-1ntuvmx">
+      <ptn:name>task2 transmission</ptn:name>
+      <ptn:initialMarking>0</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_trans_ChoreographyTask-18vbtgq">
+      <ptn:name>task3 transmission</ptn:name>
+      <ptn:initialMarking>0</ptn:initialMarking>
+    </ptn:place>
+    <ptn:place id="p_trans_ChoreographyTask-07f3pv1">
+      <ptn:name>task4 transmission</ptn:name>
+      <ptn:initialMarking>0</ptn:initialMarking>
+    </ptn:place>
+    <ptn:transition id="t_Event-0ql5o4b" isSilent="false">
+      <ptn:name>Event_0ql5o4b</ptn:name>
+    </ptn:transition>
+    <ptn:transition id="t_Event-0v3h55y" isSilent="false">
+      <ptn:name>Event_0v3h55y</ptn:name>
+    </ptn:transition>
+    <ptn:transition id="t_ChoreographyTask-06km4n2" isSilent="false">
+      <ptn:name>task1</ptn:name>
+    </ptn:transition>
+    <ptn:transition id="t_xor_ChoreographyTask-1ntuvmx_Gateway-1hms0l8" isSilent="true">
+      <ptn:name>task2 -&gt; Gateway_1hms0l8</ptn:name>
+    </ptn:transition>
+    <ptn:transition id="t_xor_ChoreographyTask-18vbtgq_Gateway-1hms0l8" isSilent="true">
+      <ptn:name>task3 -&gt; Gateway_1hms0l8</ptn:name>
+    </ptn:transition>
+    <ptn:transition id="t_local_RoleA_ClassA_initial_a-x" isSilent="true">
+      <ptn:name>[RoleA]</ptn:name>
+    </ptn:transition>
+    <ptn:transition id="t_local_RoleA_ClassA_initial_a-y" isSilent="true">
+      <ptn:name>[RoleA]</ptn:name>
+    </ptn:transition>
+    <ptn:transition id="t_local_RoleB_ClassA_a-x_a-z" isSilent="true">
+      <ptn:name>[RoleB]</ptn:name>
+    </ptn:transition>
+    <ptn:transition id="t_local_RoleB_ClassA_a-y_a-z" isSilent="true">
+      <ptn:name>[RoleB]</ptn:name>
+    </ptn:transition>
+    <ptn:transition id="t_send_ChoreographyTask-1ntuvmx_ClassA_a-x" isSilent="false">
+      <ptn:name>task2 send</ptn:name>
+    </ptn:transition>
+    <ptn:transition id="t_recv_ChoreographyTask-1ntuvmx_ClassA_initial_a-x" isSilent="false">
+      <ptn:name>task2 receive initial</ptn:name>
+    </ptn:transition>
+    <ptn:transition id="t_send_ChoreographyTask-18vbtgq_ClassA_a-y" isSilent="false">
+      <ptn:name>task3 send</ptn:name>
+    </ptn:transition>
+    <ptn:transition id="t_recv_ChoreographyTask-18vbtgq_ClassA_initial_a-y" isSilent="false">
+      <ptn:name>task3 receive initial</ptn:name>
+    </ptn:transition>
+    <ptn:transition id="t_send_ChoreographyTask-07f3pv1_ClassA_a-z" isSilent="false">
+      <ptn:name>task4 send</ptn:name>
+    </ptn:transition>
+    <ptn:transition id="t_recv_ChoreographyTask-07f3pv1_ClassA_a-x_a-z" isSilent="false">
+      <ptn:name>task4 receive a-x</ptn:name>
+    </ptn:transition>
+    <ptn:transition id="t_recv_ChoreographyTask-07f3pv1_ClassA_a-y_a-z" isSilent="false">
+      <ptn:name>task4 receive a-y</ptn:name>
+    </ptn:transition>
+    <ptn:arc id="a_p_source_t_Event-0ql5o4b" source="p_source" target="t_Event-0ql5o4b"/>
+    <ptn:arc id="a_t_Event-0v3h55y_p_sink" source="t_Event-0v3h55y" target="p_sink"/>
+    <ptn:arc id="a_p_sf_Flow-0yu7xi1_t_ChoreographyTask-06km4n2" source="p_sf_Flow-0yu7xi1" target="t_ChoreographyTask-06km4n2"/>
+    <ptn:arc id="a_t_Event-0ql5o4b_p_sf_Flow-0yu7xi1" source="t_Event-0ql5o4b" target="p_sf_Flow-0yu7xi1"/>
+    <ptn:arc id="a_t_ChoreographyTask-06km4n2_p_sf_Flow-0v6yqir" source="t_ChoreographyTask-06km4n2" target="p_sf_Flow-0v6yqir"/>
+    <ptn:arc id="a_p_sf_Flow-07i5zqs_t_Event-0v3h55y" source="p_sf_Flow-07i5zqs" target="t_Event-0v3h55y"/>
+    <ptn:arc id="a_p_sf_Flow-0h536ur_t_xor_ChoreographyTask-1ntuvmx_Gateway-1hms0l8" source="p_sf_Flow-0h536ur" target="t_xor_ChoreographyTask-1ntuvmx_Gateway-1hms0l8"/>
+    <ptn:arc id="a_p_sf_Flow-0kxe60s_t_xor_ChoreographyTask-18vbtgq_Gateway-1hms0l8" source="p_sf_Flow-0kxe60s" target="t_xor_ChoreographyTask-18vbtgq_Gateway-1hms0l8"/>
+    <ptn:arc id="a_t_xor_ChoreographyTask-1ntuvmx_Gateway-1hms0l8_p_sf_Flow-1pat3d3" source="t_xor_ChoreographyTask-1ntuvmx_Gateway-1hms0l8" target="p_sf_Flow-1pat3d3"/>
+    <ptn:arc id="a_t_xor_ChoreographyTask-18vbtgq_Gateway-1hms0l8_p_sf_Flow-1pat3d3" source="t_xor_ChoreographyTask-18vbtgq_Gateway-1hms0l8" target="p_sf_Flow-1pat3d3"/>
+    <ptn:arc id="a_p_state_RoleA_ClassA_initial_t_local_RoleA_ClassA_initial_a-x" source="p_state_RoleA_ClassA_initial" target="t_local_RoleA_ClassA_initial_a-x"/>
+    <ptn:arc id="a_t_local_RoleA_ClassA_initial_a-x_p_state_RoleA_ClassA_a-x" source="t_local_RoleA_ClassA_initial_a-x" target="p_state_RoleA_ClassA_a-x"/>
+    <ptn:arc id="a_t_local_RoleA_ClassA_initial_a-x_p_exists_RoleA_ClassA" source="t_local_RoleA_ClassA_initial_a-x" target="p_exists_RoleA_ClassA"/>
+    <ptn:arc id="a_p_state_RoleA_ClassA_initial_t_local_RoleA_ClassA_initial_a-y" source="p_state_RoleA_ClassA_initial" target="t_local_RoleA_ClassA_initial_a-y"/>
+    <ptn:arc id="a_t_local_RoleA_ClassA_initial_a-y_p_state_RoleA_ClassA_a-y" source="t_local_RoleA_ClassA_initial_a-y" target="p_state_RoleA_ClassA_a-y"/>
+    <ptn:arc id="a_t_local_RoleA_ClassA_initial_a-y_p_exists_RoleA_ClassA" source="t_local_RoleA_ClassA_initial_a-y" target="p_exists_RoleA_ClassA"/>
+    <ptn:arc id="a_p_state_RoleB_ClassA_a-x_t_local_RoleB_ClassA_a-x_a-z" source="p_state_RoleB_ClassA_a-x" target="t_local_RoleB_ClassA_a-x_a-z"/>
+    <ptn:arc id="a_t_local_RoleB_ClassA_a-x_a-z_p_state_RoleB_ClassA_a-z" source="t_local_RoleB_ClassA_a-x_a-z" target="p_state_RoleB_ClassA_a-z"/>
+    <ptn:arc id="a_p_state_RoleB_ClassA_a-y_t_local_RoleB_ClassA_a-y_a-z" source="p_state_RoleB_ClassA_a-y" target="t_local_RoleB_ClassA_a-y_a-z"/>
+    <ptn:arc id="a_t_local_RoleB_ClassA_a-y_a-z_p_state_RoleB_ClassA_a-z" source="t_local_RoleB_ClassA_a-y_a-z" target="p_state_RoleB_ClassA_a-z"/>
+    <ptn:arc id="a_p_sf_Flow-0v6yqir_t_send_ChoreographyTask-1ntuvmx_ClassA_a-x" source="p_sf_Flow-0v6yqir" target="t_send_ChoreographyTask-1ntuvmx_ClassA_a-x"/>
+    <ptn:arc id="a_p_state_RoleA_ClassA_a-x_t_send_ChoreographyTask-1ntuvmx_ClassA_a-x" source="p_state_RoleA_ClassA_a-x" target="t_send_ChoreographyTask-1ntuvmx_ClassA_a-x"/>
+    <ptn:arc id="a_t_send_ChoreographyTask-1ntuvmx_ClassA_a-x_p_state_RoleA_ClassA_a-x" source="t_send_ChoreographyTask-1ntuvmx_ClassA_a-x" target="p_state_RoleA_ClassA_a-x"/>
+    <ptn:arc id="a_t_send_ChoreographyTask-1ntuvmx_ClassA_a-x_p_trans_ChoreographyTask-1ntuvmx" source="t_send_ChoreographyTask-1ntuvmx_ClassA_a-x" target="p_trans_ChoreographyTask-1ntuvmx"/>
+    <ptn:arc id="a_p_trans_ChoreographyTask-1ntuvmx_t_recv_ChoreographyTask-1ntuvmx_ClassA_initial_a-x" source="p_trans_ChoreographyTask-1ntuvmx" target="t_recv_ChoreographyTask-1ntuvmx_ClassA_initial_a-x"/>
+    <ptn:arc id="a_p_state_RoleB_ClassA_initial_t_recv_ChoreographyTask-1ntuvmx_ClassA_initial_a-x" source="p_state_RoleB_ClassA_initial" target="t_recv_ChoreographyTask-1ntuvmx_ClassA_initial_a-x"/>
+    <ptn:arc id="a_t_recv_ChoreographyTask-1ntuvmx_ClassA_initial_a-x_p_state_RoleB_ClassA_a-x" source="t_recv_ChoreographyTask-1ntuvmx_ClassA_initial_a-x" target="p_state_RoleB_ClassA_a-x"/>
+    <ptn:arc id="a_t_recv_ChoreographyTask-1ntuvmx_ClassA_initial_a-x_p_sf_Flow-0h536ur" source="t_recv_ChoreographyTask-1ntuvmx_ClassA_initial_a-x" target="p_sf_Flow-0h536ur"/>
+    <ptn:arc id="a_t_recv_ChoreographyTask-1ntuvmx_ClassA_initial_a-x_p_exists_RoleB_ClassA" source="t_recv_ChoreographyTask-1ntuvmx_ClassA_initial_a-x" target="p_exists_RoleB_ClassA"/>
+    <ptn:arc id="a_p_sf_Flow-0v6yqir_t_send_ChoreographyTask-18vbtgq_ClassA_a-y" source="p_sf_Flow-0v6yqir" target="t_send_ChoreographyTask-18vbtgq_ClassA_a-y"/>
+    <ptn:arc id="a_p_state_RoleA_ClassA_a-y_t_send_ChoreographyTask-18vbtgq_ClassA_a-y" source="p_state_RoleA_ClassA_a-y" target="t_send_ChoreographyTask-18vbtgq_ClassA_a-y"/>
+    <ptn:arc id="a_t_send_ChoreographyTask-18vbtgq_ClassA_a-y_p_state_RoleA_ClassA_a-y" source="t_send_ChoreographyTask-18vbtgq_ClassA_a-y" target="p_state_RoleA_ClassA_a-y"/>
+    <ptn:arc id="a_t_send_ChoreographyTask-18vbtgq_ClassA_a-y_p_trans_ChoreographyTask-18vbtgq" source="t_send_ChoreographyTask-18vbtgq_ClassA_a-y" target="p_trans_ChoreographyTask-18vbtgq"/>
+    <ptn:arc id="a_p_trans_ChoreographyTask-18vbtgq_t_recv_ChoreographyTask-18vbtgq_ClassA_initial_a-y" source="p_trans_ChoreographyTask-18vbtgq" target="t_recv_ChoreographyTask-18vbtgq_ClassA_initial_a-y"/>
+    <ptn:arc id="a_p_state_RoleB_ClassA_initial_t_recv_ChoreographyTask-18vbtgq_ClassA_initial_a-y" source="p_state_RoleB_ClassA_initial" target="t_recv_ChoreographyTask-18vbtgq_ClassA_initial_a-y"/>
+    <ptn:arc id="a_t_recv_ChoreographyTask-18vbtgq_ClassA_initial_a-y_p_state_RoleB_ClassA_a-y" source="t_recv_ChoreographyTask-18vbtgq_ClassA_initial_a-y" target="p_state_RoleB_ClassA_a-y"/>
+    <ptn:arc id="a_t_recv_ChoreographyTask-18vbtgq_ClassA_initial_a-y_p_sf_Flow-0kxe60s" source="t_recv_ChoreographyTask-18vbtgq_ClassA_initial_a-y" target="p_sf_Flow-0kxe60s"/>
+    <ptn:arc id="a_t_recv_ChoreographyTask-18vbtgq_ClassA_initial_a-y_p_exists_RoleB_ClassA" source="t_recv_ChoreographyTask-18vbtgq_ClassA_initial_a-y" target="p_exists_RoleB_ClassA"/>
+    <ptn:arc id="a_p_sf_Flow-1pat3d3_t_send_ChoreographyTask-07f3pv1_ClassA_a-z" source="p_sf_Flow-1pat3d3" target="t_send_ChoreographyTask-07f3pv1_ClassA_a-z"/>
+    <ptn:arc id="a_p_state_RoleB_ClassA_a-z_t_send_ChoreographyTask-07f3pv1_ClassA_a-z" source="p_state_RoleB_ClassA_a-z" target="t_send_ChoreographyTask-07f3pv1_ClassA_a-z"/>
+    <ptn:arc id="a_t_send_ChoreographyTask-07f3pv1_ClassA_a-z_p_state_RoleB_ClassA_a-z" source="t_send_ChoreographyTask-07f3pv1_ClassA_a-z" target="p_state_RoleB_ClassA_a-z"/>
+    <ptn:arc id="a_t_send_ChoreographyTask-07f3pv1_ClassA_a-z_p_trans_ChoreographyTask-07f3pv1" source="t_send_ChoreographyTask-07f3pv1_ClassA_a-z" target="p_trans_ChoreographyTask-07f3pv1"/>
+    <ptn:arc id="a_p_trans_ChoreographyTask-07f3pv1_t_recv_ChoreographyTask-07f3pv1_ClassA_a-x_a-z" source="p_trans_ChoreographyTask-07f3pv1" target="t_recv_ChoreographyTask-07f3pv1_ClassA_a-x_a-z"/>
+    <ptn:arc id="a_p_state_RoleA_ClassA_a-x_t_recv_ChoreographyTask-07f3pv1_ClassA_a-x_a-z" source="p_state_RoleA_ClassA_a-x" target="t_recv_ChoreographyTask-07f3pv1_ClassA_a-x_a-z"/>
+    <ptn:arc id="a_t_recv_ChoreographyTask-07f3pv1_ClassA_a-x_a-z_p_state_RoleA_ClassA_a-z" source="t_recv_ChoreographyTask-07f3pv1_ClassA_a-x_a-z" target="p_state_RoleA_ClassA_a-z"/>
+    <ptn:arc id="a_t_recv_ChoreographyTask-07f3pv1_ClassA_a-x_a-z_p_sf_Flow-07i5zqs" source="t_recv_ChoreographyTask-07f3pv1_ClassA_a-x_a-z" target="p_sf_Flow-07i5zqs"/>
+    <ptn:arc id="a_p_trans_ChoreographyTask-07f3pv1_t_recv_ChoreographyTask-07f3pv1_ClassA_a-y_a-z" source="p_trans_ChoreographyTask-07f3pv1" target="t_recv_ChoreographyTask-07f3pv1_ClassA_a-y_a-z"/>
+    <ptn:arc id="a_p_state_RoleA_ClassA_a-y_t_recv_ChoreographyTask-07f3pv1_ClassA_a-y_a-z" source="p_state_RoleA_ClassA_a-y" target="t_recv_ChoreographyTask-07f3pv1_ClassA_a-y_a-z"/>
+    <ptn:arc id="a_t_recv_ChoreographyTask-07f3pv1_ClassA_a-y_a-z_p_state_RoleA_ClassA_a-z" source="t_recv_ChoreographyTask-07f3pv1_ClassA_a-y_a-z" target="p_state_RoleA_ClassA_a-z"/>
+    <ptn:arc id="a_t_recv_ChoreographyTask-07f3pv1_ClassA_a-y_a-z_p_sf_Flow-07i5zqs" source="t_recv_ChoreographyTask-07f3pv1_ClassA_a-y_a-z" target="p_sf_Flow-07i5zqs"/>
+  </ptn:model>
+  <ptnDi:diagram id="undefined_di">
+    <ptnDi:plane id="undefined_plane">
+      <ptnDi:diagramShape id="p_source_di" modelElement="p_source">
+        <dc:Bounds x="0" y="-16" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_sink_di" modelElement="p_sink">
+        <dc:Bounds x="2050" y="-16" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_sf_Flow-0yu7xi1_di" modelElement="p_sf_Flow-0yu7xi1">
+        <dc:Bounds x="250" y="-16" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_sf_Flow-0h536ur_di" modelElement="p_sf_Flow-0h536ur">
+        <dc:Bounds x="1150" y="-16" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_sf_Flow-0kxe60s_di" modelElement="p_sf_Flow-0kxe60s">
+        <dc:Bounds x="1150" y="184" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_sf_Flow-1pat3d3_di" modelElement="p_sf_Flow-1pat3d3">
+        <dc:Bounds x="1450" y="-16" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_sf_Flow-0v6yqir_di" modelElement="p_sf_Flow-0v6yqir">
+        <dc:Bounds x="550" y="-16" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_sf_Flow-07i5zqs_di" modelElement="p_sf_Flow-07i5zqs">
+        <dc:Bounds x="1750" y="-16" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_exists_RoleA_ClassA_di" modelElement="p_exists_RoleA_ClassA">
+        <dc:Bounds x="0" y="-916" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_state_RoleA_ClassA_initial_di" modelElement="p_state_RoleA_ClassA_initial">
+        <dc:Bounds x="0" y="-836" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_state_RoleA_ClassA_a-x_di" modelElement="p_state_RoleA_ClassA_a-x">
+        <dc:Bounds x="100" y="-836" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_state_RoleA_ClassA_a-z_di" modelElement="p_state_RoleA_ClassA_a-z">
+        <dc:Bounds x="200" y="-836" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_state_RoleA_ClassA_a-y_di" modelElement="p_state_RoleA_ClassA_a-y">
+        <dc:Bounds x="300" y="-836" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_exists_RoleB_ClassA_di" modelElement="p_exists_RoleB_ClassA">
+        <dc:Bounds x="0" y="-696" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_state_RoleB_ClassA_initial_di" modelElement="p_state_RoleB_ClassA_initial">
+        <dc:Bounds x="0" y="-616" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_state_RoleB_ClassA_a-x_di" modelElement="p_state_RoleB_ClassA_a-x">
+        <dc:Bounds x="100" y="-616" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_state_RoleB_ClassA_a-z_di" modelElement="p_state_RoleB_ClassA_a-z">
+        <dc:Bounds x="200" y="-616" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_state_RoleB_ClassA_a-y_di" modelElement="p_state_RoleB_ClassA_a-y">
+        <dc:Bounds x="300" y="-616" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_trans_ChoreographyTask-1ntuvmx_di" modelElement="p_trans_ChoreographyTask-1ntuvmx">
+        <dc:Bounds x="1004" y="-16" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_trans_ChoreographyTask-18vbtgq_di" modelElement="p_trans_ChoreographyTask-18vbtgq">
+        <dc:Bounds x="1004" y="184" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="p_trans_ChoreographyTask-07f3pv1_di" modelElement="p_trans_ChoreographyTask-07f3pv1">
+        <dc:Bounds x="1604" y="-16" width="32" height="32"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="t_Event-0ql5o4b_di" modelElement="t_Event-0ql5o4b">
+        <dc:Bounds x="100" y="-30" width="40" height="60"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="t_Event-0v3h55y_di" modelElement="t_Event-0v3h55y">
+        <dc:Bounds x="1900" y="-30" width="40" height="60"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="t_ChoreographyTask-06km4n2_di" modelElement="t_ChoreographyTask-06km4n2">
+        <dc:Bounds x="400" y="-30" width="40" height="60"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="t_xor_ChoreographyTask-1ntuvmx_Gateway-1hms0l8_di" modelElement="t_xor_ChoreographyTask-1ntuvmx_Gateway-1hms0l8">
+        <dc:Bounds x="1300" y="-30" width="40" height="60"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="t_xor_ChoreographyTask-18vbtgq_Gateway-1hms0l8_di" modelElement="t_xor_ChoreographyTask-18vbtgq_Gateway-1hms0l8">
+        <dc:Bounds x="1300" y="170" width="40" height="60"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="t_local_RoleA_ClassA_initial_a-x_di" modelElement="t_local_RoleA_ClassA_initial_a-x">
+        <dc:Bounds x="50" y="-930" width="40" height="60"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="t_local_RoleA_ClassA_initial_a-y_di" modelElement="t_local_RoleA_ClassA_initial_a-y">
+        <dc:Bounds x="150" y="-930" width="40" height="60"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="t_local_RoleB_ClassA_a-x_a-z_di" modelElement="t_local_RoleB_ClassA_a-x_a-z">
+        <dc:Bounds x="150" y="-710" width="40" height="60"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="t_local_RoleB_ClassA_a-y_a-z_di" modelElement="t_local_RoleB_ClassA_a-y_a-z">
+        <dc:Bounds x="250" y="-710" width="40" height="60"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="t_send_ChoreographyTask-1ntuvmx_ClassA_a-x_di" modelElement="t_send_ChoreographyTask-1ntuvmx_ClassA_a-x">
+        <dc:Bounds x="940" y="-110" width="40" height="60"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="t_recv_ChoreographyTask-1ntuvmx_ClassA_initial_a-x_di" modelElement="t_recv_ChoreographyTask-1ntuvmx_ClassA_initial_a-x">
+        <dc:Bounds x="1060" y="50" width="40" height="60"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="t_send_ChoreographyTask-18vbtgq_ClassA_a-y_di" modelElement="t_send_ChoreographyTask-18vbtgq_ClassA_a-y">
+        <dc:Bounds x="940" y="90" width="40" height="60"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="t_recv_ChoreographyTask-18vbtgq_ClassA_initial_a-y_di" modelElement="t_recv_ChoreographyTask-18vbtgq_ClassA_initial_a-y">
+        <dc:Bounds x="1060" y="250" width="40" height="60"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="t_send_ChoreographyTask-07f3pv1_ClassA_a-z_di" modelElement="t_send_ChoreographyTask-07f3pv1_ClassA_a-z">
+        <dc:Bounds x="1540" y="-110" width="40" height="60"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="t_recv_ChoreographyTask-07f3pv1_ClassA_a-x_a-z_di" modelElement="t_recv_ChoreographyTask-07f3pv1_ClassA_a-x_a-z">
+        <dc:Bounds x="1660" y="50" width="40" height="60"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramShape id="t_recv_ChoreographyTask-07f3pv1_ClassA_a-y_a-z_di" modelElement="t_recv_ChoreographyTask-07f3pv1_ClassA_a-y_a-z">
+        <dc:Bounds x="1710" y="50" width="40" height="60"/>
+      </ptnDi:diagramShape>
+      <ptnDi:diagramEdge id="a_p_source_t_Event-0ql5o4b_di" modelElement="a_p_source_t_Event-0ql5o4b">
+        <ptnDi:waypoint x="32" y="0"/>
+        <ptnDi:waypoint x="100" y="0"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_Event-0v3h55y_p_sink_di" modelElement="a_t_Event-0v3h55y_p_sink">
+        <ptnDi:waypoint x="1940" y="0"/>
+        <ptnDi:waypoint x="2050" y="0"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_sf_Flow-0yu7xi1_t_ChoreographyTask-06km4n2_di" modelElement="a_p_sf_Flow-0yu7xi1_t_ChoreographyTask-06km4n2">
+        <ptnDi:waypoint x="282" y="0"/>
+        <ptnDi:waypoint x="400" y="0"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_Event-0ql5o4b_p_sf_Flow-0yu7xi1_di" modelElement="a_t_Event-0ql5o4b_p_sf_Flow-0yu7xi1">
+        <ptnDi:waypoint x="140" y="0"/>
+        <ptnDi:waypoint x="250" y="0"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_ChoreographyTask-06km4n2_p_sf_Flow-0v6yqir_di" modelElement="a_t_ChoreographyTask-06km4n2_p_sf_Flow-0v6yqir">
+        <ptnDi:waypoint x="440" y="0"/>
+        <ptnDi:waypoint x="550" y="0"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_sf_Flow-07i5zqs_t_Event-0v3h55y_di" modelElement="a_p_sf_Flow-07i5zqs_t_Event-0v3h55y">
+        <ptnDi:waypoint x="1782" y="0"/>
+        <ptnDi:waypoint x="1900" y="0"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_sf_Flow-0h536ur_t_xor_ChoreographyTask-1ntuvmx_Gateway-1hms0l8_di" modelElement="a_p_sf_Flow-0h536ur_t_xor_ChoreographyTask-1ntuvmx_Gateway-1hms0l8">
+        <ptnDi:waypoint x="1182" y="0"/>
+        <ptnDi:waypoint x="1300" y="0"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_sf_Flow-0kxe60s_t_xor_ChoreographyTask-18vbtgq_Gateway-1hms0l8_di" modelElement="a_p_sf_Flow-0kxe60s_t_xor_ChoreographyTask-18vbtgq_Gateway-1hms0l8">
+        <ptnDi:waypoint x="1182" y="200"/>
+        <ptnDi:waypoint x="1300" y="200"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_xor_ChoreographyTask-1ntuvmx_Gateway-1hms0l8_p_sf_Flow-1pat3d3_di" modelElement="a_t_xor_ChoreographyTask-1ntuvmx_Gateway-1hms0l8_p_sf_Flow-1pat3d3">
+        <ptnDi:waypoint x="1340" y="0"/>
+        <ptnDi:waypoint x="1450" y="0"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_xor_ChoreographyTask-18vbtgq_Gateway-1hms0l8_p_sf_Flow-1pat3d3_di" modelElement="a_t_xor_ChoreographyTask-18vbtgq_Gateway-1hms0l8_p_sf_Flow-1pat3d3">
+        <ptnDi:waypoint x="1320" y="170"/>
+        <ptnDi:waypoint x="1466" y="16"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_state_RoleA_ClassA_initial_t_local_RoleA_ClassA_initial_a-x_di" modelElement="a_p_state_RoleA_ClassA_initial_t_local_RoleA_ClassA_initial_a-x">
+        <ptnDi:waypoint x="16" y="-836"/>
+        <ptnDi:waypoint x="70" y="-870"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_local_RoleA_ClassA_initial_a-x_p_state_RoleA_ClassA_a-x_di" modelElement="a_t_local_RoleA_ClassA_initial_a-x_p_state_RoleA_ClassA_a-x">
+        <ptnDi:waypoint x="70" y="-870"/>
+        <ptnDi:waypoint x="116" y="-836"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_local_RoleA_ClassA_initial_a-x_p_exists_RoleA_ClassA_di" modelElement="a_t_local_RoleA_ClassA_initial_a-x_p_exists_RoleA_ClassA">
+        <ptnDi:waypoint x="50" y="-900"/>
+        <ptnDi:waypoint x="32" y="-900"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_state_RoleA_ClassA_initial_t_local_RoleA_ClassA_initial_a-y_di" modelElement="a_p_state_RoleA_ClassA_initial_t_local_RoleA_ClassA_initial_a-y">
+        <ptnDi:waypoint x="32" y="-820"/>
+        <ptnDi:waypoint x="150" y="-900"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_local_RoleA_ClassA_initial_a-y_p_state_RoleA_ClassA_a-y_di" modelElement="a_t_local_RoleA_ClassA_initial_a-y_p_state_RoleA_ClassA_a-y">
+        <ptnDi:waypoint x="190" y="-900"/>
+        <ptnDi:waypoint x="300" y="-820"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_local_RoleA_ClassA_initial_a-y_p_exists_RoleA_ClassA_di" modelElement="a_t_local_RoleA_ClassA_initial_a-y_p_exists_RoleA_ClassA">
+        <ptnDi:waypoint x="150" y="-900"/>
+        <ptnDi:waypoint x="32" y="-900"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_state_RoleB_ClassA_a-x_t_local_RoleB_ClassA_a-x_a-z_di" modelElement="a_p_state_RoleB_ClassA_a-x_t_local_RoleB_ClassA_a-x_a-z">
+        <ptnDi:waypoint x="116" y="-616"/>
+        <ptnDi:waypoint x="170" y="-650"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_local_RoleB_ClassA_a-x_a-z_p_state_RoleB_ClassA_a-z_di" modelElement="a_t_local_RoleB_ClassA_a-x_a-z_p_state_RoleB_ClassA_a-z">
+        <ptnDi:waypoint x="170" y="-650"/>
+        <ptnDi:waypoint x="216" y="-616"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_state_RoleB_ClassA_a-y_t_local_RoleB_ClassA_a-y_a-z_di" modelElement="a_p_state_RoleB_ClassA_a-y_t_local_RoleB_ClassA_a-y_a-z">
+        <ptnDi:waypoint x="316" y="-616"/>
+        <ptnDi:waypoint x="270" y="-650"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_local_RoleB_ClassA_a-y_a-z_p_state_RoleB_ClassA_a-z_di" modelElement="a_t_local_RoleB_ClassA_a-y_a-z_p_state_RoleB_ClassA_a-z">
+        <ptnDi:waypoint x="270" y="-650"/>
+        <ptnDi:waypoint x="216" y="-616"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_sf_Flow-0v6yqir_t_send_ChoreographyTask-1ntuvmx_ClassA_a-x_di" modelElement="a_p_sf_Flow-0v6yqir_t_send_ChoreographyTask-1ntuvmx_ClassA_a-x">
+        <ptnDi:waypoint x="582" y="0"/>
+        <ptnDi:waypoint x="940" y="-80"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_state_RoleA_ClassA_a-x_t_send_ChoreographyTask-1ntuvmx_ClassA_a-x_di" modelElement="a_p_state_RoleA_ClassA_a-x_t_send_ChoreographyTask-1ntuvmx_ClassA_a-x">
+        <ptnDi:waypoint x="132" y="-820"/>
+        <ptnDi:waypoint x="940" y="-80"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_send_ChoreographyTask-1ntuvmx_ClassA_a-x_p_state_RoleA_ClassA_a-x_di" modelElement="a_t_send_ChoreographyTask-1ntuvmx_ClassA_a-x_p_state_RoleA_ClassA_a-x">
+        <ptnDi:waypoint x="940" y="-80"/>
+        <ptnDi:waypoint x="132" y="-820"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_send_ChoreographyTask-1ntuvmx_ClassA_a-x_p_trans_ChoreographyTask-1ntuvmx_di" modelElement="a_t_send_ChoreographyTask-1ntuvmx_ClassA_a-x_p_trans_ChoreographyTask-1ntuvmx">
+        <ptnDi:waypoint x="960" y="-50"/>
+        <ptnDi:waypoint x="1020" y="-16"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_trans_ChoreographyTask-1ntuvmx_t_recv_ChoreographyTask-1ntuvmx_ClassA_initial_a-x_di" modelElement="a_p_trans_ChoreographyTask-1ntuvmx_t_recv_ChoreographyTask-1ntuvmx_ClassA_initial_a-x">
+        <ptnDi:waypoint x="1020" y="16"/>
+        <ptnDi:waypoint x="1080" y="50"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_state_RoleB_ClassA_initial_t_recv_ChoreographyTask-1ntuvmx_ClassA_initial_a-x_di" modelElement="a_p_state_RoleB_ClassA_initial_t_recv_ChoreographyTask-1ntuvmx_ClassA_initial_a-x">
+        <ptnDi:waypoint x="32" y="-600"/>
+        <ptnDi:waypoint x="1060" y="80"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_recv_ChoreographyTask-1ntuvmx_ClassA_initial_a-x_p_state_RoleB_ClassA_a-x_di" modelElement="a_t_recv_ChoreographyTask-1ntuvmx_ClassA_initial_a-x_p_state_RoleB_ClassA_a-x">
+        <ptnDi:waypoint x="1060" y="80"/>
+        <ptnDi:waypoint x="132" y="-600"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_recv_ChoreographyTask-1ntuvmx_ClassA_initial_a-x_p_sf_Flow-0h536ur_di" modelElement="a_t_recv_ChoreographyTask-1ntuvmx_ClassA_initial_a-x_p_sf_Flow-0h536ur">
+        <ptnDi:waypoint x="1100" y="80"/>
+        <ptnDi:waypoint x="1150" y="0"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_recv_ChoreographyTask-1ntuvmx_ClassA_initial_a-x_p_exists_RoleB_ClassA_di" modelElement="a_t_recv_ChoreographyTask-1ntuvmx_ClassA_initial_a-x_p_exists_RoleB_ClassA">
+        <ptnDi:waypoint x="1060" y="80"/>
+        <ptnDi:waypoint x="32" y="-680"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_sf_Flow-0v6yqir_t_send_ChoreographyTask-18vbtgq_ClassA_a-y_di" modelElement="a_p_sf_Flow-0v6yqir_t_send_ChoreographyTask-18vbtgq_ClassA_a-y">
+        <ptnDi:waypoint x="582" y="0"/>
+        <ptnDi:waypoint x="940" y="120"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_state_RoleA_ClassA_a-y_t_send_ChoreographyTask-18vbtgq_ClassA_a-y_di" modelElement="a_p_state_RoleA_ClassA_a-y_t_send_ChoreographyTask-18vbtgq_ClassA_a-y">
+        <ptnDi:waypoint x="316" y="-804"/>
+        <ptnDi:waypoint x="960" y="90"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_send_ChoreographyTask-18vbtgq_ClassA_a-y_p_state_RoleA_ClassA_a-y_di" modelElement="a_t_send_ChoreographyTask-18vbtgq_ClassA_a-y_p_state_RoleA_ClassA_a-y">
+        <ptnDi:waypoint x="960" y="90"/>
+        <ptnDi:waypoint x="316" y="-804"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_send_ChoreographyTask-18vbtgq_ClassA_a-y_p_trans_ChoreographyTask-18vbtgq_di" modelElement="a_t_send_ChoreographyTask-18vbtgq_ClassA_a-y_p_trans_ChoreographyTask-18vbtgq">
+        <ptnDi:waypoint x="960" y="150"/>
+        <ptnDi:waypoint x="1020" y="184"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_trans_ChoreographyTask-18vbtgq_t_recv_ChoreographyTask-18vbtgq_ClassA_initial_a-y_di" modelElement="a_p_trans_ChoreographyTask-18vbtgq_t_recv_ChoreographyTask-18vbtgq_ClassA_initial_a-y">
+        <ptnDi:waypoint x="1020" y="216"/>
+        <ptnDi:waypoint x="1080" y="250"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_state_RoleB_ClassA_initial_t_recv_ChoreographyTask-18vbtgq_ClassA_initial_a-y_di" modelElement="a_p_state_RoleB_ClassA_initial_t_recv_ChoreographyTask-18vbtgq_ClassA_initial_a-y">
+        <ptnDi:waypoint x="32" y="-600"/>
+        <ptnDi:waypoint x="1060" y="280"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_recv_ChoreographyTask-18vbtgq_ClassA_initial_a-y_p_state_RoleB_ClassA_a-y_di" modelElement="a_t_recv_ChoreographyTask-18vbtgq_ClassA_initial_a-y_p_state_RoleB_ClassA_a-y">
+        <ptnDi:waypoint x="1080" y="250"/>
+        <ptnDi:waypoint x="316" y="-584"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_recv_ChoreographyTask-18vbtgq_ClassA_initial_a-y_p_sf_Flow-0kxe60s_di" modelElement="a_t_recv_ChoreographyTask-18vbtgq_ClassA_initial_a-y_p_sf_Flow-0kxe60s">
+        <ptnDi:waypoint x="1100" y="280"/>
+        <ptnDi:waypoint x="1150" y="200"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_recv_ChoreographyTask-18vbtgq_ClassA_initial_a-y_p_exists_RoleB_ClassA_di" modelElement="a_t_recv_ChoreographyTask-18vbtgq_ClassA_initial_a-y_p_exists_RoleB_ClassA">
+        <ptnDi:waypoint x="1060" y="280"/>
+        <ptnDi:waypoint x="32" y="-680"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_sf_Flow-1pat3d3_t_send_ChoreographyTask-07f3pv1_ClassA_a-z_di" modelElement="a_p_sf_Flow-1pat3d3_t_send_ChoreographyTask-07f3pv1_ClassA_a-z">
+        <ptnDi:waypoint x="1482" y="0"/>
+        <ptnDi:waypoint x="1540" y="-80"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_state_RoleB_ClassA_a-z_t_send_ChoreographyTask-07f3pv1_ClassA_a-z_di" modelElement="a_p_state_RoleB_ClassA_a-z_t_send_ChoreographyTask-07f3pv1_ClassA_a-z">
+        <ptnDi:waypoint x="232" y="-600"/>
+        <ptnDi:waypoint x="1540" y="-80"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_send_ChoreographyTask-07f3pv1_ClassA_a-z_p_state_RoleB_ClassA_a-z_di" modelElement="a_t_send_ChoreographyTask-07f3pv1_ClassA_a-z_p_state_RoleB_ClassA_a-z">
+        <ptnDi:waypoint x="1540" y="-80"/>
+        <ptnDi:waypoint x="232" y="-600"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_send_ChoreographyTask-07f3pv1_ClassA_a-z_p_trans_ChoreographyTask-07f3pv1_di" modelElement="a_t_send_ChoreographyTask-07f3pv1_ClassA_a-z_p_trans_ChoreographyTask-07f3pv1">
+        <ptnDi:waypoint x="1560" y="-50"/>
+        <ptnDi:waypoint x="1620" y="-16"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_trans_ChoreographyTask-07f3pv1_t_recv_ChoreographyTask-07f3pv1_ClassA_a-x_a-z_di" modelElement="a_p_trans_ChoreographyTask-07f3pv1_t_recv_ChoreographyTask-07f3pv1_ClassA_a-x_a-z">
+        <ptnDi:waypoint x="1620" y="16"/>
+        <ptnDi:waypoint x="1680" y="50"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_state_RoleA_ClassA_a-x_t_recv_ChoreographyTask-07f3pv1_ClassA_a-x_a-z_di" modelElement="a_p_state_RoleA_ClassA_a-x_t_recv_ChoreographyTask-07f3pv1_ClassA_a-x_a-z">
+        <ptnDi:waypoint x="132" y="-820"/>
+        <ptnDi:waypoint x="1660" y="80"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_recv_ChoreographyTask-07f3pv1_ClassA_a-x_a-z_p_state_RoleA_ClassA_a-z_di" modelElement="a_t_recv_ChoreographyTask-07f3pv1_ClassA_a-x_a-z_p_state_RoleA_ClassA_a-z">
+        <ptnDi:waypoint x="1660" y="80"/>
+        <ptnDi:waypoint x="232" y="-820"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_recv_ChoreographyTask-07f3pv1_ClassA_a-x_a-z_p_sf_Flow-07i5zqs_di" modelElement="a_t_recv_ChoreographyTask-07f3pv1_ClassA_a-x_a-z_p_sf_Flow-07i5zqs">
+        <ptnDi:waypoint x="1700" y="80"/>
+        <ptnDi:waypoint x="1750" y="0"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_trans_ChoreographyTask-07f3pv1_t_recv_ChoreographyTask-07f3pv1_ClassA_a-y_a-z_di" modelElement="a_p_trans_ChoreographyTask-07f3pv1_t_recv_ChoreographyTask-07f3pv1_ClassA_a-y_a-z">
+        <ptnDi:waypoint x="1636" y="0"/>
+        <ptnDi:waypoint x="1710" y="80"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_p_state_RoleA_ClassA_a-y_t_recv_ChoreographyTask-07f3pv1_ClassA_a-y_a-z_di" modelElement="a_p_state_RoleA_ClassA_a-y_t_recv_ChoreographyTask-07f3pv1_ClassA_a-y_a-z">
+        <ptnDi:waypoint x="332" y="-820"/>
+        <ptnDi:waypoint x="1710" y="80"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_recv_ChoreographyTask-07f3pv1_ClassA_a-y_a-z_p_state_RoleA_ClassA_a-z_di" modelElement="a_t_recv_ChoreographyTask-07f3pv1_ClassA_a-y_a-z_p_state_RoleA_ClassA_a-z">
+        <ptnDi:waypoint x="1710" y="80"/>
+        <ptnDi:waypoint x="232" y="-820"/>
+      </ptnDi:diagramEdge>
+      <ptnDi:diagramEdge id="a_t_recv_ChoreographyTask-07f3pv1_ClassA_a-y_a-z_p_sf_Flow-07i5zqs_di" modelElement="a_t_recv_ChoreographyTask-07f3pv1_ClassA_a-y_a-z_p_sf_Flow-07i5zqs">
+        <ptnDi:waypoint x="1730" y="50"/>
+        <ptnDi:waypoint x="1766" y="16"/>
+      </ptnDi:diagramEdge>
+    </ptnDi:plane>
+  </ptnDi:diagram>
+</ptn:definitions>

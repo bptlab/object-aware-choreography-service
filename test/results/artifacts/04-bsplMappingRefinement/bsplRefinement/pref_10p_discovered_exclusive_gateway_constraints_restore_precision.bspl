@@ -1,0 +1,15 @@
+objectawarechoreographyprotocol {
+  roles RoleA, RoleB
+  parameters out case_id key, out completed
+  private attribute_classa_a-id, attribute_classa_att1, attribute_classa_att2, cf_excl_task4_task5, cf_prec_task2_before_task4, cf_prec_task2_before_task5, cf_prec_task3_before_task4, cf_prec_task3_before_task5, cf_prec_task4_before_task6, cf_prec_task5_before_task6, state_classa_a-y, task_task1, task_task2, task_task4, task_task5, task_task6
+  
+  RoleA -> RoleB: task1 [out case_id key, out task_task1]
+  RoleA -> RoleB: task2 [in case_id key, in attribute_classa_a-id, in attribute_classa_att1, in state_classa_a-y, out cf_prec_task2_before_task4, out cf_prec_task2_before_task5, out task_task2]
+  RoleA -> RoleB: task3 [in case_id key, out attribute_classa_a-id, out attribute_classa_att1, out cf_prec_task3_before_task4, out cf_prec_task3_before_task5]
+  RoleA -> RoleB: task4 [in case_id key, in attribute_classa_a-id, in attribute_classa_att1, in cf_prec_task2_before_task4, in state_classa_a-y, out cf_excl_task4_task5, out cf_prec_task4_before_task6, out task_task4]
+  RoleA -> RoleB: task4 [in case_id key, in attribute_classa_a-id, in attribute_classa_att1, in cf_prec_task3_before_task4, in state_classa_a-y, out cf_excl_task4_task5, out cf_prec_task4_before_task6, out task_task4]
+  RoleA -> RoleB: task5 [in case_id key, in attribute_classa_a-id, in attribute_classa_att1, in cf_prec_task2_before_task5, out cf_excl_task4_task5, out cf_prec_task5_before_task6, out task_task5, nil attribute_classa_att2, nil state_classa_a-y]
+  RoleA -> RoleB: task5 [in case_id key, in attribute_classa_a-id, in attribute_classa_att1, in cf_prec_task3_before_task5, out cf_excl_task4_task5, out cf_prec_task5_before_task6, out task_task5, nil attribute_classa_att2, nil state_classa_a-y]
+  RoleA -> RoleB: task6 [in case_id key, in cf_prec_task4_before_task6, out completed, out task_task6]
+  RoleA -> RoleB: task6 [in case_id key, in cf_prec_task5_before_task6, out completed, out task_task6]
+}

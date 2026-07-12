@@ -1,0 +1,47 @@
+{
+  "comparison": {
+    "choreographyTraceCount": 1,
+    "protocolTraceCount": 2,
+    "sharedTraceCount": 1,
+    "recall": 1,
+    "precision": 0.5,
+    "protocolOnly": [
+      [
+        "task1",
+        "task3"
+      ]
+    ]
+  },
+  "constraints": [
+    {
+      "kind": "guardInformation",
+      "id": "guardInformation:Gateway_1fcecxd:Flow_1f47s0p:task3",
+      "guardedTask": "task3",
+      "objectClass": "ClassA",
+      "objectState": "a-y",
+      "requiredInAlternatives": [
+        [
+          "attribute_classa_a-id",
+          "attribute_classa_att2"
+        ]
+      ],
+      "requiredIn": [
+        "attribute_classa_a-id",
+        "attribute_classa_att2"
+      ],
+      "requiredNil": [],
+      "source": {
+        "reason": "guardedExclusiveSplit",
+        "gatewayId": "Gateway_1fcecxd",
+        "branchId": "Flow_1f47s0p",
+        "explanation": "Task task3 is the first task on a guarded exclusive branch and requires the guard information."
+      },
+      "violatingTraces": [
+        [
+          "task1",
+          "task3"
+        ]
+      ]
+    }
+  ]
+}

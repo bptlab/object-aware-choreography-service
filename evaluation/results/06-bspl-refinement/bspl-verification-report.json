@@ -1,0 +1,130 @@
+{
+  "totals": {
+    "files": 20,
+    "correctSyntax": 20,
+    "safe": 20,
+    "live": 20
+  },
+  "results": [
+    {
+      "fileName": "cs01_no_object_sequence_refined.bspl",
+      "correctSyntax": true,
+      "safe": true,
+      "live": true
+    },
+    {
+      "fileName": "cs02_single_object_alternative_creation_refined.bspl",
+      "correctSyntax": true,
+      "safe": true,
+      "live": true
+    },
+    {
+      "fileName": "cs03_two_object_one_to_one_creation_refined.bspl",
+      "correctSyntax": true,
+      "safe": true,
+      "live": true
+    },
+    {
+      "fileName": "cs04_two_object_one_to_many_creation_refined.bspl",
+      "correctSyntax": true,
+      "safe": true,
+      "live": true
+    },
+    {
+      "fileName": "cs05_two_object_many_to_many_creation_refined.bspl",
+      "correctSyntax": true,
+      "safe": true,
+      "live": true
+    },
+    {
+      "fileName": "cs06_two_object_creation_without_association_refined.bspl",
+      "correctSyntax": true,
+      "safe": true,
+      "live": true
+    },
+    {
+      "fileName": "cs07_three_object_mixed_dependencies_refined.bspl",
+      "correctSyntax": true,
+      "safe": true,
+      "live": true
+    },
+    {
+      "fileName": "cs08_local_transitions_and_forwarding_refined.bspl",
+      "correctSyntax": true,
+      "safe": true,
+      "live": true
+    },
+    {
+      "fileName": "cs09_multiple_compatible_receiver_states_refined.bspl",
+      "correctSyntax": true,
+      "safe": true,
+      "live": true
+    },
+    {
+      "fileName": "cs10_multi_class_synchronization_forwarding_refined.bspl",
+      "correctSyntax": true,
+      "safe": true,
+      "live": true
+    },
+    {
+      "fileName": "cs11_synchronization_multiple_source_states_refined.bspl",
+      "correctSyntax": true,
+      "safe": true,
+      "live": true
+    },
+    {
+      "fileName": "cs12_state_reachable_by_sync_or_local_refined.bspl",
+      "correctSyntax": true,
+      "safe": true,
+      "live": true
+    },
+    {
+      "fileName": "cs13_combined_same_class_refined.bspl",
+      "correctSyntax": true,
+      "safe": true,
+      "live": true
+    },
+    {
+      "fileName": "cs14_combined_different_classes_refined.bspl",
+      "correctSyntax": true,
+      "safe": true,
+      "live": true
+    },
+    {
+      "fileName": "cs15_event_based_local_non_creational_decision_refined.bspl",
+      "correctSyntax": true,
+      "safe": true,
+      "live": true
+    },
+    {
+      "fileName": "cs16_guarded_exclusive_gateway_refined.bspl",
+      "correctSyntax": true,
+      "safe": true,
+      "live": true
+    },
+    {
+      "fileName": "cs18_parallel_independent_object_branches_refined.bspl",
+      "correctSyntax": true,
+      "safe": true,
+      "live": true
+    },
+    {
+      "fileName": "is01_order_fulfillment_refined.bspl",
+      "correctSyntax": true,
+      "safe": true,
+      "live": true
+    },
+    {
+      "fileName": "is02_item_purchase_plain_refined.bspl",
+      "correctSyntax": true,
+      "safe": true,
+      "live": true
+    },
+    {
+      "fileName": "is03_item_purchase_optimistic_refined.bspl",
+      "correctSyntax": true,
+      "safe": true,
+      "live": true
+    }
+  ]
+}

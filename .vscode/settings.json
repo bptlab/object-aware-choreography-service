@@ -1,0 +1,19 @@
+{
+  "editor.bracketPairColorization.enabled": true,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "workbench.editor.labelFormat": "short",
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "eslint.workingDirectories": [
+    "./src",
+  ]
+}
+

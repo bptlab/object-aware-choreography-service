@@ -1,0 +1,166 @@
+{
+  "totals": {
+    "files": 20,
+    "correctSyntax": 20,
+    "safe": 17,
+    "live": 20
+  },
+  "results": [
+    {
+      "fileName": "cs01_no_object_sequence.bspl",
+      "correctSyntax": true,
+      "safe": true,
+      "live": true
+    },
+    {
+      "fileName": "cs02_single_object_alternative_creation.bspl",
+      "correctSyntax": true,
+      "safe": true,
+      "live": true
+    },
+    {
+      "fileName": "cs03_two_object_one_to_one_creation.bspl",
+      "correctSyntax": true,
+      "safe": true,
+      "live": true
+    },
+    {
+      "fileName": "cs04_two_object_one_to_many_creation.bspl",
+      "correctSyntax": true,
+      "safe": true,
+      "live": true
+    },
+    {
+      "fileName": "cs05_two_object_many_to_many_creation.bspl",
+      "correctSyntax": true,
+      "safe": true,
+      "live": true
+    },
+    {
+      "fileName": "cs06_two_object_creation_without_association.bspl",
+      "correctSyntax": true,
+      "safe": true,
+      "live": true
+    },
+    {
+      "fileName": "cs07_three_object_mixed_dependencies.bspl",
+      "correctSyntax": true,
+      "safe": true,
+      "live": true
+    },
+    {
+      "fileName": "cs08_local_transitions_and_forwarding.bspl",
+      "correctSyntax": true,
+      "safe": true,
+      "live": true
+    },
+    {
+      "fileName": "cs09_multiple_compatible_receiver_states.bspl",
+      "correctSyntax": true,
+      "safe": true,
+      "live": true
+    },
+    {
+      "fileName": "cs10_multi_class_synchronization_forwarding.bspl",
+      "correctSyntax": true,
+      "safe": true,
+      "live": true
+    },
+    {
+      "fileName": "cs11_synchronization_multiple_source_states.bspl",
+      "correctSyntax": true,
+      "safe": true,
+      "live": true
+    },
+    {
+      "fileName": "cs12_state_reachable_by_sync_or_local.bspl",
+      "correctSyntax": true,
+      "safe": true,
+      "live": true
+    },
+    {
+      "fileName": "cs13_combined_same_class.bspl",
+      "correctSyntax": true,
+      "safe": true,
+      "live": true
+    },
+    {
+      "fileName": "cs14_combined_different_classes.bspl",
+      "correctSyntax": true,
+      "safe": true,
+      "live": true
+    },
+    {
+      "fileName": "cs15_event_based_local_non_creational_decision.bspl",
+      "correctSyntax": true,
+      "safe": true,
+      "live": true
+    },
+    {
+      "fileName": "cs16_guarded_exclusive_gateway.bspl",
+      "correctSyntax": true,
+      "safe": true,
+      "live": true
+    },
+    {
+      "fileName": "cs18_parallel_independent_object_branches.bspl",
+      "correctSyntax": true,
+      "safe": true,
+      "live": true
+    },
+    {
+      "fileName": "is01_order_fulfillment.bspl",
+      "correctSyntax": true,
+      "safe": false,
+      "live": true,
+      "diagnostics": {
+        "checkSyntax": {
+          "returnCode": 0,
+          "stdout": "\n  Syntax: correct\n",
+          "stderr": ""
+        },
+        "verifyAll": {
+          "returnCode": 0,
+          "stdout": "\n{'elapsed': 0.005502084037289023, 'path': (Buyer!po-place-order, Seller?po-place-order, Seller!si-send-invoice, Buyer?si-send-invoice, Buyer!pp-send-payment-proof, Seller?pp-send-payment-proof, Seller!rs-request-shipment-2, Seller!rl-release-shipment, Warehouse?rl-release-shipment, Warehouse!pd-report-planned-delivery, Seller?pd-report-planned-delivery, Warehouse?rs-request-shipment-2, Buyer!co-cancel-order, Seller?co-cancel-order, Warehouse!dg-deliver-goods, Buyer?dg-deliver-goods), 'paths': 1, 'safe': False, 'unsafe': 'completed'}\n{'elapsed': 0.0313344580354169, 'paths': 15, 'live': True}\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "fileName": "is02_item_purchase_plain.bspl",
+      "correctSyntax": true,
+      "safe": false,
+      "live": true,
+      "diagnostics": {
+        "checkSyntax": {
+          "returnCode": 0,
+          "stdout": "\n  Syntax: correct\n",
+          "stderr": ""
+        },
+        "verifyAll": {
+          "returnCode": 0,
+          "stdout": "\n{'elapsed': 0.0013212919002398849, 'path': (Buyer!request-item, Seller?request-item, Seller!offer-item, Buyer?offer-item, Buyer!order-item, Seller?order-item, Buyer!decline-offer, Seller!ship-item, Seller?decline-offer, Buyer?ship-item), 'paths': 2, 'safe': False, 'unsafe': 'completed'}\n{'elapsed': 0.001109083998017013, 'paths': 2, 'live': True}\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "fileName": "is03_item_purchase_optimistic.bspl",
+      "correctSyntax": true,
+      "safe": false,
+      "live": true,
+      "diagnostics": {
+        "checkSyntax": {
+          "returnCode": 0,
+          "stdout": "\n  Syntax: correct\n",
+          "stderr": ""
+        },
+        "verifyAll": {
+          "returnCode": 0,
+          "stdout": "\n{'elapsed': 0.0028065830701962113, 'path': (Buyer!request-item, Seller?request-item, Seller!offer-item, Buyer?offer-item, Buyer!place-order, Seller?place-order, Seller!decline-request, Seller!accept-order, Buyer?accept-order, Buyer!decline-offer, Buyer?decline-request, Seller?decline-offer), 'paths': 2, 'safe': False, 'unsafe': 'completed'}\n{'elapsed': 0.006289165932685137, 'paths': 10, 'live': True}\n",
+          "stderr": ""
+        }
+      }
+    }
+  ]
+}

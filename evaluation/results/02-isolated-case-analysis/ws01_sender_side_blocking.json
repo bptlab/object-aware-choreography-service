@@ -1,0 +1,608 @@
+{
+  "objectAwareRealizability": {
+    "holds": false,
+    "assumptions": {
+      "controlFlowSoundness": "assumedExternal",
+      "controlFlowRealizability": "assumedExternal"
+    },
+    "subproperties": {
+      "projectedChoreographySoundness": {
+        "optionToComplete": {
+          "holds": true,
+          "violatingStateCount": 0
+        },
+        "properInteractionCompletion": {
+          "holds": true,
+          "violatingStateCount": 0
+        },
+        "taskCoverage": {
+          "holds": true,
+          "coveredTaskCount": 3,
+          "totalTaskCount": 3,
+          "uncoveredTaskIds": []
+        },
+        "branchCoverage": {
+          "holds": true,
+          "coveredBranchCount": 0,
+          "totalBranchCount": 0,
+          "uncoveredBranchIds": []
+        },
+        "holds": true
+      },
+      "senderProgression": false,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "firstViolation": {
+      "subproperty": "senderProgression",
+      "witnessPath": [
+        "Event_1o0bxp1 (t_Event-1o0bxp1)",
+        "request availability (t_ChoreographyTask-1av5ks0)",
+        "Gateway_0i6pput (t_parallel_Gateway-0i6pput)"
+      ]
+    }
+  },
+  "stateSpace": {
+    "markings": 15,
+    "edges": 17
+  },
+  "metadata": {
+    "senderPositions": 2,
+    "transmissions": 2,
+    "decisionGateways": 0,
+    "branchAlternatives": 0,
+    "localTransitions": 2,
+    "localTransitionsByRole": {
+      "Buyer": 1,
+      "Seller": 1
+    }
+  },
+  "diagnostics": {
+    "senderProgressionViolations": 3,
+    "receiverProgressionViolations": 0,
+    "decisionConsistencyViolations": 0,
+    "optionToCompleteViolations": 0,
+    "properInteractionCompletionViolations": 0,
+    "uncoveredTasks": 0,
+    "uncoveredBranches": 0
+  },
+  "projectedChoreographySoundness": {
+    "optionToComplete": {
+      "holds": true,
+      "violatingStateCount": 0
+    },
+    "properInteractionCompletion": {
+      "holds": true,
+      "violatingStateCount": 0
+    },
+    "taskCoverage": {
+      "holds": true,
+      "coveredTaskCount": 3,
+      "totalTaskCount": 3,
+      "uncoveredTaskIds": []
+    },
+    "branchCoverage": {
+      "holds": true,
+      "coveredBranchCount": 0,
+      "totalBranchCount": 0,
+      "uncoveredBranchIds": []
+    },
+    "holds": true
+  },
+  "senderProgression": {
+    "holds": false,
+    "violationCount": 3,
+    "violations": [
+      {
+        "kind": "sender-progression",
+        "message": "Sender progression violation at \"accept order\": control flow reached place \"p_sf_Flow-0w62i2w\", but no sequence of local lifecycle transitions can enable any associated sender-side transition. Sender transitions: \"t_send_ChoreographyTask-0gwtneo_Order_accepted\". Local transitions considered: \"t_local_Buyer_Order_initial_created\", \"t_local_Seller_Order_created_accepted\".",
+        "positionId": "send_ChoreographyTask_0gwtneo",
+        "positionLabel": "accept order",
+        "positionKind": "direct-task",
+        "placeId": "p_sf_Flow-0w62i2w",
+        "placeLabel": "Flow_0w62i2w",
+        "taskIds": [
+          "ChoreographyTask_0gwtneo"
+        ],
+        "taskNames": [
+          "accept order"
+        ],
+        "senderTransitionIds": [
+          "t_send_ChoreographyTask-0gwtneo_Order_accepted"
+        ],
+        "localTransitionIds": [
+          "t_local_Buyer_Order_initial_created",
+          "t_local_Seller_Order_created_accepted"
+        ],
+        "markingKey": "p_sf_Flow-0w62i2w:1|p_sf_Flow-1dg7y2u:1|p_state_Buyer_Order_initial:1|p_state_Seller_Order_initial:1",
+        "trace": [
+          {
+            "transitionId": "t_Event-1o0bxp1",
+            "transitionLabel": "Event_1o0bxp1",
+            "transitionKind": "control-flow"
+          },
+          {
+            "transitionId": "t_ChoreographyTask-1av5ks0",
+            "transitionLabel": "request availability",
+            "transitionKind": "control-flow"
+          },
+          {
+            "transitionId": "t_parallel_Gateway-0i6pput",
+            "transitionLabel": "Gateway_0i6pput",
+            "transitionKind": "control-flow"
+          }
+        ],
+        "traceText": [
+          "Event_1o0bxp1 (t_Event-1o0bxp1)",
+          "request availability (t_ChoreographyTask-1av5ks0)",
+          "Gateway_0i6pput (t_parallel_Gateway-0i6pput)"
+        ],
+        "marking": {
+          "p_sf_Flow-0w62i2w": 1,
+          "p_sf_Flow-1dg7y2u": 1,
+          "p_state_Buyer_Order_initial": 1,
+          "p_state_Seller_Order_initial": 1
+        },
+        "markedPlaces": [
+          {
+            "placeId": "p_sf_Flow-0w62i2w",
+            "placeLabel": "Flow_0w62i2w",
+            "tokens": 1
+          },
+          {
+            "placeId": "p_sf_Flow-1dg7y2u",
+            "placeLabel": "Flow_1dg7y2u",
+            "tokens": 1
+          },
+          {
+            "placeId": "p_state_Buyer_Order_initial",
+            "placeLabel": "Buyer.Order [initial]",
+            "tokens": 1
+          },
+          {
+            "placeId": "p_state_Seller_Order_initial",
+            "placeLabel": "Seller.Order [initial]",
+            "tokens": 1
+          }
+        ]
+      },
+      {
+        "kind": "sender-progression",
+        "message": "Sender progression violation at \"accept order\": control flow reached place \"p_sf_Flow-0w62i2w\", but no sequence of local lifecycle transitions can enable any associated sender-side transition. Sender transitions: \"t_send_ChoreographyTask-0gwtneo_Order_accepted\". Local transitions considered: \"t_local_Buyer_Order_initial_created\", \"t_local_Seller_Order_created_accepted\".",
+        "positionId": "send_ChoreographyTask_0gwtneo",
+        "positionLabel": "accept order",
+        "positionKind": "direct-task",
+        "placeId": "p_sf_Flow-0w62i2w",
+        "placeLabel": "Flow_0w62i2w",
+        "taskIds": [
+          "ChoreographyTask_0gwtneo"
+        ],
+        "taskNames": [
+          "accept order"
+        ],
+        "senderTransitionIds": [
+          "t_send_ChoreographyTask-0gwtneo_Order_accepted"
+        ],
+        "localTransitionIds": [
+          "t_local_Buyer_Order_initial_created",
+          "t_local_Seller_Order_created_accepted"
+        ],
+        "markingKey": "p_exists_Buyer_Order:1|p_sf_Flow-0w62i2w:1|p_sf_Flow-1dg7y2u:1|p_state_Buyer_Order_created:1|p_state_Seller_Order_initial:1",
+        "trace": [
+          {
+            "transitionId": "t_Event-1o0bxp1",
+            "transitionLabel": "Event_1o0bxp1",
+            "transitionKind": "control-flow"
+          },
+          {
+            "transitionId": "t_ChoreographyTask-1av5ks0",
+            "transitionLabel": "request availability",
+            "transitionKind": "control-flow"
+          },
+          {
+            "transitionId": "t_local_Buyer_Order_initial_created",
+            "transitionLabel": "[Buyer]",
+            "transitionKind": "local"
+          },
+          {
+            "transitionId": "t_parallel_Gateway-0i6pput",
+            "transitionLabel": "Gateway_0i6pput",
+            "transitionKind": "control-flow"
+          }
+        ],
+        "traceText": [
+          "Event_1o0bxp1 (t_Event-1o0bxp1)",
+          "request availability (t_ChoreographyTask-1av5ks0)",
+          "[Buyer] (t_local_Buyer_Order_initial_created)",
+          "Gateway_0i6pput (t_parallel_Gateway-0i6pput)"
+        ],
+        "marking": {
+          "p_exists_Buyer_Order": 1,
+          "p_sf_Flow-0w62i2w": 1,
+          "p_sf_Flow-1dg7y2u": 1,
+          "p_state_Buyer_Order_created": 1,
+          "p_state_Seller_Order_initial": 1
+        },
+        "markedPlaces": [
+          {
+            "placeId": "p_exists_Buyer_Order",
+            "placeLabel": "Buyer.Order+",
+            "tokens": 1
+          },
+          {
+            "placeId": "p_sf_Flow-0w62i2w",
+            "placeLabel": "Flow_0w62i2w",
+            "tokens": 1
+          },
+          {
+            "placeId": "p_sf_Flow-1dg7y2u",
+            "placeLabel": "Flow_1dg7y2u",
+            "tokens": 1
+          },
+          {
+            "placeId": "p_state_Buyer_Order_created",
+            "placeLabel": "Buyer.Order [created]",
+            "tokens": 1
+          },
+          {
+            "placeId": "p_state_Seller_Order_initial",
+            "placeLabel": "Seller.Order [initial]",
+            "tokens": 1
+          }
+        ]
+      },
+      {
+        "kind": "sender-progression",
+        "message": "Sender progression violation at \"accept order\": control flow reached place \"p_sf_Flow-0w62i2w\", but no sequence of local lifecycle transitions can enable any associated sender-side transition. Sender transitions: \"t_send_ChoreographyTask-0gwtneo_Order_accepted\". Local transitions considered: \"t_local_Buyer_Order_initial_created\", \"t_local_Seller_Order_created_accepted\".",
+        "positionId": "send_ChoreographyTask_0gwtneo",
+        "positionLabel": "accept order",
+        "positionKind": "direct-task",
+        "placeId": "p_sf_Flow-0w62i2w",
+        "placeLabel": "Flow_0w62i2w",
+        "taskIds": [
+          "ChoreographyTask_0gwtneo"
+        ],
+        "taskNames": [
+          "accept order"
+        ],
+        "senderTransitionIds": [
+          "t_send_ChoreographyTask-0gwtneo_Order_accepted"
+        ],
+        "localTransitionIds": [
+          "t_local_Buyer_Order_initial_created",
+          "t_local_Seller_Order_created_accepted"
+        ],
+        "markingKey": "p_exists_Buyer_Order:1|p_sf_Flow-0w62i2w:1|p_state_Buyer_Order_created:1|p_state_Seller_Order_initial:1|p_trans_ChoreographyTask-0yqkzdm:1",
+        "trace": [
+          {
+            "transitionId": "t_Event-1o0bxp1",
+            "transitionLabel": "Event_1o0bxp1",
+            "transitionKind": "control-flow"
+          },
+          {
+            "transitionId": "t_ChoreographyTask-1av5ks0",
+            "transitionLabel": "request availability",
+            "transitionKind": "control-flow"
+          },
+          {
+            "transitionId": "t_local_Buyer_Order_initial_created",
+            "transitionLabel": "[Buyer]",
+            "transitionKind": "local"
+          },
+          {
+            "transitionId": "t_parallel_Gateway-0i6pput",
+            "transitionLabel": "Gateway_0i6pput",
+            "transitionKind": "control-flow"
+          },
+          {
+            "transitionId": "t_send_ChoreographyTask-0yqkzdm_Order_created",
+            "transitionLabel": "place order send",
+            "transitionKind": "send"
+          }
+        ],
+        "traceText": [
+          "Event_1o0bxp1 (t_Event-1o0bxp1)",
+          "request availability (t_ChoreographyTask-1av5ks0)",
+          "[Buyer] (t_local_Buyer_Order_initial_created)",
+          "Gateway_0i6pput (t_parallel_Gateway-0i6pput)",
+          "place order send (t_send_ChoreographyTask-0yqkzdm_Order_created)"
+        ],
+        "marking": {
+          "p_exists_Buyer_Order": 1,
+          "p_sf_Flow-0w62i2w": 1,
+          "p_state_Buyer_Order_created": 1,
+          "p_state_Seller_Order_initial": 1,
+          "p_trans_ChoreographyTask-0yqkzdm": 1
+        },
+        "markedPlaces": [
+          {
+            "placeId": "p_exists_Buyer_Order",
+            "placeLabel": "Buyer.Order+",
+            "tokens": 1
+          },
+          {
+            "placeId": "p_sf_Flow-0w62i2w",
+            "placeLabel": "Flow_0w62i2w",
+            "tokens": 1
+          },
+          {
+            "placeId": "p_state_Buyer_Order_created",
+            "placeLabel": "Buyer.Order [created]",
+            "tokens": 1
+          },
+          {
+            "placeId": "p_state_Seller_Order_initial",
+            "placeLabel": "Seller.Order [initial]",
+            "tokens": 1
+          },
+          {
+            "placeId": "p_trans_ChoreographyTask-0yqkzdm",
+            "placeLabel": "place order transmission",
+            "tokens": 1
+          }
+        ]
+      }
+    ]
+  },
+  "receiverProgression": {
+    "holds": true,
+    "violationCount": 0,
+    "violations": []
+  },
+  "decisionConsistency": {
+    "holds": true,
+    "violationCount": 0,
+    "violations": []
+  },
+  "violations": [
+    {
+      "kind": "sender-progression",
+      "message": "Sender progression violation at \"accept order\": control flow reached place \"p_sf_Flow-0w62i2w\", but no sequence of local lifecycle transitions can enable any associated sender-side transition. Sender transitions: \"t_send_ChoreographyTask-0gwtneo_Order_accepted\". Local transitions considered: \"t_local_Buyer_Order_initial_created\", \"t_local_Seller_Order_created_accepted\".",
+      "positionId": "send_ChoreographyTask_0gwtneo",
+      "positionLabel": "accept order",
+      "positionKind": "direct-task",
+      "placeId": "p_sf_Flow-0w62i2w",
+      "placeLabel": "Flow_0w62i2w",
+      "taskIds": [
+        "ChoreographyTask_0gwtneo"
+      ],
+      "taskNames": [
+        "accept order"
+      ],
+      "senderTransitionIds": [
+        "t_send_ChoreographyTask-0gwtneo_Order_accepted"
+      ],
+      "localTransitionIds": [
+        "t_local_Buyer_Order_initial_created",
+        "t_local_Seller_Order_created_accepted"
+      ],
+      "markingKey": "p_sf_Flow-0w62i2w:1|p_sf_Flow-1dg7y2u:1|p_state_Buyer_Order_initial:1|p_state_Seller_Order_initial:1",
+      "trace": [
+        {
+          "transitionId": "t_Event-1o0bxp1",
+          "transitionLabel": "Event_1o0bxp1",
+          "transitionKind": "control-flow"
+        },
+        {
+          "transitionId": "t_ChoreographyTask-1av5ks0",
+          "transitionLabel": "request availability",
+          "transitionKind": "control-flow"
+        },
+        {
+          "transitionId": "t_parallel_Gateway-0i6pput",
+          "transitionLabel": "Gateway_0i6pput",
+          "transitionKind": "control-flow"
+        }
+      ],
+      "traceText": [
+        "Event_1o0bxp1 (t_Event-1o0bxp1)",
+        "request availability (t_ChoreographyTask-1av5ks0)",
+        "Gateway_0i6pput (t_parallel_Gateway-0i6pput)"
+      ],
+      "marking": {
+        "p_sf_Flow-0w62i2w": 1,
+        "p_sf_Flow-1dg7y2u": 1,
+        "p_state_Buyer_Order_initial": 1,
+        "p_state_Seller_Order_initial": 1
+      },
+      "markedPlaces": [
+        {
+          "placeId": "p_sf_Flow-0w62i2w",
+          "placeLabel": "Flow_0w62i2w",
+          "tokens": 1
+        },
+        {
+          "placeId": "p_sf_Flow-1dg7y2u",
+          "placeLabel": "Flow_1dg7y2u",
+          "tokens": 1
+        },
+        {
+          "placeId": "p_state_Buyer_Order_initial",
+          "placeLabel": "Buyer.Order [initial]",
+          "tokens": 1
+        },
+        {
+          "placeId": "p_state_Seller_Order_initial",
+          "placeLabel": "Seller.Order [initial]",
+          "tokens": 1
+        }
+      ]
+    },
+    {
+      "kind": "sender-progression",
+      "message": "Sender progression violation at \"accept order\": control flow reached place \"p_sf_Flow-0w62i2w\", but no sequence of local lifecycle transitions can enable any associated sender-side transition. Sender transitions: \"t_send_ChoreographyTask-0gwtneo_Order_accepted\". Local transitions considered: \"t_local_Buyer_Order_initial_created\", \"t_local_Seller_Order_created_accepted\".",
+      "positionId": "send_ChoreographyTask_0gwtneo",
+      "positionLabel": "accept order",
+      "positionKind": "direct-task",
+      "placeId": "p_sf_Flow-0w62i2w",
+      "placeLabel": "Flow_0w62i2w",
+      "taskIds": [
+        "ChoreographyTask_0gwtneo"
+      ],
+      "taskNames": [
+        "accept order"
+      ],
+      "senderTransitionIds": [
+        "t_send_ChoreographyTask-0gwtneo_Order_accepted"
+      ],
+      "localTransitionIds": [
+        "t_local_Buyer_Order_initial_created",
+        "t_local_Seller_Order_created_accepted"
+      ],
+      "markingKey": "p_exists_Buyer_Order:1|p_sf_Flow-0w62i2w:1|p_sf_Flow-1dg7y2u:1|p_state_Buyer_Order_created:1|p_state_Seller_Order_initial:1",
+      "trace": [
+        {
+          "transitionId": "t_Event-1o0bxp1",
+          "transitionLabel": "Event_1o0bxp1",
+          "transitionKind": "control-flow"
+        },
+        {
+          "transitionId": "t_ChoreographyTask-1av5ks0",
+          "transitionLabel": "request availability",
+          "transitionKind": "control-flow"
+        },
+        {
+          "transitionId": "t_local_Buyer_Order_initial_created",
+          "transitionLabel": "[Buyer]",
+          "transitionKind": "local"
+        },
+        {
+          "transitionId": "t_parallel_Gateway-0i6pput",
+          "transitionLabel": "Gateway_0i6pput",
+          "transitionKind": "control-flow"
+        }
+      ],
+      "traceText": [
+        "Event_1o0bxp1 (t_Event-1o0bxp1)",
+        "request availability (t_ChoreographyTask-1av5ks0)",
+        "[Buyer] (t_local_Buyer_Order_initial_created)",
+        "Gateway_0i6pput (t_parallel_Gateway-0i6pput)"
+      ],
+      "marking": {
+        "p_exists_Buyer_Order": 1,
+        "p_sf_Flow-0w62i2w": 1,
+        "p_sf_Flow-1dg7y2u": 1,
+        "p_state_Buyer_Order_created": 1,
+        "p_state_Seller_Order_initial": 1
+      },
+      "markedPlaces": [
+        {
+          "placeId": "p_exists_Buyer_Order",
+          "placeLabel": "Buyer.Order+",
+          "tokens": 1
+        },
+        {
+          "placeId": "p_sf_Flow-0w62i2w",
+          "placeLabel": "Flow_0w62i2w",
+          "tokens": 1
+        },
+        {
+          "placeId": "p_sf_Flow-1dg7y2u",
+          "placeLabel": "Flow_1dg7y2u",
+          "tokens": 1
+        },
+        {
+          "placeId": "p_state_Buyer_Order_created",
+          "placeLabel": "Buyer.Order [created]",
+          "tokens": 1
+        },
+        {
+          "placeId": "p_state_Seller_Order_initial",
+          "placeLabel": "Seller.Order [initial]",
+          "tokens": 1
+        }
+      ]
+    },
+    {
+      "kind": "sender-progression",
+      "message": "Sender progression violation at \"accept order\": control flow reached place \"p_sf_Flow-0w62i2w\", but no sequence of local lifecycle transitions can enable any associated sender-side transition. Sender transitions: \"t_send_ChoreographyTask-0gwtneo_Order_accepted\". Local transitions considered: \"t_local_Buyer_Order_initial_created\", \"t_local_Seller_Order_created_accepted\".",
+      "positionId": "send_ChoreographyTask_0gwtneo",
+      "positionLabel": "accept order",
+      "positionKind": "direct-task",
+      "placeId": "p_sf_Flow-0w62i2w",
+      "placeLabel": "Flow_0w62i2w",
+      "taskIds": [
+        "ChoreographyTask_0gwtneo"
+      ],
+      "taskNames": [
+        "accept order"
+      ],
+      "senderTransitionIds": [
+        "t_send_ChoreographyTask-0gwtneo_Order_accepted"
+      ],
+      "localTransitionIds": [
+        "t_local_Buyer_Order_initial_created",
+        "t_local_Seller_Order_created_accepted"
+      ],
+      "markingKey": "p_exists_Buyer_Order:1|p_sf_Flow-0w62i2w:1|p_state_Buyer_Order_created:1|p_state_Seller_Order_initial:1|p_trans_ChoreographyTask-0yqkzdm:1",
+      "trace": [
+        {
+          "transitionId": "t_Event-1o0bxp1",
+          "transitionLabel": "Event_1o0bxp1",
+          "transitionKind": "control-flow"
+        },
+        {
+          "transitionId": "t_ChoreographyTask-1av5ks0",
+          "transitionLabel": "request availability",
+          "transitionKind": "control-flow"
+        },
+        {
+          "transitionId": "t_local_Buyer_Order_initial_created",
+          "transitionLabel": "[Buyer]",
+          "transitionKind": "local"
+        },
+        {
+          "transitionId": "t_parallel_Gateway-0i6pput",
+          "transitionLabel": "Gateway_0i6pput",
+          "transitionKind": "control-flow"
+        },
+        {
+          "transitionId": "t_send_ChoreographyTask-0yqkzdm_Order_created",
+          "transitionLabel": "place order send",
+          "transitionKind": "send"
+        }
+      ],
+      "traceText": [
+        "Event_1o0bxp1 (t_Event-1o0bxp1)",
+        "request availability (t_ChoreographyTask-1av5ks0)",
+        "[Buyer] (t_local_Buyer_Order_initial_created)",
+        "Gateway_0i6pput (t_parallel_Gateway-0i6pput)",
+        "place order send (t_send_ChoreographyTask-0yqkzdm_Order_created)"
+      ],
+      "marking": {
+        "p_exists_Buyer_Order": 1,
+        "p_sf_Flow-0w62i2w": 1,
+        "p_state_Buyer_Order_created": 1,
+        "p_state_Seller_Order_initial": 1,
+        "p_trans_ChoreographyTask-0yqkzdm": 1
+      },
+      "markedPlaces": [
+        {
+          "placeId": "p_exists_Buyer_Order",
+          "placeLabel": "Buyer.Order+",
+          "tokens": 1
+        },
+        {
+          "placeId": "p_sf_Flow-0w62i2w",
+          "placeLabel": "Flow_0w62i2w",
+          "tokens": 1
+        },
+        {
+          "placeId": "p_state_Buyer_Order_created",
+          "placeLabel": "Buyer.Order [created]",
+          "tokens": 1
+        },
+        {
+          "placeId": "p_state_Seller_Order_initial",
+          "placeLabel": "Seller.Order [initial]",
+          "tokens": 1
+        },
+        {
+          "placeId": "p_trans_ChoreographyTask-0yqkzdm",
+          "placeLabel": "place order transmission",
+          "tokens": 1
+        }
+      ]
+    }
+  ]
+}

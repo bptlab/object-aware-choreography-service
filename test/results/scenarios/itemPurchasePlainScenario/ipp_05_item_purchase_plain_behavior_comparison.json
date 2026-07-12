@@ -1,0 +1,33 @@
+{
+  "choreographyTraceCount": 2,
+  "protocolTraceCount": 4,
+  "sharedTraceCount": 2,
+  "recall": 1,
+  "precision": 0.5,
+  "choreographyOnly": [],
+  "protocolOnly": [
+    [
+      "request-item",
+      "decline-offer"
+    ],
+    [
+      "request-item",
+      "offer-item",
+      "order-item",
+      "decline-offer"
+    ]
+  ],
+  "shared": [
+    [
+      "request-item",
+      "offer-item",
+      "decline-offer"
+    ],
+    [
+      "request-item",
+      "offer-item",
+      "order-item",
+      "ship-item"
+    ]
+  ]
+}

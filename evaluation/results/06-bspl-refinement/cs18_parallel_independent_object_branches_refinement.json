@@ -1,0 +1,108 @@
+{
+  "discovery": {
+    "comparison": {
+      "choreographyTraceCount": 2,
+      "protocolTraceCount": 5,
+      "sharedTraceCount": 2,
+      "recall": 1,
+      "precision": 0.4,
+      "protocolOnly": [
+        [
+          "task1",
+          "task4"
+        ],
+        [
+          "task1",
+          "task2",
+          "task4"
+        ],
+        [
+          "task1",
+          "task3",
+          "task4"
+        ]
+      ]
+    },
+    "constraints": [
+      {
+        "kind": "precedence",
+        "id": "precedence:task2->task4",
+        "predecessor": "task2",
+        "constrained": "task4",
+        "source": {
+          "reason": "parallelJoin",
+          "explanation": "Task task4 is after a join and requires branch task task2."
+        },
+        "violatingTraces": [
+          [
+            "task1",
+            "task4"
+          ],
+          [
+            "task1",
+            "task3",
+            "task4"
+          ]
+        ]
+      },
+      {
+        "kind": "precedence",
+        "id": "precedence:task3->task4",
+        "predecessor": "task3",
+        "constrained": "task4",
+        "source": {
+          "reason": "parallelJoin",
+          "explanation": "Task task4 is after a join and requires branch task task3."
+        },
+        "violatingTraces": [
+          [
+            "task1",
+            "task4"
+          ],
+          [
+            "task1",
+            "task2",
+            "task4"
+          ]
+        ]
+      }
+    ]
+  },
+  "refinedComparison": {
+    "choreographyTraceCount": 2,
+    "protocolTraceCount": 2,
+    "sharedTraceCount": 2,
+    "recall": 1,
+    "precision": 1,
+    "choreographyOnly": [],
+    "protocolOnly": [],
+    "shared": [
+      [
+        "task1",
+        "task2",
+        "task3",
+        "task4"
+      ],
+      [
+        "task1",
+        "task3",
+        "task2",
+        "task4"
+      ]
+    ]
+  },
+  "singleRemovalDiagnostics": [
+    {
+      "removedConstraintId": "precedence:task2->task4",
+      "removedConstraintKind": "precedence",
+      "recall": 1,
+      "precision": 0.6666666666666666
+    },
+    {
+      "removedConstraintId": "precedence:task3->task4",
+      "removedConstraintKind": "precedence",
+      "recall": 1,
+      "precision": 0.6666666666666666
+    }
+  ]
+}

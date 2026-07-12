@@ -1,0 +1,325 @@
+{
+  "objectAwareRealizability": {
+    "holds": false,
+    "assumptions": {
+      "controlFlowSoundness": "assumedExternal",
+      "controlFlowRealizability": "assumedExternal"
+    },
+    "subproperties": {
+      "projectedChoreographySoundness": {
+        "optionToComplete": {
+          "holds": false,
+          "violatingStateCount": 3,
+          "representativeViolation": "1"
+        },
+        "properInteractionCompletion": {
+          "holds": true,
+          "violatingStateCount": 0
+        },
+        "taskCoverage": {
+          "holds": false,
+          "coveredTaskCount": 0,
+          "totalTaskCount": 1,
+          "uncoveredTaskIds": [
+            "ChoreographyTask_1ntuvmx"
+          ]
+        },
+        "branchCoverage": {
+          "holds": true,
+          "coveredBranchCount": 0,
+          "totalBranchCount": 0,
+          "uncoveredBranchIds": []
+        },
+        "holds": false
+      },
+      "senderProgression": true,
+      "receiverProgression": false,
+      "decisionConsistency": true
+    },
+    "firstViolation": {
+      "subproperty": "projectedChoreographySoundness"
+    }
+  },
+  "crossCaseAnalysis": {
+    "holds": false,
+    "subproperties": {
+      "caseOptionToComplete": false,
+      "projectedChoreographySoundness": false,
+      "properInteractionCompletion": true,
+      "taskCoverage": false,
+      "branchCoverage": true,
+      "senderProgression": true,
+      "receiverProgression": false,
+      "decisionConsistency": true
+    }
+  },
+  "stateSpace": {
+    "markings": 4,
+    "edges": 3,
+    "truncated": false,
+    "truncationReasons": [],
+    "limits": {
+      "maxMarkings": 20000,
+      "maxDepth": null
+    }
+  },
+  "metadata": {
+    "caseOptionToCompleteSemantics": "explicit-sink-place: completed cases occur in the typed sink place and must not occur in any non-sink case-control or transmission place",
+    "activeCases": 1,
+    "checkedCaseStatePairs": 3,
+    "taskCoverageTasks": 1,
+    "branchCoverageBranches": 0,
+    "senderPositions": 1,
+    "transmissions": 1,
+    "decisionGateways": 0,
+    "localTransitions": 1
+  },
+  "diagnostics": {
+    "optionToCompleteViolations": 3,
+    "caseOptionToCompleteViolations": 3,
+    "properInteractionCompletionViolations": 0,
+    "uncoveredTasks": 1,
+    "uncoveredBranches": 0,
+    "senderProgressionViolations": 0,
+    "receiverProgressionViolations": 1,
+    "decisionConsistencyViolations": 0
+  },
+  "projectedChoreographySoundness": {
+    "optionToComplete": {
+      "holds": false,
+      "violatingStateCount": 3,
+      "representativeViolation": "1"
+    },
+    "properInteractionCompletion": {
+      "holds": true,
+      "violatingStateCount": 0
+    },
+    "taskCoverage": {
+      "holds": false,
+      "coveredTaskCount": 0,
+      "totalTaskCount": 1,
+      "uncoveredTaskIds": [
+        "ChoreographyTask_1ntuvmx"
+      ]
+    },
+    "branchCoverage": {
+      "holds": true,
+      "coveredBranchCount": 0,
+      "totalBranchCount": 0,
+      "uncoveredBranchIds": []
+    },
+    "holds": false
+  },
+  "caseOptionToComplete": {
+    "holds": false,
+    "violationCount": 3,
+    "activeCaseCount": 1,
+    "checkedPairCount": 3,
+    "completionSemantics": "explicit-sink-place: completed cases occur in the typed sink place and must not occur in any non-sink case-control or transmission place",
+    "violations": [
+      {
+        "kind": "case-option-to-complete",
+        "message": "Case option-to-complete violation: case case1 is active in reachable marking 1, but no continuation reaches a marking where that case occurs in the typed sink place and no longer occurs in any non-sink case-control or transmission place.",
+        "markingKey": "Place_cf_Flow_0yu7xi1[DataClass_Case:case1]|Place_part_RoleA[DataClass_Case:case1,DataClass_Role_RoleA:RoleA_1]|Place_part_RoleB[DataClass_Case:case1,DataClass_Role_RoleB:RoleB_1]|Place_pool_RoleA[DataClass_Role_RoleA:RoleA_1]|Place_pool_RoleB[DataClass_Role_RoleB:RoleB_1]",
+        "nodeId": 1,
+        "caseId": "case1",
+        "witnessPath": [
+          {
+            "transitionId": "Transition_start_Event_0ql5o4b",
+            "binding": {
+              "role_RoleA": "RoleA_1",
+              "role_RoleB": "RoleB_1",
+              "case": "case1"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "case-option-to-complete",
+        "message": "Case option-to-complete violation: case case1 is active in reachable marking 2, but no continuation reaches a marking where that case occurs in the typed sink place and no longer occurs in any non-sink case-control or transmission place.",
+        "markingKey": "Place_aware_RoleA_ClassA[DataClass_Role_RoleA:RoleA_1,DataClass_Object_ClassA:ClassA_1]|Place_cf_Flow_0yu7xi1[DataClass_Case:case1]|Place_incl_ClassA[DataClass_Case:case1]|Place_obj_ClassA[DataClass_Case:case1,DataClass_Object_ClassA:ClassA_1]|Place_part_RoleA[DataClass_Case:case1,DataClass_Role_RoleA:RoleA_1]|Place_part_RoleB[DataClass_Case:case1,DataClass_Role_RoleB:RoleB_1]|Place_pool_RoleA[DataClass_Role_RoleA:RoleA_1]|Place_pool_RoleB[DataClass_Role_RoleB:RoleB_1]|Place_state_RoleA_ClassA_a_x[DataClass_Role_RoleA:RoleA_1,DataClass_Object_ClassA:ClassA_1]",
+        "nodeId": 2,
+        "caseId": "case1",
+        "witnessPath": [
+          {
+            "transitionId": "Transition_start_Event_0ql5o4b",
+            "binding": {
+              "role_RoleA": "RoleA_1",
+              "role_RoleB": "RoleB_1",
+              "case": "case1"
+            }
+          },
+          {
+            "transitionId": "Transition_create_RoleA_ClassA_a_x",
+            "binding": {
+              "case": "case1",
+              "role_RoleA": "RoleA_1",
+              "object_ClassA": "ClassA_1"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "case-option-to-complete",
+        "message": "Case option-to-complete violation: case case1 is active in reachable marking 3, but no continuation reaches a marking where that case occurs in the typed sink place and no longer occurs in any non-sink case-control or transmission place.",
+        "markingKey": "Place_aware_RoleA_ClassA[DataClass_Role_RoleA:RoleA_1,DataClass_Object_ClassA:ClassA_1]|Place_incl_ClassA[DataClass_Case:case1]|Place_obj_ClassA[DataClass_Case:case1,DataClass_Object_ClassA:ClassA_1]|Place_part_RoleA[DataClass_Case:case1,DataClass_Role_RoleA:RoleA_1]|Place_part_RoleB[DataClass_Case:case1,DataClass_Role_RoleB:RoleB_1]|Place_pool_RoleA[DataClass_Role_RoleA:RoleA_1]|Place_pool_RoleB[DataClass_Role_RoleB:RoleB_1]|Place_state_RoleA_ClassA_a_y[DataClass_Role_RoleA:RoleA_1,DataClass_Object_ClassA:ClassA_1]|Place_tx_ChoreographyTask_1ntuvmx[DataClass_Case:case1]",
+        "nodeId": 3,
+        "caseId": "case1",
+        "witnessPath": [
+          {
+            "transitionId": "Transition_start_Event_0ql5o4b",
+            "binding": {
+              "role_RoleA": "RoleA_1",
+              "role_RoleB": "RoleB_1",
+              "case": "case1"
+            }
+          },
+          {
+            "transitionId": "Transition_create_RoleA_ClassA_a_x",
+            "binding": {
+              "case": "case1",
+              "role_RoleA": "RoleA_1",
+              "object_ClassA": "ClassA_1"
+            }
+          },
+          {
+            "transitionId": "Transition_send_ChoreographyTask_1ntuvmx",
+            "binding": {
+              "role_RoleA": "RoleA_1",
+              "object_ClassA": "ClassA_1",
+              "case": "case1"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "senderProgression": {
+    "holds": true,
+    "violations": []
+  },
+  "receiverProgression": {
+    "holds": false,
+    "violations": [
+      {
+        "kind": "receiver-progression",
+        "message": "Receiver progression violation for transmission place \"sync-task Transmission\": pending token DataClass_Case:case1 cannot be consumed by any receiver-side completion transition in the same reachable marking. Receiver transitions: Transition_receive_ChoreographyTask_1ntuvmx.",
+        "markingKey": "Place_aware_RoleA_ClassA[DataClass_Role_RoleA:RoleA_1,DataClass_Object_ClassA:ClassA_1]|Place_incl_ClassA[DataClass_Case:case1]|Place_obj_ClassA[DataClass_Case:case1,DataClass_Object_ClassA:ClassA_1]|Place_part_RoleA[DataClass_Case:case1,DataClass_Role_RoleA:RoleA_1]|Place_part_RoleB[DataClass_Case:case1,DataClass_Role_RoleB:RoleB_1]|Place_pool_RoleA[DataClass_Role_RoleA:RoleA_1]|Place_pool_RoleB[DataClass_Role_RoleB:RoleB_1]|Place_state_RoleA_ClassA_a_y[DataClass_Role_RoleA:RoleA_1,DataClass_Object_ClassA:ClassA_1]|Place_tx_ChoreographyTask_1ntuvmx[DataClass_Case:case1]",
+        "transmissionPlaceId": "Place_tx_ChoreographyTask_1ntuvmx",
+        "transmissionPlaceName": "sync-task Transmission",
+        "transmissionToken": [
+          {
+            "typeId": "DataClass_Case",
+            "value": "case1"
+          }
+        ],
+        "transmissionTokenKey": "DataClass_Case:case1",
+        "taskId": "ChoreographyTask_1ntuvmx",
+        "taskName": "sync-task",
+        "receiverTransitionIds": [
+          "Transition_receive_ChoreographyTask_1ntuvmx"
+        ]
+      }
+    ]
+  },
+  "decisionConsistency": {
+    "holds": true,
+    "violations": []
+  },
+  "violations": [
+    {
+      "kind": "case-option-to-complete",
+      "message": "Case option-to-complete violation: case case1 is active in reachable marking 2, but no continuation reaches a marking where that case occurs in the typed sink place and no longer occurs in any non-sink case-control or transmission place.",
+      "markingKey": "Place_aware_RoleA_ClassA[DataClass_Role_RoleA:RoleA_1,DataClass_Object_ClassA:ClassA_1]|Place_cf_Flow_0yu7xi1[DataClass_Case:case1]|Place_incl_ClassA[DataClass_Case:case1]|Place_obj_ClassA[DataClass_Case:case1,DataClass_Object_ClassA:ClassA_1]|Place_part_RoleA[DataClass_Case:case1,DataClass_Role_RoleA:RoleA_1]|Place_part_RoleB[DataClass_Case:case1,DataClass_Role_RoleB:RoleB_1]|Place_pool_RoleA[DataClass_Role_RoleA:RoleA_1]|Place_pool_RoleB[DataClass_Role_RoleB:RoleB_1]|Place_state_RoleA_ClassA_a_x[DataClass_Role_RoleA:RoleA_1,DataClass_Object_ClassA:ClassA_1]",
+      "nodeId": 2,
+      "caseId": "case1",
+      "witnessPath": [
+        {
+          "transitionId": "Transition_start_Event_0ql5o4b",
+          "binding": {
+            "role_RoleA": "RoleA_1",
+            "role_RoleB": "RoleB_1",
+            "case": "case1"
+          }
+        },
+        {
+          "transitionId": "Transition_create_RoleA_ClassA_a_x",
+          "binding": {
+            "case": "case1",
+            "role_RoleA": "RoleA_1",
+            "object_ClassA": "ClassA_1"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "case-option-to-complete",
+      "message": "Case option-to-complete violation: case case1 is active in reachable marking 3, but no continuation reaches a marking where that case occurs in the typed sink place and no longer occurs in any non-sink case-control or transmission place.",
+      "markingKey": "Place_aware_RoleA_ClassA[DataClass_Role_RoleA:RoleA_1,DataClass_Object_ClassA:ClassA_1]|Place_incl_ClassA[DataClass_Case:case1]|Place_obj_ClassA[DataClass_Case:case1,DataClass_Object_ClassA:ClassA_1]|Place_part_RoleA[DataClass_Case:case1,DataClass_Role_RoleA:RoleA_1]|Place_part_RoleB[DataClass_Case:case1,DataClass_Role_RoleB:RoleB_1]|Place_pool_RoleA[DataClass_Role_RoleA:RoleA_1]|Place_pool_RoleB[DataClass_Role_RoleB:RoleB_1]|Place_state_RoleA_ClassA_a_y[DataClass_Role_RoleA:RoleA_1,DataClass_Object_ClassA:ClassA_1]|Place_tx_ChoreographyTask_1ntuvmx[DataClass_Case:case1]",
+      "nodeId": 3,
+      "caseId": "case1",
+      "witnessPath": [
+        {
+          "transitionId": "Transition_start_Event_0ql5o4b",
+          "binding": {
+            "role_RoleA": "RoleA_1",
+            "role_RoleB": "RoleB_1",
+            "case": "case1"
+          }
+        },
+        {
+          "transitionId": "Transition_create_RoleA_ClassA_a_x",
+          "binding": {
+            "case": "case1",
+            "role_RoleA": "RoleA_1",
+            "object_ClassA": "ClassA_1"
+          }
+        },
+        {
+          "transitionId": "Transition_send_ChoreographyTask_1ntuvmx",
+          "binding": {
+            "role_RoleA": "RoleA_1",
+            "object_ClassA": "ClassA_1",
+            "case": "case1"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "receiver-progression",
+      "message": "Receiver progression violation for transmission place \"sync-task Transmission\": pending token DataClass_Case:case1 cannot be consumed by any receiver-side completion transition in the same reachable marking. Receiver transitions: Transition_receive_ChoreographyTask_1ntuvmx.",
+      "markingKey": "Place_aware_RoleA_ClassA[DataClass_Role_RoleA:RoleA_1,DataClass_Object_ClassA:ClassA_1]|Place_incl_ClassA[DataClass_Case:case1]|Place_obj_ClassA[DataClass_Case:case1,DataClass_Object_ClassA:ClassA_1]|Place_part_RoleA[DataClass_Case:case1,DataClass_Role_RoleA:RoleA_1]|Place_part_RoleB[DataClass_Case:case1,DataClass_Role_RoleB:RoleB_1]|Place_pool_RoleA[DataClass_Role_RoleA:RoleA_1]|Place_pool_RoleB[DataClass_Role_RoleB:RoleB_1]|Place_state_RoleA_ClassA_a_y[DataClass_Role_RoleA:RoleA_1,DataClass_Object_ClassA:ClassA_1]|Place_tx_ChoreographyTask_1ntuvmx[DataClass_Case:case1]",
+      "transmissionPlaceId": "Place_tx_ChoreographyTask_1ntuvmx",
+      "transmissionPlaceName": "sync-task Transmission",
+      "transmissionToken": [
+        {
+          "typeId": "DataClass_Case",
+          "value": "case1"
+        }
+      ],
+      "transmissionTokenKey": "DataClass_Case:case1",
+      "taskId": "ChoreographyTask_1ntuvmx",
+      "taskName": "sync-task",
+      "receiverTransitionIds": [
+        "Transition_receive_ChoreographyTask_1ntuvmx"
+      ]
+    },
+    {
+      "kind": "case-option-to-complete",
+      "message": "Case option-to-complete violation: case case1 is active in reachable marking 1, but no continuation reaches a marking where that case occurs in the typed sink place and no longer occurs in any non-sink case-control or transmission place.",
+      "markingKey": "Place_cf_Flow_0yu7xi1[DataClass_Case:case1]|Place_part_RoleA[DataClass_Case:case1,DataClass_Role_RoleA:RoleA_1]|Place_part_RoleB[DataClass_Case:case1,DataClass_Role_RoleB:RoleB_1]|Place_pool_RoleA[DataClass_Role_RoleA:RoleA_1]|Place_pool_RoleB[DataClass_Role_RoleB:RoleB_1]",
+      "nodeId": 1,
+      "caseId": "case1",
+      "witnessPath": [
+        {
+          "transitionId": "Transition_start_Event_0ql5o4b",
+          "binding": {
+            "role_RoleA": "RoleA_1",
+            "role_RoleB": "RoleB_1",
+            "case": "case1"
+          }
+        }
+      ]
+    }
+  ]
+}

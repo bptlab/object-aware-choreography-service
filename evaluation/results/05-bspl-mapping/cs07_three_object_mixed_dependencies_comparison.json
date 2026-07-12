@@ -1,0 +1,21 @@
+{
+  "choreographyTraceCount": 1,
+  "protocolTraceCount": 2,
+  "sharedTraceCount": 1,
+  "recall": 1,
+  "precision": 0.5,
+  "choreographyOnly": [],
+  "protocolOnly": [
+    [
+      "task1",
+      "task3"
+    ]
+  ],
+  "shared": [
+    [
+      "task1",
+      "task2",
+      "task3"
+    ]
+  ]
+}

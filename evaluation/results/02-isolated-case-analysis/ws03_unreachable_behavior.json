@@ -1,0 +1,111 @@
+{
+  "objectAwareRealizability": {
+    "holds": false,
+    "assumptions": {
+      "controlFlowSoundness": "assumedExternal",
+      "controlFlowRealizability": "assumedExternal"
+    },
+    "subproperties": {
+      "projectedChoreographySoundness": {
+        "optionToComplete": {
+          "holds": true,
+          "violatingStateCount": 0
+        },
+        "properInteractionCompletion": {
+          "holds": true,
+          "violatingStateCount": 0
+        },
+        "taskCoverage": {
+          "holds": false,
+          "coveredTaskCount": 3,
+          "totalTaskCount": 4,
+          "uncoveredTaskIds": [
+            "ChoreographyTask_0cojd1b"
+          ]
+        },
+        "branchCoverage": {
+          "holds": false,
+          "coveredBranchCount": 1,
+          "totalBranchCount": 2,
+          "uncoveredBranchIds": [
+            "branch_Gateway_05yuuvj_ChoreographyTask_0cojd1b"
+          ]
+        },
+        "holds": false
+      },
+      "senderProgression": true,
+      "receiverProgression": true,
+      "decisionConsistency": true
+    },
+    "firstViolation": {
+      "subproperty": "projectedChoreographySoundness"
+    }
+  },
+  "stateSpace": {
+    "markings": 14,
+    "edges": 14
+  },
+  "metadata": {
+    "senderPositions": 4,
+    "transmissions": 4,
+    "decisionGateways": 1,
+    "branchAlternatives": 2,
+    "localTransitions": 2,
+    "localTransitionsByRole": {
+      "Buyer": 1,
+      "Seller": 1
+    }
+  },
+  "diagnostics": {
+    "senderProgressionViolations": 0,
+    "receiverProgressionViolations": 0,
+    "decisionConsistencyViolations": 0,
+    "optionToCompleteViolations": 0,
+    "properInteractionCompletionViolations": 0,
+    "uncoveredTasks": 1,
+    "uncoveredBranches": 1
+  },
+  "projectedChoreographySoundness": {
+    "optionToComplete": {
+      "holds": true,
+      "violatingStateCount": 0
+    },
+    "properInteractionCompletion": {
+      "holds": true,
+      "violatingStateCount": 0
+    },
+    "taskCoverage": {
+      "holds": false,
+      "coveredTaskCount": 3,
+      "totalTaskCount": 4,
+      "uncoveredTaskIds": [
+        "ChoreographyTask_0cojd1b"
+      ]
+    },
+    "branchCoverage": {
+      "holds": false,
+      "coveredBranchCount": 1,
+      "totalBranchCount": 2,
+      "uncoveredBranchIds": [
+        "branch_Gateway_05yuuvj_ChoreographyTask_0cojd1b"
+      ]
+    },
+    "holds": false
+  },
+  "senderProgression": {
+    "holds": true,
+    "violationCount": 0,
+    "violations": []
+  },
+  "receiverProgression": {
+    "holds": true,
+    "violationCount": 0,
+    "violations": []
+  },
+  "decisionConsistency": {
+    "holds": true,
+    "violationCount": 0,
+    "violations": []
+  },
+  "violations": []
+}

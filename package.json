@@ -1,0 +1,51 @@
+{
+  "name": "object-aware-choreography-service",
+  "version": "1.0.1",
+  "description": "A service providing functionalities related to object-aware choreography.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.14"
+  },
+  "scripts": {
+    "postinstall": "cd lib/openbpt-service-core-ts && npm install",
+    "start": "npm run build && cross-env NODE_ENV=production node ./build/main.js",
+    "dev": "cross-env NODE_ENV=development tsx watch ./src/main.ts | pino-pretty",
+    "build": "cross-env NODE_ENV=production rimraf ./build && tsc",
+    "test": "cross-env NODE_ENV=development node --test --import tsx $(find ./test -name '*.test.ts' -type f | sort)",
+    "test:silent": "cross-env NODE_ENV=development LOG_LEVEL=silent node --test --import tsx $(find ./test -name '*.test.ts' -type f | sort)",
+    "typecheck:evaluation": "tsc -p tsconfig.evaluation.json",
+    "evaluation": "npm run typecheck:evaluation && cross-env NODE_ENV=development node --test --import tsx $(find ./evaluation -name '*.test.ts' -type f | sort)",
+    "evaluation:silent": "npm run typecheck:evaluation && cross-env NODE_ENV=development LOG_LEVEL=silent node --test --import tsx $(find ./evaluation -name '*.test.ts' -type f | sort)",
+    "lint": "npx eslint ./src"
+  },
+  "keywords": [],
+  "author": "Tom Lichtenstein",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.hpi.de/bpt-lab/openbpt-project/services/templates/openbpt-service-template-ts.git"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@types/bpmn-moddle": "^10.0.0",
+    "@types/node": "^20.19.41",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.57.0",
+    "pino-pretty": "^11.0.0",
+    "prettier": "^2.8.8",
+    "rimraf": "^5.0.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^7.6.0"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "bpmn-moddle": "^10.0.0",
+    "dotenv": "^16.3.1",
+    "fastify": "^5.8.5",
+    "openbpt-service-core": "file:lib/openbpt-service-core-ts",
+    "pino": "^8.20.0",
+    "pnml-moddle-converter": "^1.0.2",
+    "xmlbuilder2": "^4.0.3"
+  }
+}
