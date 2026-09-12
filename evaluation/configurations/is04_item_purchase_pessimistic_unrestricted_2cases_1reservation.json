@@ -1,0 +1,16 @@
+{
+  "crossCaseClasses": ["Item", "Reservation"],
+  "domainLimits": {
+    "cases": 2,
+    "participantsPerRole": {
+      "Buyer": 2,
+      "Seller": 1
+    },
+    "objectsPerClass": {
+      "Item": 1,
+      "Reservation": 1
+    }
+  },
+  "maxMarkings": 300000,
+  "maxDepth": 100
+}
