@@ -9,7 +9,7 @@ and transformations to BSPL information protocols. It operates on
 interaction-centric BPMN choreography diagrams enriched with a shared data
 model and shared data object lifecycles.
 
-> **Demo.** A demo is available at <https://app-thesis-oapc.bpt-lab.org>. The object-aware choreography service is not yet integrated into the production version of OpenBPT.
+> **Demo and walkthrough.** Try the hosted demo at <https://app-thesis-oapc.bpt-lab.org>, or watch the [object-aware choreography service screencast](https://youtu.be/uPkDNZhYNbs). The service is not yet integrated into the production version of OpenBPT.
 
 ---
 
